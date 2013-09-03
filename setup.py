@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.2'
 
 setup(name='crgis.content',
       version=version,
@@ -38,7 +38,7 @@ setup(name='crgis.content',
       # The next two lines may be deleted after you no longer need
       # addcontent support from paster and before you distribute
       # your package.
-      setup_requires=["PasteScript"],
-      paster_plugins = ["ZopeSkel"],
+#     setup_requires=["PasteScript"],
+#     paster_plugins = ["ZopeSkel"],
 
       )

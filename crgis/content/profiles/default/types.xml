@@ -4,8 +4,7 @@
      that spaces are allowed in type names, but the corresponding XML file
      uses an underscore instead. The "Factory-based Type Information with
      dynamic views" refers to an FTI from Products.CMFDynamicViewFTI,
-     which supports Plone's "display" menu.
-  -->
+     which supports Plone's "display" menu. -->
 <object name="portal_types" meta_type="Plone Types Tool">
-  <!-- -*- extra stuff goes here -*- -->
+ <object name="bixiewu" meta_type="Dexterity FTI" />
 </object>
