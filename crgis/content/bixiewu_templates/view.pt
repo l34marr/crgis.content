@@ -20,6 +20,11 @@
   <span tal:replace="context/facing" />
 </div>
 
+<div tal:condition="context/location">
+  <tal:field i18n:translate="">Location</tal:field>:
+  <span tal:replace="context/location" />
+</div>
+
   </metal:content-core>
 </metal:main>
 

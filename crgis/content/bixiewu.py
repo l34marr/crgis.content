@@ -1,5 +1,6 @@
 from five import grok
 from plone.directives import dexterity, form
+from plone.indexer import indexer
 
 from zope import schema
 
@@ -36,6 +37,11 @@ class IBiXieWu(form.Schema):
         required=False,
     )
 
+    location = schema.TextLine(
+        title=_(u"Location"),
+        required=False,
+    )
+
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific
 # methods and properties. Put methods that are mainly useful for rendering
@@ -46,6 +52,13 @@ class BiXieWu(dexterity.Container):
     
     # Add your class methods and properties here
 
+@indexer(IBiXieWu)
+def lcityIndexer(obj):
+    if len(obj.location) >= 3:
+        return obj.location[:3]
+    else:
+        return None
+grok.global_adapter(lcityIndexer, name='lcity')
 
 # View class
 # The view will automatically use a similarly named template in
