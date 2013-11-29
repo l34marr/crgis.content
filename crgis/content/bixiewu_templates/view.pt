@@ -1,10 +1,10 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
-      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      lang="en"
-      metal:use-macro="context/main_template/macros/master"
-      i18n:domain="crgis.content">
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="crgis.content">
 <body>
 
 <metal:main fill-slot="content-core">
@@ -20,9 +20,9 @@
   <span tal:replace="context/facing" />
 </div>
 
-<div tal:condition="context/location">
-  <tal:field i18n:translate="">Location</tal:field>:
-  <span tal:replace="context/location" />
+<div tal:condition="context/address">
+  <tal:field i18n:translate="">Address</tal:field>:
+  <span tal:replace="context/address" />
 </div>
 
   </metal:content-core>

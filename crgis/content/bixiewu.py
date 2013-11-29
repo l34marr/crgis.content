@@ -18,7 +18,7 @@ class IBiXieWu(form.Schema):
     # If you want a schema-defined interface, delete the form.model
     # line below and delete the matching file in the models sub-directory.
     # If you want a model-based interface, edit
-    # models/jury.xml to define the content type
+    # models/bixiewu.xml to define the content type
     # and add directives here as necessary.
     
     #form.model("models/bixiewu.xml")
@@ -37,8 +37,8 @@ class IBiXieWu(form.Schema):
         required=False,
     )
 
-    location = schema.TextLine(
-        title=_(u"Location"),
+    address = schema.TextLine(
+        title=_(u"Address"),
         required=False,
     )
 
@@ -62,7 +62,7 @@ grok.global_adapter(lcityIndexer, name='lcity')
 
 # View class
 # The view will automatically use a similarly named template in
-# jury_templates.
+# bixiewu_templates.
 # Template filenames should be all lower case.
 # The view will render when you request a content object with this
 # interface with "/@@sampleview" appended.
