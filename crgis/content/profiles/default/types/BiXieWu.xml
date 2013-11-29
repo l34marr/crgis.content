@@ -20,10 +20,10 @@
   <property name="klass">crgis.content.bixiewu.BiXieWu</property>
 
   <property name="behaviors">
-     <element value="plone.app.content.interfaces.INameFromTitle" />
-     <!-- IReferenceable might not be available, but it will not break. -->
-     <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
-   </property>
+    <element value="crgis.content.behaviors.shortname.INameFromCreationDate" />
+    <!-- IReferenceable might not be available, but it will not break. -->
+    <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
+  </property>
 
   <!-- View information -->
   <property name="link_target"></property>
