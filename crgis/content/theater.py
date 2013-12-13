@@ -23,13 +23,13 @@ class ITheater(form.Schema):
     
     #form.model("models/theater.xml")
 
-    title = schema.TextLine(
-        title=_(u'theater_title', default=u"Title"),
-    )
-
     description = schema.Text(
         title=_(u"Administrative Area"),
         required=False,
+    )
+
+    title = schema.TextLine(
+        title=_(u'theater_title', default=u"Title"),
     )
 
     address = schema.TextLine(
@@ -62,6 +62,11 @@ class ITheater(form.Schema):
         required=False,
     )
 
+    history = RichText(
+        title=_(u"History"),
+        required=False,
+    )
+
     narrative = RichText(
         title=_(u"Narrative"),
         required=False,
@@ -79,6 +84,11 @@ class ITheater(form.Schema):
 
     remark = RichText(
         title=_(u"Remark"),
+        required=False,
+    )
+
+    reference = RichText(
+        title=_(u"Reference"),
         required=False,
     )
 

@@ -14,7 +14,8 @@
      ajax_load request/ajax_load | nothing;
      ajax_include_head request/ajax_include_head | nothing;
  dummy python:request.RESPONSE.setHeader('X-UA-Compatible', 'IE=edge,chrome=1');"
- tal:attributes="lang lang;">
+ tal:attributes="lang lang;"
+ i18n:domain="crgis.content">
 
     <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
     Get the global cache headers located in global_cache_settings.
@@ -55,7 +56,6 @@
 <div id="visual-portal-wrapper">
 
  <div id="portal-top" class="row"
-  i18n:domain="plone"
   tal:condition="not:ajax_load">
   <div class="cell width-full position-0">
     <div tal:replace="structure provider:plone.portaltop" />
@@ -119,6 +119,46 @@
       <tal:field i18n:translate="">Purpose</tal:field>:
       <span tal:replace="context/purpose" />
     </div>
+    <div tal:condition="context/completed">
+      <tal:field i18n:translate="">Completed Date</tal:field>:
+      <span tal:replace="context/completed" />
+    </div>
+    <div tal:condition="context/launched">
+      <tal:field i18n:translate="">Launched Date</tal:field>:
+      <span tal:replace="context/launched" />
+    </div>
+    <div tal:condition="context/updated">
+      <tal:field i18n:translate="">Last Updated</tal:field>:
+      <span tal:replace="context/updated" />
+    </div>
+    <div tal:condition="context/funding">
+      <tal:field i18n:translate="">Construction Funds</tal:field>:
+      <span tal:replace="structure context/funding/output" />
+    </div>
+    <div tal:condition="context/history">
+      <tal:field i18n:translate="">History</tal:field>:
+      <span tal:replace="structure context/history/output" />
+    </div>
+    <div tal:condition="context/narrative">
+      <tal:field i18n:translate="">Narrative</tal:field>:
+      <span tal:replace="structure context/narrative/output" />
+    </div>
+    <div tal:condition="context/operating">
+      <tal:field i18n:translate="">Operating</tal:field>:
+      <span tal:replace="structure context/operating/output" />
+    </div>
+    <div tal:condition="context/program">
+      <tal:field i18n:translate="">Program</tal:field>:
+      <span tal:replace="structure context/program/output" />
+    </div>
+    <div tal:condition="context/remark">
+      <tal:field i18n:translate="">Remark</tal:field>:
+      <span tal:replace="structure context/remark/output" />
+    </div>
+    <div tal:condition="context/reference">
+      <tal:field i18n:translate="">Reference</tal:field>:
+      <span tal:replace="structure context/reference/output" />
+    </div>
     </div>
     <div id="viewlet-below-content-body"
      tal:content="structure provider:plone.belowcontentbody"
@@ -170,7 +210,6 @@
  </div>
 
  <div id="portal-footer-wrapper" class="row"
-  i18n:domain="plone"
   tal:condition="not:ajax_load">
   <div class="cell width-full position-0">
     <div tal:replace="structure provider:plone.portalfooter" />
