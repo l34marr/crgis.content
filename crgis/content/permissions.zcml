@@ -8,5 +8,9 @@
     id="add.bixiewu"
     title="CRGIS: Add BiXieWu"
     />
+  <permission
+    id="add.theater"
+    title="CRGIS: Add Theater"
+    />
 
 </configure>
