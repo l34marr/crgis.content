@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: crgis.content\n"
+"POT-Creation-Date: 2013-12-13 14:26+0000\n"
+"PO-Revision-Date: 2013-12-13 22:28+0800\n"
+"Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
+"Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: crgis.content\n"
+
+#: ./bixiewu.py:41
+#: ./bixiewu_templates/view.pt:24
+#: ./theater.py:36
+msgid "Address"
+msgstr "所在位址"
+
+#: ./theater.py:27
+#: ./theater_templates/view.pt:101
+msgid "Administrative Area"
+msgstr "州廳名"
+
+#: ./profiles/default/types/BiXieWu.xml
+msgid "BiXieWu"
+msgstr ""
+
+#: ./profiles/default/types/BiXieWu.xml
+msgid "CRGIS BiXieWu Type"
+msgstr ""
+
+#: ./profiles/default/types/Theater.xml
+msgid "CRGIS Theater Type"
+msgstr "臺灣老戲院"
+
+#: ./bixiewu.py:31
+#: ./bixiewu_templates/view.pt:14
+msgid "Common Era"
+msgstr ""
+
+#: ./theater.py:46
+#: ./theater_templates/view.pt:123
+msgid "Completed Date"
+msgstr "落成日"
+
+#: ./theater.py:61
+#: ./theater_templates/view.pt:135
+msgid "Construction Funds"
+msgstr "建築經費"
+
+#: ./bixiewu.py:36
+#: ./bixiewu_templates/view.pt:19
+msgid "Facing"
+msgstr ""
+
+#: ./theater.py:66
+#: ./theater_templates/view.pt:139
+msgid "History"
+msgstr "沿革介紹"
+
+#: ./theater.py:56
+#: ./theater_templates/view.pt:131
+msgid "Last Updated"
+msgstr "最後記錄"
+
+#: ./theater.py:51
+#: ./theater_templates/view.pt:127
+msgid "Launched Date"
+msgstr "啟用日"
+
+#: ./theater.py:71
+#: ./theater_templates/view.pt:143
+msgid "Narrative"
+msgstr "建物描述(含內部設施)"
+
+#: ./theater.py:76
+#: ./theater_templates/view.pt:147
+msgid "Operating"
+msgstr "營運紀要"
+
+#: ./theater.py:81
+#: ./theater_templates/view.pt:151
+msgid "Program"
+msgstr "節目類型"
+
+#: ./theater.py:41
+#: ./theater_templates/view.pt:119
+msgid "Purpose"
+msgstr "戲院屬性"
+
+#: ./theater.py:91
+#: ./theater_templates/view.pt:159
+msgid "Reference"
+msgstr "相關文獻"
+
+#: ./theater.py:86
+#: ./theater_templates/view.pt:155
+msgid "Remark"
+msgstr "備註"
+
+#: ./profiles/default/types/Theater.xml
+msgid "Theater"
+msgstr "戲院"
+
+#: ./bixiewu.py:27
+msgid "Title"
+msgstr ""
+
+#. Default: "Title"
+#: ./theater.py:32
+msgid "theater_title"
+msgstr "戲院名"
+

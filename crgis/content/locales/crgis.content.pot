@@ -1,0 +1,120 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2013-12-13 14:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: crgis.content\n"
+
+#: ./bixiewu.py:41
+#: ./bixiewu_templates/view.pt:24
+#: ./theater.py:36
+msgid "Address"
+msgstr ""
+
+#: ./theater.py:27
+#: ./theater_templates/view.pt:101
+msgid "Administrative Area"
+msgstr ""
+
+#: ./profiles/default/types/BiXieWu.xml
+msgid "BiXieWu"
+msgstr ""
+
+#: ./profiles/default/types/BiXieWu.xml
+msgid "CRGIS BiXieWu Type"
+msgstr ""
+
+#: ./profiles/default/types/Theater.xml
+msgid "CRGIS Theater Type"
+msgstr ""
+
+#: ./bixiewu.py:31
+#: ./bixiewu_templates/view.pt:14
+msgid "Common Era"
+msgstr ""
+
+#: ./theater.py:46
+#: ./theater_templates/view.pt:123
+msgid "Completed Date"
+msgstr ""
+
+#: ./theater.py:61
+#: ./theater_templates/view.pt:135
+msgid "Construction Funds"
+msgstr ""
+
+#: ./bixiewu.py:36
+#: ./bixiewu_templates/view.pt:19
+msgid "Facing"
+msgstr ""
+
+#: ./theater.py:66
+#: ./theater_templates/view.pt:139
+msgid "History"
+msgstr ""
+
+#: ./theater.py:56
+#: ./theater_templates/view.pt:131
+msgid "Last Updated"
+msgstr ""
+
+#: ./theater.py:51
+#: ./theater_templates/view.pt:127
+msgid "Launched Date"
+msgstr ""
+
+#: ./theater.py:71
+#: ./theater_templates/view.pt:143
+msgid "Narrative"
+msgstr ""
+
+#: ./theater.py:76
+#: ./theater_templates/view.pt:147
+msgid "Operating"
+msgstr ""
+
+#: ./theater.py:81
+#: ./theater_templates/view.pt:151
+msgid "Program"
+msgstr ""
+
+#: ./theater.py:41
+#: ./theater_templates/view.pt:119
+msgid "Purpose"
+msgstr ""
+
+#: ./theater.py:91
+#: ./theater_templates/view.pt:159
+msgid "Reference"
+msgstr ""
+
+#: ./theater.py:86
+#: ./theater_templates/view.pt:155
+msgid "Remark"
+msgstr ""
+
+#: ./profiles/default/types/Theater.xml
+msgid "Theater"
+msgstr ""
+
+#: ./bixiewu.py:27
+msgid "Title"
+msgstr ""
+
+#. Default: "Title"
+#: ./theater.py:32
+msgid "theater_title"
+msgstr ""
+
