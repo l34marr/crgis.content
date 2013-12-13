@@ -24,7 +24,7 @@ class ITheater(form.Schema):
     #form.model("models/theater.xml")
 
     title = schema.TextLine(
-        title=_(u"Title"),
+        title=_(u'theater_title', default=u"Title"),
     )
 
     description = schema.Text(
