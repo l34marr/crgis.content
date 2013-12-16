@@ -3,10 +3,18 @@ from plone.directives import dexterity, form
 from plone.indexer import indexer
 
 from zope import schema
-
 from plone.app.textfield import RichText
 
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+
 from crgis.content import MessageFactory as _
+
+data_src = SimpleVocabulary([
+    SimpleTerm(value='governmental', title=_(u'Governmental')),
+    SimpleTerm(value='academic', title=_(u'Academic')),
+    SimpleTerm(value='fieldwork', title=_(u'Fieldwork')),
+    SimpleTerm(value='other', title=_(u'Other'))
+])
 
 # Interface class; used to define content-type schema.
 
@@ -25,6 +33,12 @@ class IBiXieWu(form.Schema):
 
     title = schema.TextLine(
         title=_(u"Title"),
+    )
+
+    data_src = schema.Choice(
+        title=_(u"Data Source"),
+        vocabulary=data_src,
+        required=False,
     )
 
     era = schema.TextLine(
