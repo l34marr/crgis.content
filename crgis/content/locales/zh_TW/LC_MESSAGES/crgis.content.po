@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.content\n"
-"POT-Creation-Date: 2013-12-13 14:26+0000\n"
-"PO-Revision-Date: 2013-12-13 22:28+0800\n"
+"POT-Creation-Date: 2013-12-17 07:37+0000\n"
+"PO-Revision-Date: 2013-12-17 15:38+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,104 +14,228 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.content\n"
 
-#: ./bixiewu.py:41
-#: ./bixiewu_templates/view.pt:24
-#: ./theater.py:36
+#: ./theater.py:44
+#: ./theater_templates/view.pt:116
 msgid "Address"
 msgstr "所在位址"
 
-#: ./theater.py:27
-#: ./theater_templates/view.pt:101
+#: ./theater.py:35
+#: ./theater_templates/view.pt:112
 msgid "Administrative Area"
 msgstr "州廳名"
 
-#: ./profiles/default/types/BiXieWu.xml
-msgid "BiXieWu"
-msgstr ""
+#: ./theater.py:95
+#: ./theater_templates/view.pt:139
+msgid "Affairs"
+msgstr "事務擔當者"
 
-#: ./profiles/default/types/BiXieWu.xml
-msgid "CRGIS BiXieWu Type"
-msgstr ""
+#: ./theater_templates/view.pt:110
+msgid "Basic Info"
+msgstr "基本資料"
 
 #: ./profiles/default/types/Theater.xml
 msgid "CRGIS Theater Type"
 msgstr "臺灣老戲院"
 
-#: ./bixiewu.py:31
-#: ./bixiewu_templates/view.pt:14
-msgid "Common Era"
+#: ./vocabularies.py:36
+msgid "Changhua County"
 msgstr ""
 
-#: ./theater.py:46
-#: ./theater_templates/view.pt:123
+#: ./vocabularies.py:38
+msgid "Chiayi City"
+msgstr ""
+
+#: ./vocabularies.py:39
+msgid "Chiayi County"
+msgstr ""
+
+#: ./theater.py:49
+#: ./theater_templates/view.pt:150
 msgid "Completed Date"
 msgstr "落成日"
 
-#: ./theater.py:61
-#: ./theater_templates/view.pt:135
+#: ./theater.py:64
+#: ./theater_templates/view.pt:162
 msgid "Construction Funds"
 msgstr "建築經費"
 
-#: ./bixiewu.py:36
-#: ./bixiewu_templates/view.pt:19
-msgid "Facing"
-msgstr ""
+#: ./theater.py:100
+#: ./theater_templates/view.pt:143
+msgid "Contract"
+msgstr "統治會社契約書"
 
-#: ./theater.py:66
-#: ./theater_templates/view.pt:139
+#: ./vocabularies.py:16
+msgid "County-Controlled"
+msgstr "縣(市)定"
+
+#: ./vocabularies.py:15
+msgid "Direct-Controlled"
+msgstr "直轄市定"
+
+#: ./theater.py:79
+msgid "Function"
+msgstr "業別"
+
+#: ./theater_templates/view.pt:148
+msgid "Historic Info"
+msgstr "簡介"
+
+#: ./theater.py:69
+#: ./theater_templates/view.pt:166
 msgid "History"
 msgstr "沿革介紹"
 
-#: ./theater.py:56
-#: ./theater_templates/view.pt:131
+#: ./vocabularies.py:32
+msgid "Hsinchu City"
+msgstr ""
+
+#: ./vocabularies.py:31
+msgid "Hsinchu County"
+msgstr ""
+
+#: ./vocabularies.py:44
+msgid "Hualien County"
+msgstr ""
+
+#: ./vocabularies.py:41
+msgid "Kaohsiung City"
+msgstr ""
+
+#: ./vocabularies.py:27
+msgid "Keelung City"
+msgstr ""
+
+#: ./vocabularies.py:48
+msgid "Kinmen County"
+msgstr ""
+
+#: ./theater.py:59
+#: ./theater_templates/view.pt:158
 msgid "Last Updated"
 msgstr "最後記錄"
 
-#: ./theater.py:51
-#: ./theater_templates/view.pt:127
+#: ./theater.py:54
+#: ./theater_templates/view.pt:154
 msgid "Launched Date"
 msgstr "啟用日"
 
-#: ./theater.py:71
-#: ./theater_templates/view.pt:143
+#: ./vocabularies.py:47
+msgid "Lienchiang County"
+msgstr ""
+
+#: ./vocabularies.py:33
+msgid "Miaoli County"
+msgstr ""
+
+#: ./theater.py:14
+msgid "Mixed Theater"
+msgstr "混合戲院"
+
+#: ./theater.py:13
+msgid "Movie Theater"
+msgstr "電影常設館"
+
+#: ./vocabularies.py:35
+msgid "Nantou County"
+msgstr ""
+
+#: ./theater.py:74
+#: ./theater_templates/view.pt:124
 msgid "Narrative"
 msgstr "建物描述(含內部設施)"
 
-#: ./theater.py:76
-#: ./theater_templates/view.pt:147
+#: ./vocabularies.py:14
+msgid "National"
+msgstr "國定"
+
+#: ./vocabularies.py:29
+msgid "New Taipei City"
+msgstr ""
+
+#: ./theater.py:15
+msgid "Opera Theater"
+msgstr "專演戲劇的戲院"
+
+#: ./theater.py:105
+#: ./theater_templates/view.pt:170
 msgid "Operating"
 msgstr "營運紀要"
 
-#: ./theater.py:81
-#: ./theater_templates/view.pt:151
+#: ./theater.py:90
+#: ./theater_templates/view.pt:135
+msgid "Operator"
+msgstr "經營者"
+
+#: ./theater.py:85
+#: ./theater_templates/view.pt:131
+msgid "Owner"
+msgstr "所有者"
+
+#: ./vocabularies.py:46
+msgid "Penghu County"
+msgstr ""
+
+#: ./vocabularies.py:42
+msgid "Pingtung County"
+msgstr ""
+
+#: ./theater.py:110
+#: ./theater_templates/view.pt:120
 msgid "Program"
 msgstr "節目類型"
 
-#: ./theater.py:41
-#: ./theater_templates/view.pt:119
-msgid "Purpose"
-msgstr "戲院屬性"
-
-#: ./theater.py:91
-#: ./theater_templates/view.pt:159
+#: ./theater.py:120
+#: ./theater_templates/view.pt:177
 msgid "Reference"
 msgstr "相關文獻"
 
-#: ./theater.py:86
-#: ./theater_templates/view.pt:155
+#: ./theater_templates/view.pt:129
+msgid "Registry Info"
+msgstr "台灣興行 (映演) 場組合登錄資訊"
+
+#: ./theater.py:115
+#: ./theater_templates/view.pt:181
 msgid "Remark"
 msgstr "備註"
+
+#: ./theater_templates/view.pt:175
+msgid "Supplementary Info"
+msgstr "參考與補充資料"
+
+#: ./vocabularies.py:34
+msgid "Taichung City"
+msgstr ""
+
+#: ./vocabularies.py:40
+msgid "Tainan City"
+msgstr ""
+
+#: ./vocabularies.py:28
+msgid "Taipei City"
+msgstr ""
+
+#: ./vocabularies.py:45
+msgid "Taitung County"
+msgstr ""
+
+#: ./vocabularies.py:30
+msgid "Taoyuan County"
+msgstr ""
 
 #: ./profiles/default/types/Theater.xml
 msgid "Theater"
 msgstr "戲院"
 
-#: ./bixiewu.py:27
-msgid "Title"
+#: ./vocabularies.py:43
+msgid "Yilan County"
+msgstr ""
+
+#: ./vocabularies.py:37
+msgid "Yunlin County"
 msgstr ""
 
 #. Default: "Title"
-#: ./theater.py:32
+#: ./theater.py:40
 msgid "theater_title"
 msgstr "戲院名"
 
