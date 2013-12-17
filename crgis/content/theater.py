@@ -5,6 +5,8 @@ from plone.indexer import indexer
 from zope import schema
 from plone.app.textfield import RichText
 
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+
 from crgis.content import MessageFactory as _
 
 function = SimpleVocabulary([
@@ -81,6 +83,26 @@ class ITheater(form.Schema):
     function = schema.Choice(
         title=_(u"Function"),
         vocabulary=function,
+        required=False,
+    )
+
+    owner = schema.TextLine(
+        title=_(u"Owner"),
+        required=False,
+    )
+
+    operator = schema.TextLine(
+        title=_(u"Operator"),
+        required=False,
+    )
+
+    affairs = schema.TextLine(
+        title=_(u"Affairs"),
+        required=False,
+    )
+
+    contract = schema.TextLine(
+        title=_(u"Contract"),
         required=False,
     )
 
