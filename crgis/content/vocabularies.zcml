@@ -5,8 +5,12 @@
   i18n_domain="crgis.content">
 
   <utility
-    name="regions"
-    component=".vocabularies.regionsFactory"
+    name="adm_level"
+    component=".vocabularies.adm_levelFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+  <utility
+    name="region"
+    component=".vocabularies.regionFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
 </configure>

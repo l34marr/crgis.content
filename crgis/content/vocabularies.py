@@ -5,8 +5,21 @@ from zope.schema.vocabulary import SimpleTerm
 from crgis.content import MessageFactory as _
 
 
-class regions(object):
-    """ Regions
+class adm_level(object):
+    """ Administrative Level
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='nation', title=_(u'National')),
+            SimpleTerm(value='municipality', title=_(u'Direct-Controlled')),
+            SimpleTerm(value='county', title=_(u'County-Controlled'))
+        )
+        return SimpleVocabulary(items)
+adm_levelFactory = adm_level()
+
+class region(object):
+    """ Region
     """
     implements(IVocabularyFactory)
     def __call__(self, context=None):
@@ -35,5 +48,5 @@ class regions(object):
             SimpleTerm(value='KinmenCounty', title=_(u'Kinmen County')),
         )
         return SimpleVocabulary(items)
-regionsFactory = regions()
+regionFactory = region()
 
