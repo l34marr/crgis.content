@@ -3,10 +3,16 @@ from plone.directives import dexterity, form
 from plone.indexer import indexer
 
 from zope import schema
-
 from plone.app.textfield import RichText
 
 from crgis.content import MessageFactory as _
+
+function = SimpleVocabulary([
+    SimpleTerm(value=u'movie', title=_(u'Moive Theater')),
+    SimpleTerm(value=u'mixed', title=_(u'Mixed Theater')),
+    SimpleTerm(value=u'opera', title=_(u'Opera Theater'))
+])
+
 
 # Interface class; used to define content-type schema.
 
@@ -69,6 +75,12 @@ class ITheater(form.Schema):
 
     narrative = RichText(
         title=_(u"Narrative"),
+        required=False,
+    )
+
+    function = schema.Choice(
+        title=_(u"Function"),
+        vocabulary=function,
         required=False,
     )
 
