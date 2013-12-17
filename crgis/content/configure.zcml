@@ -36,5 +36,6 @@
     />
 
   <!-- -*- extra stuff goes here -*- -->
+  <adapter name="adm_area" factory=".indexers.adm_area" />
 
 </configure>
