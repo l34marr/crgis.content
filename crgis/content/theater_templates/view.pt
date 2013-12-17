@@ -140,9 +140,9 @@
       <tal:field i18n:translate="">Operator</tal:field>:
       <span tal:replace="context/operator" />
     </div>
-    <div tal:condition="context/affairs">
-      <tal:field i18n:translate="">Affairs</tal:field>:
-      <span tal:replace="context/affairs" />
+    <div tal:condition="context/in_charge">
+      <tal:field i18n:translate="">Person In Charge</tal:field>:
+      <span tal:replace="context/in_charge" />
     </div>
     <div tal:condition="context/contract">
       <tal:field i18n:translate="">Contract</tal:field>:

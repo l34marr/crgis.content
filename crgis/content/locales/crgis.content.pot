@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-12-17 07:37+0000\n"
+"POT-Creation-Date: 2013-12-17 13:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,6 @@ msgstr ""
 #: ./theater.py:35
 #: ./theater_templates/view.pt:112
 msgid "Administrative Area"
-msgstr ""
-
-#: ./theater.py:95
-#: ./theater_templates/view.pt:139
-msgid "Affairs"
 msgstr ""
 
 #: ./theater_templates/view.pt:110
@@ -53,17 +48,17 @@ msgid "Chiayi County"
 msgstr ""
 
 #: ./theater.py:49
-#: ./theater_templates/view.pt:150
+#: ./theater_templates/view.pt:155
 msgid "Completed Date"
 msgstr ""
 
 #: ./theater.py:64
-#: ./theater_templates/view.pt:162
+#: ./theater_templates/view.pt:167
 msgid "Construction Funds"
 msgstr ""
 
 #: ./theater.py:100
-#: ./theater_templates/view.pt:143
+#: ./theater_templates/view.pt:148
 msgid "Contract"
 msgstr ""
 
@@ -76,15 +71,16 @@ msgid "Direct-Controlled"
 msgstr ""
 
 #: ./theater.py:79
+#: ./theater_templates/view.pt:132
 msgid "Function"
 msgstr ""
 
-#: ./theater_templates/view.pt:148
+#: ./theater_templates/view.pt:153
 msgid "Historic Info"
 msgstr ""
 
 #: ./theater.py:69
-#: ./theater_templates/view.pt:166
+#: ./theater_templates/view.pt:171
 msgid "History"
 msgstr ""
 
@@ -113,12 +109,12 @@ msgid "Kinmen County"
 msgstr ""
 
 #: ./theater.py:59
-#: ./theater_templates/view.pt:158
+#: ./theater_templates/view.pt:163
 msgid "Last Updated"
 msgstr ""
 
 #: ./theater.py:54
-#: ./theater_templates/view.pt:154
+#: ./theater_templates/view.pt:159
 msgid "Launched Date"
 msgstr ""
 
@@ -160,22 +156,27 @@ msgid "Opera Theater"
 msgstr ""
 
 #: ./theater.py:105
-#: ./theater_templates/view.pt:170
+#: ./theater_templates/view.pt:175
 msgid "Operating"
 msgstr ""
 
 #: ./theater.py:90
-#: ./theater_templates/view.pt:135
+#: ./theater_templates/view.pt:140
 msgid "Operator"
 msgstr ""
 
 #: ./theater.py:85
-#: ./theater_templates/view.pt:131
+#: ./theater_templates/view.pt:136
 msgid "Owner"
 msgstr ""
 
 #: ./vocabularies.py:46
 msgid "Penghu County"
+msgstr ""
+
+#: ./theater.py:95
+#: ./theater_templates/view.pt:144
+msgid "Person In Charge"
 msgstr ""
 
 #: ./vocabularies.py:42
@@ -188,7 +189,7 @@ msgid "Program"
 msgstr ""
 
 #: ./theater.py:120
-#: ./theater_templates/view.pt:177
+#: ./theater_templates/view.pt:182
 msgid "Reference"
 msgstr ""
 
@@ -197,11 +198,11 @@ msgid "Registry Info"
 msgstr ""
 
 #: ./theater.py:115
-#: ./theater_templates/view.pt:181
+#: ./theater_templates/view.pt:186
 msgid "Remark"
 msgstr ""
 
-#: ./theater_templates/view.pt:175
+#: ./theater_templates/view.pt:180
 msgid "Supplementary Info"
 msgstr ""
 

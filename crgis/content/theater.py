@@ -91,8 +91,8 @@ class ITheater(form.Schema):
         required=False,
     )
 
-    affairs = schema.TextLine(
-        title=_(u"Affairs"),
+    in_charge = schema.TextLine(
+        title=_(u"Person In Charge"),
         required=False,
     )
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.content\n"
-"POT-Creation-Date: 2013-12-17 07:37+0000\n"
-"PO-Revision-Date: 2013-12-17 15:38+0800\n"
+"POT-Creation-Date: 2013-12-17 13:50+0000\n"
+"PO-Revision-Date: 2013-12-17 21:51+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -23,11 +23,6 @@ msgstr "所在位址"
 #: ./theater_templates/view.pt:112
 msgid "Administrative Area"
 msgstr "州廳名"
-
-#: ./theater.py:95
-#: ./theater_templates/view.pt:139
-msgid "Affairs"
-msgstr "事務擔當者"
 
 #: ./theater_templates/view.pt:110
 msgid "Basic Info"
@@ -50,17 +45,17 @@ msgid "Chiayi County"
 msgstr ""
 
 #: ./theater.py:49
-#: ./theater_templates/view.pt:150
+#: ./theater_templates/view.pt:155
 msgid "Completed Date"
 msgstr "落成日"
 
 #: ./theater.py:64
-#: ./theater_templates/view.pt:162
+#: ./theater_templates/view.pt:167
 msgid "Construction Funds"
 msgstr "建築經費"
 
 #: ./theater.py:100
-#: ./theater_templates/view.pt:143
+#: ./theater_templates/view.pt:148
 msgid "Contract"
 msgstr "統治會社契約書"
 
@@ -73,15 +68,16 @@ msgid "Direct-Controlled"
 msgstr "直轄市定"
 
 #: ./theater.py:79
+#: ./theater_templates/view.pt:132
 msgid "Function"
 msgstr "業別"
 
-#: ./theater_templates/view.pt:148
+#: ./theater_templates/view.pt:153
 msgid "Historic Info"
 msgstr "簡介"
 
 #: ./theater.py:69
-#: ./theater_templates/view.pt:166
+#: ./theater_templates/view.pt:171
 msgid "History"
 msgstr "沿革介紹"
 
@@ -110,12 +106,12 @@ msgid "Kinmen County"
 msgstr ""
 
 #: ./theater.py:59
-#: ./theater_templates/view.pt:158
+#: ./theater_templates/view.pt:163
 msgid "Last Updated"
 msgstr "最後記錄"
 
 #: ./theater.py:54
-#: ./theater_templates/view.pt:154
+#: ./theater_templates/view.pt:159
 msgid "Launched Date"
 msgstr "啟用日"
 
@@ -157,23 +153,28 @@ msgid "Opera Theater"
 msgstr "專演戲劇的戲院"
 
 #: ./theater.py:105
-#: ./theater_templates/view.pt:170
+#: ./theater_templates/view.pt:175
 msgid "Operating"
 msgstr "營運紀要"
 
 #: ./theater.py:90
-#: ./theater_templates/view.pt:135
+#: ./theater_templates/view.pt:140
 msgid "Operator"
 msgstr "經營者"
 
 #: ./theater.py:85
-#: ./theater_templates/view.pt:131
+#: ./theater_templates/view.pt:136
 msgid "Owner"
 msgstr "所有者"
 
 #: ./vocabularies.py:46
 msgid "Penghu County"
 msgstr ""
+
+#: ./theater.py:95
+#: ./theater_templates/view.pt:144
+msgid "Person In Charge"
+msgstr "事務擔當者"
 
 #: ./vocabularies.py:42
 msgid "Pingtung County"
@@ -185,7 +186,7 @@ msgid "Program"
 msgstr "節目類型"
 
 #: ./theater.py:120
-#: ./theater_templates/view.pt:177
+#: ./theater_templates/view.pt:182
 msgid "Reference"
 msgstr "相關文獻"
 
@@ -194,11 +195,11 @@ msgid "Registry Info"
 msgstr "台灣興行 (映演) 場組合登錄資訊"
 
 #: ./theater.py:115
-#: ./theater_templates/view.pt:181
+#: ./theater_templates/view.pt:186
 msgid "Remark"
 msgstr "備註"
 
-#: ./theater_templates/view.pt:175
+#: ./theater_templates/view.pt:180
 msgid "Supplementary Info"
 msgstr "參考與補充資料"
 
