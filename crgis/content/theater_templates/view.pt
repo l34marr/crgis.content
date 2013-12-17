@@ -96,12 +96,7 @@
     <div id="viewlet-above-content-title"
      tal:content="structure provider:plone.abovecontenttitle"
      tal:condition="not:ajax_load" />
-    <metal:description define-slot="content-description">
-      <div tal:condition="context/description">
-      <tal:field i18n:translate="">Administrative Area</tal:field>:
-      <span tal:replace="context/description" />
-      </div>
-    </metal:description>
+
     <metal:title define-slot="content-title">
       <h1 class="documentFirstHeading" tal:content="context/title">
       Title
@@ -111,14 +106,51 @@
      tal:content="structure provider:plone.abovecontentbody"
      tal:condition="not:ajax_load" />
     <div id="content-core">
+<fieldset>
+<legend i18n:translate="">Basic Info</legend>
+    <div tal:condition="context/adm_area">
+      <tal:field i18n:translate="">Administrative Area</tal:field>:
+      <span tal:replace="context/adm_area" />
+    </div>
     <div tal:condition="context/address">
       <tal:field i18n:translate="">Address</tal:field>:
       <span tal:replace="context/address" />
     </div>
-    <div tal:condition="context/purpose">
-      <tal:field i18n:translate="">Purpose</tal:field>:
-      <span tal:replace="context/purpose" />
+    <div tal:condition="context/program">
+      <tal:field i18n:translate="">Program</tal:field>:
+      <span tal:replace="structure context/program/output" />
     </div>
+    <div tal:condition="context/narrative">
+      <tal:field i18n:translate="">Narrative</tal:field>:
+      <span tal:replace="structure context/narrative/output" />
+    </div>
+</fieldset>
+<fieldset>
+<legend i18n:translate="">Registry Info</legend>
+    <div tal:define="t_function python:view.t_title(context.function)"
+     tal:condition="t_function">
+      <tal:field i18n:translate="">Function</tal:field>:
+      <span tal:replace="t_function" />
+    </div>
+    <div tal:condition="context/owner">
+      <tal:field i18n:translate="">Owner</tal:field>:
+      <span tal:replace="context/owner" />
+    </div>
+    <div tal:condition="context/operator">
+      <tal:field i18n:translate="">Operator</tal:field>:
+      <span tal:replace="context/operator" />
+    </div>
+    <div tal:condition="context/affairs">
+      <tal:field i18n:translate="">Affairs</tal:field>:
+      <span tal:replace="context/affairs" />
+    </div>
+    <div tal:condition="context/contract">
+      <tal:field i18n:translate="">Contract</tal:field>:
+      <span tal:replace="context/contract" />
+    </div>
+</fieldset>
+<fieldset>
+<legend i18n:translate="">Historic Info</legend>
     <div tal:condition="context/completed">
       <tal:field i18n:translate="">Completed Date</tal:field>:
       <span tal:replace="context/completed" />
@@ -139,26 +171,22 @@
       <tal:field i18n:translate="">History</tal:field>:
       <span tal:replace="structure context/history/output" />
     </div>
-    <div tal:condition="context/narrative">
-      <tal:field i18n:translate="">Narrative</tal:field>:
-      <span tal:replace="structure context/narrative/output" />
-    </div>
     <div tal:condition="context/operating">
       <tal:field i18n:translate="">Operating</tal:field>:
       <span tal:replace="structure context/operating/output" />
     </div>
-    <div tal:condition="context/program">
-      <tal:field i18n:translate="">Program</tal:field>:
-      <span tal:replace="structure context/program/output" />
+</fieldset>
+<fieldset>
+<legend i18n:translate="">Supplementary Info</legend>
+    <div tal:condition="context/reference">
+      <tal:field i18n:translate="">Reference</tal:field>:
+      <span tal:replace="structure context/reference/output" />
     </div>
     <div tal:condition="context/remark">
       <tal:field i18n:translate="">Remark</tal:field>:
       <span tal:replace="structure context/remark/output" />
     </div>
-    <div tal:condition="context/reference">
-      <tal:field i18n:translate="">Reference</tal:field>:
-      <span tal:replace="structure context/reference/output" />
-    </div>
+</fieldset>
     </div>
     <div id="viewlet-below-content-body"
      tal:content="structure provider:plone.belowcontentbody"

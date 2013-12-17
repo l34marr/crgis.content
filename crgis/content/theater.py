@@ -10,9 +10,9 @@ from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 from crgis.content import MessageFactory as _
 
 function = SimpleVocabulary([
-    SimpleTerm(value=u'movie', title=_(u'Moive Theater')),
-    SimpleTerm(value=u'mixed', title=_(u'Mixed Theater')),
-    SimpleTerm(value=u'opera', title=_(u'Opera Theater'))
+    SimpleTerm(value='movie', title=_(u'Movie Theater')),
+    SimpleTerm(value='mixed', title=_(u'Mixed Theater')),
+    SimpleTerm(value='opera', title=_(u'Opera Theater'))
 ])
 
 
@@ -31,7 +31,7 @@ class ITheater(form.Schema):
     
     #form.model("models/theater.xml")
 
-    description = schema.Text(
+    adm_area = schema.TextLine(
         title=_(u"Administrative Area"),
         required=False,
     )
@@ -42,11 +42,6 @@ class ITheater(form.Schema):
 
     address = schema.TextLine(
         title=_(u"Address"),
-        required=False,
-    )
-
-    purpose = schema.TextLine(
-        title=_(u"Purpose"),
         required=False,
     )
 
@@ -159,4 +154,11 @@ class View(grok.View):
     grok.context(ITheater)
     grok.require('zope2.View')
     grok.name('view')
+
+    def t_title(self, value):
+        if value in ('movie', 'mixed', 'opera'):
+            term = function.getTerm(value)
+            return term.title
+        else:
+            return None
 
