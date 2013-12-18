@@ -6,7 +6,11 @@
 
   <utility
     name="adm_level"
-    component=".vocabularies.adm_levelFactory"
+    component=".vocabularies.AdminLevelFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+  <utility
+    name="theater.function"
+    component=".vocabularies.TheaterFunctionFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
   <utility
     name="region"

@@ -5,8 +5,8 @@ from zope.schema.vocabulary import SimpleTerm
 from crgis.content import MessageFactory as _
 
 
-class adm_level(object):
-    """ Administrative Level
+class AdminLevel(object):
+    """ Administrative Level Vocabulary
     """
     implements(IVocabularyFactory)
     def __call__(self, context=None):
@@ -16,7 +16,20 @@ class adm_level(object):
             SimpleTerm(value='county', title=_(u'County-Controlled'))
         )
         return SimpleVocabulary(items)
-adm_levelFactory = adm_level()
+AdminLevelFactory = AdminLevel()
+
+class TheaterFunction(object):
+    """ Theater Function Vocabulary
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='movie', title=_(u'Movie Theater')),
+            SimpleTerm(value='mixed', title=_(u'Mixed Theater')),
+            SimpleTerm(value='opera', title=_(u'Opera Theater'))
+        )
+        return SimpleVocabulary(items)
+TheaterFunctionFactory = TheaterFunction()
 
 class region(object):
     """ Region

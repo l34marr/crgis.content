@@ -5,15 +5,7 @@ from plone.indexer import indexer
 from zope import schema
 from plone.app.textfield import RichText
 
-from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
-
 from crgis.content import MessageFactory as _
-
-function = SimpleVocabulary([
-    SimpleTerm(value='movie', title=_(u'Movie Theater')),
-    SimpleTerm(value='mixed', title=_(u'Mixed Theater')),
-    SimpleTerm(value='opera', title=_(u'Opera Theater'))
-])
 
 
 # Interface class; used to define content-type schema.
@@ -77,7 +69,7 @@ class ITheater(form.Schema):
 
     function = schema.Choice(
         title=_(u"Function"),
-        vocabulary=function,
+        vocabulary='theater.function',
         required=False,
     )
 
