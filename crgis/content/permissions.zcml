@@ -12,5 +12,9 @@
     id="add.theater"
     title="CRGIS: Add Theater"
     />
+  <permission
+    id="add.tree"
+    title="CRGIS: Add Tree"
+    />
 
 </configure>
