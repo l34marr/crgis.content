@@ -3,6 +3,7 @@ from plone.directives import dexterity, form
 
 from zope import schema
 from plone.app.textfield import RichText
+from plone.z3cform.textlines import TextLinesFieldWidget
 
 from crgis.content import MessageFactory as _
 
@@ -24,6 +25,126 @@ class ILiuYu(form.Schema):
 
     title = schema.TextLine(
         title=_(u"Title"),
+    )
+
+    year_start = schema.TextLine(
+        title=_(u"Start Year"),
+        required=False,
+    )
+
+    month_start = schema.TextLine(
+        title=_(u"Start Month"),
+        required=False,
+    )
+
+    year_end = schema.TextLine(
+        title=_(u"End Year"),
+        required=False,
+    )
+
+    month_end = schema.TextLine(
+        title=_(u"End Month"),
+        required=False,
+    )
+
+    country = schema.TextLine(
+        title=_(u"Country"),
+        required=False,
+    )
+
+    state = schema.TextLine(
+        title=_(u"State"),
+        required=False,
+    )
+
+    city = schema.TextLine(
+        title=_(u"City"),
+        required=False,
+    )
+
+    county = schema.TextLine(
+        title=_(u"County"),
+        required=False,
+    )
+
+    river = schema.List(
+        title=_(u"River"),
+        value_type=schema.TextLine(),
+        required=False,
+    )
+    form.widget(river=TextLinesFieldWidget)
+
+    mountain = schema.List(
+        title=_(u"Mountain"),
+        value_type=schema.TextLine(),
+        required=False,
+    )
+    form.widget(mountain=TextLinesFieldWidget)
+
+    monastery = schema.TextLine(
+        title=_(u"Monastery"),
+        required=False,
+    )
+
+    tomb = schema.List(
+        title=_(u"Tomb"),
+        value_type=schema.TextLine(),
+        required=False,
+    )
+    form.widget(tomb=TextLinesFieldWidget)
+
+    castle = schema.List(
+        title=_(u"Castle"),
+        value_type=schema.TextLine(),
+        required=False,
+    )
+    form.widget(castle=TextLinesFieldWidget)
+
+    fortress = schema.List(
+        title=_(u"Fortress"),
+        value_type=schema.TextLine(),
+        required=False,
+    )
+    form.widget(fortress=TextLinesFieldWidget)
+
+    relices = schema.TextLine(
+        title=_(u"Relices"),
+        required=False,
+    )
+
+    buildings = schema.TextLine(
+        title=_(u"Buildings"),
+        required=False,
+    )
+
+    legend = schema.TextLine(
+        title=_(u"Legend"),
+        required=False,
+    )
+
+    people = RichText(
+        title=_(u"Historic People"),
+        required=False,
+    )
+
+    tongjian = RichText(
+        title=_(u"ZiZhi TongJian"),
+        required=False,
+    )
+
+    xizheng = RichText(
+        title=_(u"XiZhengJi"),
+        required=False,
+    )
+
+    shuzheng = RichText(
+        title=_(u"ShuZhengJi"),
+        required=False,
+    )
+
+    note = RichText(
+        title=_(u"Note"),
+        required=False,
     )
 
 

@@ -29,7 +29,7 @@ class ITheater(form.Schema):
     )
 
     title = schema.TextLine(
-        title=_(u'theater_title', default=u"Title"),
+        title=_('theater_title', default=u"Title"),
     )
 
     address = schema.TextLine(
