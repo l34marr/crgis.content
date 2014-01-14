@@ -109,7 +109,7 @@
 <fieldset>
 <legend i18n:translate="">Basic Info</legend>
     <div tal:condition="context/adm_area">
-      <tal:field i18n:translate="">Administrative Area</tal:field>:
+      <tal:field i18n:translate="theater_adm">Administrative Area</tal:field>:
       <span tal:replace="context/adm_area" />
     </div>
     <div tal:condition="context/address">

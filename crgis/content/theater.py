@@ -1,4 +1,6 @@
 from five import grok
+from zope.component import getUtility
+from zope.schema.interfaces import IVocabularyFactory
 from plone.directives import dexterity, form
 from plone.indexer import indexer
 
@@ -24,7 +26,7 @@ class ITheater(form.Schema):
     #form.model("models/theater.xml")
 
     adm_area = schema.TextLine(
-        title=_(u"Administrative Area"),
+        title=_('theater_adm', default=u"Administrative Area"),
         required=False,
     )
 
@@ -149,7 +151,9 @@ class View(grok.View):
 
     def t_title(self, value):
         if value in ('movie', 'mixed', 'opera'):
-            term = function.getTerm(value)
+            factory = getUtility(IVocabularyFactory, 'theater.function')
+            vocabulary = factory(self.context)
+            term = vocabulary.getTerm(value)
             return term.title
         else:
             return None
