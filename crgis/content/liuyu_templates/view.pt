@@ -69,7 +69,10 @@
 <legend i18n:translate="">History Info</legend>
 <div tal:condition="context/monastery">
   <tal:field i18n:translate="">Monastery</tal:field>:
-  <span tal:replace="context/monastery" />
+  <tal:block repeat="value context/monastery">
+  <span tal:replace="value" />
+  <span class="separator" tal:condition="not: repeat/value/end">,</span>
+  </tal:block>
 </div>
 <div tal:condition="context/tomb">
   <tal:field i18n:translate="">Tomb</tal:field>:
@@ -114,13 +117,13 @@
 </fieldset>
 <fieldset>
 <legend i18n:translate="">Reference Info</legend>
-<div tal:condition="context/xizheng">
-  <tal:field i18n:translate="">XiZhengJi</tal:field>:
-  <span tal:replace="structure context/xizheng/output" />
+<div tal:condition="context/ref_name">
+  <tal:field i18n:translate="">Reference Name</tal:field>:
+  <span tal:replace="context/ref_name" />
 </div>
-<div tal:condition="context/shuzheng">
-  <tal:field i18n:translate="">ShuZhengJi</tal:field>:
-  <span tal:replace="structure context/shuzheng/output" />
+<div tal:condition="context/ref_text">
+  <tal:field i18n:translate="">Reference Text</tal:field>:
+  <span tal:replace="structure context/ref_text/output" />
 </div>
 </fieldset>
 

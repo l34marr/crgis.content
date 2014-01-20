@@ -5,6 +5,8 @@ from zope import schema
 from plone.app.textfield import RichText
 from plone.z3cform.textlines import TextLinesFieldWidget
 
+from collective import dexteritytextindexer
+
 from crgis.content import MessageFactory as _
 
 
@@ -81,10 +83,12 @@ class ILiuYu(form.Schema):
     )
     form.widget(mountain=TextLinesFieldWidget)
 
-    monastery = schema.TextLine(
+    monastery = schema.List(
         title=_(u"Monastery"),
+        value_type=schema.TextLine(),
         required=False,
     )
+    form.widget(monastery=TextLinesFieldWidget)
 
     tomb = schema.List(
         title=_(u"Tomb"),
@@ -122,9 +126,13 @@ class ILiuYu(form.Schema):
         required=False,
     )
 
+    dexteritytextindexer.searchable('people')
     people = RichText(
         title=_(u"Historic People"),
         required=False,
+        default_mime_type='text/html',
+        output_mime_type='text/html',
+        allowed_mime_types=('text/html','text/plain',),
     )
 
     tongjian = RichText(
@@ -132,13 +140,13 @@ class ILiuYu(form.Schema):
         required=False,
     )
 
-    xizheng = RichText(
-        title=_(u"XiZhengJi"),
+    ref_name = schema.TextLine(
+        title=_(u"Reference Name"),
         required=False,
     )
 
-    shuzheng = RichText(
-        title=_(u"ShuZhengJi"),
+    ref_text = RichText(
+        title=_(u"Reference Text"),
         required=False,
     )
 

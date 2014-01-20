@@ -20,8 +20,9 @@
   <property name="klass">crgis.content.liuyu.LiuYu</property>
 
   <property name="behaviors">
-    <element value="crgis.content.behaviors.shortname.INameFromCreationDate" />
+    <element value="plone.app.content.interfaces.INameFromTitle" />
     <element value="plone.app.dexterity.behaviors.metadata.ICategorization" />
+    <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
     <!-- IReferenceable might not be available, but it will not break. -->
     <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
   </property>
