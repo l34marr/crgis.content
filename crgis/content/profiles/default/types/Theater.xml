@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <object name="theater"
-   meta_type="Dexterity FTI"
-   i18n:domain="crgis.content"
-   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ meta_type="Dexterity FTI"
+ i18n:domain="crgis.content"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
   <property name="title" i18n:translate="">Theater</property>
   <property name="description"
    i18n:translate="">CRGIS Theater Type</property>
-  <property name="icon_expr">string:${portal_url}/folder_icon.png</property>
+  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
   <property name="factory">crgis.content.theater</property>
   <property name="global_allow">True</property>
-  <property name="filter_content_types">False</property>  
+  <property name="filter_content_types">True</property>
   <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
