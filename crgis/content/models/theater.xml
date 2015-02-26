@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<model i18n:domain="crgis.content"
+ xmlns="http://namespaces.plone.org/supermodel/schema"
+ xmlns:form="http://namespaces.plone.org/supermodel/form"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ xmlns:security="http://namespaces.plone.org/supermodel/security"
+ xmlns:lingua="http://namespaces.plone.org/supermodel/lingua"
+ xmlns:marshal="http://namespaces.plone.org/supermodel/marshal">
+
+<schema>
+
+  <field name="id" type="zope.schema.TextLine">
+    <title i18n:translate="">Id Number</title>
+    <required>True</required>
+    <description />
+  </field>
+  <field name="title" type="zope.schema.Text">
+    <title i18n:translate="">Title</title>
+    <required>True</required>
+    <description i18n:translate="">Example: Title One, Title Two, Title Three</description>
+  </field>
+  <field name="description" type="zope.schema.Text">
+    <title i18n:translate="">Administrative Area</title>
+    <required>True</required>
+    <description i18n:translate="">Example: Name, Description</description>
+  </field>
+  <field name="accrcy_l" type="zope.schema.Choice">
+    <title i18n:translate="">Accuracy of Positioning</title>
+    <required>True</required>
+    <description />
+    <default i18n:translate="">Fuzzy</default>
+    <values>
+      <element i18n:translate="">Fuzzy</element>
+      <element i18n:translate="">Exact</element>
+    </values>
+  </field>
+  <field name="building_desc" type="plone.app.textfield.RichText">
+    <title i18n:translate="">Building Description</title>
+    <required>True</required>
+    <description />
+  </field>
+  <field name="building_status" type="zope.schema.Text">
+    <title>Building Status</title>
+    <required>True</required>
+	<description i18n:translate="">Example: Exist, Description...</description>
+  </field>
+  <field name="op_start" type="zope.schema.TextLine">
+    <title i18n:translate="">Operating Start</title>
+    <required>True</required>
+    <description i18n:translate="">Format Example: 1916-01-15</description>
+  </field>
+  <field name="op_end" type="zope.schema.TextLine">
+    <title i18n:translate="">Operating End</title>
+    <required>True</required>
+    <description i18n:translate="">Format Example: 1916-01-15</description>
+  </field>
+  <field name="op_period" type="zope.schema.Choice">
+    <title i18n:translate="">Operating Period</title>
+    <required>True</required>
+    <description />
+    <values>
+      <element>1895-1899</element>
+      <element>1900-1909</element>
+      <element>1910-1919</element>
+      <element>1920-1929</element>
+      <element>1930-1939</element>
+      <element>1940-1945</element>
+    </values>
+  </field>
+  <field name="media" type="plone.app.textfield.RichText">
+    <title i18n:translate="">Media</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="purpose" type="zope.schema.Choice">
+    <title i18n:translate="">Purpose</title>
+    <required>False</required>
+    <description />
+    <values>
+      <element i18n:translate="">opera</element>
+      <element i18n:translate="">mixed</element>
+      <element i18n:translate="">movie</element>
+    </values>
+  </field>
+  <field name="staff" type="zope.schema.Text">
+    <title>Staff</title>
+    <required>True</required>
+    <description i18n:translate="">Example: Name, Title (Year)</description>
+  </field>
+  <field name="op_desc" type="plone.app.textfield.RichText">
+    <title i18n:translate="">Operating Description</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="program" type="plone.app.textfield.RichText">
+    <title i18n:translate="">Program</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="source" type="zope.schema.Choice">
+    <title i18n:translate="">Source</title>
+    <required>True</required>
+    <description />
+    <values>
+      <element i18n:translate="">TWDAILY</element>
+      <element i18n:translate="">TWCORP</element>
+      <element i18n:translate="">TWBANK</element>
+      <element i18n:translate="">1942NEWS</element>
+      <element i18n:translate="">1944BOOK</element>
+    </values>
+  </field>
+  <field name="other" type="zope.schema.TextLine">
+    <title i18n:translate="">Other</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="reference" type="plone.app.textfield.RichText">
+    <title i18n:translate="">Reference</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="resource" type="plone.app.textfield.RichText">
+    <title i18n:translate="">Online Resource</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="remark" type="plone.app.textfield.RichText">
+    <title i18n:translate="">Remark</title>
+    <required>True</required>
+    <description />
+  </field>
+  <field name="booking" type="zope.schema.TextLine">
+    <title i18n:translate="">Booking</title>
+    <required>True</required>
+    <description />
+  </field>
+  <field name="rev_1" type="zope.schema.TextLine">
+    <title i18n:translate="">Revisal #1</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="rev_2" type="zope.schema.TextLine">
+    <title i18n:translate="">Revisal #2</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="rev_3" type="zope.schema.TextLine">
+    <title i18n:translate="">Revisal #3</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="online" type="zope.schema.TextLine">
+    <title i18n:translate="">Online</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="editor" type="zope.schema.TextLine">
+    <title i18n:translate="">Editor</title>
+    <required>False</required>
+    <description />
+  </field>
+  <field name="note" type="zope.schema.TextLine">
+    <title i18n:translate="">Note</title>
+    <required>False</required>
+    <description />
+  </field>
+
+</schema>
+
+</model>
