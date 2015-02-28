@@ -24,12 +24,27 @@ class TheaterFunction(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='movie', title=_(u'Movie Theater')),
-            SimpleTerm(value='mixed', title=_(u'Mixed Theater')),
-            SimpleTerm(value='opera', title=_(u'Opera Theater'))
+            SimpleTerm(value='movie', title=_(u'Movie')),
+            SimpleTerm(value='mixed', title=_(u'Mixed')),
+            SimpleTerm(value='opera', title=_(u'Opera'))
         )
         return SimpleVocabulary(items)
 TheaterFunctionFactory = TheaterFunction()
+
+class TheaterSource(object):
+    """ Theater Source Vocabulary
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='TWDAILY', title=_(u'TWDAILY')),
+            SimpleTerm(value='TWCORP', title=_(u'TWCORP')),
+            SimpleTerm(value='TWBANK', title=_(u'TWBANK')),
+            SimpleTerm(value='1942NEWS', title=_(u'1942NEWS')),
+            SimpleTerm(value='1944BOOK', title=_(u'1944BOOK'))
+        )
+        return SimpleVocabulary(items)
+TheaterSourceFactory = TheaterSource()
 
 class region(object):
     """ Region

@@ -40,7 +40,7 @@
     <description />
   </field>
   <field name="building_status" type="zope.schema.Text">
-    <title>Building Status</title>
+    <title i18n:translate="">Building Status</title>
     <required>True</required>
 	<description i18n:translate="">Example: Exist, Description...</description>
   </field>
@@ -72,18 +72,14 @@
     <required>False</required>
     <description />
   </field>
-  <field name="purpose" type="zope.schema.Choice">
-    <title i18n:translate="">Purpose</title>
+  <field name="function" type="zope.schema.Choice">
+    <title i18n:translate="">Function</title>
     <required>False</required>
     <description />
-    <values>
-      <element i18n:translate="">opera</element>
-      <element i18n:translate="">mixed</element>
-      <element i18n:translate="">movie</element>
-    </values>
+    <vocabulary>theater.function</vocabulary>
   </field>
   <field name="staff" type="zope.schema.Text">
-    <title>Staff</title>
+    <title i18n:translate="">Staff</title>
     <required>True</required>
     <description i18n:translate="">Example: Name, Title (Year)</description>
   </field>
@@ -101,13 +97,7 @@
     <title i18n:translate="">Source</title>
     <required>True</required>
     <description />
-    <values>
-      <element i18n:translate="">TWDAILY</element>
-      <element i18n:translate="">TWCORP</element>
-      <element i18n:translate="">TWBANK</element>
-      <element i18n:translate="">1942NEWS</element>
-      <element i18n:translate="">1944BOOK</element>
-    </values>
+    <vocabulary>theater.source</vocabulary>
   </field>
   <field name="other" type="zope.schema.TextLine">
     <title i18n:translate="">Other</title>

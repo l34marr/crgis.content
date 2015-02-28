@@ -139,13 +139,13 @@
     <tal:field i18n:translate="">Media</tal:field>:
     <span tal:replace="structure context/media/output" />
   </div>
-  <div tal:condition="context/purpose">
-    <tal:field i18n:translate="">Purpose</tal:field>:
-    <span tal:replace="context/purpose" />
+  <div tal:condition="context/function">
+    <tal:field i18n:translate="">Function</tal:field>:
+    <span tal:replace="python:view.t_title('theater.function',context.function)" />
   </div>
 </fieldset>
 <fieldset>
-<legend i18n:translate="">manage</legend>
+<legend i18n:translate="">Operating</legend>
   <div tal:condition="context/staff">
     <tal:field i18n:translate="">Staff</tal:field>:
     <span tal:replace="context/staff" />
@@ -160,10 +160,10 @@
   </div>
 </fieldset>
 <fieldset>
-<legend i18n:translate="">Online Resources</legend>
+<legend i18n:translate="">Reference</legend>
   <div tal:condition="context/source">
     <tal:field i18n:translate="">Source</tal:field>:
-    <span tal:replace="context/source" />
+    <span tal:replace="python:view.t_title('theater.source',context.source)" />
   </div>
   <div tal:condition="context/other">
     <tal:field i18n:translate="">Other</tal:field>:
@@ -179,7 +179,7 @@
   </div>
 </fieldset>
 <fieldset>
-<legend i18n:translate="">備註</legend>
+<legend i18n:translate="">Remark</legend>
   <div tal:condition="context/remark">
     <tal:field i18n:translate="">Remark</tal:field>:
     <span tal:replace="structure context/remark/output" />

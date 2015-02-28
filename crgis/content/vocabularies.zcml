@@ -13,6 +13,10 @@
     component=".vocabularies.TheaterFunctionFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
   <utility
+    name="theater.source"
+    component=".vocabularies.TheaterSourceFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+  <utility
     name="region"
     component=".vocabularies.regionFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />

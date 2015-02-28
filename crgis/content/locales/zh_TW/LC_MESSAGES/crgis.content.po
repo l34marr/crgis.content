@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.content\n"
-"POT-Creation-Date: 2013-12-17 13:50+0000\n"
-"PO-Revision-Date: 2013-12-17 21:51+0800\n"
+"POT-Creation-Date: 2015-02-28 00:01+0000\n"
+"PO-Revision-Date: 2015-02-28 08:31+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,212 +14,466 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.content\n"
 
-#: ./theater.py:44
-#: ./theater_templates/view.pt:116
+#: ./vocabularies.py:43
+msgid "1942NEWS"
+msgstr "1942《社報》"
+
+#: ./vocabularies.py:44
+msgid "1944BOOK"
+msgstr "1944《組合員名簿》"
+
+#: ./bixiewu.py:14
+msgid "Academic"
+msgstr ""
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:115
+msgid "Accuracy of Positioning"
+msgstr "定位精度"
+
+#: ./bixiewu.py:55
+#: ./bixiewu_templates/view.pt:24
 msgid "Address"
 msgstr "所在位址"
 
-#: ./theater.py:35
-#: ./theater_templates/view.pt:112
+#: ./liuyu_templates/view.pt:33
+#: ./models/theater.xml
 msgid "Administrative Area"
 msgstr "州廳名"
 
-#: ./theater_templates/view.pt:110
+#: ./theater_templates/view.pt:105
 msgid "Basic Info"
 msgstr "基本資料"
+
+#: ./profiles/default/types/BiXieWu.xml
+msgid "BiXieWu"
+msgstr ""
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:191
+msgid "Booking"
+msgstr "建檔者"
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:119
+msgid "Building Description"
+msgstr "建物描述（年）"
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:123
+msgid "Building Status"
+msgstr "建物現況"
+
+#: ./liuyu.py:120
+#: ./liuyu_templates/view.pt:103
+msgid "Buildings"
+msgstr ""
+
+#: ./profiles/default/types/BiXieWu.xml
+msgid "CRGIS BiXieWu Type"
+msgstr ""
+
+#: ./profiles/default/types/LiuYu.xml
+msgid "CRGIS LiuYu Type"
+msgstr ""
 
 #: ./profiles/default/types/Theater.xml
 msgid "CRGIS Theater Type"
 msgstr "臺灣老戲院"
 
-#: ./vocabularies.py:36
+#: ./profiles/default/types/Tree.xml
+msgid "CRGIS Tree Type"
+msgstr ""
+
+#: ./liuyu.py:101
+#: ./liuyu_templates/view.pt:85
+msgid "Castle"
+msgstr ""
+
+#: ./vocabularies.py:64
 msgid "Changhua County"
 msgstr ""
 
-#: ./vocabularies.py:38
+#: ./vocabularies.py:66
 msgid "Chiayi City"
 msgstr ""
 
-#: ./vocabularies.py:39
+#: ./vocabularies.py:67
 msgid "Chiayi County"
 msgstr ""
 
-#: ./theater.py:49
-#: ./theater_templates/view.pt:155
-msgid "Completed Date"
-msgstr "落成日"
+#: ./liuyu.py:63
+#: ./liuyu_templates/view.pt:43
+msgid "City"
+msgstr ""
 
-#: ./theater.py:64
-#: ./theater_templates/view.pt:167
-msgid "Construction Funds"
-msgstr "建築經費"
+#: ./bixiewu.py:45
+#: ./bixiewu_templates/view.pt:14
+msgid "Common Era"
+msgstr ""
 
-#: ./theater.py:100
-#: ./theater_templates/view.pt:148
-msgid "Contract"
-msgstr "統治會社契約書"
+#: ./liuyu.py:53
+#: ./liuyu_templates/view.pt:35
+msgid "Country"
+msgstr ""
+
+#: ./liuyu.py:68
+#: ./liuyu_templates/view.pt:47
+msgid "County"
+msgstr ""
 
 #: ./vocabularies.py:16
 msgid "County-Controlled"
 msgstr "縣(市)定"
 
+#: ./liuyu_templates/view.pt:108
+msgid "Culture Info"
+msgstr ""
+
+#: ./bixiewu.py:39
+msgid "Data Source"
+msgstr ""
+
 #: ./vocabularies.py:15
 msgid "Direct-Controlled"
 msgstr "直轄市定"
 
-#: ./theater.py:79
-#: ./theater_templates/view.pt:132
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:211
+msgid "Editor"
+msgstr "責任校對"
+
+#: ./liuyu.py:48
+msgid "End Month"
+msgstr ""
+
+#: ./liuyu.py:43
+msgid "End Year"
+msgstr ""
+
+#: ./models/theater.xml
+msgid "Exact"
+msgstr "精確"
+
+#: ./models/theater.xml
+msgid "Example: Exist, Description..."
+msgstr "範例：存在, 現況描述..."
+
+#: ./models/theater.xml
+msgid "Example: Name, Description"
+msgstr "範例：台北州, 位址描述... (年代)"
+
+#: ./models/theater.xml
+msgid "Example: Name, Title (Year)"
+msgstr "範例：王小明, 社長 (年代)"
+
+#: ./models/theater.xml
+msgid "Example: Title One, Title Two, Title Three"
+msgstr "範例：林園座, 東新座, 東勢座"
+
+#: ./bixiewu.py:50
+#: ./bixiewu_templates/view.pt:19
+msgid "Facing"
+msgstr ""
+
+#: ./bixiewu.py:15
+msgid "Fieldwork"
+msgstr ""
+
+#: ./models/theater.xml
+msgid "Format Example: 1916-01-15"
+msgstr "日期輸入格式範例: 1916-01-15"
+
+#: ./liuyu.py:108
+#: ./liuyu_templates/view.pt:92
+msgid "Fortress"
+msgstr ""
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:143
 msgid "Function"
-msgstr "業別"
+msgstr "戲院屬性（1944《組合員名簿》）"
 
-#: ./theater_templates/view.pt:153
-msgid "Historic Info"
-msgstr "簡介"
+#: ./models/theater.xml
+msgid "Fuzzy"
+msgstr "模糊"
 
-#: ./theater.py:69
-#: ./theater_templates/view.pt:171
-msgid "History"
-msgstr "沿革介紹"
+#: ./liuyu_templates/view.pt:52
+msgid "Geography Info"
+msgstr ""
 
-#: ./vocabularies.py:32
+#: ./bixiewu.py:13
+msgid "Governmental"
+msgstr ""
+
+#: ./liuyu.py:131
+msgid "Historic People"
+msgstr ""
+
+#: ./liuyu_templates/view.pt:69
+msgid "History Info"
+msgstr ""
+
+#: ./vocabularies.py:60
 msgid "Hsinchu City"
 msgstr ""
 
-#: ./vocabularies.py:31
+#: ./vocabularies.py:59
 msgid "Hsinchu County"
 msgstr ""
 
-#: ./vocabularies.py:44
+#: ./vocabularies.py:72
 msgid "Hualien County"
 msgstr ""
 
-#: ./vocabularies.py:41
+#: ./models/theater.xml
+msgid "Id Number"
+msgstr "編號"
+
+#: ./vocabularies.py:69
 msgid "Kaohsiung City"
 msgstr ""
 
-#: ./vocabularies.py:27
+#: ./vocabularies.py:55
 msgid "Keelung City"
 msgstr ""
 
-#: ./vocabularies.py:48
+#: ./vocabularies.py:76
 msgid "Kinmen County"
 msgstr ""
 
-#: ./theater.py:59
-#: ./theater_templates/view.pt:163
-msgid "Last Updated"
-msgstr "最後記錄"
+#: ./liuyu.py:125
+#: ./liuyu_templates/view.pt:110
+msgid "Legend"
+msgstr ""
 
-#: ./theater.py:54
-#: ./theater_templates/view.pt:159
-msgid "Launched Date"
-msgstr "啟用日"
-
-#: ./vocabularies.py:47
+#: ./vocabularies.py:75
 msgid "Lienchiang County"
 msgstr ""
 
-#: ./vocabularies.py:33
+#: ./profiles/default/types/LiuYu.xml
+msgid "LiuYu"
+msgstr ""
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:139
+msgid "Media"
+msgstr "圖片"
+
+#: ./vocabularies.py:61
 msgid "Miaoli County"
 msgstr ""
 
-#: ./theater.py:14
-msgid "Mixed Theater"
-msgstr "混合戲院"
+#: ./vocabularies.py:28
+msgid "Mixed"
+msgstr "混合"
 
-#: ./theater.py:13
-msgid "Movie Theater"
-msgstr "電影常設館"
-
-#: ./vocabularies.py:35
-msgid "Nantou County"
+#: ./liuyu.py:87
+#: ./liuyu_templates/view.pt:71
+msgid "Monastery"
 msgstr ""
 
-#: ./theater.py:74
-#: ./theater_templates/view.pt:124
-msgid "Narrative"
-msgstr "建物描述(含內部設施)"
+#: ./liuyu_templates/view.pt:28
+msgid "Month_end"
+msgstr ""
+
+#: ./liuyu_templates/view.pt:20
+msgid "Month_start"
+msgstr ""
+
+#: ./liuyu.py:80
+#: ./liuyu_templates/view.pt:61
+msgid "Mountain"
+msgstr ""
+
+#: ./vocabularies.py:27
+msgid "Movie"
+msgstr "電影"
+
+#: ./vocabularies.py:63
+msgid "Nantou County"
+msgstr ""
 
 #: ./vocabularies.py:14
 msgid "National"
 msgstr "國定"
 
-#: ./vocabularies.py:29
+#: ./vocabularies.py:57
 msgid "New Taipei City"
 msgstr ""
 
-#: ./theater.py:15
-msgid "Opera Theater"
-msgstr "專演戲劇的戲院"
+#: ./liuyu.py:154
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:215
+msgid "Note"
+msgstr "註記"
 
-#: ./theater.py:105
-#: ./theater_templates/view.pt:175
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:207
+msgid "Online"
+msgstr "上網"
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:177
+msgid "Online Resource"
+msgstr "網路資源"
+
+#: ./vocabularies.py:29
+msgid "Opera"
+msgstr "演劇"
+
+#: ./theater_templates/view.pt:148
 msgid "Operating"
 msgstr "營運紀要"
 
-#: ./theater.py:90
-#: ./theater_templates/view.pt:140
-msgid "Operator"
-msgstr "經營者"
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:154
+msgid "Operating Description"
+msgstr "營運紀要"
 
-#: ./theater.py:85
-#: ./theater_templates/view.pt:136
-msgid "Owner"
-msgstr "所有者"
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:131
+msgid "Operating End"
+msgstr "建物日期（迄）"
 
-#: ./vocabularies.py:46
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:135
+msgid "Operating Period"
+msgstr "營運年代區間（僅限日治時期）"
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:127
+msgid "Operating Start"
+msgstr "建物日期（起）"
+
+#: ./bixiewu.py:16
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:169
+msgid "Other"
+msgstr "其他"
+
+#: ./vocabularies.py:74
 msgid "Penghu County"
 msgstr ""
 
-#: ./theater.py:95
-#: ./theater_templates/view.pt:144
-msgid "Person In Charge"
-msgstr "事務擔當者"
+#: ./liuyu_templates/view.pt:114
+msgid "People"
+msgstr ""
 
-#: ./vocabularies.py:42
+#: ./vocabularies.py:70
 msgid "Pingtung County"
 msgstr ""
 
-#: ./theater.py:110
-#: ./theater_templates/view.pt:120
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:158
 msgid "Program"
-msgstr "節目類型"
+msgstr "節目內容"
 
-#: ./theater.py:120
-#: ./theater_templates/view.pt:182
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:163
 msgid "Reference"
 msgstr "相關文獻"
 
-#: ./theater_templates/view.pt:129
-msgid "Registry Info"
-msgstr "台灣興行 (映演) 場組合登錄資訊"
+#: ./liuyu_templates/view.pt:119
+msgid "Reference Info"
+msgstr ""
 
-#: ./theater.py:115
-#: ./theater_templates/view.pt:186
+#: ./liuyu.py:144
+#: ./liuyu_templates/view.pt:121
+msgid "Reference Name"
+msgstr ""
+
+#: ./liuyu.py:149
+#: ./liuyu_templates/view.pt:125
+msgid "Reference Text"
+msgstr ""
+
+#: ./theater_templates/view.pt:189
+msgid "Registry"
+msgstr "建檔紀錄"
+
+#: ./liuyu.py:115
+#: ./liuyu_templates/view.pt:99
+msgid "Relices"
+msgstr ""
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:182
 msgid "Remark"
 msgstr "備註"
 
-#: ./theater_templates/view.pt:180
-msgid "Supplementary Info"
-msgstr "參考與補充資料"
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:195
+msgid "Revisal #1"
+msgstr "一校"
 
-#: ./vocabularies.py:34
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:199
+msgid "Revisal #2"
+msgstr "二校"
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:203
+msgid "Revisal #3"
+msgstr "三校"
+
+#: ./liuyu.py:73
+#: ./liuyu_templates/view.pt:54
+msgid "River"
+msgstr ""
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:165
+msgid "Source"
+msgstr "建檔資料來源"
+
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:150
+msgid "Staff"
+msgstr "姓名，職稱（年）"
+
+#: ./liuyu.py:38
+msgid "Start Month"
+msgstr ""
+
+#: ./liuyu.py:33
+msgid "Start Year"
+msgstr ""
+
+#: ./liuyu.py:58
+#: ./liuyu_templates/view.pt:39
+msgid "State"
+msgstr ""
+
+#: ./vocabularies.py:42
+msgid "TWBANK"
+msgstr "《臺灣銀行會社錄》"
+
+#: ./vocabularies.py:41
+msgid "TWCORP"
+msgstr "《臺灣會社年鑑》"
+
+#: ./vocabularies.py:40
+msgid "TWDAILY"
+msgstr "《臺灣日日新報》與《漢文臺灣日日新報》電子資料庫"
+
+#: ./vocabularies.py:62
 msgid "Taichung City"
 msgstr ""
 
-#: ./vocabularies.py:40
+#: ./vocabularies.py:68
 msgid "Tainan City"
 msgstr ""
 
-#: ./vocabularies.py:28
+#: ./vocabularies.py:56
 msgid "Taipei City"
 msgstr ""
 
-#: ./vocabularies.py:45
+#: ./vocabularies.py:73
 msgid "Taitung County"
 msgstr ""
 
-#: ./vocabularies.py:30
+#: ./vocabularies.py:58
 msgid "Taoyuan County"
 msgstr ""
 
@@ -227,16 +481,56 @@ msgstr ""
 msgid "Theater"
 msgstr "戲院"
 
-#: ./vocabularies.py:43
+#: ./liuyu_templates/view.pt:14
+msgid "Time Info"
+msgstr ""
+
+#: ./bixiewu.py:35
+#: ./liuyu.py:29
+#: ./models/theater.xml
+msgid "Title"
+msgstr "戲院名稱"
+
+#: ./liuyu.py:94
+#: ./liuyu_templates/view.pt:78
+msgid "Tomb"
+msgstr ""
+
+#: ./profiles/default/types/Tree.xml
+msgid "Tree"
+msgstr ""
+
+#: ./tree.py:26
+msgid "Tree ID"
+msgstr ""
+
+#: ./liuyu_templates/view.pt:24
+msgid "Year_end"
+msgstr ""
+
+#: ./liuyu_templates/view.pt:16
+msgid "Year_start"
+msgstr ""
+
+#: ./vocabularies.py:71
 msgid "Yilan County"
 msgstr ""
 
-#: ./vocabularies.py:37
+#: ./vocabularies.py:65
 msgid "Yunlin County"
 msgstr ""
 
+#: ./liuyu.py:139
+msgid "ZiZhi TongJian"
+msgstr ""
+
+#. Default: "Administrative Area"
+#: ./theater_templates/view.pt:111
+msgid "theater_adm"
+msgstr "所在地（年）"
+
 #. Default: "Title"
-#: ./theater.py:40
+#: ./theater_templates/view.pt:107
 msgid "theater_title"
 msgstr "戲院名"
 

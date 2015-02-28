@@ -51,12 +51,12 @@ class View(grok.View):
     grok.require('zope2.View')
     grok.name('view')
 
-    def t_title(self, value):
-        if value in ('movie', 'mixed', 'opera'):
-            factory = getUtility(IVocabularyFactory, 'theater.function')
+    def t_title(self, vocab, value):
+        try:
+            factory = getUtility(IVocabularyFactory, vocab)
             vocabulary = factory(self.context)
             term = vocabulary.getTerm(value)
             return term.title
-        else:
+        except:
             return None
 
