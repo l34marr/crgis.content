@@ -93,11 +93,14 @@
     <required>False</required>
     <description />
   </field>
-  <field name="source" type="zope.schema.Choice">
+  <field name="source" type="zope.schema.List">
     <title i18n:translate="">Source</title>
     <required>True</required>
     <description />
-    <vocabulary>theater.source</vocabulary>
+    <value_type type="zope.schema.Choice">
+      <title>Source Option</title>
+      <vocabulary>theater.source</vocabulary>
+    </value_type>
   </field>
   <field name="other" type="zope.schema.TextLine">
     <title i18n:translate="">Other</title>
