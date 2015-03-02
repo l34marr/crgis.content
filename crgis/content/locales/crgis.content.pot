@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-02-28 00:01+0000\n"
+"POT-Creation-Date: 2015-03-02 04:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.content\n"
 
-#: ./vocabularies.py:43
+#: ./vocabularies.py:55
 msgid "1942NEWS"
 msgstr ""
 
-#: ./vocabularies.py:44
+#: ./vocabularies.py:56
 msgid "1944BOOK"
 msgstr ""
 
@@ -30,7 +30,7 @@ msgid "Academic"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:115
+#: ./theater_templates/view.pt:126
 msgid "Accuracy of Positioning"
 msgstr ""
 
@@ -53,17 +53,17 @@ msgid "BiXieWu"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:191
+#: ./theater_templates/view.pt:205
 msgid "Booking"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:119
+#: ./theater_templates/view.pt:130
 msgid "Building Description"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:123
+#: ./theater_templates/view.pt:134
 msgid "Building Status"
 msgstr ""
 
@@ -93,15 +93,15 @@ msgstr ""
 msgid "Castle"
 msgstr ""
 
-#: ./vocabularies.py:64
+#: ./vocabularies.py:76
 msgid "Changhua County"
 msgstr ""
 
-#: ./vocabularies.py:66
+#: ./vocabularies.py:78
 msgid "Chiayi City"
 msgstr ""
 
-#: ./vocabularies.py:67
+#: ./vocabularies.py:79
 msgid "Chiayi County"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgid "Direct-Controlled"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:211
+#: ./theater_templates/view.pt:225
 msgid "Editor"
 msgstr ""
 
@@ -155,6 +155,7 @@ msgid "End Year"
 msgstr ""
 
 #: ./models/theater.xml
+#: ./vocabularies.py:28
 msgid "Exact"
 msgstr ""
 
@@ -193,11 +194,12 @@ msgid "Fortress"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:143
+#: ./theater_templates/view.pt:154
 msgid "Function"
 msgstr ""
 
 #: ./models/theater.xml
+#: ./vocabularies.py:27
 msgid "Fuzzy"
 msgstr ""
 
@@ -217,15 +219,15 @@ msgstr ""
 msgid "History Info"
 msgstr ""
 
-#: ./vocabularies.py:60
+#: ./vocabularies.py:72
 msgid "Hsinchu City"
 msgstr ""
 
-#: ./vocabularies.py:59
+#: ./vocabularies.py:71
 msgid "Hsinchu County"
 msgstr ""
 
-#: ./vocabularies.py:72
+#: ./vocabularies.py:84
 msgid "Hualien County"
 msgstr ""
 
@@ -233,15 +235,15 @@ msgstr ""
 msgid "Id Number"
 msgstr ""
 
-#: ./vocabularies.py:69
+#: ./vocabularies.py:81
 msgid "Kaohsiung City"
 msgstr ""
 
-#: ./vocabularies.py:55
+#: ./vocabularies.py:67
 msgid "Keelung City"
 msgstr ""
 
-#: ./vocabularies.py:76
+#: ./vocabularies.py:88
 msgid "Kinmen County"
 msgstr ""
 
@@ -250,7 +252,7 @@ msgstr ""
 msgid "Legend"
 msgstr ""
 
-#: ./vocabularies.py:75
+#: ./vocabularies.py:87
 msgid "Lienchiang County"
 msgstr ""
 
@@ -259,15 +261,15 @@ msgid "LiuYu"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:139
+#: ./theater_templates/view.pt:150
 msgid "Media"
 msgstr ""
 
-#: ./vocabularies.py:61
+#: ./vocabularies.py:73
 msgid "Miaoli County"
 msgstr ""
 
-#: ./vocabularies.py:28
+#: ./vocabularies.py:40
 msgid "Mixed"
 msgstr ""
 
@@ -289,11 +291,11 @@ msgstr ""
 msgid "Mountain"
 msgstr ""
 
-#: ./vocabularies.py:27
+#: ./vocabularies.py:39
 msgid "Movie"
 msgstr ""
 
-#: ./vocabularies.py:63
+#: ./vocabularies.py:75
 msgid "Nantou County"
 msgstr ""
 
@@ -301,61 +303,61 @@ msgstr ""
 msgid "National"
 msgstr ""
 
-#: ./vocabularies.py:57
+#: ./vocabularies.py:69
 msgid "New Taipei City"
 msgstr ""
 
 #: ./liuyu.py:154
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:215
+#: ./theater_templates/view.pt:229
 msgid "Note"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:207
+#: ./theater_templates/view.pt:221
 msgid "Online"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:177
+#: ./theater_templates/view.pt:191
 msgid "Online Resource"
 msgstr ""
 
-#: ./vocabularies.py:29
+#: ./vocabularies.py:41
 msgid "Opera"
 msgstr ""
 
-#: ./theater_templates/view.pt:148
+#: ./theater_templates/view.pt:159
 msgid "Operating"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:154
+#: ./theater_templates/view.pt:165
 msgid "Operating Description"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:131
+#: ./theater_templates/view.pt:142
 msgid "Operating End"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:135
+#: ./theater_templates/view.pt:146
 msgid "Operating Period"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:127
+#: ./theater_templates/view.pt:138
 msgid "Operating Start"
 msgstr ""
 
 #: ./bixiewu.py:16
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:169
+#: ./theater_templates/view.pt:183
 msgid "Other"
 msgstr ""
 
-#: ./vocabularies.py:74
+#: ./vocabularies.py:86
 msgid "Penghu County"
 msgstr ""
 
@@ -363,17 +365,17 @@ msgstr ""
 msgid "People"
 msgstr ""
 
-#: ./vocabularies.py:70
+#: ./vocabularies.py:82
 msgid "Pingtung County"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:158
+#: ./theater_templates/view.pt:169
 msgid "Program"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:163
+#: ./theater_templates/view.pt:187
 msgid "Reference"
 msgstr ""
 
@@ -391,7 +393,7 @@ msgstr ""
 msgid "Reference Text"
 msgstr ""
 
-#: ./theater_templates/view.pt:189
+#: ./theater_templates/view.pt:203
 msgid "Registry"
 msgstr ""
 
@@ -401,22 +403,22 @@ msgid "Relices"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:182
+#: ./theater_templates/view.pt:196
 msgid "Remark"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:195
+#: ./theater_templates/view.pt:209
 msgid "Revisal #1"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:199
+#: ./theater_templates/view.pt:213
 msgid "Revisal #2"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:203
+#: ./theater_templates/view.pt:217
 msgid "Revisal #3"
 msgstr ""
 
@@ -426,12 +428,12 @@ msgid "River"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:165
+#: ./theater_templates/view.pt:176
 msgid "Source"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:150
+#: ./theater_templates/view.pt:161
 msgid "Staff"
 msgstr ""
 
@@ -448,35 +450,35 @@ msgstr ""
 msgid "State"
 msgstr ""
 
-#: ./vocabularies.py:42
+#: ./vocabularies.py:54
 msgid "TWBANK"
 msgstr ""
 
-#: ./vocabularies.py:41
+#: ./vocabularies.py:53
 msgid "TWCORP"
 msgstr ""
 
-#: ./vocabularies.py:40
+#: ./vocabularies.py:52
 msgid "TWDAILY"
 msgstr ""
 
-#: ./vocabularies.py:62
+#: ./vocabularies.py:74
 msgid "Taichung City"
 msgstr ""
 
-#: ./vocabularies.py:68
+#: ./vocabularies.py:80
 msgid "Tainan City"
 msgstr ""
 
-#: ./vocabularies.py:56
+#: ./vocabularies.py:68
 msgid "Taipei City"
 msgstr ""
 
-#: ./vocabularies.py:73
+#: ./vocabularies.py:85
 msgid "Taitung County"
 msgstr ""
 
-#: ./vocabularies.py:58
+#: ./vocabularies.py:70
 msgid "Taoyuan County"
 msgstr ""
 
@@ -515,11 +517,11 @@ msgstr ""
 msgid "Year_start"
 msgstr ""
 
-#: ./vocabularies.py:71
+#: ./vocabularies.py:83
 msgid "Yilan County"
 msgstr ""
 
-#: ./vocabularies.py:65
+#: ./vocabularies.py:77
 msgid "Yunlin County"
 msgstr ""
 
@@ -527,13 +529,18 @@ msgstr ""
 msgid "ZiZhi TongJian"
 msgstr ""
 
+#. Default: "Reference"
+#: ./theater_templates/view.pt:174
+msgid "legend_ref"
+msgstr ""
+
 #. Default: "Administrative Area"
-#: ./theater_templates/view.pt:111
+#: ./theater_templates/view.pt:122
 msgid "theater_adm"
 msgstr ""
 
 #. Default: "Title"
-#: ./theater_templates/view.pt:107
+#: ./theater_templates/view.pt:108
 msgid "theater_title"
 msgstr ""
 
