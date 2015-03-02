@@ -97,19 +97,51 @@
      tal:content="structure provider:plone.abovecontenttitle"
      tal:condition="not:ajax_load" />
 
+<metal:title define-slot="content-title">
+  <h1 class="documentFirstHeading"
+   tal:define="titles python:context.title.split('\n')"
+   tal:content="python:titles[0]">
+  Title
+  </h1>
+</metal:title>
+
     <div id="viewlet-above-content-body"
      tal:content="structure provider:plone.abovecontentbody"
      tal:condition="not:ajax_load" />
+
     <div id="content-core">
+
 <fieldset>
 <legend style="font-size:120%; font-weight:bold" i18n:translate="">Basic Info</legend>
-  <div tal:condition="context/title">
+  <div tal:define="titles python:context.title.split('\n')"
+   tal:condition="python:len(titles) > 0">
     <label i18n:translate="theater_title">Title</label>:
+    <tal:one condition="python:len(titles) == 1">
     <span tal:replace="context/title" />
+    </tal:one>
+    <tal:many condition="python:len(titles) > 1">
+    <div>
+    <tal:items repeat="item titles">
+    <span tal:replace="item">Value</span>
+    <br tal:condition="not:repeat/item/end" />
+    </tal:items>
+    </div>
+    </tal:many>
   </div>
-  <div tal:condition="context/description">
+  <div tal:define="adm_areas python:context.description.split('\n')"
+   tal:condition="python:len(adm_areas) > 0">
     <label i18n:translate="theater_adm">Administrative Area</label>:
+    <tal:one condition="python:len(adm_areas) == 1">
     <span tal:replace="context/description" />
+    </tal:one>
+    <tal:many condition="python:len(adm_areas) > 1">
+    <div>
+    <tal:items repeat="item adm_areas">
+    <span tal:replace="item">Value</span>
+    <br tal:condition="not:repeat/item/end" />
+    </tal:items>
+    </div>
+    </tal:many>
   </div>
   <div tal:condition="context/accrcy_l">
     <label i18n:translate="">Accuracy of Positioning</label>:
@@ -146,9 +178,20 @@
 </fieldset>
 <fieldset>
 <legend style="font-size:120%; font-weight:bold" i18n:translate="">Operating</legend>
-  <div tal:condition="context/staff">
+  <div tal:define="people python:context.staff.split('\n')"
+   tal:condition="python:len(people) > 0">
     <label i18n:translate="">Staff</label>:
+    <tal:one condition="python:len(people) == 1">
     <span tal:replace="context/staff" />
+    </tal:one>
+    <tal:many condition="python:len(people) > 1">
+    <div>
+    <tal:items repeat="item people">
+    <span tal:replace="item">Value</span>
+    <br tal:condition="not:repeat/item/end" />
+    </tal:items>
+    </div>
+    </tal:many>
   </div>
   <div tal:condition="context/op_desc">
     <label i18n:translate="">Operating Description</label>:
@@ -277,6 +320,7 @@
  </div>
 
 </div>
+
 </body>
 </html>
 
