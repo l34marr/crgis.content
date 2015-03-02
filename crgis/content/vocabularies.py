@@ -18,6 +18,18 @@ class AdminLevel(object):
         return SimpleVocabulary(items)
 AdminLevelFactory = AdminLevel()
 
+class TheaterAccrcyL(object):
+    """ Theater AccrcyL Vocabulary
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='Fuzzy', title=_(u'Fuzzy')),
+            SimpleTerm(value='Exact', title=_(u'Exact'))
+        )
+        return SimpleVocabulary(items)
+TheaterAccrcyLFactory = TheaterAccrcyL()
+
 class TheaterFunction(object):
     """ Theater Function Vocabulary
     """

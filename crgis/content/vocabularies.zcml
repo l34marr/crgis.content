@@ -9,6 +9,10 @@
     component=".vocabularies.AdminLevelFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
   <utility
+    name="theater.accrcy_l"
+    component=".vocabularies.TheaterAccrcyLFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+  <utility
     name="theater.function"
     component=".vocabularies.TheaterFunctionFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
