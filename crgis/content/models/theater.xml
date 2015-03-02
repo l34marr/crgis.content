@@ -28,11 +28,7 @@
     <title i18n:translate="">Accuracy of Positioning</title>
     <required>True</required>
     <description />
-    <default i18n:translate="">Fuzzy</default>
-    <values>
-      <element i18n:translate="">Fuzzy</element>
-      <element i18n:translate="">Exact</element>
-    </values>
+    <vocabulary>theater.accrcy_l</vocabulary>
   </field>
   <field name="building_desc" type="plone.app.textfield.RichText">
     <title i18n:translate="">Building Description</title>
