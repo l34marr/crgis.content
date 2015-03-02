@@ -102,120 +102,120 @@
      tal:condition="not:ajax_load" />
     <div id="content-core">
 <fieldset>
-<legend i18n:translate="">Basic Info</legend>
+<legend style="font-size:120%; font-weight:bold" i18n:translate="">Basic Info</legend>
   <div tal:condition="context/title">
-    <tal:field i18n:translate="theater_title">Title</tal:field>:
+    <label i18n:translate="theater_title">Title</label>:
     <span tal:replace="context/title" />
   </div>
   <div tal:condition="context/description">
-    <tal:field i18n:translate="theater_adm">Administrative Area</tal:field>:
+    <label i18n:translate="theater_adm">Administrative Area</label>:
     <span tal:replace="context/description" />
   </div>
   <div tal:condition="context/accrcy_l">
-    <tal:field i18n:translate="">Accuracy of Positioning</tal:field>:
+    <label i18n:translate="">Accuracy of Positioning</label>:
     <span tal:replace="context/accrcy_l" />
   </div>
   <div tal:condition="context/building_desc">
-    <tal:field i18n:translate="">Building Description</tal:field>:
+    <label i18n:translate="">Building Description</label>:
     <span tal:replace="structure context/building_desc/output" />
   </div>
   <div tal:condition="context/building_status">
-    <tal:field i18n:translate="">Building Status</tal:field>:
+    <label i18n:translate="">Building Status</label>:
     <span tal:replace="context/building_status" />
   </div>
   <div tal:condition="context/op_start">
-    <tal:field i18n:translate="">Operating Start</tal:field>:
+    <label i18n:translate="">Operating Start</label>:
     <span tal:replace="context/op_start" />
   </div>
   <div tal:condition="context/op_end">
-    <tal:field i18n:translate="">Operating End</tal:field>:
+    <label i18n:translate="">Operating End</label>:
     <span tal:replace="context/op_end" />
   </div>
   <div tal:condition="context/op_period">
-    <tal:field i18n:translate="">Operating Period</tal:field>:
+    <label i18n:translate="">Operating Period</label>:
     <span tal:replace="context/op_period" />
   </div>
   <div tal:condition="context/media">
-    <tal:field i18n:translate="">Media</tal:field>:
+    <label i18n:translate="">Media</label>:
     <span tal:replace="structure context/media/output" />
   </div>
   <div tal:condition="context/function">
-    <tal:field i18n:translate="">Function</tal:field>:
+    <label i18n:translate="">Function</label>:
     <span tal:replace="python:view.t_title('theater.function',context.function)" />
   </div>
 </fieldset>
 <fieldset>
-<legend i18n:translate="">Operating</legend>
+<legend style="font-size:120%; font-weight:bold" i18n:translate="">Operating</legend>
   <div tal:condition="context/staff">
-    <tal:field i18n:translate="">Staff</tal:field>:
+    <label i18n:translate="">Staff</label>:
     <span tal:replace="context/staff" />
   </div>
   <div tal:condition="context/op_desc">
-    <tal:field i18n:translate="">Operating Description</tal:field>:
+    <label i18n:translate="">Operating Description</label>:
     <span tal:replace="structure context/op_desc/output" />
   </div>
   <div tal:condition="context/program">
-    <tal:field i18n:translate="">Program</tal:field>:
+    <label i18n:translate="">Program</label>:
     <span tal:replace="structure context/program/output" />
   </div>
 </fieldset>
 <fieldset>
-<legend i18n:translate="">Reference</legend>
+<legend style="font-size:120%; font-weight:bold" i18n:translate="legend_ref">Reference</legend>
   <div tal:condition="context/source">
-    <tal:field i18n:translate="">Source</tal:field>:
+    <label i18n:translate="">Source</label>:
     <tal:items repeat="item context/source">
     <span tal:replace="python:view.t_title('theater.source',item)">Value</span>
     <span class="separator" tal:condition="not:repeat/item/end">,</span>
     </tal:items>
   </div>
   <div tal:condition="context/other">
-    <tal:field i18n:translate="">Other</tal:field>:
+    <label i18n:translate="">Other</label>:
     <span tal:replace="context/other" />
   </div>
   <div tal:condition="context/reference">
-    <tal:field i18n:translate="">Reference</tal:field>:
+    <label i18n:translate="">Reference</label>:
     <span tal:replace="structure context/reference/output" />
   </div>
   <div tal:condition="context/resource">
-    <tal:field i18n:translate="">Online Resource</tal:field>:
+    <label i18n:translate="">Online Resource</label>:
     <span tal:replace="structure context/resource/output" />
   </div>
 </fieldset>
 <fieldset>
-<legend i18n:translate="">Remark</legend>
+<legend style="font-size:120%; font-weight:bold" i18n:translate="">Remark</legend>
   <div tal:condition="context/remark">
-    <tal:field i18n:translate="">Remark</tal:field>:
+    <label i18n:translate="">Remark</label>:
     <span tal:replace="structure context/remark/output" />
   </div>
 </fieldset>
 <fieldset>
-<legend i18n:translate="">Registry</legend>
+<legend style="font-size:120%; font-weight:bold" i18n:translate="">Registry</legend>
   <div tal:condition="context/booking">
-    <tal:field i18n:translate="">Booking</tal:field>:
+    <label i18n:translate="">Booking</label>:
     <span tal:replace="context/booking" />
   </div>
   <div tal:condition="context/rev_1">
-    <tal:field i18n:translate="">Revisal #1</tal:field>:
+    <label i18n:translate="">Revisal #1</label>:
     <span tal:replace="context/rev_1" />
   </div>
   <div tal:condition="context/rev_2">
-    <tal:field i18n:translate="">Revisal #2</tal:field>:
+    <label i18n:translate="">Revisal #2</label>:
     <span tal:replace="context/rev_2" />
   </div>
   <div tal:condition="context/rev_3">
-    <tal:field i18n:translate="">Revisal #3</tal:field>:
+    <label i18n:translate="">Revisal #3</label>:
     <span tal:replace="context/rev_3" />
   </div>
   <div tal:condition="context/online">
-    <tal:field i18n:translate="">Online</tal:field>:
+    <label i18n:translate="">Online</label>:
     <span tal:replace="context/online" />
   </div>
   <div tal:condition="context/editor">
-    <tal:field i18n:translate="">Editor</tal:field>:
+    <label i18n:translate="">Editor</label>:
     <span tal:replace="context/editor" />
   </div>
   <div tal:condition="context/note">
-    <tal:field i18n:translate="">Note</tal:field>:
+    <label i18n:translate="">Note</label>:
     <span tal:replace="context/note" />
   </div>
 </fieldset>
