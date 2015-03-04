@@ -20,7 +20,7 @@
     <description i18n:translate="">Example: Title One, Title Two, Title Three</description>
   </field>
   <field name="description" type="zope.schema.Text">
-    <title i18n:translate="">Administrative Area</title>
+    <title i18n:translate="theater_adm">Administrative Area</title>
     <required>True</required>
     <description i18n:translate="">Example: Name, Description</description>
   </field>
@@ -50,18 +50,21 @@
     <required>True</required>
     <description i18n:translate="">Format Example: 1916-01-15</description>
   </field>
-  <field name="op_period" type="zope.schema.Choice">
+  <field name="op_period" type="zope.schema.List">
     <title i18n:translate="">Operating Period</title>
     <required>True</required>
     <description />
-    <values>
-      <element>1895-1899</element>
-      <element>1900-1909</element>
-      <element>1910-1919</element>
-      <element>1920-1929</element>
-      <element>1930-1939</element>
-      <element>1940-1945</element>
-    </values>
+    <value_type type="zope.schema.Choice">
+      <title>Option</title>
+      <values>
+        <element>1895-1899</element>
+        <element>1900-1909</element>
+        <element>1910-1919</element>
+        <element>1920-1929</element>
+        <element>1930-1939</element>
+        <element>1940-1945</element>
+      </values>
+    </value_type>
   </field>
   <field name="media" type="plone.app.textfield.RichText">
     <title i18n:translate="">Media</title>
@@ -94,7 +97,7 @@
     <required>True</required>
     <description />
     <value_type type="zope.schema.Choice">
-      <title>Source Option</title>
+      <title>Option</title>
       <vocabulary>theater.source</vocabulary>
     </value_type>
   </field>
