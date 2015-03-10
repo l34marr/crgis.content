@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.content\n"
-"POT-Creation-Date: 2015-03-02 04:25+0000\n"
-"PO-Revision-Date: 2015-03-02 12:26+0800\n"
+"POT-Creation-Date: 2015-03-10 07:36+0000\n"
+"PO-Revision-Date: 2015-03-06 15:37+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgid "Academic"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:126
+#: ./theater_templates/view.pt:147
 msgid "Accuracy of Positioning"
 msgstr "定位精度"
 
@@ -37,11 +37,10 @@ msgid "Address"
 msgstr "所在位址"
 
 #: ./liuyu_templates/view.pt:33
-#: ./models/theater.xml
 msgid "Administrative Area"
 msgstr "州廳名"
 
-#: ./theater_templates/view.pt:105
+#: ./theater_templates/view.pt:115
 msgid "Basic Info"
 msgstr "基本資料"
 
@@ -50,17 +49,17 @@ msgid "BiXieWu"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:205
+#: ./theater_templates/view.pt:217
 msgid "Booking"
 msgstr "建檔者"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:130
+#: ./theater_templates/view.pt:151
 msgid "Building Description"
-msgstr "建物描述（年）"
+msgstr "建物描述（年份）"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:134
+#: ./theater_templates/view.pt:155
 msgid "Building Status"
 msgstr "建物現況"
 
@@ -139,7 +138,6 @@ msgid "Direct-Controlled"
 msgstr "直轄市定"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:225
 msgid "Editor"
 msgstr "責任校對"
 
@@ -151,7 +149,6 @@ msgstr ""
 msgid "End Year"
 msgstr ""
 
-#: ./models/theater.xml
 #: ./vocabularies.py:28
 msgid "Exact"
 msgstr "精確"
@@ -191,11 +188,9 @@ msgid "Fortress"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:154
 msgid "Function"
 msgstr "戲院屬性（1944《組合員名簿》）"
 
-#: ./models/theater.xml
 #: ./vocabularies.py:27
 msgid "Fuzzy"
 msgstr "模糊"
@@ -258,7 +253,6 @@ msgid "LiuYu"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:150
 msgid "Media"
 msgstr "圖片"
 
@@ -306,17 +300,14 @@ msgstr ""
 
 #: ./liuyu.py:154
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:229
 msgid "Note"
 msgstr "註記"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:221
 msgid "Online"
 msgstr "上網"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:191
 msgid "Online Resource"
 msgstr "網路資源"
 
@@ -324,33 +315,31 @@ msgstr "網路資源"
 msgid "Opera"
 msgstr "演劇"
 
-#: ./theater_templates/view.pt:159
+#: ./theater_templates/view.pt:175
 msgid "Operating"
 msgstr "營運"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:165
 msgid "Operating Description"
 msgstr "營運紀要"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:142
+#: ./theater_templates/view.pt:163
 msgid "Operating End"
-msgstr "建物日期（迄）"
+msgstr "營運日期（迄）"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:146
+#: ./theater_templates/view.pt:167
 msgid "Operating Period"
-msgstr "營運年代區間（僅限日治時期）"
+msgstr "營運年代（僅及於日治時期）"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:138
+#: ./theater_templates/view.pt:159
 msgid "Operating Start"
-msgstr "建物日期（起）"
+msgstr "營運日期（起）"
 
 #: ./bixiewu.py:16
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:183
 msgid "Other"
 msgstr "其他"
 
@@ -367,12 +356,10 @@ msgid "Pingtung County"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:169
 msgid "Program"
 msgstr "節目內容"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:187
 msgid "Reference"
 msgstr "相關文獻"
 
@@ -390,7 +377,7 @@ msgstr ""
 msgid "Reference Text"
 msgstr ""
 
-#: ./theater_templates/view.pt:203
+#: ./theater_templates/view.pt:215
 msgid "Registry"
 msgstr "建檔紀錄"
 
@@ -400,22 +387,19 @@ msgid "Relices"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:196
+#: ./theater_templates/view.pt:210
 msgid "Remark"
 msgstr "備註"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:209
 msgid "Revisal #1"
 msgstr "一校"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:213
 msgid "Revisal #2"
 msgstr "二校"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:217
 msgid "Revisal #3"
 msgstr "三校"
 
@@ -425,14 +409,14 @@ msgid "River"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:176
+#: ./theater_templates/view.pt:195
 msgid "Source"
 msgstr "建檔資料來源"
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:161
+#: ./theater_templates/view.pt:178
 msgid "Staff"
-msgstr "姓名，職稱（年）"
+msgstr "姓名，職稱（年份）"
 
 #: ./liuyu.py:38
 msgid "Start Month"
@@ -527,17 +511,18 @@ msgid "ZiZhi TongJian"
 msgstr ""
 
 #. Default: "Reference"
-#: ./theater_templates/view.pt:174
+#: ./theater_templates/view.pt:193
 msgid "legend_ref"
 msgstr "參考文獻"
 
 #. Default: "Administrative Area"
-#: ./theater_templates/view.pt:122
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:133
 msgid "theater_adm"
-msgstr "所在地（年）"
+msgstr "所在地（年份）"
 
 #. Default: "Title"
-#: ./theater_templates/view.pt:108
+#: ./theater_templates/view.pt:118
 msgid "theater_title"
 msgstr "戲院名"
 

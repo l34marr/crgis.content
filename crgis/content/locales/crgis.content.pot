@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-03-02 04:25+0000\n"
+"POT-Creation-Date: 2015-03-10 15:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid "Academic"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:126
+#: ./theater_templates/view.pt:147
 msgid "Accuracy of Positioning"
 msgstr ""
 
@@ -40,11 +40,10 @@ msgid "Address"
 msgstr ""
 
 #: ./liuyu_templates/view.pt:33
-#: ./models/theater.xml
 msgid "Administrative Area"
 msgstr ""
 
-#: ./theater_templates/view.pt:105
+#: ./theater_templates/view.pt:115
 msgid "Basic Info"
 msgstr ""
 
@@ -53,17 +52,17 @@ msgid "BiXieWu"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:205
+#: ./theater_templates/view.pt:217
 msgid "Booking"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:130
+#: ./theater_templates/view.pt:151
 msgid "Building Description"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:134
+#: ./theater_templates/view.pt:155
 msgid "Building Status"
 msgstr ""
 
@@ -142,7 +141,6 @@ msgid "Direct-Controlled"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:225
 msgid "Editor"
 msgstr ""
 
@@ -154,7 +152,6 @@ msgstr ""
 msgid "End Year"
 msgstr ""
 
-#: ./models/theater.xml
 #: ./vocabularies.py:28
 msgid "Exact"
 msgstr ""
@@ -194,11 +191,9 @@ msgid "Fortress"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:154
 msgid "Function"
 msgstr ""
 
-#: ./models/theater.xml
 #: ./vocabularies.py:27
 msgid "Fuzzy"
 msgstr ""
@@ -261,7 +256,6 @@ msgid "LiuYu"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:150
 msgid "Media"
 msgstr ""
 
@@ -309,17 +303,14 @@ msgstr ""
 
 #: ./liuyu.py:154
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:229
 msgid "Note"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:221
 msgid "Online"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:191
 msgid "Online Resource"
 msgstr ""
 
@@ -327,33 +318,31 @@ msgstr ""
 msgid "Opera"
 msgstr ""
 
-#: ./theater_templates/view.pt:159
+#: ./theater_templates/view.pt:175
 msgid "Operating"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:165
 msgid "Operating Description"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:142
+#: ./theater_templates/view.pt:163
 msgid "Operating End"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:146
+#: ./theater_templates/view.pt:167
 msgid "Operating Period"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:138
+#: ./theater_templates/view.pt:159
 msgid "Operating Start"
 msgstr ""
 
 #: ./bixiewu.py:16
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:183
 msgid "Other"
 msgstr ""
 
@@ -370,12 +359,10 @@ msgid "Pingtung County"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:169
 msgid "Program"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:187
 msgid "Reference"
 msgstr ""
 
@@ -393,7 +380,7 @@ msgstr ""
 msgid "Reference Text"
 msgstr ""
 
-#: ./theater_templates/view.pt:203
+#: ./theater_templates/view.pt:215
 msgid "Registry"
 msgstr ""
 
@@ -403,22 +390,19 @@ msgid "Relices"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:196
+#: ./theater_templates/view.pt:210
 msgid "Remark"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:209
 msgid "Revisal #1"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:213
 msgid "Revisal #2"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:217
 msgid "Revisal #3"
 msgstr ""
 
@@ -428,12 +412,12 @@ msgid "River"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:176
+#: ./theater_templates/view.pt:195
 msgid "Source"
 msgstr ""
 
 #: ./models/theater.xml
-#: ./theater_templates/view.pt:161
+#: ./theater_templates/view.pt:178
 msgid "Staff"
 msgstr ""
 
@@ -530,17 +514,18 @@ msgid "ZiZhi TongJian"
 msgstr ""
 
 #. Default: "Reference"
-#: ./theater_templates/view.pt:174
+#: ./theater_templates/view.pt:193
 msgid "legend_ref"
 msgstr ""
 
 #. Default: "Administrative Area"
-#: ./theater_templates/view.pt:122
+#: ./models/theater.xml
+#: ./theater_templates/view.pt:133
 msgid "theater_adm"
 msgstr ""
 
 #. Default: "Title"
-#: ./theater_templates/view.pt:108
+#: ./theater_templates/view.pt:118
 msgid "theater_title"
 msgstr ""
 
