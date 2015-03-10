@@ -145,7 +145,7 @@
   </div>
   <div tal:condition="context/accrcy_l">
     <label i18n:translate="">Accuracy of Positioning</label>:
-    <span tal:replace="context/accrcy_l" />
+    <span tal:replace="python:view.t_title('theater.accrcy_l',context.accrcy_l)" />
   </div>
   <div tal:condition="context/building_desc">
     <label i18n:translate="">Building Description</label>:
@@ -165,15 +165,10 @@
   </div>
   <div tal:condition="context/op_period">
     <label i18n:translate="">Operating Period</label>:
-    <span tal:replace="context/op_period" />
-  </div>
-  <div tal:condition="context/media">
-    <label i18n:translate="">Media</label>:
-    <span tal:replace="structure context/media/output" />
-  </div>
-  <div tal:condition="context/function">
-    <label i18n:translate="">Function</label>:
-    <span tal:replace="python:view.t_title('theater.function',context.function)" />
+    <tal:items repeat="item context/op_period">
+    <span tal:replace="item" />
+    <span class="separator" tal:condition="not:repeat/item/end">,</span>
+    </tal:items>
   </div>
 </fieldset>
 <fieldset>
@@ -193,73 +188,34 @@
     </div>
     </tal:many>
   </div>
-  <div tal:condition="context/op_desc">
-    <label i18n:translate="">Operating Description</label>:
-    <span tal:replace="structure context/op_desc/output" />
-  </div>
-  <div tal:condition="context/program">
-    <label i18n:translate="">Program</label>:
-    <span tal:replace="structure context/program/output" />
-  </div>
 </fieldset>
 <fieldset>
 <legend style="font-size:120%; font-weight:bold" i18n:translate="legend_ref">Reference</legend>
-  <div tal:condition="context/source">
+  <div tal:condition="python:context.source or context.other">
     <label i18n:translate="">Source</label>:
+    <tal:source condition="context/source">
     <tal:items repeat="item context/source">
     <span tal:replace="python:view.t_title('theater.source',item)">Value</span>
     <span class="separator" tal:condition="not:repeat/item/end">,</span>
     </tal:items>
-  </div>
-  <div tal:condition="context/other">
-    <label i18n:translate="">Other</label>:
+    </tal:source>
+    <tal:other condition="context/other">
+    <span class="separator" tal:condition="python:context.source and context.other">,</span>
     <span tal:replace="context/other" />
-  </div>
-  <div tal:condition="context/reference">
-    <label i18n:translate="">Reference</label>:
-    <span tal:replace="structure context/reference/output" />
-  </div>
-  <div tal:condition="context/resource">
-    <label i18n:translate="">Online Resource</label>:
-    <span tal:replace="structure context/resource/output" />
+    </tal:other>
   </div>
 </fieldset>
+<tal:remark condition="context/remark">
 <fieldset>
 <legend style="font-size:120%; font-weight:bold" i18n:translate="">Remark</legend>
-  <div tal:condition="context/remark">
-    <label i18n:translate="">Remark</label>:
-    <span tal:replace="structure context/remark/output" />
-  </div>
+  <span tal:replace="structure context/remark/output" />
 </fieldset>
+</tal:remark>
 <fieldset>
 <legend style="font-size:120%; font-weight:bold" i18n:translate="">Registry</legend>
   <div tal:condition="context/booking">
     <label i18n:translate="">Booking</label>:
     <span tal:replace="context/booking" />
-  </div>
-  <div tal:condition="context/rev_1">
-    <label i18n:translate="">Revisal #1</label>:
-    <span tal:replace="context/rev_1" />
-  </div>
-  <div tal:condition="context/rev_2">
-    <label i18n:translate="">Revisal #2</label>:
-    <span tal:replace="context/rev_2" />
-  </div>
-  <div tal:condition="context/rev_3">
-    <label i18n:translate="">Revisal #3</label>:
-    <span tal:replace="context/rev_3" />
-  </div>
-  <div tal:condition="context/online">
-    <label i18n:translate="">Online</label>:
-    <span tal:replace="context/online" />
-  </div>
-  <div tal:condition="context/editor">
-    <label i18n:translate="">Editor</label>:
-    <span tal:replace="context/editor" />
-  </div>
-  <div tal:condition="context/note">
-    <label i18n:translate="">Note</label>:
-    <span tal:replace="context/note" />
   </div>
 </fieldset>
   </div>
