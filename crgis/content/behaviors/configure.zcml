@@ -9,8 +9,14 @@
     title="Name from Creation Date"
     description="Generates short name based on creation date."
     provides=".shortname.INameFromCreationDate"
-    for="plone.dexterity.interfaces.IDexterityContent"
-    />
+    for="plone.dexterity.interfaces.IDexterityContent" />
   <adapter factory=".shortname.NameFromCreationDate" />
+
+  <plone:behavior
+    title="Name from Id"
+    description="Generates short name based on Id."
+    provides=".shortname.INameFromId"
+    for="plone.dexterity.interfaces.IDexterityContent" />
+  <adapter factory=".shortname.NameFromId" />
 
 </configure>
