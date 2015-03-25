@@ -50,6 +50,7 @@ class TheaterSource(object):
     def __call__(self, context=None):
         items = (
             SimpleTerm(value='TWDAILY', title=_(u'TWDAILY')),
+            SimpleTerm(value='TWDAILYZH', title=_(u'TWDAILYZH')),
             SimpleTerm(value='TWCORP', title=_(u'TWCORP')),
             SimpleTerm(value='TWBANK', title=_(u'TWBANK')),
             SimpleTerm(value='1942NEWS', title=_(u'1942NEWS')),
