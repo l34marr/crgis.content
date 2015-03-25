@@ -113,20 +113,24 @@
 
 <fieldset>
 <legend style="font-size:120%; font-weight:bold" i18n:translate="">Basic Info</legend>
-  <div tal:define="titles python:context.title.split('\n')"
-   tal:condition="python:len(titles) > 0">
+  <div tal:condition="context/title">
     <label i18n:translate="theater_title">Title</label>:
-    <tal:one condition="python:len(titles) == 1">
-    <span tal:replace="context/title" />
+    <br><span tal:replace="context/title" />
+  </div>
+  <div tal:condition="context/alias">
+  <tal:alias define="alias python:context.alias.split('\n')">
+    <tal:one condition="python:len(alias) == 1">
+    <span tal:replace="context/alias" />
     </tal:one>
-    <tal:many condition="python:len(titles) > 1">
+    <tal:many condition="python:len(alias) > 1">
     <div>
-    <tal:items repeat="item titles">
+    <tal:items repeat="item alias">
     <span tal:replace="item">Value</span>
     <br tal:condition="not:repeat/item/end" />
     </tal:items>
     </div>
     </tal:many>
+  </tal:alias>
   </div>
   <div tal:define="adm_areas python:context.description.split('\n')"
    tal:condition="python:len(adm_areas) > 0">
@@ -173,7 +177,8 @@
 </fieldset>
 <fieldset>
 <legend style="font-size:120%; font-weight:bold" i18n:translate="">Operating</legend>
-  <div tal:define="people python:context.staff.split('\n')"
+  <div tal:condition="context/staff">
+  <tal:staff define="people python:context.staff.split('\n')"
    tal:condition="python:len(people) > 0">
     <label i18n:translate="">Staff</label>:
     <tal:one condition="python:len(people) == 1">
@@ -187,6 +192,7 @@
     </tal:items>
     </div>
     </tal:many>
+  </tal:staff>
   </div>
 </fieldset>
 <fieldset>
@@ -216,6 +222,14 @@
   <div tal:condition="context/booking">
     <label i18n:translate="">Booking</label>:
     <span tal:replace="context/booking" />
+  </div>
+  <div tal:condition="context/editor">
+    <label i18n:translate="">Editor</label>:
+    <span tal:replace="context/editor" />
+  </div>
+  <div tal:condition="context/note">
+    <label i18n:translate="">Note</label>:
+    <span tal:replace="context/note" />
   </div>
 </fieldset>
   </div>

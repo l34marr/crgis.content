@@ -14,10 +14,15 @@
     <required>True</required>
     <description />
   </field>
-  <field name="title" type="zope.schema.Text">
-    <title i18n:translate="">Title</title>
+  <field name="title" type="zope.schema.TextLine">
+    <title i18n:translate="theater_title">Title</title>
     <required>True</required>
-    <description i18n:translate="">Example: Title One, Title Two, Title Three</description>
+    <description i18n:translate="">Example: Title One</description>
+  </field>
+  <field name="alias" type="zope.schema.Text">
+    <title i18n:translate="">Alias</title>
+    <required>False</required>
+    <description i18n:translate="">Example: Title Two, Title Three</description>
   </field>
   <field name="description" type="zope.schema.Text">
     <title i18n:translate="theater_adm">Administrative Area</title>
@@ -79,7 +84,7 @@
   </field>
   <field name="staff" type="zope.schema.Text">
     <title i18n:translate="">Staff</title>
-    <required>True</required>
+    <required>False</required>
     <description i18n:translate="">Example: Name, Title (Year)</description>
   </field>
   <field name="op_desc" type="plone.app.textfield.RichText">
@@ -118,7 +123,7 @@
   </field>
   <field name="remark" type="plone.app.textfield.RichText">
     <title i18n:translate="">Remark</title>
-    <required>True</required>
+    <required>False</required>
     <description />
   </field>
   <field name="booking" type="zope.schema.TextLine">
@@ -126,29 +131,9 @@
     <required>True</required>
     <description />
   </field>
-  <field name="rev_1" type="zope.schema.TextLine">
-    <title i18n:translate="">Revisal #1</title>
-    <required>False</required>
-    <description />
-  </field>
-  <field name="rev_2" type="zope.schema.TextLine">
-    <title i18n:translate="">Revisal #2</title>
-    <required>False</required>
-    <description />
-  </field>
-  <field name="rev_3" type="zope.schema.TextLine">
-    <title i18n:translate="">Revisal #3</title>
-    <required>False</required>
-    <description />
-  </field>
-  <field name="online" type="zope.schema.TextLine">
-    <title i18n:translate="">Online</title>
-    <required>False</required>
-    <description />
-  </field>
   <field name="editor" type="zope.schema.TextLine">
     <title i18n:translate="">Editor</title>
-    <required>False</required>
+    <required>True</required>
     <description />
   </field>
   <field name="note" type="zope.schema.TextLine">
