@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.content\n"
-"POT-Creation-Date: 2015-03-25 01:59+0000\n"
-"PO-Revision-Date: 2015-03-25 10:00+0800\n"
+"POT-Creation-Date: 2015-07-28 02:35+0000\n"
+"PO-Revision-Date: 2015-07-28 10:36+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -524,4 +524,39 @@ msgstr "所在地（年）"
 #: ./theater_templates/view.pt:117
 msgid "theater_title"
 msgstr "戲院名稱"
+
+#. Default: "Title (1895-1899)"
+#: ./models/theater.xml
+msgid "theater_title_1"
+msgstr "戲院名稱 (1895-1899)"
+
+#. Default: "Title (1900-1909)"
+#: ./models/theater.xml
+msgid "theater_title_2"
+msgstr "戲院名稱 (1900-1909)"
+
+#. Default: "Title (1910-1919)"
+#: ./models/theater.xml
+msgid "theater_title_3"
+msgstr "戲院名稱 (1910-1919)"
+
+#. Default: "Title (1920-1929)"
+#: ./models/theater.xml
+msgid "theater_title_4"
+msgstr "戲院名稱 (1920-1929)"
+
+#. Default: "Title (1930-1939)"
+#: ./models/theater.xml
+msgid "theater_title_5"
+msgstr "戲院名稱 (1930-1939)"
+
+#. Default: "Title (1940-1945)"
+#: ./models/theater.xml
+msgid "theater_title_6"
+msgstr "戲院名稱 (1940-1945)"
+
+#. Default: "Title (Post-WW2)"
+#: ./models/theater.xml
+msgid "theater_title_7"
+msgstr "戲院名稱 (戰後時期)"
 

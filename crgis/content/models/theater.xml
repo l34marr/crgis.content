@@ -19,6 +19,34 @@
     <required>True</required>
     <description i18n:translate="">Example: Title One</description>
   </field>
+  <field name="title_1" type="zope.schema.TextLine">
+    <title i18n:translate="theater_title_1">Title (1895-1899)</title>
+    <required>False</required>
+  </field>
+  <field name="title_2" type="zope.schema.TextLine">
+    <title i18n:translate="theater_title_2">Title (1900-1909)</title>
+    <required>False</required>
+  </field>
+  <field name="title_3" type="zope.schema.TextLine">
+    <title i18n:translate="theater_title_3">Title (1910-1919)</title>
+    <required>False</required>
+  </field>
+  <field name="title_4" type="zope.schema.TextLine">
+    <title i18n:translate="theater_title_4">Title (1920-1929)</title>
+    <required>False</required>
+  </field>
+  <field name="title_5" type="zope.schema.TextLine">
+    <title i18n:translate="theater_title_5">Title (1930-1939)</title>
+    <required>False</required>
+  </field>
+  <field name="title_6" type="zope.schema.TextLine">
+    <title i18n:translate="theater_title_6">Title (1940-1945)</title>
+    <required>False</required>
+  </field>
+  <field name="title_7" type="zope.schema.TextLine">
+    <title i18n:translate="theater_title_7">Title (Post-WW2)</title>
+    <required>False</required>
+  </field>
   <field name="alias" type="zope.schema.Text">
     <title i18n:translate="">Alias</title>
     <required>False</required>

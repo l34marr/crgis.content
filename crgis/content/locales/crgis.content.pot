@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-03-25 01:59+0000\n"
+"POT-Creation-Date: 2015-07-28 02:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -526,5 +526,40 @@ msgstr ""
 #: ./models/theater.xml
 #: ./theater_templates/view.pt:117
 msgid "theater_title"
+msgstr ""
+
+#. Default: "Title (1895-1899)"
+#: ./models/theater.xml
+msgid "theater_title_1"
+msgstr ""
+
+#. Default: "Title (1900-1909)"
+#: ./models/theater.xml
+msgid "theater_title_2"
+msgstr ""
+
+#. Default: "Title (1910-1919)"
+#: ./models/theater.xml
+msgid "theater_title_3"
+msgstr ""
+
+#. Default: "Title (1920-1929)"
+#: ./models/theater.xml
+msgid "theater_title_4"
+msgstr ""
+
+#. Default: "Title (1930-1939)"
+#: ./models/theater.xml
+msgid "theater_title_5"
+msgstr ""
+
+#. Default: "Title (1940-1945)"
+#: ./models/theater.xml
+msgid "theater_title_6"
+msgstr ""
+
+#. Default: "Title (Post-WW2)"
+#: ./models/theater.xml
+msgid "theater_title_7"
 msgstr ""
 
