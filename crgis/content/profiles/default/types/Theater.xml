@@ -8,15 +8,16 @@
   <property name="title" i18n:translate="">Theater</property>
   <property name="description"
    i18n:translate="">CRGIS Theater Type</property>
-  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
-  <property name="factory">crgis.content.content.Theater</property>
+  <property name="icon_expr"></property>
+  <property name="factory">Theater</property>
+  <property name="add_view_expr">string:${folder_url}/++add++Theater</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
   <!-- schema and class used for content items -->
-  <property name="schema">crgis.content.content.ITheater</property> 
+  <property name="schema"></property>
   <property name="klass">crgis.content.content.Theater</property>
   <property name="model_source"></property>
   <property name="model_file">crgis.content.models:theater.xml</property>
@@ -24,8 +25,6 @@
   <property name="behaviors">
     <element value="crgis.content.behaviors.shortname.INameFromId" />
     <element value="plone.app.dexterity.behaviors.metadata.ICategorization" />
-    <!-- IReferenceable might not be available, but it will not break. -->
-    <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
   </property>
 
   <!-- View information -->
