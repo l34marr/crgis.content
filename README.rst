@@ -14,3 +14,5 @@ Add this line in the eggs section of your ``buildout.cfg``::
         ...
         crgis.content
 
+and then run "bin/buildout"
+

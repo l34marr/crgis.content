@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0dev (unreleased)
+-------------------
+
+- Update Add-on Skeleton Like mr.bob Style
+
 0.3dev (unreleased)
 -------------------
 
