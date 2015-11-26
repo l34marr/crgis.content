@@ -7,7 +7,7 @@ from plone.z3cform.textlines import TextLinesFieldWidget
 
 from collective import dexteritytextindexer
 
-from crgis.content import MessageFactory as _
+from crgis.content import _
 
 
 # Interface class; used to define content-type schema.

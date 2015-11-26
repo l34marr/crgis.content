@@ -4,7 +4,7 @@ from plone.directives import dexterity, form
 from zope import schema
 from plone.app.textfield import RichText
 
-from crgis.content import MessageFactory as _
+from crgis.content import _
 
 
 # Interface class; used to define content-type schema.

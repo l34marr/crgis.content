@@ -2,7 +2,7 @@ from zope.schema.interfaces import IVocabularyFactory
 from zope.interface import implements
 from zope.schema.vocabulary import SimpleVocabulary
 from zope.schema.vocabulary import SimpleTerm
-from crgis.content import MessageFactory as _
+from crgis.content import _
 
 
 class AdminLevel(object):

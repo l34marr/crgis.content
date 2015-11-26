@@ -7,7 +7,7 @@ from plone.app.textfield import RichText
 
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-from crgis.content import MessageFactory as _
+from crgis.content import _
 
 data_src = SimpleVocabulary([
     SimpleTerm(value='governmental', title=_(u'Governmental')),
