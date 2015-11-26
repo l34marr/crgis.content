@@ -18,6 +18,8 @@
   <!-- schema and class used for content items -->
   <property name="schema">crgis.content.content.ITheater</property> 
   <property name="klass">crgis.content.content.Theater</property>
+  <property name="model_source"></property>
+  <property name="model_file">crgis.content.models:theater.xml</property>
 
   <property name="behaviors">
     <element value="crgis.content.behaviors.shortname.INameFromId" />
