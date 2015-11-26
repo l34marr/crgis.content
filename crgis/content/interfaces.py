@@ -1,11 +1,9 @@
-from plone.directives import form
+from zope.interface import Interface
 
 
-class IBiXieWu(form.Schema):
+class IBiXieWu(Interface):
     """BiXieWu Type"""
-    form.model('models/bixiewu.xml')
 
-class ITheater(form.Schema):
+class ITheater(Interface):
     """Theater Type"""
-    form.model('models/theater.xml')
 
