@@ -12,6 +12,7 @@
 
   <!-- Include Files and Packages -->
   <include package=".behaviors" />
+  <include package=".browser" />
   <include file="permissions.zcml" />
   <include file="vocabularies.zcml" />
 
