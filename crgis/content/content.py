@@ -9,3 +9,8 @@ class BiXieWu(Item):
     """Item Subclass for BiXieWu
     """
 
+@implementer(ITheater)
+class Theater(Item):
+    """Item Subclass for Theater
+    """
+
