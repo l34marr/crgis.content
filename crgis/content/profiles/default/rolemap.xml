@@ -1,25 +1,7 @@
 <?xml version="1.0"?>
 <rolemap>
  <permissions>
-  <permission name="CRGIS: Add BiXieWu" acquire="True">
-   <role name="Manager" />
-   <role name="Site Administrator" />
-   <role name="Owner" />
-   <role name="Contributor" />
-  </permission>
   <permission name="CRGIS: Add Theater" acquire="True">
-   <role name="Manager" />
-   <role name="Site Administrator" />
-   <role name="Owner" />
-   <role name="Contributor" />
-  </permission>
-  <permission name="CRGIS: Add Tree" acquire="True">
-   <role name="Manager" />
-   <role name="Site Administrator" />
-   <role name="Owner" />
-   <role name="Contributor" />
-  </permission>
-  <permission name="CRGIS: Add LiuYu" acquire="True">
    <role name="Manager" />
    <role name="Site Administrator" />
    <role name="Owner" />

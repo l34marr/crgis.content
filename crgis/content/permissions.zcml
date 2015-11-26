@@ -3,22 +3,7 @@
   xmlns:i18n="http://namespaces.zope.org/i18n"
   i18n_domain="crgis.content">
 
-  <!-- Define new permissions -->
-  <permission
-    id="add.bixiewu"
-    title="CRGIS: Add BiXieWu"
-    />
-  <permission
-    id="add.theater"
-    title="CRGIS: Add Theater"
-    />
-  <permission
-    id="add.tree"
-    title="CRGIS: Add Tree"
-    />
-  <permission
-    id="add.liuyu"
-    title="CRGIS: Add LiuYu"
-    />
+  <permission id="add.theater"
+    title="CRGIS: Add Theater" />
 
 </configure>
