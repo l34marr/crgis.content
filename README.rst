@@ -5,7 +5,7 @@ Introduction
 
 crgis.content offers custom content types for the `CRGIS project`_ based on Dexterity.
 
-_`CRGIS project`: http://crgis.rchss.sinica.edu.tw/about
+_CRGIS project: http://crgis.rchss.sinica.edu.tw/about
 
 Installation
 ============
