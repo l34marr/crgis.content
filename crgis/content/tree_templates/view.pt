@@ -9,11 +9,61 @@
 
 <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core">
-
-<div tal:condition="context/title">
-  <tal:field i18n:translate="">Title</tal:field>:
-  <span tal:replace="context/title" />
+<fieldset>
+<legend i18n:translate="">Basic Info</legend>
+<div tal:condition="context/code">
+  <tal:field i18n:translate="">Code</tal:field>:
+<span tal:replace="context/code" />
 </div>
+<div tal:condition="context/name">
+  <tal:field i18n:translate="">Name</tal:field>:
+  <span tal:replace="context/name" />
+</div>
+<div tal:condition="context/height">
+  <tal:field i18n:translate="">Height</tal:field>:
+  <span tal:replace="context/height" />
+</div>
+<div tal:condition="context/diameter">
+  <tal:field i18n:translate="">Diameter</tal:field>:
+  <span tal:replace="context/diameter" />
+</div>
+<div tal:condition="context/perimeter">
+  <tal:field i18n:translate="">Perimeter</tal:field>:
+  <span tal:replace="context/perimeter" />
+</div>
+<div tal:condition="context/breadth">
+  <tal:field i18n:translate="">Breadth</tal:field>:
+  <span tal:replace="context/breadth" />
+</div>
+<div tal:condition="context/tree_old">
+  <tal:field i18n:translate="">Tree_old</tal:field>:
+  <span tal:replace="context/tree_old" />
+</div>
+</fieldset>
+<fieldset>
+<legend i18n:translate="tree_adm">Administrative Info</legend>
+<div tal:condition="context/adress">
+  <tal:field i18n:translate="">Adress</tal:field>:
+  <span tal:replace="context/adress" />
+</div>
+<div tal:condition="context/countyname">
+  <tal:field i18n:translate="">Countyname</tal:field>:
+  <span tal:replace="context/countyname" />
+</div>
+<div tal:condition="context/townname">
+  <tal:field i18n:translate="">Townname</tal:field>:
+  <span tal:replace="context/townname" />
+</div>
+<div tal:condition="context/villagenam">
+  <tal:field i18n:translate="">Villagenam</tal:field>:
+  <span tal:replace="context/villagenam" />
+</div>
+<div tal:condition="context/geo_kind">
+  <tal:field i18n:translate="">Geo_kind</tal:field>:
+  <span tal:replace="context/geo_kind" />
+</div>
+</fieldset>
+<fieldset>
 
   </metal:content-core>
 </metal:main>

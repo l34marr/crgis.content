@@ -26,6 +26,70 @@ class ITree(form.Schema):
         title=_(u"Tree ID"),
     )
 
+    code = schema.TextLine(
+        title=_(u"Code"),
+        required=False,
+    )
+
+    name = schema.TextLine(
+        title=_(u"Name"),
+        required=False,
+    )
+
+    height = schema.TextLine(
+        title=_(u"Height"),
+        description=_(u"unit:meter"),
+        required=False,
+    )
+
+    diameter = schema.TextLine(
+        title=_(u"Diameter"),
+        description=_(u"unit:meter"),
+        required=False,
+    )
+
+    perimeter = schema.TextLine(
+        title=_(u"Perimeter"),
+        description=_(u"unit:meter"),
+        required=False,
+    )
+
+    breadth = schema.TextLine(
+        title=_(u"Breadth"),
+        description=_(u"unit:meter"),
+        required=False,
+    )
+
+    tree_old = schema.TextLine(
+        title=_(u"Tree_old"),
+        required=False,
+    )
+
+    adress = schema.TextLine(
+        title=_(u"Adress"),
+        required=False,
+    )
+
+    countyname = schema.TextLine(
+        title=_(u"Countyname"),
+        required=False,
+    )
+
+    townname = schema.TextLine(
+        title=_(u"Townname"),
+        required=False,
+    )
+
+    villagenam = schema.TextLine(
+        title=_(u"Villagenam"),
+        required=False,
+    )
+
+    geo_kind = schema.TextLine(
+        title=_(u"Geo_kind"),
+        required=False,
+    )
+
 
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific
@@ -34,7 +98,7 @@ class ITree(form.Schema):
 
 class Tree(dexterity.Container):
     grok.implements(ITree)
-    
+
     # Add your class methods and properties here
 
 
