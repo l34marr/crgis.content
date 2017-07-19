@@ -30,9 +30,7 @@ setup(name='crgis.content',
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'Products.CMFPlone',
-        'plone.app.dexterity < 2.1.0',
-        'plone.dexterity >= 2.2.1',
+        'plone.app.dexterity',
         'plone.namedfile [blobs]',
     ],
     extras_require={
