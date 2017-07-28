@@ -31,6 +31,7 @@ setup(name='crgis.content',
     install_requires=[
         'setuptools',
         'plone.app.dexterity',
+        'plone.app.relationfield',
         'plone.namedfile [blobs]',
     ],
     extras_require={

@@ -5,10 +5,9 @@
  xmlns:zcml="http://namespaces.zope.org/zcml">
 
   <browser:page
-    name="view"
-    for="crgis.content.content.ITheater"
-    class=".view.MyView"
-    template="templates/theater.pt"
-    permission="zope.Public" />
+    name="photo_view"
+    for="crgis.content.interfaces.IPhoto"
+    template="photo.pt"
+    permission="zope2.View" />
 
 </configure>

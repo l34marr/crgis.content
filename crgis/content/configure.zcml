@@ -13,7 +13,6 @@
   <!-- Include Files and Packages -->
   <include package=".behaviors" />
   <include package=".browser" />
-  <include file="permissions.zcml" />
   <include file="vocabularies.zcml" />
 
   <!-- Register Resource Directory for Static Resources -->
@@ -28,7 +27,7 @@
     name="default"
     title="CRGIS Content Types"
     directory="profiles/default"
-    description="CRGIS Content Types Extension Profile"
+    description="CRGIS Content Types Package"
     provides="Products.GenericSetup.interfaces.EXTENSION" />
 
 </configure>

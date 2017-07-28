@@ -1,13 +1,14 @@
 from zope.interface import implements
+from plone.dexterity.content import Container
 from plone.dexterity.content import Item
 
 from crgis.content.interfaces import IBiXieWu
-from crgis.content.interfaces import ITheater
+from crgis.content.interfaces import IPhoto
 
 
-class BiXieWu(Item):
+class BiXieWu(Container):
     implements(IBiXieWu)
 
-class Theater(Item):
-    implements(ITheater)
+class Photo(Item):
+    implements(IPhoto)
 

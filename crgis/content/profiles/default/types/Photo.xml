@@ -1,32 +1,30 @@
 <?xml version="1.0"?>
-<object name="BiXieWu"
+<object name="Photo"
  meta_type="Dexterity FTI"
  i18n:domain="crgis.content"
  xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
-  <property name="title" i18n:translate="">BiXieWu</property>
-  <property name="description" i18n:translate="">BiXieWu Type</property>
+  <property name="title" i18n:translate="">Photo</property>
+  <property name="description" i18n:translate="">Photo Type</property>
   <property name="icon_expr"></property>
-  <property name="factory">BiXieWu</property>
-  <property name="add_view_expr">string:${folder_url}/++add++BiXieWu</property>
+  <property name="factory">Photo</property>
+  <property name="add_view_expr">string:${folder_url}/++add++Photo</property>
   <property name="link_target"></property>
-  <property name="global_allow">True</property>
-  <property name="filter_content_types">True</property>
-  <property name="allowed_content_types">
-    <element value="Photo" />
-  </property>
+  <property name="global_allow">False</property>
+  <property name="filter_content_types">False</property>  
+  <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
   <!-- schema and class used for content items -->
   <property name="add_permission">cmf.AddPortalContent</property>
-  <property name="klass">crgis.content.content.BiXieWu</property>
+  <property name="klass">crgis.content.content.Photo</property>
   <property name="model_source"></property>
-  <property name="model_file">crgis.content.models:bixiewu.xml</property>
-  <property name="schema">crgis.content.interfaces.IBiXieWu</property>
+  <property name="model_file">crgis.content.models:photo.xml</property>
+  <property name="schema">crgis.content.interfaces.IPhoto</property> 
 
   <property name="behaviors">
-    <element value="plone.app.content.interfaces.INameFromTitle" />
+    <element value="crgis.content.behaviors.shortname.INameFromCreationDate" />
     <element value="plone.app.dexterity.behaviors.metadata.ICategorization" />
     <element value="plone.app.dexterity.behaviors.metadata.IOwnership" />
     <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation" />
