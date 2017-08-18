@@ -167,9 +167,11 @@ class ITemple(model.Schema):
         required=False,
     )
     model.fieldset('appendix', label=_(u'Appendix'), fields=['jstq', 'jstq_o', 'jsfw', 'xyfw', 'flxt', 'flxt_o', 'ymmy', 'ymmy_o', 'xhly', 'xhly_o', 'nlqs', 'nlqs_o', 'wyxx', 'wyxx_o', 'medicine', 'luck', 'organization', 'desc_o'])
-    jstq = schema.TextLine(
+    jstq = schema.Tuple(
         title=_(u"JiSiZuQun"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
     )
     jstq_o = schema.TextLine(
         title=_(u"JiSiZuQun Other"),
@@ -183,53 +185,67 @@ class ITemple(model.Schema):
         title=_(u"XinYangFangWei"),
         required=False,
     )
-    flxt = schema.TextLine(
+    flxt = schema.Tuple(
         title=_(u"FenLingXiTong"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
     )
     flxt_o = schema.TextLine(
         title=_(u"FenLingXiTong Other"),
         required=False,
     )
-    ymmy = schema.TextLine(
+    ymmy = schema.Tuple(
         title=_(u"YiMingMiaoYu"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
     )
     ymmy_o = schema.TextLine(
         title=_(u"YiMingMiaoYu Other"),
         required=False,
     )
-    xhly = schema.TextLine(
+    xhly = schema.Tuple(
         title=_(u"XiangHuoLaiYuan"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
     )
     xhly_o = schema.TextLine(
         title=_(u"XiangHuoLaiYuan Other"),
         required=False,
     )
-    nlqs = schema.TextLine(
+    nlqs = schema.Tuple(
         title=_(u"NianLiQingSheng"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
     )
     nlqs_o = schema.TextLine(
         title=_(u"NianLiQingSheng Other"),
         required=False,
     )
-    wyxx = schema.TextLine(
+    wyxx = schema.Tuple(
         title=_(u"WangYeXianXiang"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
     )
     wyxx_o = schema.TextLine(
         title=_(u"WangYeXianXiang Other"),
         required=False,
     )
-    medicine = schema.TextLine(
+    medicine = schema.Tuple(
         title=_(u"Medicine Divination"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
     )
-    luck = schema.TextLine(
+    luck = schema.Tuple(
         title=_(u"Luck Divination"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
     )
     organization = RichTextField(
         title=_(u"Believer Organization"),
