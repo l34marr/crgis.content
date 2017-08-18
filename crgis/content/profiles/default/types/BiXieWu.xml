@@ -22,7 +22,7 @@
   <property name="add_permission">cmf.AddPortalContent</property>
   <property name="klass">crgis.content.content.BiXieWu</property>
   <property name="model_source"></property>
-  <property name="model_file">crgis.content.models:bixiewu.xml</property>
+  <property name="model_file"></property>
   <property name="schema">crgis.content.interfaces.IBiXieWu</property>
 
   <property name="behaviors">

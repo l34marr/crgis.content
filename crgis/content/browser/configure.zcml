@@ -7,7 +7,7 @@
   <browser:page
     name="photo_view"
     for="crgis.content.interfaces.IPhoto"
-    template="photo.pt"
+    class=".view.MyView"
     permission="zope2.View" />
 
 </configure>

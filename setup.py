@@ -32,6 +32,7 @@ setup(name='crgis.content',
         'setuptools',
         'plone.app.dexterity',
         'plone.app.relationfield',
+        'plone.formwidget.contenttree',
         'plone.namedfile [blobs]',
     ],
     extras_require={
