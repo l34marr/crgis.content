@@ -5,6 +5,7 @@ from plone.dexterity.content import Item
 from crgis.content.interfaces import ITemple
 from crgis.content.interfaces import IBiXieWu
 from crgis.content.interfaces import IPhoto
+from crgis.content.interfaces import IPilgrimage
 
 
 class Temple(Container):
@@ -15,4 +16,7 @@ class BiXieWu(Container):
 
 class Photo(Item):
     implements(IPhoto)
+
+class Pilgrimage(Container):
+    implements(IPilgrimage)
 

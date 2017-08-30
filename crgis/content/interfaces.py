@@ -477,3 +477,19 @@ class IPhoto(model.Schema):
         required=False,
     )
 
+
+class IPilgrimage(model.Schema):
+    """Pilgrimage Type"""
+    title = schema.TextLine(
+        title=_(u"Title"),
+        required=False,
+    )
+    description = schema.Text(
+        title=_(u"Description"),
+        required=False,
+    )
+    body = RichTextField(
+        title=_(u"Body"),
+        required=False,
+    )
+
