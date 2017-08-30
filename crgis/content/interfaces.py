@@ -360,6 +360,26 @@ class IBiXieWu(model.Schema):
         title=_(u"Worship Description"),
         required=False,
     )
+    establishment = RichTextField(
+        title=_(u"Establishment Description"),
+        required=False,
+    )
+    spatial = RichTextField(
+        title=_(u"Spatial Attribute"),
+        required=False,
+    )
+    environment = RichTextField(
+        title=_(u"Environment Description"),
+        required=False,
+    )
+    reference = RichTextField(
+        title=_(u"Reference"),
+        required=False,
+    )
+    remark = RichTextField(
+        title=_(u"Remark"),
+        required=False,
+    )
     r_temples = RelationList(
         title=_(u"Related Temples"),
         default=[],
