@@ -476,8 +476,24 @@ class IPhoto(model.Schema):
         title=_(u"Village"),
         required=False,
     )
-    date = schema.TextLine(
-        title=_(u"Photo Date"),
+    lng = schema.TextLine(
+        title=_(u"Longtitude"),
+        required=False,
+    )
+    lat = schema.TextLine(
+        title=_(u"Latitude"),
+        required=False,
+    )
+    year = schema.TextLine(
+        title=_(u"Photo Year"),
+        required=False,
+    )
+    month = schema.TextLine(
+        title=_(u"Photo Month"),
+        required=False,
+    )
+    day = schema.TextLine(
+        title=_(u"Photo Day"),
         required=False,
     )
     owner_name = schema.TextLine(
