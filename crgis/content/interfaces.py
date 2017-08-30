@@ -493,3 +493,29 @@ class IPilgrimage(model.Schema):
         required=False,
     )
 
+
+class ISchedule(model.Schema):
+    """Schedule Type"""
+    title = schema.TextLine(
+        title=_(u"Title"),
+        required=False,
+    )
+    description = schema.Text(
+        title=_(u"Description"),
+        required=False,
+    )
+    body = RichTextField(
+        title=_(u"Body"),
+        required=False,
+    )
+    temples = RelationList(
+        title=_(u"Related Temples"),
+        required=False,
+        default=[],
+        value_type=RelationChoice(
+            title=u"Related Temple",
+            source=ObjPathSourceBinder()
+        ),
+    )
+
+

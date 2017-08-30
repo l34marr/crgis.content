@@ -6,6 +6,7 @@ from crgis.content.interfaces import ITemple
 from crgis.content.interfaces import IBiXieWu
 from crgis.content.interfaces import IPhoto
 from crgis.content.interfaces import IPilgrimage
+from crgis.content.interfaces import ISchedule
 
 
 class Temple(Container):
@@ -19,4 +20,7 @@ class Photo(Item):
 
 class Pilgrimage(Container):
     implements(IPilgrimage)
+
+class Schedule(Container):
+    implements(ISchedule)
 
