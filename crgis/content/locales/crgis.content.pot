@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-07-28 02:35+0000\n"
+"POT-Creation-Date: 2017-08-31 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,114 +17,106 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.content\n"
 
-#: ./vocabularies.py:56
-msgid "1942NEWS"
+#: ./interfaces.py:154
+msgid "Academic Works"
 msgstr ""
 
-#: ./vocabularies.py:57
-msgid "1944BOOK"
-msgstr ""
-
-#: ./bixiewu.py:14
-msgid "Academic"
-msgstr ""
-
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:151
-msgid "Accuracy of Positioning"
-msgstr ""
-
-#: ./bixiewu.py:55
-#: ./bixiewu_templates/view.pt:24
+#: ./browser/bixiewu.pt:24
+#: ./interfaces.py:82
 msgid "Address"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:33
-msgid "Administrative Area"
+#: ./interfaces.py:142
+msgid "Antiquity"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Alias"
+#: ./interfaces.py:169
+msgid "Appendix"
 msgstr ""
 
-#: ./theater_templates/view.pt:115
-msgid "Basic Info"
+#: ./interfaces.py:462
+msgid "Attached To"
+msgstr ""
+
+#: ./interfaces.py:437
+msgid "Base Height"
+msgstr ""
+
+#: ./interfaces.py:429
+msgid "Base Length"
+msgstr ""
+
+#: ./interfaces.py:433
+msgid "Base Width"
+msgstr ""
+
+#: ./interfaces.py:251
+msgid "Believer Organization"
 msgstr ""
 
 #: ./profiles/default/types/BiXieWu.xml
 msgid "BiXieWu"
 msgstr ""
 
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:223
-msgid "Booking"
-msgstr ""
-
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:155
-msgid "Building Description"
-msgstr ""
-
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:159
-msgid "Building Status"
-msgstr ""
-
-#: ./liuyu.py:120
-#: ./liuyu_templates/view.pt:103
-msgid "Buildings"
-msgstr ""
-
+#: ./interfaces.py:326
 #: ./profiles/default/types/BiXieWu.xml
-msgid "CRGIS BiXieWu Type"
+msgid "BiXieWu Type"
 msgstr ""
 
-#: ./profiles/default/types/LiuYu.xml
-msgid "CRGIS LiuYu Type"
+#: ./interfaces.py:528
+msgid "Body"
 msgstr ""
 
-#: ./profiles/default/types/Theater.xml
-msgid "CRGIS Theater Type"
+#: ./interfaces.py:138
+msgid "Building Overview"
 msgstr ""
 
-#: ./profiles/default/types/Tree.xml
-msgid "CRGIS Tree Type"
+#: ./interfaces.py:58
+msgid "Building Type"
 msgstr ""
 
-#: ./liuyu.py:101
-#: ./liuyu_templates/view.pt:85
-msgid "Castle"
+#: ./interfaces.py:62
+msgid "Building Type Other"
 msgstr ""
 
-#: ./vocabularies.py:77
+#: ./configure.zcml:31
+msgid "CRGIS Content Types"
+msgstr ""
+
+#: ./configure.zcml:31
+msgid "CRGIS Content Types Package"
+msgstr ""
+
+#: ./interfaces.py:456
+msgid "Category"
+msgstr ""
+
+#: ./vocabularies.py:36
 msgid "Changhua County"
 msgstr ""
 
-#: ./vocabularies.py:79
+#: ./vocabularies.py:38
 msgid "Chiayi City"
 msgstr ""
 
-#: ./vocabularies.py:80
+#: ./vocabularies.py:39
 msgid "Chiayi County"
 msgstr ""
 
-#: ./liuyu.py:63
-#: ./liuyu_templates/view.pt:43
-msgid "City"
+#: ./interfaces.py:397
+msgid "Color"
 msgstr ""
 
-#: ./bixiewu.py:45
-#: ./bixiewu_templates/view.pt:14
+#: ./browser/bixiewu.pt:14
+#: ./interfaces.py:330
 msgid "Common Era"
 msgstr ""
 
-#: ./liuyu.py:53
-#: ./liuyu_templates/view.pt:35
-msgid "Country"
+#: ./interfaces.py:22
+msgid "Coordinate Type"
 msgstr ""
 
-#: ./liuyu.py:68
-#: ./liuyu_templates/view.pt:47
+#: ./interfaces.py:310
 msgid "County"
 msgstr ""
 
@@ -132,434 +124,495 @@ msgstr ""
 msgid "County-Controlled"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:108
-msgid "Culture Info"
+#: ./interfaces.py:268
+msgid "DaiTien XuanSho"
 msgstr ""
 
-#: ./bixiewu.py:39
+#: ./interfaces.py:18
 msgid "Data Source"
+msgstr ""
+
+#: ./interfaces.py:126
+msgid "Deities Accompany"
+msgstr ""
+
+#: ./interfaces.py:44
+msgid "Deity Company"
+msgstr ""
+
+#: ./interfaces.py:30
+msgid "Deity Host"
+msgstr ""
+
+#: ./interfaces.py:40
+msgid "Deity Host Alias"
+msgstr ""
+
+#: ./interfaces.py:36
+msgid "Deity Host Other"
+msgstr ""
+
+#: ./interfaces.py:302
+msgid "Description"
+msgstr ""
+
+#: ./interfaces.py:255
+msgid "Description Other"
 msgstr ""
 
 #: ./vocabularies.py:15
 msgid "Direct-Controlled"
 msgstr ""
 
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:227
-msgid "Editor"
+#: ./interfaces.py:372
+msgid "Environment Description"
 msgstr ""
 
-#: ./liuyu.py:48
-msgid "End Month"
+#: ./interfaces.py:334
+msgid "Era Reference"
 msgstr ""
 
-#: ./liuyu.py:43
-msgid "End Year"
+#: ./interfaces.py:114
+msgid "Established Year by Taiwan Temple Collection"
 msgstr ""
 
-#: ./vocabularies.py:28
-msgid "Exact"
+#: ./interfaces.py:118
+msgid "Established Year by Taiwan Temple Overview"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Example: Exist, Description..."
+#: ./interfaces.py:364
+msgid "Establishment Description"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Example: Name, Description"
+#: ./interfaces.py:110
+msgid "Establishment History"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Example: Name, Title (Year)"
+#: ./interfaces.py:98
+msgid "Estimated Earliest Founding Year"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Example: Title One"
+#: ./interfaces.py:102
+msgid "Estimated Latest Founding Year"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Example: Title Two, Title Three"
-msgstr ""
-
-#: ./bixiewu.py:50
-#: ./bixiewu_templates/view.pt:19
+#: ./browser/bixiewu.pt:19
+#: ./interfaces.py:338
 msgid "Facing"
 msgstr ""
 
-#: ./bixiewu.py:15
-msgid "Fieldwork"
+#: ./interfaces.py:189
+msgid "FenLingXiTong"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Format Example: 1916-01-15"
+#: ./interfaces.py:195
+msgid "FenLingXiTong Other"
 msgstr ""
 
-#: ./liuyu.py:108
-#: ./liuyu_templates/view.pt:92
-msgid "Fortress"
+#: ./interfaces.py:391
+msgid "FengShiYe"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Function"
+#: ./interfaces.py:166
+msgid "Filling Date"
 msgstr ""
 
-#: ./vocabularies.py:27
-msgid "Fuzzy"
+#: ./interfaces.py:162
+msgid "Filling Person"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:52
-msgid "Geography Info"
+#: ./interfaces.py:274
+msgid "Frequence"
 msgstr ""
 
-#: ./bixiewu.py:13
-msgid "Governmental"
+#: ./interfaces.py:70
+msgid "Funding Type"
 msgstr ""
 
-#: ./liuyu.py:131
-msgid "Historic People"
+#: ./interfaces.py:409
+msgid "Gender"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:69
-msgid "History Info"
+#: ./behaviors/configure.zcml:17
+msgid "Generates short name based on Id."
 msgstr ""
 
-#: ./vocabularies.py:73
+#: ./behaviors/configure.zcml:11
+msgid "Generates short name based on creation date."
+msgstr ""
+
+#: ./interfaces.py:401
+msgid "Genre"
+msgstr ""
+
+#: ./interfaces.py:94
+msgid "Homepage"
+msgstr ""
+
+#: ./vocabularies.py:32
 msgid "Hsinchu City"
 msgstr ""
 
-#: ./vocabularies.py:72
+#: ./vocabularies.py:31
 msgid "Hsinchu County"
 msgstr ""
 
-#: ./vocabularies.py:85
+#: ./vocabularies.py:44
 msgid "Hualien County"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Id Number"
+#: ./interfaces.py:453
+msgid "Image"
 msgstr ""
 
-#: ./vocabularies.py:82
+#: ./interfaces.py:134
+msgid "Introduction"
+msgstr ""
+
+#: ./interfaces.py:181
+msgid "JiSiFanWei"
+msgstr ""
+
+#: ./interfaces.py:171
+msgid "JiSiZuQun"
+msgstr ""
+
+#: ./interfaces.py:177
+msgid "JiSiZuQun Other"
+msgstr ""
+
+#: ./vocabularies.py:41
 msgid "Kaohsiung City"
 msgstr ""
 
-#: ./vocabularies.py:68
+#: ./vocabularies.py:27
 msgid "Keelung City"
 msgstr ""
 
-#: ./vocabularies.py:89
+#: ./vocabularies.py:48
 msgid "Kinmen County"
 msgstr ""
 
-#: ./liuyu.py:125
-#: ./liuyu_templates/view.pt:110
-msgid "Legend"
+#: ./interfaces.py:484
+msgid "Latitude"
 msgstr ""
 
-#: ./vocabularies.py:88
+#: ./vocabularies.py:47
 msgid "Lienchiang County"
 msgstr ""
 
-#: ./profiles/default/types/LiuYu.xml
-msgid "LiuYu"
+#: ./interfaces.py:158
+msgid "Literature Reference"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Media"
+#: ./interfaces.py:350
+msgid "Localtional Attribute"
 msgstr ""
 
-#: ./vocabularies.py:74
+#: ./interfaces.py:480
+msgid "Longtitude"
+msgstr ""
+
+#: ./interfaces.py:245
+msgid "Luck Divination"
+msgstr ""
+
+#: ./interfaces.py:342
+msgid "Material"
+msgstr ""
+
+#: ./interfaces.py:239
+msgid "Medicine Divination"
+msgstr ""
+
+#: ./vocabularies.py:33
 msgid "Miaoli County"
 msgstr ""
 
-#: ./vocabularies.py:40
-msgid "Mixed"
+#: ./behaviors/configure.zcml:11
+msgid "Name from Creation Date"
 msgstr ""
 
-#: ./liuyu.py:87
-#: ./liuyu_templates/view.pt:71
-msgid "Monastery"
+#: ./behaviors/configure.zcml:17
+msgid "Name from Id"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:28
-msgid "Month_end"
-msgstr ""
-
-#: ./liuyu_templates/view.pt:20
-msgid "Month_start"
-msgstr ""
-
-#: ./liuyu.py:80
-#: ./liuyu_templates/view.pt:61
-msgid "Mountain"
-msgstr ""
-
-#: ./vocabularies.py:39
-msgid "Movie"
-msgstr ""
-
-#: ./vocabularies.py:76
+#: ./vocabularies.py:35
 msgid "Nantou County"
+msgstr ""
+
+#: ./interfaces.py:146
+msgid "Narrate"
 msgstr ""
 
 #: ./vocabularies.py:14
 msgid "National"
 msgstr ""
 
-#: ./vocabularies.py:70
+#: ./vocabularies.py:29
 msgid "New Taipei City"
 msgstr ""
 
-#: ./liuyu.py:154
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:231
-msgid "Note"
+#: ./interfaces.py:219
+msgid "NianLiQingSheng"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Online Resource"
+#: ./interfaces.py:225
+msgid "NianLiQingSheng Other"
 msgstr ""
 
-#: ./vocabularies.py:41
-msgid "Opera"
+#: ./interfaces.py:150
+msgid "Non Narrate"
 msgstr ""
 
-#: ./theater_templates/view.pt:179
-msgid "Operating"
+#: ./interfaces.py:74
+msgid "Organizing Type"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Operating Description"
+#: ./interfaces.py:78
+msgid "Organizing Type Other"
 msgstr ""
 
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:167
-msgid "Operating End"
+#: ./interfaces.py:500
+msgid "Owner Name"
 msgstr ""
 
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:171
-msgid "Operating Period"
+#: ./interfaces.py:504
+msgid "Owner Organization"
 msgstr ""
 
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:163
-msgid "Operating Start"
+#: ./interfaces.py:508
+msgid "Owner Title"
 msgstr ""
 
-#: ./bixiewu.py:16
-#: ./models/theater.xml
-msgid "Other"
-msgstr ""
-
-#: ./vocabularies.py:87
+#: ./vocabularies.py:46
 msgid "Penghu County"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:114
-msgid "People"
+#: ./interfaces.py:86
+msgid "Person In Charge"
 msgstr ""
 
-#: ./vocabularies.py:83
+#: ./profiles/default/types/Photo.xml
+msgid "Photo"
+msgstr ""
+
+#: ./interfaces.py:496
+msgid "Photo Day"
+msgstr ""
+
+#: ./interfaces.py:492
+msgid "Photo Month"
+msgstr ""
+
+#: ./profiles/default/types/Photo.xml
+msgid "Photo Type"
+msgstr ""
+
+#: ./interfaces.py:488
+msgid "Photo Year"
+msgstr ""
+
+#: ./profiles/default/types/Pilgrimage.xml
+msgid "Pilgrimage"
+msgstr ""
+
+#: ./profiles/default/types/Pilgrimage.xml
+msgid "Pilgrimage Type"
+msgstr ""
+
+#: ./vocabularies.py:42
 msgid "Pingtung County"
 msgstr ""
 
-#: ./models/theater.xml
-msgid "Program"
+#: ./interfaces.py:405
+msgid "Posture"
 msgstr ""
 
-#: ./models/theater.xml
+#: ./interfaces.py:354
+msgid "Purpose"
+msgstr ""
+
+#: ./interfaces.py:376
 msgid "Reference"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:119
-msgid "Reference Info"
+#: ./interfaces.py:122
+msgid "References on Establishment"
 msgstr ""
 
-#: ./liuyu.py:144
-#: ./liuyu_templates/view.pt:121
-msgid "Reference Name"
+#: ./interfaces.py:66
+msgid "Registered Name"
 msgstr ""
 
-#: ./liuyu.py:149
-#: ./liuyu_templates/view.pt:125
-msgid "Reference Text"
+#: ./interfaces.py:384
+msgid "Related Temples"
 msgstr ""
 
-#: ./theater_templates/view.pt:221
-msgid "Registry"
+#: ./interfaces.py:50
+msgid "Religion Type"
 msgstr ""
 
-#: ./liuyu.py:115
-#: ./liuyu_templates/view.pt:99
-msgid "Relices"
+#: ./interfaces.py:54
+msgid "Religion Type Other"
 msgstr ""
 
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:216
+#: ./interfaces.py:380
 msgid "Remark"
 msgstr ""
 
-#: ./liuyu.py:73
-#: ./liuyu_templates/view.pt:54
-msgid "River"
+#: ./profiles/default/types/Schedule.xml
+msgid "Schedule"
 msgstr ""
 
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:201
-msgid "Source"
+#: ./profiles/default/types/Schedule.xml
+msgid "Schedule Type"
 msgstr ""
 
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:183
-msgid "Staff"
+#: ./interfaces.py:413
+msgid "ShiZi Depth"
 msgstr ""
 
-#: ./liuyu.py:38
-msgid "Start Month"
+#: ./interfaces.py:425
+msgid "ShiZi Head"
 msgstr ""
 
-#: ./liuyu.py:33
-msgid "Start Year"
+#: ./interfaces.py:421
+msgid "ShiZi Height"
 msgstr ""
 
-#: ./liuyu.py:58
-#: ./liuyu_templates/view.pt:39
-msgid "State"
+#: ./interfaces.py:417
+msgid "ShiZi Width"
 msgstr ""
 
-#: ./vocabularies.py:55
-msgid "TWBANK"
+#: ./interfaces.py:26
+msgid "Sitting Facing"
 msgstr ""
 
-#: ./vocabularies.py:54
-msgid "TWCORP"
+#: ./interfaces.py:368
+msgid "Spatial Attribute"
 msgstr ""
 
-#: ./vocabularies.py:52
-msgid "TWDAILY"
+#: ./interfaces.py:286
+msgid "SungWang XingShi"
 msgstr ""
 
-#: ./vocabularies.py:53
-msgid "TWDAILYZH"
-msgstr ""
-
-#: ./vocabularies.py:75
+#: ./vocabularies.py:34
 msgid "Taichung City"
 msgstr ""
 
-#: ./vocabularies.py:81
+#: ./vocabularies.py:40
 msgid "Tainan City"
 msgstr ""
 
-#: ./vocabularies.py:69
+#: ./vocabularies.py:28
 msgid "Taipei City"
 msgstr ""
 
-#: ./vocabularies.py:86
+#: ./vocabularies.py:45
 msgid "Taitung County"
 msgstr ""
 
-#: ./vocabularies.py:71
+#: ./vocabularies.py:30
 msgid "Taoyuan County"
 msgstr ""
 
-#: ./profiles/default/types/Theater.xml
-msgid "Theater"
+#: ./interfaces.py:90
+msgid "Telephone"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:14
-msgid "Time Info"
+#: ./profiles/default/types/Temple.xml
+msgid "Temple"
 msgstr ""
 
-#: ./bixiewu.py:35
-#: ./liuyu.py:29
-#: ./tree_templates/view.pt:14
+#: ./profiles/default/types/Temple.xml
+msgid "Temple Type"
+msgstr ""
+
+#: ./interfaces.py:14
 msgid "Title"
 msgstr ""
 
-#: ./liuyu.py:94
-#: ./liuyu_templates/view.pt:78
-msgid "Tomb"
+#: ./interfaces.py:314
+msgid "Town"
 msgstr ""
 
-#: ./profiles/default/types/Tree.xml
-msgid "Tree"
+#: ./interfaces.py:318
+msgid "Village"
 msgstr ""
 
-#: ./tree.py:26
-msgid "Tree ID"
+#: ./interfaces.py:393
+msgid "Village Name"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:24
-msgid "Year_end"
+#: ./interfaces.py:346
+msgid "Volumn"
 msgstr ""
 
-#: ./liuyu_templates/view.pt:16
-msgid "Year_start"
+#: ./interfaces.py:280
+msgid "WangTsuan Material"
 msgstr ""
 
-#: ./vocabularies.py:84
+#: ./interfaces.py:258
+msgid "WangYe"
+msgstr ""
+
+#: ./interfaces.py:260
+msgid "WangYe Name"
+msgstr ""
+
+#: ./interfaces.py:229
+msgid "WangYeXianXiang"
+msgstr ""
+
+#: ./interfaces.py:235
+msgid "WangYeXianXiang Other"
+msgstr ""
+
+#: ./interfaces.py:130
+msgid "Worship"
+msgstr ""
+
+#: ./interfaces.py:360
+msgid "Worship Description"
+msgstr ""
+
+#: ./interfaces.py:209
+msgid "XiangHuoLaiYuan"
+msgstr ""
+
+#: ./interfaces.py:215
+msgid "XiangHuoLaiYuan Other"
+msgstr ""
+
+#: ./interfaces.py:185
+msgid "XinYangFangWei"
+msgstr ""
+
+#: ./interfaces.py:290
+msgid "YSGS"
+msgstr ""
+
+#: ./interfaces.py:106
+msgid "Year Accuracy"
+msgstr ""
+
+#: ./interfaces.py:199
+msgid "YiMingMiaoYu"
+msgstr ""
+
+#: ./interfaces.py:205
+msgid "YiMingMiaoYu Other"
+msgstr ""
+
+#: ./vocabularies.py:43
 msgid "Yilan County"
 msgstr ""
 
-#: ./vocabularies.py:78
+#: ./interfaces.py:264
+msgid "YungS WangTsuan"
+msgstr ""
+
+#: ./vocabularies.py:37
 msgid "Yunlin County"
 msgstr ""
-
-#: ./liuyu.py:139
-msgid "ZiZhi TongJian"
-msgstr ""
-
-#. Default: "Reference"
-#: ./theater_templates/view.pt:199
-msgid "legend_ref"
-msgstr ""
-
-#. Default: "Administrative Area"
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:137
-msgid "theater_adm"
-msgstr ""
-
-#. Default: "Title"
-#: ./models/theater.xml
-#: ./theater_templates/view.pt:117
-msgid "theater_title"
-msgstr ""
-
-#. Default: "Title (1895-1899)"
-#: ./models/theater.xml
-msgid "theater_title_1"
-msgstr ""
-
-#. Default: "Title (1900-1909)"
-#: ./models/theater.xml
-msgid "theater_title_2"
-msgstr ""
-
-#. Default: "Title (1910-1919)"
-#: ./models/theater.xml
-msgid "theater_title_3"
-msgstr ""
-
-#. Default: "Title (1920-1929)"
-#: ./models/theater.xml
-msgid "theater_title_4"
-msgstr ""
-
-#. Default: "Title (1930-1939)"
-#: ./models/theater.xml
-msgid "theater_title_5"
-msgstr ""
-
-#. Default: "Title (1940-1945)"
-#: ./models/theater.xml
-msgid "theater_title_6"
-msgstr ""
-
-#. Default: "Title (Post-WW2)"
-#: ./models/theater.xml
-msgid "theater_title_7"
-msgstr ""
-
