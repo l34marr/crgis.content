@@ -372,63 +372,63 @@ msgstr "組織型態 (其他)"
 
 #: ./interfaces.py:500
 msgid "Owner Name"
-msgstr ""
+msgstr "圖片拍攝/提供者姓名"
 
 #: ./interfaces.py:504
 msgid "Owner Organization"
-msgstr ""
+msgstr "圖片拍攝/提供者單位"
 
 #: ./interfaces.py:508
 msgid "Owner Title"
-msgstr ""
+msgstr "圖片拍攝/提供者職稱"
 
 #: ./vocabularies.py:46
 msgid "Penghu County"
-msgstr ""
+msgstr "澎湖縣"
 
 #: ./interfaces.py:86
 msgid "Person In Charge"
-msgstr ""
+msgstr "負責人"
 
 #: ./profiles/default/types/Photo.xml
 msgid "Photo"
-msgstr ""
+msgstr "圖片"
 
 #: ./interfaces.py:496
 msgid "Photo Day"
-msgstr ""
+msgstr "拍攝/製作日期"
 
 #: ./interfaces.py:492
 msgid "Photo Month"
-msgstr ""
+msgstr "拍攝/製作月份"
 
 #: ./profiles/default/types/Photo.xml
 msgid "Photo Type"
-msgstr ""
+msgstr "圖片型別"
 
 #: ./interfaces.py:488
 msgid "Photo Year"
-msgstr ""
+msgstr "拍攝/製作年份"
 
 #: ./profiles/default/types/Pilgrimage.xml
 msgid "Pilgrimage"
-msgstr ""
+msgstr "遶境"
 
 #: ./profiles/default/types/Pilgrimage.xml
 msgid "Pilgrimage Type"
-msgstr ""
+msgstr "遶境型別"
 
 #: ./vocabularies.py:42
 msgid "Pingtung County"
-msgstr ""
+msgstr "屏東縣"
 
 #: ./interfaces.py:405
 msgid "Posture"
-msgstr ""
+msgstr "形制"
 
 #: ./interfaces.py:354
 msgid "Purpose"
-msgstr ""
+msgstr "功用"
 
 #: ./interfaces.py:376
 msgid "Reference"
@@ -436,23 +436,23 @@ msgstr "相關文獻"
 
 #: ./interfaces.py:122
 msgid "References on Establishment"
-msgstr ""
+msgstr "創立年代參考文獻"
 
 #: ./interfaces.py:66
 msgid "Registered Name"
-msgstr ""
+msgstr "登記名稱"
 
 #: ./interfaces.py:384
 msgid "Related Temples"
-msgstr ""
+msgstr "相關寺廟"
 
 #: ./interfaces.py:50
 msgid "Religion Type"
-msgstr ""
+msgstr "教別"
 
 #: ./interfaces.py:54
 msgid "Religion Type Other"
-msgstr ""
+msgstr "教別 (其他)"
 
 #: ./interfaces.py:380
 msgid "Remark"
@@ -460,35 +460,35 @@ msgstr "備註"
 
 #: ./profiles/default/types/Schedule.xml
 msgid "Schedule"
-msgstr ""
+msgstr "行程"
 
 #: ./profiles/default/types/Schedule.xml
 msgid "Schedule Type"
-msgstr ""
+msgstr "行程型別"
 
 #: ./interfaces.py:413
 msgid "ShiZi Depth"
-msgstr ""
+msgstr "獅子尺寸 (深)"
 
 #: ./interfaces.py:425
 msgid "ShiZi Head"
-msgstr ""
+msgstr "獅子尺寸 (頭)"
 
 #: ./interfaces.py:421
 msgid "ShiZi Height"
-msgstr ""
+msgstr "獅子尺寸 (高)"
 
 #: ./interfaces.py:417
 msgid "ShiZi Width"
-msgstr ""
+msgstr "獅子尺寸 (面寬)"
 
 #: ./interfaces.py:26
 msgid "Sitting Facing"
-msgstr ""
+msgstr "坐向"
 
 #: ./interfaces.py:368
 msgid "Spatial Attribute"
-msgstr ""
+msgstr "空間屬性"
 
 #: ./interfaces.py:286
 msgid "SungWang XingShi"
@@ -496,35 +496,35 @@ msgstr ""
 
 #: ./vocabularies.py:34
 msgid "Taichung City"
-msgstr ""
+msgstr "臺中市"
 
 #: ./vocabularies.py:40
 msgid "Tainan City"
-msgstr ""
+msgstr "臺南市"
 
 #: ./vocabularies.py:28
 msgid "Taipei City"
-msgstr ""
+msgstr "臺北市"
 
 #: ./vocabularies.py:45
 msgid "Taitung County"
-msgstr ""
+msgstr "臺東縣"
 
 #: ./vocabularies.py:30
 msgid "Taoyuan County"
-msgstr ""
+msgstr "桃園縣"
 
 #: ./interfaces.py:90
 msgid "Telephone"
-msgstr ""
+msgstr "電話"
 
 #: ./profiles/default/types/Temple.xml
 msgid "Temple"
-msgstr ""
+msgstr "寺廟"
 
 #: ./profiles/default/types/Temple.xml
 msgid "Temple Type"
-msgstr ""
+msgstr "寺廟型別"
 
 #: ./interfaces.py:14
 msgid "Title"
@@ -532,11 +532,11 @@ msgstr "名稱"
 
 #: ./interfaces.py:314
 msgid "Town"
-msgstr ""
+msgstr "鄉鎮"
 
 #: ./interfaces.py:318
 msgid "Village"
-msgstr ""
+msgstr "所屬村落"
 
 #: ./interfaces.py:393
 msgid "Village Name"
@@ -544,7 +544,7 @@ msgstr ""
 
 #: ./interfaces.py:346
 msgid "Volumn"
-msgstr ""
+msgstr "材積"
 
 #: ./interfaces.py:280
 msgid "WangTsuan Material"
@@ -560,31 +560,31 @@ msgstr ""
 
 #: ./interfaces.py:229
 msgid "WangYeXianXiang"
-msgstr ""
+msgstr "王爺選項"
 
 #: ./interfaces.py:235
 msgid "WangYeXianXiang Other"
-msgstr ""
+msgstr "王爺選項 (其他)"
 
 #: ./interfaces.py:130
 msgid "Worship"
-msgstr ""
+msgstr "祭祀活動"
 
 #: ./interfaces.py:360
 msgid "Worship Description"
-msgstr ""
+msgstr "祭祀日期"
 
 #: ./interfaces.py:209
 msgid "XiangHuoLaiYuan"
-msgstr ""
+msgstr "香火來源"
 
 #: ./interfaces.py:215
 msgid "XiangHuoLaiYuan Other"
-msgstr ""
+msgstr "香火來源 (其他)"
 
 #: ./interfaces.py:185
 msgid "XinYangFangWei"
-msgstr ""
+msgstr "信仰範圍"
 
 #: ./interfaces.py:290
 msgid "YSGS"
@@ -592,19 +592,19 @@ msgstr ""
 
 #: ./interfaces.py:106
 msgid "Year Accuracy"
-msgstr ""
+msgstr "年份精確度"
 
 #: ./interfaces.py:199
 msgid "YiMingMiaoYu"
-msgstr ""
+msgstr "移民廟宇"
 
 #: ./interfaces.py:205
 msgid "YiMingMiaoYu Other"
-msgstr ""
+msgstr "移民廟宇 (其他)"
 
 #: ./vocabularies.py:43
 msgid "Yilan County"
-msgstr ""
+msgstr "宜蘭縣"
 
 #: ./interfaces.py:264
 msgid "YungS WangTsuan"
@@ -612,4 +612,4 @@ msgstr ""
 
 #: ./vocabularies.py:37
 msgid "Yunlin County"
-msgstr ""
+msgstr "雲林縣"
