@@ -46,7 +46,8 @@ class MyMigration(BrowserView):
         '''
         data = {
             'Temple':
-                {'Temple': (
+                {'target_type': 'Temple',
+                 'field_mapping': [
                     {'AT_field_name': 'data_src',
                      'AT_field_type': 'Products.Archetypes.Field.StringField',
                      'DX_field_name': 'data_src',
@@ -266,11 +267,12 @@ class MyMigration(BrowserView):
                     {'AT_field_name': 'desc_o',
                      'AT_field_type': 'Products.Archetypes.Field.TextField',
                      'DX_field_name': 'desc_o',
-                     'DX_field_type': 'RichText'},
-                 )
+                     'DX_field_type': 'RichText'}
+                 ]
                 },
             'BiXieWu':
-                {'BiXieWu': (
+                {'target_type': 'BiXieWu',
+                 'field_mapping': [
                     {'AT_field_name': 'data_src',
                      'AT_field_type': 'Products.Archetypes.Field.StringField',
                      'DX_field_name': 'data_src',
@@ -398,12 +400,14 @@ class MyMigration(BrowserView):
                     {'AT_field_name': 'base_h',
                      'AT_field_type': 'Products.Archetypes.Field.StringField',
                      'DX_field_name': 'base_h',
-                     'DX_field_type': 'StringField'},
-                 )
+                     'DX_field_type': 'StringField'}
+                 ]
                 },
             'Photo':
-                {'Photo': (
+                {'target_type': 'Photo',
+                 'field_mapping': [
                     {'AT_field_name': 'image',
+                     'AT_field_type': 'Products.Archetypes.Field.ImageField',
                      'DX_field_name': 'image',
                      'DX_field_type': 'NamedBlobImage'},
                     {'AT_field_name': 'category',
@@ -461,19 +465,21 @@ class MyMigration(BrowserView):
                     {'AT_field_name': 'reference',
                      'AT_field_type': 'Products.Archetypes.Field.TextField',
                      'DX_field_name': 'reference',
-                     'DX_field_type': 'RichText'},
-                 )
+                     'DX_field_type': 'RichText'}
+                 ]
                 },
             'Pilgrimage':
-                {'Pilgrimage': (
+                {'target_type': 'Pilgrimage',
+                 'field_mapping': [
                     {'AT_field_name': 'body',
                      'AT_field_type': 'Products.Archetypes.Field.TextField',
                      'DX_field_name': 'body',
-                     'DX_field_type': 'RichText'},
-                 )
+                     'DX_field_type': 'RichText'}
+                 ]
                 },
             'Schedule':
-                {'Schedule': (
+                {'target_type': 'Schedule',
+                 'field_mapping': [
                     {'AT_field_name': 'body',
                      'AT_field_type': 'Products.Archetypes.Field.TextField',
                      'DX_field_name': 'body',
@@ -481,21 +487,20 @@ class MyMigration(BrowserView):
                     {'AT_field_name': 'temples',
                      'AT_field_type': 'Products.Archetypes.Field.ReferenceField',
                      'DX_field_name': 'temples',
-                     'DX_field_type': 'RelationList'},
-                 )
-                },
+                     'DX_field_type': 'RelationList'}
+                 ]
+                }
         }
 
         # now that the data dict contains relevant information, we can call
         # the custom migrator
         migration_results = []
         for at_typename in data:
-            dx_typename = at_typename
-            fields_mapping = data[at_typename][dx_typename]
+            fields_mapping = data[at_typename]['field_mapping']
             res = migrateCustomAT(
                 fields_mapping=fields_mapping,
                 src_type=at_typename,
-                dst_type=dx_typename,
+                dst_type=data[at_typename]['target_type'],
                 dry_run=dry_run)
             migration_results.append({'type': at_typename,
                                       'infos': res})
