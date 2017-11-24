@@ -323,7 +323,7 @@ class IBiXieWu(model.Schema):
         required=False,
     )
     btype = schema.TextLine(
-        title=_(u"BiXieWu Type"),
+        title=_(u"BiXieWu_Type"),
         required=False,
     )
     era = schema.TextLine(
