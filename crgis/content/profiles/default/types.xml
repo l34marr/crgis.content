@@ -11,4 +11,5 @@
  <object name="Photo" meta_type="Dexterity FTI" />
  <object name="Pilgrimage" meta_type="Dexterity FTI" />
  <object name="Schedule" meta_type="Dexterity FTI" />
+ <object name="Buddhist" meta_type="Dexterity FTI" />
 </object>

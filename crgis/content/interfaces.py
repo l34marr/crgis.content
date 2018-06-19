@@ -555,3 +555,29 @@ class ISchedule(model.Schema):
     )
 
 
+class IBuddhist(model.Schema):
+    """Buddhist Type"""
+    title = schema.TextLine(
+        title=_(u"Title"),
+        required=False,
+    )
+    description = schema.Text(
+        title=_(u"Description"),
+        required=False,
+    )
+    area1 = schema.TextLine(
+        title=_(u"1st-level Administrative Area"),
+        required=False,
+    )
+    area2 = schema.TextLine(
+        title=_(u"2nd-level Adminstrative Area"),
+        required=False,
+    )
+    category = schema.Tuple(
+        title=_(u"Category"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=()
+    )
+
+
