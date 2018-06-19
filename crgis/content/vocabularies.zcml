@@ -5,22 +5,6 @@
   i18n_domain="crgis.content">
 
   <utility
-    name="adm_level"
-    component=".vocabularies.AdminLevelFactory"
-    provides="zope.schema.interfaces.IVocabularyFactory" />
-  <utility
-    name="theater.accrcy_l"
-    component=".vocabularies.TheaterAccrcyLFactory"
-    provides="zope.schema.interfaces.IVocabularyFactory" />
-  <utility
-    name="theater.function"
-    component=".vocabularies.TheaterFunctionFactory"
-    provides="zope.schema.interfaces.IVocabularyFactory" />
-  <utility
-    name="theater.source"
-    component=".vocabularies.TheaterSourceFactory"
-    provides="zope.schema.interfaces.IVocabularyFactory" />
-  <utility
     name="region"
     component=".vocabularies.regionFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
