@@ -2,7 +2,7 @@ from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.ATContentTypes.content.schemata import ATContentTypeSchema
 from Products.statusmessages.interfaces import IStatusMessage
-from plone.app.contenttypes.migration.migration import migrateCustomAT
+#from plone.app.contenttypes.migration.migration import migrateCustomAT
 
 
 class MyMigration(BrowserView):
