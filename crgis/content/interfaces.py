@@ -14,13 +14,15 @@ class ITemple(model.Schema):
         title=_(u"Title"),
         required=False,
     )
-    data_src = schema.TextLine(
+    data_src = schema.Choice(
         title=_(u"Data Source"),
         required=False,
+        vocabulary=u"data_src",
     )
-    coordinate = schema.TextLine(
+    coordinate = schema.Choice(
         title=_(u"Coordinate Type"),
         required=False,
+        vocabulary=u"coordinate",
     )
     facing = schema.TextLine(
         title=_(u"Sitting Facing"),
@@ -46,17 +48,19 @@ class ITemple(model.Schema):
         value_type=schema.TextLine(),
         missing_value=()
     )
-    religion = schema.TextLine(
+    religion = schema.Choice(
         title=_(u"Religion Type"),
         required=False,
+        vocabulary=u"religion",
     )
     religion_o = schema.TextLine(
         title=_(u"Religion Type Other"),
         required=False,
     )
-    building = schema.TextLine(
+    building = schema.Choice(
         title=_(u"Building Type"),
         required=False,
+        vocabulary=u"building",
     )
     building_o = schema.TextLine(
         title=_(u"Building Type Other"),
@@ -66,13 +70,15 @@ class ITemple(model.Schema):
         title=_(u"Registered Name"),
         required=False,
     )
-    funding = schema.TextLine(
+    funding = schema.Choice(
         title=_(u"Funding Type"),
         required=False,
+        vocabulary=u"funding",
     )
-    organizing = schema.TextLine(
+    organizing = schema.Choice(
         title=_(u"Organizing Type"),
         required=False,
+        vocabulary=u"organizing",
     )
     organizing_o = schema.TextLine(
         title=_(u"Organizing Type Other"),
@@ -102,9 +108,10 @@ class ITemple(model.Schema):
         title=_(u"Estimated Latest Founding Year"),
         required=False,
     )
-    year_accuracy = schema.TextLine(
+    year_accuracy = schema.Choice(
         title=_(u"Year Accuracy"),
         required=False,
+        vocabulary=u"year_accuracy",
     )
     history = RichTextField(
         title=_(u"Establishment History"),
@@ -170,7 +177,9 @@ class ITemple(model.Schema):
     jstq = schema.Tuple(
         title=_(u"JiSiZuQun"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"jstq",
+        ),
         missing_value=()
     )
     jstq_o = schema.TextLine(
@@ -188,7 +197,9 @@ class ITemple(model.Schema):
     flxt = schema.Tuple(
         title=_(u"FenLingXiTong"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"flxt",
+        ),
         missing_value=()
     )
     flxt_o = schema.TextLine(
@@ -198,7 +209,9 @@ class ITemple(model.Schema):
     ymmy = schema.Tuple(
         title=_(u"YiMingMiaoYu"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"ymmy",
+        ),
         missing_value=()
     )
     ymmy_o = schema.TextLine(
@@ -208,7 +221,9 @@ class ITemple(model.Schema):
     xhly = schema.Tuple(
         title=_(u"XiangHuoLaiYuan"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"xhly",
+        ),
         missing_value=()
     )
     xhly_o = schema.TextLine(
@@ -218,7 +233,9 @@ class ITemple(model.Schema):
     nlqs = schema.Tuple(
         title=_(u"NianLiQingSheng"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"nlqs",
+        ),
         missing_value=()
     )
     nlqs_o = schema.TextLine(
@@ -228,7 +245,9 @@ class ITemple(model.Schema):
     wyxx = schema.Tuple(
         title=_(u"WangYeXianXiang"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"wyxx",
+        ),
         missing_value=()
     )
     wyxx_o = schema.TextLine(
@@ -238,13 +257,17 @@ class ITemple(model.Schema):
     medicine = schema.Tuple(
         title=_(u"Medicine Divination"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"medicine",
+        ),
         missing_value=()
     )
     luck = schema.Tuple(
         title=_(u"Luck Divination"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"luck",
+        ),
         missing_value=()
     )
     organization = RichTextField(
@@ -302,9 +325,10 @@ class IBiXieWu(model.Schema):
         title=_(u"Description"),
         required=False,
     )
-    data_src = schema.TextLine(
+    data_src = schema.Choice(
         title=_(u"Data Source"),
         required=False,
+        vocabulary=u'data_src',
     )
     lct_cou = schema.TextLine(
         title=_(u"County"),

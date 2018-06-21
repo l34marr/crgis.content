@@ -5,8 +5,83 @@
   i18n_domain="crgis.content">
 
   <utility
+    name="data_src"
+    component=".vocabularies.data_srcFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="coordinate"
+    component=".vocabularies.coordinateFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
     name="region"
     component=".vocabularies.regionFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="religion"
+    component=".vocabularies.religionFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="building"
+    component=".vocabularies.buildingFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="funding"
+    component=".vocabularies.fundingFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="organizing"
+    component=".vocabularies.organizingFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="year_accuracy"
+    component=".vocabularies.yearAccuracyFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="jstq"
+    component=".vocabularies.jstqFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="flxt"
+    component=".vocabularies.flxtFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="ymmy"
+    component=".vocabularies.ymmyFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="xhly"
+    component=".vocabularies.xhlyFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="nlqs"
+    component=".vocabularies.nlqsFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="wyxx"
+    component=".vocabularies.wyxxFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="medicine"
+    component=".vocabularies.medicineFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="luck"
+    component=".vocabularies.luckFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
 </configure>
