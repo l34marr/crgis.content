@@ -10,4 +10,10 @@
     class=".view.MyView"
     permission="zope2.View" />
 
+  <browser:page
+      name="set_default_view_status"
+      for="*"
+      class=".view.SetDefaultViewStatus"
+      permission="cmf.ManagePortal"
+  />
 </configure>
