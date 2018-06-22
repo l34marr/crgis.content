@@ -40,6 +40,11 @@
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
   <utility
+    name="deity_name"
+    component=".vocabularies.deity_nameFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
     name="year_accuracy"
     component=".vocabularies.yearAccuracyFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />

@@ -31,7 +31,9 @@ class ITemple(model.Schema):
     deity_host = schema.Tuple(
         title=_(u"Deity Host"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u'deity_name',
+        ),
         missing_value=()
     )
     deity_host_o = schema.TextLine(
@@ -45,7 +47,9 @@ class ITemple(model.Schema):
     deity_company = schema.Tuple(
         title=_(u"Deity Company"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u'deity_name',
+        ),
         missing_value=()
     )
     religion = schema.Choice(
