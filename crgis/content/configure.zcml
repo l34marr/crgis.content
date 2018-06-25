@@ -31,4 +31,26 @@
     description="CRGIS Content Types Package"
     provides="Products.GenericSetup.interfaces.EXTENSION" />
 
+  <!-- catalog -->
+  <adapter name="bgis_type" factory=".catalog.bgis_type" />
+  <adapter name="area1_bgis" factory=".catalog.area1_bgis" />
+  <adapter name="deity_main" factory=".catalog.deity_main" />
+  <adapter name="deity" factory=".catalog.deity" />
+  <adapter name="wynm" factory=".catalog.wynm" />
+  <adapter name="area1_temple" factory=".catalog.area1_temple" />
+  <adapter name="area2" factory=".catalog.area2" />
+  <adapter name="hostcmpn" factory=".catalog.hostcmpn" />
+  <adapter name="founded" factory=".catalog.founded" />
+  <adapter name="purpose" factory=".catalog.purpose" />
+  <adapter name="material" factory=".catalog.material" />
+  <adapter name="locational" factory=".catalog.locational" />
+  <adapter name="color" factory=".catalog.color" />
+  <adapter name="genre" factory=".catalog.genre" />
+  <adapter name="posture" factory=".catalog.posture" />
+  <adapter name="gender" factory=".catalog.gender" />
+  <adapter name="lct_cou" factory=".catalog.lct_cou" />
+  <adapter name="lct_tow" factory=".catalog.lct_tow" />
+  <adapter name="lct_vil" factory=".catalog.lct_vil" />
+  <adapter name="height" factory=".catalog.height" />
+
 </configure>

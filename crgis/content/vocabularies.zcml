@@ -5,8 +5,139 @@
   i18n_domain="crgis.content">
 
   <utility
+    name="vocabulary.data_src"
+    component=".vocabularies.data_srcFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+  
+  <utility
+    name="vocabulary.coordinate"
+    component=".vocabularies.coordinateFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.deity_name"
+    component=".vocabularies.deity_nameFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.religion"
+    component=".vocabularies.religionFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.building"
+    component=".vocabularies.buildingFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.funding"
+    component=".vocabularies.fundingFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.organizing"
+    component=".vocabularies.organizingFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.jstq"
+    component=".vocabularies.jstqFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.flxt"
+    component=".vocabularies.flxtFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.ymmy"
+    component=".vocabularies.ymmyFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.xhly"
+    component=".vocabularies.xhlyFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.nlqs"
+    component=".vocabularies.nlqsFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.wyxx"
+    component=".vocabularies.wyxxFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.medicine"
+    component=".vocabularies.medicineFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.luck"
+    component=".vocabularies.luckFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.bixiewu"
+    component=".vocabularies.bixiewuFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.material"
+    component=".vocabularies.materialFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.locational"
+    component=".vocabularies.locationalFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.purpose"
+    component=".vocabularies.purposeFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.isExisting"
+    component=".vocabularies.isExistingFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.genre"
+    component=".vocabularies.genreFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.posture"
+    component=".vocabularies.postureFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.gender"
+    component=".vocabularies.genderFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.category"
+    component=".vocabularies.categoryFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.year_accuracy"
+    component=".vocabularies.yearAccuracyFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="vocabulary.attachesTo"
+    component=".vocabularies.attachesToFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
     name="region"
     component=".vocabularies.regionFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
 </configure>
+

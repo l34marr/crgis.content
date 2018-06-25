@@ -11,6 +11,13 @@
     permission="zope2.View" />
 
   <browser:page
+      name="import_gis"
+      for="*"
+      class=".view.ImportGIS"
+      permission="zope2.View"
+      />
+
+  <browser:page
       name="set_default_view_status"
       for="*"
       class=".view.SetDefaultViewStatus"

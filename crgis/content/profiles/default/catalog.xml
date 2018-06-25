@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+
+<index name="bgis_type" meta_type="FieldIndex">
+  <indexed_attr value="bgis_type" />
+</index>
+<column value="bgis_type"/>
+
+<index name="area1_bgis" meta_type="FieldIndex">
+  <indexed_attr value="area1_bgis" />
+</index>
+<column value="area1_bgis"/>
+
+<index name="deity_main" meta_type="FieldIndex">
+  <indexed_attr value="deity_main" />
+</index>
+<column value="deity_main"/>
+
+<index name="deity" meta_type="FieldIndex">
+  <indexed_attr value="deity" />
+</index>
+<column value="deity"/>
+
+<index name="wynm" meta_type="FieldIndex">
+  <indexed_attr value="wynm" />
+</index>
+<column value="wynm"/>
+
+<index name="area1_temple" meta_type="FieldIndex">
+  <indexed_attr value="area1_temple" />
+</index>
+<column value="area1_temple"/>
+
+<index name="area2" meta_type="FieldIndex">
+  <indexed_attr value="area2" />
+</index>
+<column value="area2"/>
+
+<index name="hostcmpn" meta_type="FieldIndex">
+  <indexed_attr value="hostcmpn" />
+</index>
+<column value="hostcmpn"/>
+
+<index name="founded" meta_type="FieldIndex">
+  <indexed_attr value="founded" />
+</index>
+<column value="founded"/>
+
+<index name="purpose" meta_type="FieldIndex">
+  <indexed_attr value="purpose" />
+</index>
+<column value="purpose"/>
+
+<index name="material" meta_type="FieldIndex">
+  <indexed_attr value="material" />
+</index>
+<column value="material"/>
+
+<index name="locational" meta_type="FieldIndex">
+  <indexed_attr value="locational" />
+</index>
+<column value="locational"/>
+
+<index name="color" meta_type="FieldIndex">
+  <indexed_attr value="color" />
+</index>
+<column value="color"/>
+
+<index name="genre" meta_type="FieldIndex">
+  <indexed_attr value="genre" />
+</index>
+<column value="genre"/>
+
+<index name="posture" meta_type="FieldIndex">
+  <indexed_attr value="posture" />
+</index>
+<column value="posture"/>
+
+<index name="gender" meta_type="FieldIndex">
+  <indexed_attr value="gender" />
+</index>
+<column value="gender"/>
+
+<index name="lct_cou" meta_type="FieldIndex">
+  <indexed_attr value="lct_cou" />
+</index>
+<column value="lct_cou"/>
+
+<index name="lct_tow" meta_type="FieldIndex">
+  <indexed_attr value="lct_tow" />
+</index>
+<column value="lct_tow"/>
+
+<index name="lct_vil" meta_type="FieldIndex">
+  <indexed_attr value="lct_vil" />
+</index>
+<column value="lct_vil"/>
+
+<index name="height" meta_type="FieldIndex">
+  <indexed_attr value="height" />
+</index>
+<column value="height"/>
+
+</object>
+
+
