@@ -346,13 +346,15 @@ class IBiXieWu(model.Schema):
         title=_(u"Village"),
         required=False,
     )
-    coordinate = schema.TextLine(
+    coordinate = schema.Choice(
         title=_(u"Coordinate Type"),
         required=False,
+        vocabulary=u"coordinate",
     )
-    btype = schema.TextLine(
+    btype = schema.Choice(
         title=_(u"BiXieWu_Type"),
         required=False,
+        vocabulary=u"bixiewu",
     )
     era = schema.TextLine(
         title=_(u"Common Era"),
@@ -366,22 +368,26 @@ class IBiXieWu(model.Schema):
         title=_(u"Facing"),
         required=False,
     )
-    material = schema.TextLine(
+    material = schema.Choice(
         title=_(u"Material"),
         required=False,
+        vocabulary=u"material",
     )
     volumn = schema.TextLine(
         title=_(u"Volumn"),
         required=False,
     )
-    localtional = schema.TextLine(
+    localtional = schema.Choice(
         title=_(u"Localtional Attribute"),
         required=False,
+        vocabulary=u"locational",
     )
     purpose = schema.Tuple(
         title=_(u"Purpose"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"purpose",
+        ),
         missing_value=()
     )
     worship = RichTextField(
@@ -425,17 +431,20 @@ class IBiXieWu(model.Schema):
         title=_(u"Color"),
         required=False,
     )
-    genre = schema.TextLine(
+    genre = schema.Choice(
         title=_(u"Genre"),
         required=False,
+        vocabulary=u"genre",
     )
-    posture = schema.TextLine(
+    posture = schema.Choice(
         title=_(u"Posture"),
         required=False,
+        vocabulary=u"posture",
     )
-    gender = schema.TextLine(
+    gender = schema.Choice(
         title=_(u"Gender"),
         required=False,
+        vocabulary=u"gender",
     )
     shi_d = schema.TextLine(
         title=_(u"ShiZi Depth"),
@@ -483,13 +492,17 @@ class IPhoto(model.Schema):
     category = schema.Tuple(
         title=_(u"Category"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"category",
+        ),
         missing_value=()
     )
     attachesTo = schema.Tuple(
         title=_(u"Attached To"),
         required=False,
-        value_type=schema.TextLine(),
+        value_type=schema.Choice(
+            vocabulary=u"attachesTo",
+        ),
         missing_value=()
     )
     cou = schema.TextLine(

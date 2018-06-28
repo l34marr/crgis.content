@@ -89,4 +89,54 @@
     component=".vocabularies.luckFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
+  <utility
+    name="bixiewu"
+    component=".vocabularies.bixiewuFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="material"
+    component=".vocabularies.materialFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="locational"
+    component=".vocabularies.locationalFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="purpose"
+    component=".vocabularies.purposeFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="isExisting"
+    component=".vocabularies.isExistingFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="genre"
+    component=".vocabularies.genreFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="posture"
+    component=".vocabularies.postureFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="gender"
+    component=".vocabularies.genderFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="category"
+    component=".vocabularies.categoryFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="attachesTo"
+    component=".vocabularies.attachesToFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
 </configure>
