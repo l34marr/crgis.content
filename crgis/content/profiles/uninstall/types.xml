@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object meta_type="Plone Types Tool" name="portal_types">
+ <property name="title">CRGIS Content Types</property>
+ <object meta_type="Dexterity FTI" name="Temple" remove="True" />
+ <object meta_type="Dexterity FTI" name="BiXieWu" remove="True" />
+ <object meta_type="Dexterity FTI" name="Photo" remove="True" />
+ <object meta_type="Dexterity FTI" name="Pilgrimage" remove="True" />
+ <object meta_type="Dexterity FTI" name="Schedule" remove="True" />
+ <object meta_type="Dexterity FTI" name="Buddhist" remove="True" />
+</object>
