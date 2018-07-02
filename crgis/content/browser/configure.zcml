@@ -5,6 +5,18 @@
  xmlns:zcml="http://namespaces.zope.org/zcml">
 
   <browser:page
+    name="temple_view"
+    for="crgis.content.interfaces.ITemple"
+    class=".view.TempleView"
+    permission="zope2.View" />
+
+  <browser:page
+    name="bixiewu_view"
+    for="crgis.content.interfaces.IBiXieWu"
+    class=".view.BiXieWuView"
+    permission="zope2.View" />
+
+  <browser:page
     name="photo_view"
     for="crgis.content.interfaces.IPhoto"
     class=".view.MyView"
