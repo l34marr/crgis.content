@@ -5,28 +5,213 @@
  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
  metal:use-macro="context/main_template/macros/master"
  i18n:domain="crgis.content">
+
 <body>
 
-<metal:main fill-slot="content-core">
-  <metal:content-core define-macro="content-core">
+<metal:styleslot fill-slot="style_slot">
+  <link rel="stylesheet" href="++resource++crgis.theme/leaflet/leaflet.css">
+</metal:styleslot>
 
-<div tal:condition="context/era">
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#tab1" i18n:translate="">BiXieWu Info</a></li>
+  <li><a data-toggle="tab" href="#tab2" i18n:translate="">FengShiYe Info</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="tab1" class="tab-pane fade in active">
+
+<fieldset>
+<legend i18n:translate="">Basic Info</legend>
+  <div tal:condition="context/data_src">
+  <tal:field i18n:translate="">Data Source</tal:field>:
+  <span tal:replace="python:view.t_title('data_src',context.data_src)" />
+  </div>
+  <div tal:condition="context/lct_cou">
+  <tal:field i18n:translate="">County</tal:field>:
+  <span tal:replace="context/lct_cou" />
+  </div>
+  <div tal:condition="context/lct_tow">
+  <tal:field i18n:translate="">Town</tal:field>:
+  <span tal:replace="context/lct_tow" />
+  </div>
+  <div tal:condition="context/lct_vil">
+  <tal:field i18n:translate="">Village</tal:field>:
+  <span tal:replace="context/lct_vil" />
+  </div>
+  <div tal:condition="context/coordinate">
+  <tal:field i18n:translate="">Coordinate Type</tal:field>:
+  <span tal:replace="python:view.t_title('coordinate',context.coordinate)" />
+  </div>
+  <div tal:condition="context/btype">
+  <tal:field i18n:translate="">BiXieWu Type</tal:field>:
+  <span tal:replace="python:view.t_title('bixiewu',context.btype)" />
+  </div>
+  <div tal:condition="context/era">
   <tal:field i18n:translate="">Common Era</tal:field>:
   <span tal:replace="context/era" />
-</div>
-
-<div tal:condition="context/facing">
+  </div>
+  <div tal:condition="context/era_ref">
+  <tal:field i18n:translate="era_ref">Era Reference</tal:field>
+  <span tal:content="structure python:context.era_ref.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/facing">
   <tal:field i18n:translate="">Facing</tal:field>:
   <span tal:replace="context/facing" />
+  </div>
+  <div tal:condition="context/material">
+  <tal:field i18n:translate="">Material</tal:field>:
+  <span tal:replace="python:view.t_title('material',context.material)" />
+  </div>
+  <div tal:condition="context/volumn">
+  <tal:field i18n:translate="">Volumn</tal:field>:
+  <span tal:replace="context/volumn" />
+  </div>
+  <div tal:condition="context/localtional">
+  <tal:field i18n:translate="">Locational Attribute</tal:field>:
+  <span tal:replace="python:view.t_title('locational',context.localtional)" />
+  </div>
+  <div tal:define="choices context/purpose|nothing"
+       tal:condition="choices">
+    <tal:onlyone condition="python: len(choices) == 1">
+    <tal:field i18n:translate="">Primary Purpose</tal:field>:
+    <span tal:replace="python: view.t_title('purpose',choices[0])" />
+    </tal:onlyone>
+    <tal:many condition="python: len(choices) > 1"
+              repeat="choice choices">
+      <tal:first condition="repeat/choice/start">
+      <tal:field i18n:translate="">Primary Purpose</tal:field>:
+      <span tal:replace="python: view.t_title('purpose',choice)" />
+      <br />
+      <tal:field i18n:translate="">Secondary Purpose</tal:field>:
+      </tal:first>
+      <tal:others condition="not:repeat/choice/start">
+      <span tal:replace="python: view.t_title('purpose',choice)" />
+      <span class="separator" tal:condition="not: repeat/choice/end">,</span>
+      </tal:others>
+    </tal:many>
+  </div>
+  <div tal:condition="context/worship">
+  <tal:field i18n:translate="">Worship</tal:field>:
+  <span tal:content="structure python:context.worship.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/establishment">
+  <tal:field i18n:translate="">Establishment Description</tal:field>:
+  <span tal:content="structure python:context.establishment.output_relative_to(view.context)" />
+  </div>
+</fieldset>
+
+  </div>
+
+  <div id="tab2" class="tab-pane fade">
+
+<fieldset>
+<legend i18n:translate="">FengShiYe Info</legend>
+  <div tal:condition="context/village">
+  <tal:field i18n:translate="">Village Name</tal:field>:
+  <span tal:replace="context/village" />
+  </div>
+  <div tal:condition="context/color">
+  <tal:field i18n:translate="">Color</tal:field>:
+  <span tal:replace="python:view.t_title('isExisting',context.color)" />
+  </div>
+  <div tal:condition="context/genre">
+  <tal:field i18n:translate="">Genre</tal:field>:
+  <span tal:replace="python:view.t_title('genre',context.genre)" />
+  </div>
+  <div tal:condition="context/posture">
+  <tal:field i18n:translate="">Posture</tal:field>:
+  <span tal:replace="python:view.t_title('posture',context.posture)" />
+  </div>
+  <div tal:condition="context/gender">
+  <tal:field i18n:translate="">Gender</tal:field>:
+  <span tal:replace="python:view.t_title('gender',context.gender)" />
+  </div>
+</fieldset>
+
+<fieldset>
+<legend i18n:translate="">Shi Size</legend>
+  <div tal:condition="context/shi_d">
+  <tal:field i18n:translate="">ShiZi Depth</tal:field>:
+  <span tal:replace="context/shi_d" />
+  </div>
+  <div tal:condition="context/shi_w">
+  <tal:field i18n:translate="">ShiZi Width</tal:field>:
+  <span tal:replace="context/shi_w" />
+  </div>
+  <div tal:condition="context/shi_h">
+  <tal:field i18n:translate="">ShiZi Height</tal:field>:
+  <span tal:replace="context/shi_h" />
+  </div>
+  <div tal:condition="context/shi_t">
+  <tal:field i18n:translate="">ShiZi Head</tal:field>:
+  <span tal:replace="context/shi_t" />
+  </div>
+</fieldset>
+
+<fieldset>
+<legend i18n:translate="">Base Size</legend>
+  <div tal:condition="context/base_l">
+  <tal:field i18n:translate="">Base Length</tal:field>:
+  <span tal:replace="context/base_l" />
+  </div>
+  <div tal:condition="context/base_w">
+  <tal:field i18n:translate="">Base Width</tal:field>:
+  <span tal:replace="context/base_w" />
+  </div>
+  <div tal:condition="context/base_h">
+  <tal:field i18n:translate="">Base Height</tal:field>:
+  <span tal:replace="context/base_h" />
+  </div>
+</fieldset>
+
+  </div>
+
 </div>
 
-<div tal:condition="context/address">
-  <tal:field i18n:translate="">Address</tal:field>:
-  <span tal:replace="context/address" />
-</div>
+<!-- Embeded map -->
+<?python
+from collective.geo.geographer.interfaces import IGeoreferenced
+geo = IGeoreferenced(context)
+coordinates = geo.coordinates if geo.coordinates else (121.0, 24.0)
+zoom = 17 if geo.coordinates else 7
+?>
 
-  </metal:content-core>
-</metal:main>
+<div id="mymap" style="z-index: 10; height:300px; width: 100%"></div>
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
+
+<script>
+var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var ly1 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2003&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2001&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly3 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1993&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly4 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1989&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly5 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1921&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var baseMaps = {
+    "1921 日治臺灣堡圖": ly5,
+    "1989 臺灣經建1版地形圖": ly4,
+    "1993 臺灣經建2版地形圖": ly3,
+    "2001 臺灣經建3版地形圖": ly2,
+    "2003 臺灣經建4版地形圖": ly1,
+    "Open Street Map" : osm
+};
+
+var map = L.map('mymap', {
+    center: ${python:'[%s, %s]' % (coordinates[1], coordinates[0])},
+    zoom: ${zoom},
+    layers: [osm]
+});
+L.control.layers(baseMaps).addTo(map);
+
+marker = L.marker(${python:'[%s, %s]' % (coordinates[1], coordinates[0])}, {'title': '${context/title}', 'riseOnHover': true})
+marker.addTo(map)
+</script>
+
+</metal:content-core>
+</metal:content-core>
 
 </body>
 </html>
