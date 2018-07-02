@@ -99,3 +99,25 @@ class MyView(BrowserView):
         except:
             return None
 
+from plone.protect.interfaces import IDisableCSRFProtection
+from zope.interface import alsoProvides
+from zope.event import notify
+from zope.lifecycleevent import ObjectModifiedEvent
+from plone import api
+import logging
+import requests
+logger = logging.getLogger("ReindexObject:")
+class ReindexAll(BrowserView):
+
+    def __call__(self):
+        alsoProvides(self.request, IDisableCSRFProtection)
+        brain = api.content.find(Type=['Temple', 'BiXieWu'])
+        count = 0
+        for item in brain:
+            req = requests.patch('%s' % item.getURL(),
+                headers={'Accept': 'application/json', 'Content-Type': 'application/json'},
+                json={'IOwnership.rights': ' '}, auth=('admin', 'admin')
+            )
+            count += 1
+
+            logger.info('%s %s: %s' % (count, req.status_code, item.getPath()))
