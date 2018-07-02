@@ -1,0 +1,381 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="crgis.content">
+
+<body>
+
+<metal:styleslot fill-slot="style_slot">
+  <link rel="stylesheet" href="++resource++crgis.theme/leaflet/leaflet.css">
+</metal:styleslot>
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#tab1" i18n:translate="">Default Info</a></li>
+  <li><a data-toggle="tab" href="#tab2" i18n:translate="">Appendix Info</a></li>
+  <li><a data-toggle="tab" href="#tab3" i18n:translate="">WangYe Info</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="tab1" class="tab-pane fade in active">
+
+<fieldset>
+<legend i18n:translate="">Basic Info</legend>
+  <div tal:condition="context/data_src">
+  <tal:field i18n:translate="">Data Source</tal:field>:
+  <span tal:replace="python:view.t_title('data_src',context.data_src)" />
+  </div>
+  <div tal:condition="context/coordinate">
+  <tal:field i18n:translate="">Coordinate Type</tal:field>:
+  <span tal:replace="python:view.t_title('coordinate',context.coordinate)" />
+  </div>
+  <div tal:condition="context/facing">
+  <tal:field i18n:translate="">Sitting Facing</tal:field>:
+  <span tal:replace="context/facing" />
+  </div>
+  <div tal:condition="context/address">
+  <tal:field i18n:translate="">Address</tal:field>:
+  <span tal:replace="context/address" />
+  </div>
+  <div tal:condition="context/tel">
+  <tal:field i18n:translate="">Telephone</tal:field>:
+  <span tal:replace="context/tel" />
+  </div>
+  <div tal:condition="context/homepage">
+  <tal:field i18n:translate="">Homepage</tal:field>:
+  <a href=""
+     tal:attributes="href context/homepage;
+                     target string:_blank"
+     i18n:translate="view_homepage">View Homepage</a>
+  </div>
+  <div tal:define="deities context/deity_host|nothing"
+       tal:condition="deities">
+  <tal:field i18n:translate="">Primary Deities</tal:field>:
+  <tal:deities repeat="deity deities">
+    <span tal:replace="python:view.deity_term(deity)">Deity Name</span>
+  </tal:deities>
+  </div>
+  <div tal:condition="context/deity_host_o">
+  <tal:field i18n:translate="">Primary Deities (Other)</tal:field>:
+  <span tal:replace="context/deity_host_o" />
+  </div>
+  <div tal:condition="context/deity_host_a">
+  <tal:field i18n:translate="">Primary Deity Alias</tal:field>:
+  <span tal:replace="context/deity_host_a" />
+  </div>
+  <div tal:define="deities context/deity_company|nothing"
+       tal:condition="deities">
+  <tal:field i18n:translate="">Deity Company</tal:field>:
+  <div tal:repeat="deity deities">
+    <span tal:replace="python:view.deity_term(deity)">Deity Name</span>
+  </div>
+  </div>
+
+  <div tal:condition="context/era">
+  <tal:field i18n:translate="">Estimated Earliest Founding Year</tal:field>:
+  <span tal:replace="context/era" />
+  </div>
+  <div tal:condition="context/era_1">
+  <tal:field i18n:translate="">Established Year by Taiwan Temple Collection</tal:field>:
+  <span tal:replace="context/era_1" />
+  </div>
+  <div tal:condition="context/era_2">
+  <tal:field i18n:translate="">Established Year by Taiwan Temple Overview</tal:field>:
+  <span tal:replace="context/era_2" />
+  </div>
+  <div tal:condition="context/era_ref">
+  <tal:field i18n:translate="">References on Establishment</tal:field>:
+  <span tal:content="structure python:context.era_ref.output_relative_to(view.context)" />
+  </div>
+
+  <div tal:condition="context/history">
+  <tal:field i18n:translate="">Establishment History</tal:field>:
+  <span tal:content="structure python:context.history.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/introduction">
+  <tal:field i18n:translate="">Introduction</tal:field>:
+  <span tal:content="structure python:context.introduction.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/deity_accompany">
+  <tal:field i18n:translate="">Deities Accompany</tal:field>:
+  <span tal:content="structure python:context.deity_accompany.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/worship">
+  <tal:field i18n:translate="">Worship</tal:field>:
+  <span tal:content="structure python:context.worship.output_relative_to(view.context)" />
+  </div>
+</fieldset>
+
+<fieldset>
+<legend i18n:translate="">MOI Registry Info</legend>
+  <div tal:condition="context/registered">
+  <tal:field i18n:translate="">Registered Name</tal:field>:
+  <span tal:replace="context/registered" />
+  </div>
+  <div tal:condition="context/building">
+  <tal:field i18n:translate="">Building Type</tal:field>:
+  <span tal:replace="python:view.t_title('building',context.building)" />
+  </div>
+  <div tal:condition="context/building_o">
+  <tal:field i18n:translate="">Building Type Other</tal:field>:
+  <span tal:replace="context/building_o" />
+  </div>
+  <div tal:condition="context/religion">
+  <tal:field i18n:translate="">Religion Type</tal:field>:
+  <span tal:replace="python:view.t_title('religion',context.religion)" />
+  </div>
+  <div tal:condition="context/religion_o">
+  <tal:field i18n:translate="">Religion Type Other</tal:field>:
+  <span tal:replace="context/religion_o" />
+  </div>
+  <div tal:condition="context/funding">
+  <tal:field i18n:translate="">Funding Type</tal:field>:
+  <span tal:replace="python:view.t_title('funding',context.funding)" />
+  </div>
+  <div tal:condition="context/organizing">
+  <tal:field i18n:translate="">Organizing Type</tal:field>:
+  <span tal:replace="python:view.t_title('organizing',context.organizing)" />
+  </div>
+  <div tal:condition="context/organizing_o">
+  <tal:field i18n:translate="">Organizing Type Other</tal:field>:
+  <span tal:replace="context/organizing_o" />
+  </div>
+  <div tal:condition="context/in_charge">
+  <tal:field i18n:translate="">Person In Charge</tal:field>:
+  <span tal:replace="context/in_charge" />
+  </div>
+</fieldset>
+
+<fieldset tal:condition="python:context.overview or context.antiquity or context.narrate or context.non_narrate">
+<legend i18n:translate="">Outlook</legend>
+  <div tal:condition="context/overview">
+  <tal:field i18n:translate="">Overview</tal:field>:
+  <span tal:content="structure python:context.overview.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/antiquity">
+  <tal:field i18n:translate="">Antiquity</tal:field>:
+  <span tal:content="structure python:context.antiquity.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/narrate">
+  <tal:field i18n:translate="">Narrate</tal:field>:
+  <span tal:content="structure python:context.narrate.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/non_narrate">
+  <tal:field i18n:translate="">Non Narrate</tal:field>:
+  <span tal:content="structure python:context.non_narrate.output_relative_to(view.context)" />
+  </div>
+</fieldset>
+
+<fieldset tal:condition="python:context.academic or context.literature">
+<legend i18n:translate="references">References</legend>
+  <div tal:condition="context/academic">
+  <tal:field i18n:translate="">Academic</tal:field>:
+  <span tal:content="structure python:context.academic.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/literature">
+  <tal:field i18n:translate="literature">Literature</tal:field>:
+  <span tal:content="structure python:context.literature.output_relative_to(view.context)" />
+  </div>
+</fieldset>
+
+<fieldset tal:condition="python:context.fill_in or context.fill_date">
+<legend i18n:translate="">Booking Info</legend>
+  <div tal:condition="context/fill_in">
+  <tal:field i18n:translate="">Filling Person</tal:field>:
+  <span tal:replace="context/fill_in" />
+  </div>
+  <div tal:condition="context/fill_date">
+  <tal:field i18n:translate="">Filling Date</tal:field>:
+  <span tal:replace="context/fill_date" />
+  </div>
+</fieldset>
+
+  </div>
+
+  <div id="tab2" class="tab-pane fade">
+
+  <div tal:define="jss context/jstq|nothing"
+       tal:condition="jss">
+  祭祀族群：
+  <tal:block repeat="js jss">
+  <span tal:replace="python:view.t_title('jstq',js)" />
+  </tal:block>
+  </div>
+  <div tal:condition="context/jstq_o">
+  祭祀族群 (其他)：
+  <span tal:replace="context/jstq_o" />
+  </div>
+  <div tal:condition="context/jsfw">
+  祭祀範圍：
+  <span tal:replace="context/jsfw" />
+  </div>
+  <div tal:condition="context/xyfw">
+  信仰範圍：
+  <span tal:replace="context/xyfw" />
+  </div>
+  <div tal:define="flxts context/flxt|nothing"
+       tal:condition="flxts">
+  分靈系統：
+  <tal:block repeat="flxt flxts">
+  <span tal:replace="python:view.t_title('flxt',flxt)" />
+  </tal:block>
+  </div>
+  <div tal:condition="context/flxt_o">
+  分靈系統 (其他)：
+  <span tal:replace="context/flxt_o" />
+  </div>
+  <div tal:define="yms context/ymmy|nothing"
+       tal:condition="yms">
+  移民廟宇：
+  <tal:block repeat="ym yms">
+  <span tal:replace="python:view.t_title('ymmy',ym)" />
+  </tal:block>
+  </div>
+  <div tal:condition="context/ymmy_o">
+  移民廟宇 (其他)：
+  <span tal:replace="context/ymmy_o" />
+  </div>
+  <div tal:define="xhs context/xhly|nothing"
+       tal:condition="xhs">
+  香火來源：
+  <tal:block repeat="xh xhs">
+  <span tal:replace="python:view.t_title('xhly',xh)" />
+  </tal:block>
+  </div>
+  <div tal:condition="context/xhly_o">
+  香火來源 (其他)：
+  <span tal:replace="context/xhly_o" />
+  </div>
+  <div tal:define="nls context/nlqs|nothing"
+       tal:condition="nls">
+  年例請神：
+  <tal:block repeat="nl nls">
+  <span tal:replace="python:view.t_title('nlqs',nl)" />
+  </tal:block>
+  </div>
+  <div tal:condition="context/nlqs_o">
+  年例請神 (其他)：
+  <span tal:replace="context/nlqs_o" />
+  </div>
+  <div tal:define="wys context/wyxx|nothing"
+       tal:condition="wys">
+  王爺選項：
+  <tal:block repeat="wy wys">
+  <span tal:replace="python:view.t_title('wyxx',wy)" />
+  </tal:block>
+  </div>
+  <div tal:condition="context/wyxx_o">
+  王爺選項 (其他)：
+  <span tal:replace="context/wyxx_o" />
+  </div>
+
+<fieldset tal:condition="python:context.medicine or context.luck">
+<legend>籤詩</legend>
+  <div tal:define="medicines context/medicine|nothing"
+       tal:condition="medicines">
+  藥籤:
+  <tal:block repeat="medicine medicines">
+  <span tal:replace="python:view.t_title('medicine',medicine)" />
+  </tal:block>
+  </div>
+  <div tal:define="lucks context/luck|nothing"
+       tal:condition="lucks">
+  運籤:
+  <tal:block repeat="luck lucks">
+  <span tal:replace="python:view.t_title('luck',luck)" />
+  </tal:block>
+  </div>
+</fieldset>
+  <div tal:condition="context/organization">
+  信徒組織：
+  <span tal:replace="context/organization" />
+  </div>
+  <div tal:condition="context/desc_o">
+  其他可供記述事項：
+  <span tal:replace="context/desc_o" />
+  </div>
+  </div>
+
+  <div id="tab3" class="tab-pane fade">
+
+  <div tal:condition="context/wysm">
+  <tal:field i18n:translate="">WangYe Name</tal:field>:
+  <span tal:replace="context/wysm" />
+  </div>
+  <div tal:condition="context/yswt">
+  <tal:field i18n:translate="">YungS WangTsuan</tal:field>:
+  <span tal:replace="context/yswt" />
+  </div>
+  <div tal:condition="context/dtxs">
+  <tal:field i18n:translate="">DaiTien XuanSho</tal:field>:
+  <span tal:replace="context/dtxs" />
+  </div>
+  <div tal:condition="context/freq">
+  <tal:field i18n:translate="">Frequence</tal:field>:
+  <span tal:replace="context/freq" />
+  </div>
+  <div tal:condition="context/wttz">
+  <tal:field i18n:translate="">WangTsuan Material</tal:field>:
+  <span tal:replace="context/wttz" />
+  </div>
+  <div tal:condition="context/swxs">
+  <tal:field i18n:translate="">SungWang XingShi</tal:field>:
+  <span tal:replace="context/swxs" />
+  </div>
+  <div tal:condition="context/ysgs">
+  <tal:field i18n:translate="">YSGS</tal:field>:
+  <span tal:replace="context/ysgs" />
+  </div>
+  </div>
+
+</div>
+
+<!-- Embeded map -->
+<?python
+from collective.geo.geographer.interfaces import IGeoreferenced
+geo = IGeoreferenced(context)
+coordinates = geo.coordinates if geo.coordinates else (121.0, 24.0)
+zoom = 17 if geo.coordinates else 7
+?>
+
+<div id="mymap" style="z-index: 10; height:300px; width: 100%"></div>
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
+
+<script>
+var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var ly1 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2003&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2001&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly3 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1993&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly4 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1989&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly5 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1921&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var baseMaps = {
+    "1921 日治臺灣堡圖": ly5,
+    "1989 臺灣經建1版地形圖": ly4,
+    "1993 臺灣經建2版地形圖": ly3,
+    "2001 臺灣經建3版地形圖": ly2,
+    "2003 臺灣經建4版地形圖": ly1,
+    "Open Street Map" : osm
+};
+
+var map = L.map('mymap', {
+    center: ${python:'[%s, %s]' % (coordinates[1], coordinates[0])},
+    zoom: ${zoom},
+    layers: [osm]
+});
+L.control.layers(baseMaps).addTo(map);
+
+marker = L.marker(${python:'[%s, %s]' % (coordinates[1], coordinates[0])}, {'title': '${context/title}', 'riseOnHover': true})
+marker.addTo(map)
+</script>
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
