@@ -378,7 +378,7 @@ class IBiXieWu(model.Schema):
         required=False,
     )
     localtional = schema.Choice(
-        title=_(u"Localtional Attribute"),
+        title=_(u"Locational Attribute"),
         required=False,
         vocabulary=u"locational",
     )
