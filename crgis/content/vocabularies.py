@@ -695,9 +695,9 @@ class crgis_data_src(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='governmental', title=u'政府官方資料'),
-            SimpleTerm(value='academic', title=u'學術研究成果'),
-            SimpleTerm(value='fieldwork', title=u'田野調查'),
+            SimpleTerm(value='gov', title=u'政府官方資料'),
+            SimpleTerm(value='acm', title=u'學術研究成果'),
+            SimpleTerm(value='fdw', title=u'田野調查'),
         )
         return SimpleVocabulary(items)
 crgis_data_srcFactory = crgis_data_src()
@@ -708,11 +708,11 @@ class crgis_coordinate(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='address', title=u'住址轉址定位'),
+            SimpleTerm(value='adr', title=u'住址轉址定位'),
             SimpleTerm(value='gps', title=u'GPS 定位'),
-            SimpleTerm(value='gisref', title=u'GIS 資料參考定位'),
+            SimpleTerm(value='gis', title=u'GIS 資料參考定位'),
             SimpleTerm(value='map', title=u'地圖定位'),
-            SimpleTerm(value='notyet', title=u'未定位'),
+            SimpleTerm(value='nyt', title=u'未定位'),
         )
         return SimpleVocabulary(items)
 crgis_coordinateFactory = crgis_coordinate()
@@ -723,9 +723,9 @@ class df_type(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='dao', title=u'道壇'),
-            SimpleTerm(value='fa', title=u'法壇'),
-            SimpleTerm(value='daofa', title=u'道法壇'),
+            SimpleTerm(value='dat', title=u'道壇'),
+            SimpleTerm(value='fat', title=u'法壇'),
+            SimpleTerm(value='dft', title=u'道法壇'),
         )
         return SimpleVocabulary(items)
 df_typeFactory = df_type()
