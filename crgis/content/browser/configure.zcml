@@ -22,4 +22,10 @@
     class=".view.MyView"
     permission="zope2.View" />
 
+  <browser:page
+    name="daoshi_view"
+    for="crgis.content.interfaces.IDaoShi"
+    class=".view.DaoShiView"
+    permission="zope2.View" />
+
 </configure>

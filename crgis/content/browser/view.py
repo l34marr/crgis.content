@@ -69,3 +69,23 @@ class BiXieWuView(BrowserView):
     def related_temples(self):
         return None
 
+
+class DaoShiView(BrowserView):
+
+    template = ViewPageTemplateFile("daoshi.pt")
+
+    def __call__(self):
+        return self.template()
+
+    def t_title(self, vocab, value):
+        try:
+            factory = getUtility(IVocabularyFactory, vocab)
+            vocabulary = factory(self.context)
+            term = vocabulary.getTerm(value)
+            return term.title
+        except:
+            return None
+
+    def related_temples(self):
+        return None
+
