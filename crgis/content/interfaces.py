@@ -6,7 +6,9 @@ from z3c.relationfield.schema import RelationChoice, RelationList
 from plone.app.z3cform.widget import AjaxSelectFieldWidget
 from plone.app.z3cform.widget import RelatedItemsFieldWidget
 from plone.formwidget.contenttree import ObjPathSourceBinder
+from plone.app.vocabularies.catalog import CatalogSource
 from plone.supermodel import model
+
 from crgis.content import _
 
 
@@ -690,7 +692,7 @@ class IDaoShi(model.Schema):
         vocabulary='dao.ft_type'
     )
     df_attr = schema.Tuple(
-        title=_(u"DaoFaTan Attribution"),
+        title=_(u"DaoFaTan Attribute"),
         required=False,
         value_type=schema.TextLine(),
         missing_value=(),
@@ -781,7 +783,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'JingChang',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource(portal_type=['Temple'])
         ),
         required=False,
     )
@@ -797,7 +799,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'ZhuMiao',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource(portal_type=['Temple'])
         ),
         required=False,
     )
@@ -813,7 +815,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'YiShi',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource(portal_type=['Temple','Document'])
         ),
         required=False,
     )
@@ -829,7 +831,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'DaoShi',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource(portal_type=['DaoShi'])
         ),
         required=False,
     )
