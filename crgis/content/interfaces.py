@@ -1,8 +1,10 @@
 from zope import schema
-from plone.autoform import directives as form
+from plone.autoform import directives
 from plone.namedfile import field as namedfile
 from plone.app.textfield import RichText as RichTextField
 from z3c.relationfield.schema import RelationChoice, RelationList
+from plone.app.z3cform.widget import AjaxSelectFieldWidget
+from plone.app.z3cform.widget import RelatedItemsFieldWidget
 from plone.formwidget.contenttree import ObjPathSourceBinder
 from plone.supermodel import model
 from crgis.content import _
@@ -621,4 +623,237 @@ class IBuddhist(model.Schema):
         missing_value=()
     )
 
+
+class IDaoShi(model.Schema):
+    """DaoShi Type"""
+    title = schema.TextLine(
+        title=_(u"DaoShi Name"),
+        required=False,
+    )
+    description = schema.Text(
+        title=_(u"DaoShi Other Name"),
+        required=False,
+    )
+    data_src = schema.Tuple(
+        title=_(u"Data Source"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'data_src',
+        AjaxSelectFieldWidget,
+        vocabulary='crgis.data_src'
+    )
+    coordinate = schema.Tuple(
+        title=_(u"Coordinate Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'coordinate',
+        AjaxSelectFieldWidget,
+        vocabulary='crgis.coordinate'
+    )
+    df_type = schema.Tuple(
+        title=_(u"DaoFaTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'df_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.df_type'
+    )
+    dt_type = schema.Tuple(
+        title=_(u"DaoTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'dt_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.dt_type'
+    )
+    ft_type = schema.Tuple(
+        title=_(u"FaTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'ft_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.ft_type'
+    )
+    df_attr = schema.Tuple(
+        title=_(u"DaoFaTan Attribution"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'df_attr',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.df_attr'
+    )
+    dao_hao = schema.TextLine(
+        title=_(u"Dao Hao"),
+        required=False,
+    )
+    fa_hao = schema.TextLine(
+        title=_(u"Fa Hao"),
+        required=False,
+    )
+    dao_zi = schema.TextLine(
+        title=_(u"Dao Zi"),
+        required=False,
+    )
+    benmin = schema.TextLine(
+        title=_(u"BenMin"),
+        required=False,
+    )
+    alt_nm = schema.TextLine(
+        title=_(u"Alt Name"),
+        required=False,
+    )
+    birth = schema.TextLine(
+        title=_(u"Birth Year"),
+        required=False,
+    )
+    shchn = RelationList(
+        title=_(u"ShiCheng List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'ShiCheng',
+            vocabulary='plone.app.vocabularies.Catalog'
+        ),
+        required=False,
+    )
+    directives.widget(
+        'shchn',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    shotu = RelationList(
+        title=_(u"ShouTu List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'ShouTu',
+            vocabulary='plone.app.vocabularies.Catalog'
+        ),
+        required=False,
+    )
+    directives.widget(
+        'shotu',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    addr = schema.TextLine(
+        title=_(u"Address"),
+        required=False,
+    )
+    tel = schema.TextLine(
+        title=_(u"Telephone"),
+        required=False,
+    )
+    zouzhi = RichTextField(
+        title=_(u"ZouZhi"),
+        required=False,
+    )
+    intro = RichTextField(
+        title=_(u"Introduction"),
+        required=False,
+    )
+    service = RichTextField(
+        title=_(u"Service"),
+        required=False,
+    )
+    jngchng = RelationList(
+        title=_(u"JingChang FuWu"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'JingChang',
+            vocabulary='plone.app.vocabularies.Catalog'
+        ),
+        required=False,
+    )
+    directives.widget(
+        'jngchng',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    zhumiao = RelationList(
+        title=_(u"ZhuMiao List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'ZhuMiao',
+            vocabulary='plone.app.vocabularies.Catalog'
+        ),
+        required=False,
+    )
+    directives.widget(
+        'zhumiao',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    yishi = RelationList(
+        title=_(u"YiShi List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'YiShi',
+            vocabulary='plone.app.vocabularies.Catalog'
+        ),
+        required=False,
+    )
+    directives.widget(
+        'yishi',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    hzds = RelationList(
+        title=_(u"HeZuo DaoShi"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'DaoShi',
+            vocabulary='plone.app.vocabularies.Catalog'
+        ),
+        required=False,
+    )
+    directives.widget(
+        'hzds',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    hzys = RichTextField(
+        title=_(u"HeZuo YueShi"),
+        required=False,
+    )
+    hzhz = RichTextField(
+        title=_(u"HeZuo HuZhi"),
+        required=False,
+    )
+    academic = RichTextField(
+        title=_(u"Academic Works"),
+        required=False,
+    )
+    literature = RichTextField(
+        title=_(u"Literature Reference"),
+        required=False,
+    )
 

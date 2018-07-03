@@ -7,4 +7,5 @@
  <object meta_type="Dexterity FTI" name="Pilgrimage" remove="True" />
  <object meta_type="Dexterity FTI" name="Schedule" remove="True" />
  <object meta_type="Dexterity FTI" name="Buddhist" remove="True" />
+ <object meta_type="Dexterity FTI" name="DaoShi" remove="True" />
 </object>

@@ -8,6 +8,7 @@ from crgis.content.interfaces import IPhoto
 from crgis.content.interfaces import IPilgrimage
 from crgis.content.interfaces import ISchedule
 from crgis.content.interfaces import IBuddhist
+from crgis.content.interfaces import IDaoShi
 
 
 class Temple(Container):
@@ -27,4 +28,7 @@ class Schedule(Container):
 
 class Buddhist(Item):
     implements(IBuddhist)
+
+class DaoShi(Item):
+    implements(IDaoShi)
 
