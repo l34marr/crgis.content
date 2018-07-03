@@ -52,7 +52,7 @@
   <a href=""
      tal:attributes="href context/homepage;
                      target string:_blank"
-     i18n:translate="view_homepage">View Homepage</a>
+     i18n:translate="">View Homepage</a>
   </div>
   <div tal:define="deities context/deity_host|nothing"
        tal:condition="deities">
@@ -155,7 +155,7 @@
 <fieldset tal:condition="python:context.overview or context.antiquity or context.narrate or context.non_narrate">
 <legend i18n:translate="">Outlook</legend>
   <div tal:condition="context/overview">
-  <tal:field i18n:translate="">Overview</tal:field>:
+  <tal:field i18n:translate="">Building Overview</tal:field>:
   <span tal:content="structure python:context.overview.output_relative_to(view.context)" />
   </div>
   <div tal:condition="context/antiquity">
@@ -173,13 +173,13 @@
 </fieldset>
 
 <fieldset tal:condition="python:context.academic or context.literature">
-<legend i18n:translate="references">References</legend>
+<legend i18n:translate="">References</legend>
   <div tal:condition="context/academic">
-  <tal:field i18n:translate="">Academic</tal:field>:
+  <tal:field i18n:translate="">Academic Works</tal:field>:
   <span tal:content="structure python:context.academic.output_relative_to(view.context)" />
   </div>
   <div tal:condition="context/literature">
-  <tal:field i18n:translate="literature">Literature</tal:field>:
+  <tal:field i18n:translate="">Literature Reference</tal:field>:
   <span tal:content="structure python:context.literature.output_relative_to(view.context)" />
   </div>
 </fieldset>

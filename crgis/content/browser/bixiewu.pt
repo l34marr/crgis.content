@@ -55,7 +55,7 @@
   <span tal:replace="context/era" />
   </div>
   <div tal:condition="context/era_ref">
-  <tal:field i18n:translate="era_ref">Era Reference</tal:field>
+  <tal:field i18n:translate="">Era Reference</tal:field>
   <span tal:content="structure python:context.era_ref.output_relative_to(view.context)" />
   </div>
   <div tal:condition="context/facing">
