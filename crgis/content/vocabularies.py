@@ -689,15 +689,43 @@ class region(object):
         return SimpleVocabulary(items)
 regionFactory = region()
 
+class crgis_data_src(object):
+    """ CRGIS
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='governmental', title=u'政府官方資料'),
+            SimpleTerm(value='academic', title=u'學術研究成果'),
+            SimpleTerm(value='fieldwork', title=u'田野調查'),
+        )
+        return SimpleVocabulary(items)
+crgis_data_srcFactory = crgis_data_src()
+
+class crgis_coordinate(object):
+    """ CRGIS
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='address', title=u'住址轉址定位'),
+            SimpleTerm(value='gps', title=u'GPS 定位'),
+            SimpleTerm(value='gisref', title=u'GIS 資料參考定位'),
+            SimpleTerm(value='map', title=u'地圖定位'),
+            SimpleTerm(value='notyet', title=u'未定位'),
+        )
+        return SimpleVocabulary(items)
+crgis_coordinateFactory = crgis_coordinate()
+
 class df_type(object):
     """ DaoFa Type
     """
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='dao', title=_(u'Dao Tan')),
-            SimpleTerm(value='fa', title=_(u'Fa Tan')),
-            SimpleTerm(value='daofa', title=_(u'DaoFa Tan')),
+            SimpleTerm(value='dao', title=u'道壇'),
+            SimpleTerm(value='fa', title=u'法壇'),
+            SimpleTerm(value='daofa', title=u'道法壇'),
         )
         return SimpleVocabulary(items)
 df_typeFactory = df_type()
@@ -708,11 +736,11 @@ class dt_type(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='zy', title=_(u'ZhenYi')),
-            SimpleTerm(value='lb', title=_(u'LingBao')),
-            SimpleTerm(value='qz', title=_(u'QuanZhen')),
-            SimpleTerm(value='ch', title=_(u'ChanHe')),
-            SimpleTerm(value='qw', title=_(u'QingWei')),
+            SimpleTerm(value='zy', title=u'正一'),
+            SimpleTerm(value='lb', title=u'靈寶'),
+            SimpleTerm(value='qz', title=u'全真'),
+            SimpleTerm(value='ch', title=u'禪和'),
+            SimpleTerm(value='qw', title=u'清微'),
         )
         return SimpleVocabulary(items)
 dt_typeFactory = dt_type()
@@ -723,12 +751,12 @@ class ft_type(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='pa', title=_(u'PuAn')),
-            SimpleTerm(value='ls', title=_(u'LuShan')),
-            SimpleTerm(value='xc', title=_(u'XuChia')),
-            SimpleTerm(value='sn', title=_(u'SanNai')),
-            SimpleTerm(value='lr', title=_(u'LiuRen')),
-            SimpleTerm(value='th', title=_(u'TianHe')),
+            SimpleTerm(value='pa', title=u'普庵'),
+            SimpleTerm(value='ls', title=u'閭山'),
+            SimpleTerm(value='xc', title=u'徐甲'),
+            SimpleTerm(value='sn', title=u'三奶'),
+            SimpleTerm(value='lr', title=u'六壬'),
+            SimpleTerm(value='th', title=u'天和'),
         )
         return SimpleVocabulary(items)
 ft_typeFactory = ft_type()
@@ -739,10 +767,10 @@ class df_attr(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='ct', title=_(u'ChuanTong')),
-            SimpleTerm(value='mj', title=_(u'MinJian')),
-            SimpleTerm(value='sr', title=_(u'SiRen')),
-            SimpleTerm(value='gg', title=_(u'GongGuan')),
+            SimpleTerm(value='ct', title=u'傳統道壇'),
+            SimpleTerm(value='mj', title=u'民間寺廟'),
+            SimpleTerm(value='sr', title=u'私人寺廟'),
+            SimpleTerm(value='gg', title=u'道教宮觀'),
         )
         return SimpleVocabulary(items)
 df_attrFactory = df_attr()

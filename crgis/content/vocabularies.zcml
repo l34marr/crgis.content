@@ -140,22 +140,32 @@
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
   <utility
-    name="df_type"
+    name="crgis.data_src"
+    component=".vocabularies.crgis_data_srcFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="crgis.coordinate"
+    component=".vocabularies.crgis_coordinateFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="dao.df_type"
     component=".vocabularies.df_typeFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
   <utility
-    name="dt_type"
+    name="dao.dt_type"
     component=".vocabularies.dt_typeFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
   <utility
-    name="ft_type"
+    name="dao.ft_type"
     component=".vocabularies.ft_typeFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
   <utility
-    name="df_attr"
+    name="dao.df_attr"
     component=".vocabularies.df_attrFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
