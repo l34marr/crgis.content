@@ -689,3 +689,61 @@ class region(object):
         return SimpleVocabulary(items)
 regionFactory = region()
 
+class df_type(object):
+    """ DaoFa Type
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='dao', title=_(u'Dao Tan')),
+            SimpleTerm(value='fa', title=_(u'Fa Tan')),
+            SimpleTerm(value='daofa', title=_(u'DaoFa Tan')),
+        )
+        return SimpleVocabulary(items)
+df_typeFactory = df_type()
+
+class dt_type(object):
+    """ DaoTan Type
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='zy', title=_(u'ZhenYi')),
+            SimpleTerm(value='lb', title=_(u'LingBao')),
+            SimpleTerm(value='qz', title=_(u'QuanZhen')),
+            SimpleTerm(value='ch', title=_(u'ChanHe')),
+            SimpleTerm(value='qw', title=_(u'QingWei')),
+        )
+        return SimpleVocabulary(items)
+dt_typeFactory = dt_type()
+
+class ft_type(object):
+    """ FaTan Type
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='pa', title=_(u'PuAn')),
+            SimpleTerm(value='ls', title=_(u'LuShan')),
+            SimpleTerm(value='xc', title=_(u'XuChia')),
+            SimpleTerm(value='sn', title=_(u'SanNai')),
+            SimpleTerm(value='lr', title=_(u'LiuRen')),
+            SimpleTerm(value='th', title=_(u'TianHe')),
+        )
+        return SimpleVocabulary(items)
+ft_typeFactory = ft_type()
+
+class df_attr(object):
+    """ DaoFa Attribution
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='ct', title=_(u'ChuanTong')),
+            SimpleTerm(value='mj', title=_(u'MinJian')),
+            SimpleTerm(value='sr', title=_(u'SiRen')),
+            SimpleTerm(value='gg', title=_(u'GongGuan')),
+        )
+        return SimpleVocabulary(items)
+df_attrFactory = df_attr()
+

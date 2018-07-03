@@ -139,4 +139,24 @@
     component=".vocabularies.attachesToFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
+  <utility
+    name="df_type"
+    component=".vocabularies.df_typeFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="dt_type"
+    component=".vocabularies.dt_typeFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="ft_type"
+    component=".vocabularies.ft_typeFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="df_attr"
+    component=".vocabularies.df_attrFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
 </configure>
