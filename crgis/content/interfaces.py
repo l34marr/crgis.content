@@ -799,48 +799,27 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'ZhuMiao',
-            source=CatalogSource(portal_type=['Temple'])
+            vocabulary='plone.app.vocabularies.Catalog'
         ),
         required=False,
-    )
-    directives.widget(
-        'zhumiao',
-        RelatedItemsFieldWidget,
-        pattern_options={
-            'recentlyUsed': True,
-        }
     )
     yishi = RelationList(
         title=_(u"YiShi List"),
         default=[],
         value_type=RelationChoice(
             title=u'YiShi',
-            source=CatalogSource(portal_type=['Temple','Document'])
+            vocabulary='plone.app.vocabularies.Catalog'
         ),
         required=False,
-    )
-    directives.widget(
-        'yishi',
-        RelatedItemsFieldWidget,
-        pattern_options={
-            'recentlyUsed': True,
-        }
     )
     hzds = RelationList(
         title=_(u"HeZuo DaoShi"),
         default=[],
         value_type=RelationChoice(
             title=u'DaoShi',
-            source=CatalogSource(portal_type=['DaoShi'])
+            vocabulary='plone.app.vocabularies.Catalog'
         ),
         required=False,
-    )
-    directives.widget(
-        'hzds',
-        RelatedItemsFieldWidget,
-        pattern_options={
-            'recentlyUsed': True,
-        }
     )
     hzys = RichTextField(
         title=_(u"HeZuo YueShi"),
