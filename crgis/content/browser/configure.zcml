@@ -23,6 +23,12 @@
     permission="zope2.View" />
 
   <browser:page
+    name="schedule_view"
+    for="crgis.content.interfaces.ISchedule"
+    class=".view.ScheduleView"
+    permission="zope2.View" />
+
+  <browser:page
     name="daoshi_view"
     for="crgis.content.interfaces.IDaoShi"
     class=".view.DaoShiView"

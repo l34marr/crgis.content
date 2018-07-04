@@ -70,6 +70,14 @@ class BiXieWuView(BrowserView):
         return None
 
 
+class ScheduleView(BrowserView):
+
+    template = ViewPageTemplateFile("schedule.pt")
+
+    def __call__(self):
+        return self.template()
+
+
 class DaoShiView(BrowserView):
 
     template = ViewPageTemplateFile("daoshi.pt")

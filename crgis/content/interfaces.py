@@ -591,12 +591,19 @@ class ISchedule(model.Schema):
     )
     temples = RelationList(
         title=_(u"Related Temples"),
-        required=False,
         default=[],
         value_type=RelationChoice(
-            title=u"Related Temple",
-            source=ObjPathSourceBinder()
+            title=u'Related Temple',
+            source=CatalogSource(Type='Temple')
         ),
+        required=False,
+    )
+    directives.widget(
+        'temples',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
     )
 
 
