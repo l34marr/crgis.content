@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.content\n"
-"POT-Creation-Date: 2018-07-03 04:16+0000\n"
-"PO-Revision-Date: 2018-07-02 23:58+0800\n"
+"POT-Creation-Date: 2018-07-04 03:06+0000\n"
+"PO-Revision-Date: 2018-07-04 11:08+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.content\n"
 
-#: ./interfaces.py:612
+#: ./interfaces.py:614
 msgid "1st-level Administrative Area"
 msgstr ""
 
-#: ./interfaces.py:616
+#: ./interfaces.py:618
 msgid "2nd-level Adminstrative Area"
 msgstr ""
 
@@ -26,17 +26,20 @@ msgstr ""
 msgid "Academic"
 msgstr "學術研究成果"
 
+#: ./browser/daoshi.pt:151
 #: ./browser/temple.pt:178
-#: ./interfaces.py:167
+#: ./interfaces.py:169
 msgid "Academic Works"
 msgstr "學術著作"
 
+#: ./browser/daoshi.pt:90
 #: ./browser/temple.pt:43
-#: ./interfaces.py:94
+#: ./interfaces.py:96
 msgid "Address"
 msgstr "地址"
 
-#: ./interfaces.py:720
+#: ./browser/daoshi.pt:66
+#: ./interfaces.py:722
 msgid "Alt Name"
 msgstr "其他名稱"
 
@@ -45,12 +48,12 @@ msgid "AnZhenLuKou"
 msgstr "安鎮路口"
 
 #: ./browser/temple.pt:162
-#: ./interfaces.py:155
+#: ./interfaces.py:157
 #: ./vocabularies.py:652
 msgid "Antiquity"
 msgstr "古物與文物"
 
-#: ./interfaces.py:182
+#: ./interfaces.py:184
 msgid "Appendix"
 msgstr "附表"
 
@@ -58,7 +61,7 @@ msgstr "附表"
 msgid "Appendix Info"
 msgstr "附表"
 
-#: ./interfaces.py:503
+#: ./interfaces.py:505
 msgid "Attached To"
 msgstr "顯示於"
 
@@ -67,12 +70,12 @@ msgid "BaGua"
 msgstr "八卦"
 
 #: ./browser/bixiewu.pt:166
-#: ./interfaces.py:476
+#: ./interfaces.py:478
 msgid "Base Height"
 msgstr "底座尺寸 (高)"
 
 #: ./browser/bixiewu.pt:158
-#: ./interfaces.py:468
+#: ./interfaces.py:470
 msgid "Base Length"
 msgstr "底座尺寸 (長)"
 
@@ -81,7 +84,7 @@ msgid "Base Size"
 msgstr "底座尺寸"
 
 #: ./browser/bixiewu.pt:162
-#: ./interfaces.py:472
+#: ./interfaces.py:474
 msgid "Base Width"
 msgstr "底座尺寸 (寬)"
 
@@ -94,11 +97,12 @@ msgstr "基本資料"
 msgid "BeiWenFuZhou"
 msgstr "碑文與符咒"
 
-#: ./interfaces.py:280
+#: ./interfaces.py:282
 msgid "Believer Organization"
 msgstr "信徒組織"
 
-#: ./interfaces.py:716
+#: ./browser/daoshi.pt:62
+#: ./interfaces.py:718
 msgid "BenMin"
 msgstr "本命"
 
@@ -116,15 +120,16 @@ msgstr "辟邪物資訊"
 msgid "BiXieWu Type"
 msgstr "辟邪物型別"
 
-#: ./interfaces.py:357
+#: ./interfaces.py:359
 msgid "BiXieWu_Type"
 msgstr "辟邪物類型"
 
-#: ./interfaces.py:724
+#: ./browser/daoshi.pt:70
+#: ./interfaces.py:726
 msgid "Birth Year"
 msgstr "出生年代 (西元年)"
 
-#: ./interfaces.py:571
+#: ./interfaces.py:573
 msgid "Body"
 msgstr "內容"
 
@@ -141,18 +146,18 @@ msgid "Buddhist Type"
 msgstr ""
 
 #: ./browser/temple.pt:158
-#: ./interfaces.py:151
+#: ./interfaces.py:153
 #: ./vocabularies.py:651
 msgid "Building Overview"
 msgstr "建築概況"
 
 #: ./browser/temple.pt:122
-#: ./interfaces.py:67
+#: ./interfaces.py:69
 msgid "Building Type"
 msgstr "寺廟性質"
 
 #: ./browser/temple.pt:126
-#: ./interfaces.py:72
+#: ./interfaces.py:74
 msgid "Building Type Other"
 msgstr "寺廟性質 (其他)"
 
@@ -168,7 +173,7 @@ msgstr ""
 msgid "CRGIS Content Types Package"
 msgstr ""
 
-#: ./interfaces.py:495
+#: ./interfaces.py:497
 msgid "Category"
 msgstr "分類"
 
@@ -185,7 +190,7 @@ msgid "Chiayi County"
 msgstr "嘉義縣"
 
 #: ./browser/bixiewu.pt:118
-#: ./interfaces.py:433
+#: ./interfaces.py:435
 msgid "Color"
 msgstr "彩繪"
 
@@ -194,39 +199,43 @@ msgid "Committee"
 msgstr "管理委員會"
 
 #: ./browser/bixiewu.pt:54
-#: ./interfaces.py:362
+#: ./interfaces.py:364
 msgid "Common Era"
 msgstr "年代"
 
 #: ./browser/bixiewu.pt:46
+#: ./browser/daoshi.pt:26
 #: ./browser/temple.pt:35
-#: ./interfaces.py:25
 msgid "Coordinate Type"
 msgstr "座標定位方式"
 
 #: ./browser/bixiewu.pt:34
-#: ./interfaces.py:340
+#: ./interfaces.py:342
 msgid "County"
 msgstr "縣市"
 
 #: ./browser/temple.pt:316
-#: ./interfaces.py:297
+#: ./interfaces.py:299
 msgid "DaiTien XuanSho"
 msgstr "迎送代天巡狩儀式"
 
-#: ./interfaces.py:704
+#: ./browser/daoshi.pt:50
+#: ./interfaces.py:706
 msgid "Dao Hao"
 msgstr "道號"
 
-#: ./interfaces.py:712
+#: ./browser/daoshi.pt:58
+#: ./interfaces.py:714
 msgid "Dao Zi"
 msgstr "道職"
 
-#: ./interfaces.py:693
-msgid "DaoFaTan Attribution"
+#: ./browser/daoshi.pt:46
+#: ./interfaces.py:695
+msgid "DaoFaTan Attribute"
 msgstr "道法壇性質"
 
-#: ./interfaces.py:660
+#: ./browser/daoshi.pt:31
+#: ./interfaces.py:662
 msgid "DaoFaTan Type"
 msgstr "道法壇選項"
 
@@ -234,11 +243,11 @@ msgstr "道法壇選項"
 msgid "DaoShi"
 msgstr "道士"
 
-#: ./interfaces.py:630
+#: ./interfaces.py:632
 msgid "DaoShi Name"
 msgstr "道士姓名"
 
-#: ./interfaces.py:634
+#: ./interfaces.py:636
 msgid "DaoShi Other Name"
 msgstr "道士其他名稱"
 
@@ -246,13 +255,14 @@ msgstr "道士其他名稱"
 msgid "DaoShi Type"
 msgstr "道士"
 
-#: ./interfaces.py:671
+#: ./browser/daoshi.pt:36
+#: ./interfaces.py:673
 msgid "DaoTan Type"
 msgstr "道壇派門選項"
 
 #: ./browser/bixiewu.pt:30
+#: ./browser/daoshi.pt:21
 #: ./browser/temple.pt:31
-#: ./interfaces.py:20
 msgid "Data Source"
 msgstr "資料來源"
 
@@ -265,71 +275,71 @@ msgid "Default Info"
 msgstr "寺廟資料表"
 
 #: ./browser/temple.pt:106
-#: ./interfaces.py:139
+#: ./interfaces.py:141
 msgid "Deities Accompany"
 msgstr "奉祀神明 (主神之外)"
 
 #: ./browser/temple.pt:74
-#: ./interfaces.py:50
+#: ./interfaces.py:52
 msgid "Deity Company"
 msgstr "陪祀神明"
 
-#: ./interfaces.py:34
+#: ./interfaces.py:36
 msgid "Deity Host"
 msgstr "主祀神明"
 
-#: ./interfaces.py:46
+#: ./interfaces.py:48
 msgid "Deity Host Alias"
 msgstr "對主祀神明的稱呼"
 
-#: ./interfaces.py:42
+#: ./interfaces.py:44
 msgid "Deity Host Other"
 msgstr "主祀神明 (其他)"
 
-#: ./interfaces.py:331
+#: ./interfaces.py:333
 msgid "Description"
 msgstr "描述"
 
-#: ./interfaces.py:284
+#: ./interfaces.py:286
 msgid "Description Other"
 msgstr "其他可供記述事項"
 
-#: ./interfaces.py:408
+#: ./interfaces.py:410
 msgid "Environment Description"
 msgstr "環境位置描述"
 
 #: ./browser/bixiewu.pt:58
-#: ./interfaces.py:366
+#: ./interfaces.py:368
 msgid "Era Reference"
 msgstr "年代參考文獻"
 
 #: ./browser/temple.pt:85
-#: ./interfaces.py:127
+#: ./interfaces.py:129
 msgid "Established Year by Taiwan Temple Collection"
 msgstr "創立年代 (台灣寺廟大全)"
 
 #: ./browser/temple.pt:89
-#: ./interfaces.py:131
+#: ./interfaces.py:133
 msgid "Established Year by Taiwan Temple Overview"
 msgstr "創立年代 (台灣寺廟概覽)"
 
 #: ./browser/bixiewu.pt:102
-#: ./interfaces.py:400
+#: ./interfaces.py:402
 msgid "Establishment Description"
 msgstr "建立緣起"
 
 #: ./browser/temple.pt:98
-#: ./interfaces.py:123
+#: ./interfaces.py:125
 #: ./vocabularies.py:648
 msgid "Establishment History"
 msgstr "建立沿革"
 
 #: ./browser/temple.pt:81
-#: ./interfaces.py:110
+#: ./interfaces.py:112
 msgid "Estimated Earliest Founding Year"
 msgstr "創立起始年"
 
-#: ./interfaces.py:114
+#: ./interfaces.py:116
 msgid "Estimated Latest Founding Year"
 msgstr "創立結束年"
 
@@ -337,24 +347,26 @@ msgstr "創立結束年"
 msgid "Exact"
 msgstr "精確"
 
-#: ./interfaces.py:708
+#: ./browser/daoshi.pt:54
+#: ./interfaces.py:710
 msgid "Fa Hao"
 msgstr "法號"
 
-#: ./interfaces.py:682
+#: ./browser/daoshi.pt:41
+#: ./interfaces.py:684
 msgid "FaTan Type"
 msgstr "法壇派門選項"
 
 #: ./browser/bixiewu.pt:62
-#: ./interfaces.py:370
+#: ./interfaces.py:372
 msgid "Facing"
 msgstr "方位"
 
-#: ./interfaces.py:204
+#: ./interfaces.py:206
 msgid "FenLingXiTong"
 msgstr "分靈系統"
 
-#: ./interfaces.py:212
+#: ./interfaces.py:214
 msgid "FenLingXiTong Other"
 msgstr "分靈系統 (其他)"
 
@@ -362,7 +374,7 @@ msgstr "分靈系統 (其他)"
 msgid "FenMu"
 msgstr "墳墓"
 
-#: ./interfaces.py:427
+#: ./interfaces.py:429
 #: ./vocabularies.py:498
 msgid "FengShiYe"
 msgstr "風獅爺"
@@ -376,12 +388,12 @@ msgid "Fieldwork"
 msgstr "田野調查"
 
 #: ./browser/temple.pt:194
-#: ./interfaces.py:179
+#: ./interfaces.py:181
 msgid "Filling Date"
 msgstr "填表日期"
 
 #: ./browser/temple.pt:190
-#: ./interfaces.py:175
+#: ./interfaces.py:177
 msgid "Filling Person"
 msgstr "填表人姓名"
 
@@ -390,12 +402,12 @@ msgid "Foundation"
 msgstr "財團法人"
 
 #: ./browser/temple.pt:320
-#: ./interfaces.py:303
+#: ./interfaces.py:305
 msgid "Frequence"
 msgstr "舉辦週期與時間"
 
 #: ./browser/temple.pt:138
-#: ./interfaces.py:80
+#: ./interfaces.py:82
 msgid "Funding Type"
 msgstr "建別"
 
@@ -412,7 +424,7 @@ msgid "GPS"
 msgstr "GPS 定位"
 
 #: ./browser/bixiewu.pt:130
-#: ./interfaces.py:447
+#: ./interfaces.py:449
 msgid "Gender"
 msgstr "獅別"
 
@@ -425,7 +437,7 @@ msgid "Generates short name based on creation date."
 msgstr ""
 
 #: ./browser/bixiewu.pt:122
-#: ./interfaces.py:437
+#: ./interfaces.py:439
 msgid "Genre"
 msgstr "類型"
 
@@ -445,20 +457,23 @@ msgstr "政府官方資料"
 msgid "HaiBian"
 msgstr "海邊"
 
-#: ./interfaces.py:828
+#: ./browser/daoshi.pt:136
+#: ./interfaces.py:830
 msgid "HeZuo DaoShi"
 msgstr "經常合作夥伴: 道士"
 
-#: ./interfaces.py:848
+#: ./browser/daoshi.pt:147
+#: ./interfaces.py:850
 msgid "HeZuo HuZhi"
 msgstr "經常合作夥伴: 糊紙"
 
-#: ./interfaces.py:844
+#: ./browser/daoshi.pt:143
+#: ./interfaces.py:846
 msgid "HeZuo YueShi"
 msgstr "經常合作夥伴: 樂師"
 
 #: ./browser/temple.pt:51
-#: ./interfaces.py:106
+#: ./interfaces.py:108
 msgid "Homepage"
 msgstr "網址"
 
@@ -474,25 +489,25 @@ msgstr "新竹縣"
 msgid "Hualien County"
 msgstr "花蓮縣"
 
-#: ./interfaces.py:492
+#: ./interfaces.py:494
 msgid "Image"
 msgstr "圖檔"
 
+#: ./browser/daoshi.pt:102
 #: ./browser/temple.pt:102
-#: ./interfaces.py:147
-#: ./vocabularies.py:650
+#: ./interfaces.py:149
 msgid "Introduction"
 msgstr "簡介與相關圖片"
 
-#: ./interfaces.py:196
+#: ./interfaces.py:198
 msgid "JiSiFanWei"
 msgstr "祭祀範圍選項"
 
-#: ./interfaces.py:184
+#: ./interfaces.py:186
 msgid "JiSiZuQun"
 msgstr "祭祀族群"
 
-#: ./interfaces.py:192
+#: ./interfaces.py:194
 msgid "JiSiZuQun Other"
 msgstr "祭祀族群 (其他)"
 
@@ -500,7 +515,8 @@ msgstr "祭祀族群 (其他)"
 msgid "JianShi"
 msgstr "劍獅"
 
-#: ./interfaces.py:780
+#: ./browser/daoshi.pt:112
+#: ./interfaces.py:782
 msgid "JingChang FuWu"
 msgstr "經常服務宮廟"
 
@@ -524,7 +540,7 @@ msgstr "基隆市"
 msgid "Kinmen County"
 msgstr "金門縣"
 
-#: ./interfaces.py:527
+#: ./interfaces.py:529
 msgid "Latitude"
 msgstr "緯度值"
 
@@ -532,17 +548,18 @@ msgstr "緯度值"
 msgid "Lienchiang County"
 msgstr "連江縣"
 
+#: ./browser/daoshi.pt:155
 #: ./browser/temple.pt:182
-#: ./interfaces.py:171
+#: ./interfaces.py:173
 msgid "Literature Reference"
 msgstr "相關書目"
 
 #: ./browser/bixiewu.pt:74
-#: ./interfaces.py:383
+#: ./interfaces.py:385
 msgid "Locational Attribute"
 msgstr "位置屬性"
 
-#: ./interfaces.py:523
+#: ./interfaces.py:525
 msgid "Longtitude"
 msgstr "經度值"
 
@@ -554,7 +571,7 @@ msgstr "路衝"
 msgid "LuKuo"
 msgstr "路口"
 
-#: ./interfaces.py:272
+#: ./interfaces.py:274
 msgid "Luck Divination"
 msgstr "運籤"
 
@@ -567,11 +584,11 @@ msgid "Map"
 msgstr "地圖定位"
 
 #: ./browser/bixiewu.pt:66
-#: ./interfaces.py:374
+#: ./interfaces.py:376
 msgid "Material"
 msgstr "材質"
 
-#: ./interfaces.py:264
+#: ./interfaces.py:266
 msgid "Medicine Divination"
 msgstr "藥籤"
 
@@ -592,7 +609,7 @@ msgid "Nantou County"
 msgstr "南投縣"
 
 #: ./browser/temple.pt:166
-#: ./interfaces.py:159
+#: ./interfaces.py:161
 #: ./vocabularies.py:653
 msgid "Narrate"
 msgstr "敘事性裝飾題材"
@@ -601,16 +618,16 @@ msgstr "敘事性裝飾題材"
 msgid "New Taipei City"
 msgstr "新北市"
 
-#: ./interfaces.py:240
+#: ./interfaces.py:242
 msgid "NianLiQingSheng"
 msgstr "年例請神"
 
-#: ./interfaces.py:248
+#: ./interfaces.py:250
 msgid "NianLiQingSheng Other"
 msgstr "年例請神 (其他)"
 
 #: ./browser/temple.pt:170
-#: ./interfaces.py:163
+#: ./interfaces.py:165
 #: ./vocabularies.py:654
 msgid "Non Narrate"
 msgstr "非敘事性人物裝飾"
@@ -620,12 +637,12 @@ msgid "Not Yet"
 msgstr "未定位"
 
 #: ./browser/temple.pt:142
-#: ./interfaces.py:85
+#: ./interfaces.py:87
 msgid "Organizing Type"
 msgstr "組織型態"
 
 #: ./browser/temple.pt:146
-#: ./interfaces.py:90
+#: ./interfaces.py:92
 msgid "Organizing Type Other"
 msgstr "組織型態 (其他)"
 
@@ -637,15 +654,15 @@ msgstr "其它"
 msgid "Outlook"
 msgstr "建築與飾物"
 
-#: ./interfaces.py:543
+#: ./interfaces.py:545
 msgid "Owner Name"
 msgstr "圖片拍攝/提供者姓名"
 
-#: ./interfaces.py:547
+#: ./interfaces.py:549
 msgid "Owner Organization"
 msgstr "圖片拍攝/提供者單位"
 
-#: ./interfaces.py:551
+#: ./interfaces.py:553
 msgid "Owner Title"
 msgstr "圖片拍攝/提供者職稱"
 
@@ -658,7 +675,7 @@ msgid "Person"
 msgstr "管理人"
 
 #: ./browser/temple.pt:150
-#: ./interfaces.py:98
+#: ./interfaces.py:100
 msgid "Person In Charge"
 msgstr "負責人"
 
@@ -666,11 +683,11 @@ msgstr "負責人"
 msgid "Photo"
 msgstr "圖片"
 
-#: ./interfaces.py:539
+#: ./interfaces.py:541
 msgid "Photo Day"
 msgstr "拍攝/製作日期"
 
-#: ./interfaces.py:535
+#: ./interfaces.py:537
 msgid "Photo Month"
 msgstr "拍攝/製作月份"
 
@@ -678,7 +695,7 @@ msgstr "拍攝/製作月份"
 msgid "Photo Type"
 msgstr "圖片型別"
 
-#: ./interfaces.py:531
+#: ./interfaces.py:533
 msgid "Photo Year"
 msgstr "拍攝/製作年份"
 
@@ -695,7 +712,7 @@ msgid "Pingtung County"
 msgstr "屏東縣"
 
 #: ./browser/bixiewu.pt:126
-#: ./interfaces.py:442
+#: ./interfaces.py:444
 msgid "Posture"
 msgstr "形制"
 
@@ -723,7 +740,7 @@ msgstr "私建"
 msgid "Public"
 msgstr "公有"
 
-#: ./interfaces.py:388
+#: ./interfaces.py:390
 msgid "Purpose"
 msgstr "功用"
 
@@ -735,7 +752,7 @@ msgstr "器物"
 msgid "Raising"
 msgstr "勸募"
 
-#: ./interfaces.py:412
+#: ./interfaces.py:414
 msgid "Reference"
 msgstr "相關文獻"
 
@@ -744,30 +761,30 @@ msgid "References"
 msgstr "參考資料"
 
 #: ./browser/temple.pt:93
-#: ./interfaces.py:135
+#: ./interfaces.py:137
 msgid "References on Establishment"
 msgstr "創立年代參考文獻"
 
 #: ./browser/temple.pt:118
-#: ./interfaces.py:76
+#: ./interfaces.py:78
 msgid "Registered Name"
 msgstr "登記名稱"
 
-#: ./interfaces.py:420
+#: ./interfaces.py:422
 msgid "Related Temples"
 msgstr "相關寺廟"
 
 #: ./browser/temple.pt:130
-#: ./interfaces.py:58
+#: ./interfaces.py:60
 msgid "Religion Type"
 msgstr "教別"
 
 #: ./browser/temple.pt:134
-#: ./interfaces.py:63
+#: ./interfaces.py:65
 msgid "Religion Type Other"
 msgstr "教別 (其他)"
 
-#: ./interfaces.py:416
+#: ./interfaces.py:418
 msgid "Remark"
 msgstr "備註"
 
@@ -783,7 +800,8 @@ msgstr "行程型別"
 msgid "Secondary Purpose"
 msgstr "次要功用"
 
-#: ./interfaces.py:776
+#: ./browser/daoshi.pt:106
+#: ./interfaces.py:778
 msgid "Service"
 msgstr "服務項目"
 
@@ -803,7 +821,8 @@ msgstr "神像"
 msgid "Shi Size"
 msgstr "獅子尺寸"
 
-#: ./interfaces.py:728
+#: ./browser/daoshi.pt:75
+#: ./interfaces.py:730
 msgid "ShiCheng List"
 msgstr "師承"
 
@@ -812,26 +831,27 @@ msgid "ShiGanDang"
 msgstr "石敢當"
 
 #: ./browser/bixiewu.pt:138
-#: ./interfaces.py:452
+#: ./interfaces.py:454
 msgid "ShiZi Depth"
 msgstr "獅子尺寸 (深)"
 
 #: ./browser/bixiewu.pt:150
-#: ./interfaces.py:464
+#: ./interfaces.py:466
 msgid "ShiZi Head"
 msgstr "獅子尺寸 (頭)"
 
 #: ./browser/bixiewu.pt:146
-#: ./interfaces.py:460
+#: ./interfaces.py:462
 msgid "ShiZi Height"
 msgstr "獅子尺寸 (高)"
 
 #: ./browser/bixiewu.pt:142
-#: ./interfaces.py:456
+#: ./interfaces.py:458
 msgid "ShiZi Width"
 msgstr "獅子尺寸 (面寬)"
 
-#: ./interfaces.py:744
+#: ./browser/daoshi.pt:83
+#: ./interfaces.py:746
 msgid "ShouTu List"
 msgstr "授徒"
 
@@ -840,17 +860,17 @@ msgid "SiRen"
 msgstr "私人"
 
 #: ./browser/temple.pt:39
-#: ./interfaces.py:30
+#: ./interfaces.py:32
 msgid "Sitting Facing"
 msgstr "坐向"
 
-#: ./interfaces.py:404
+#: ./interfaces.py:406
 #: ./vocabularies.py:655
 msgid "Spatial Attribute"
 msgstr "空間屬性"
 
 #: ./browser/temple.pt:328
-#: ./interfaces.py:315
+#: ./interfaces.py:317
 msgid "SungWang XingShi"
 msgstr "送王形式"
 
@@ -878,8 +898,9 @@ msgstr "臺東縣"
 msgid "Taoyuan County"
 msgstr "桃園縣"
 
+#: ./browser/daoshi.pt:94
 #: ./browser/temple.pt:47
-#: ./interfaces.py:102
+#: ./interfaces.py:104
 msgid "Telephone"
 msgstr "電話"
 
@@ -895,12 +916,12 @@ msgstr "寺廟"
 msgid "Temple Type"
 msgstr "寺廟型別"
 
-#: ./interfaces.py:16
+#: ./interfaces.py:18
 msgid "Title"
 msgstr "名稱"
 
 #: ./browser/bixiewu.pt:38
-#: ./interfaces.py:344
+#: ./interfaces.py:346
 msgid "Town"
 msgstr "鄉鎮"
 
@@ -917,26 +938,26 @@ msgid "View Homepage"
 msgstr "瀏覽寺廟官方網頁"
 
 #: ./browser/bixiewu.pt:42
-#: ./interfaces.py:348
+#: ./interfaces.py:350
 msgid "Village"
 msgstr "所屬村落"
 
 #: ./browser/bixiewu.pt:114
-#: ./interfaces.py:429
+#: ./interfaces.py:431
 msgid "Village Name"
 msgstr "村落名稱"
 
 #: ./browser/bixiewu.pt:70
-#: ./interfaces.py:379
+#: ./interfaces.py:381
 msgid "Volumn"
 msgstr "材積"
 
 #: ./browser/temple.pt:324
-#: ./interfaces.py:309
+#: ./interfaces.py:311
 msgid "WangTsuan Material"
 msgstr "王船材質"
 
-#: ./interfaces.py:287
+#: ./interfaces.py:289
 msgid "WangYe"
 msgstr "王爺"
 
@@ -945,25 +966,25 @@ msgid "WangYe Info"
 msgstr "王爺附表"
 
 #: ./browser/temple.pt:308
-#: ./interfaces.py:289
+#: ./interfaces.py:291
 msgid "WangYe Name"
 msgstr "主祀王爺"
 
-#: ./interfaces.py:252
+#: ./interfaces.py:254
 msgid "WangYeXianXiang"
 msgstr "王爺選項"
 
-#: ./interfaces.py:260
+#: ./interfaces.py:262
 msgid "WangYeXianXiang Other"
 msgstr "王爺選項 (其他)"
 
 #: ./browser/bixiewu.pt:98
 #: ./browser/temple.pt:110
-#: ./interfaces.py:143
+#: ./interfaces.py:145
 msgid "Worship"
 msgstr "祭祀活動"
 
-#: ./interfaces.py:396
+#: ./interfaces.py:398
 msgid "Worship Description"
 msgstr "祭祀日期"
 
@@ -975,36 +996,37 @@ msgstr "屋衝"
 msgid "WyYing"
 msgstr "五營"
 
-#: ./interfaces.py:228
+#: ./interfaces.py:230
 msgid "XiangHuoLaiYuan"
 msgstr "香火來源"
 
-#: ./interfaces.py:236
+#: ./interfaces.py:238
 msgid "XiangHuoLaiYuan Other"
 msgstr "香火來源 (其他)"
 
-#: ./interfaces.py:200
+#: ./interfaces.py:202
 msgid "XinYangFangWei"
 msgstr "信仰範圍"
 
 #: ./browser/temple.pt:332
-#: ./interfaces.py:319
+#: ./interfaces.py:321
 msgid "YSGS"
 msgstr "迎送代天巡狩儀式概述"
 
-#: ./interfaces.py:118
+#: ./interfaces.py:120
 msgid "Year Accuracy"
 msgstr "年份精確度"
 
-#: ./interfaces.py:216
+#: ./interfaces.py:218
 msgid "YiMingMiaoYu"
 msgstr "移民廟宇"
 
-#: ./interfaces.py:224
+#: ./interfaces.py:226
 msgid "YiMingMiaoYu Other"
 msgstr "移民廟宇 (其他)"
 
-#: ./interfaces.py:812
+#: ./browser/daoshi.pt:128
+#: ./interfaces.py:814
 msgid "YiShi List"
 msgstr "重要儀式執行"
 
@@ -1013,7 +1035,7 @@ msgid "Yilan County"
 msgstr "宜蘭縣"
 
 #: ./browser/temple.pt:312
-#: ./interfaces.py:293
+#: ./interfaces.py:295
 msgid "YungS WangTsuan"
 msgstr "永祀王船"
 
@@ -1037,11 +1059,13 @@ msgstr "鎮水 (擋水箭)"
 msgid "ZhiWu"
 msgstr "植物"
 
-#: ./interfaces.py:796
+#: ./browser/daoshi.pt:120
+#: ./interfaces.py:798
 msgid "ZhuMiao List"
 msgstr "駐廟服務宮廟"
 
-#: ./interfaces.py:768
+#: ./browser/daoshi.pt:98
+#: ./interfaces.py:770
 msgid "ZouZhi"
 msgstr "奏職與學習"
 
