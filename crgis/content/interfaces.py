@@ -731,7 +731,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'ShiCheng',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource(Type='DaoShi')
         ),
         required=False,
     )
@@ -747,7 +747,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'ShouTu',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource(Type='DaoShi')
         ),
         required=False,
     )
@@ -783,7 +783,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'JingChang',
-            source=CatalogSource(portal_type=['Temple'])
+            source=CatalogSource(Type='Temple')
         ),
         required=False,
     )
@@ -799,16 +799,23 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'ZhuMiao',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource(Type='Temple')
         ),
         required=False,
+    )
+    directives.widget(
+        'zhumiao',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
     )
     yishi = RelationList(
         title=_(u"YiShi List"),
         default=[],
         value_type=RelationChoice(
             title=u'YiShi',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource()
         ),
         required=False,
     )
@@ -817,7 +824,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'DaoShi',
-            vocabulary='plone.app.vocabularies.Catalog'
+            source=CatalogSource(Type='DaoShi')
         ),
         required=False,
     )
