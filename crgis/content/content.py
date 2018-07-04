@@ -9,6 +9,7 @@ from crgis.content.interfaces import IPilgrimage
 from crgis.content.interfaces import ISchedule
 from crgis.content.interfaces import IBuddhist
 from crgis.content.interfaces import IDaoShi
+from crgis.content.interfaces import IDaoFaTan
 
 
 class Temple(Container):
@@ -31,4 +32,7 @@ class Buddhist(Item):
 
 class DaoShi(Container):
     implements(IDaoShi)
+
+class DaoFaTan(Container):
+    implements(IDaoFaTan)
 

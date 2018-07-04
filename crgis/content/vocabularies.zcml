@@ -140,6 +140,11 @@
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
   <utility
+    name="crgis.deity"
+    component=".vocabularies.crgis_deityFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
     name="crgis.data_src"
     component=".vocabularies.crgis_data_srcFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />

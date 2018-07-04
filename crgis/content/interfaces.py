@@ -852,3 +852,281 @@ class IDaoShi(model.Schema):
         required=False,
     )
 
+class IDaoFaTan(model.Schema):
+    """DaoFaTan Type"""
+    title = schema.TextLine(
+        title=_(u"DaoFaTan Name"),
+        required=False,
+    )
+    description = schema.Text(
+        title=_(u"DaoFaTan Other Name"),
+        required=False,
+    )
+    data_src = schema.Tuple(
+        title=_(u"Data Source"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'data_src',
+        AjaxSelectFieldWidget,
+        vocabulary='crgis.data_src'
+    )
+    coordinate = schema.Tuple(
+        title=_(u"Coordinate Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'coordinate',
+        AjaxSelectFieldWidget,
+        vocabulary='crgis.coordinate'
+    )
+    df_type = schema.Tuple(
+        title=_(u"DaoFaTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'df_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.df_type'
+    )
+    dt_type = schema.Tuple(
+        title=_(u"DaoTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'dt_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.dt_type'
+    )
+    ft_type = schema.Tuple(
+        title=_(u"FaTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'ft_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.ft_type'
+    )
+    df_attr = schema.Tuple(
+        title=_(u"DaoFaTan Attribute"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'df_attr',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.df_attr'
+    )
+    birth = schema.TextLine(
+        title=_(u"Establish Year"),
+        required=False,
+    )
+    chngli = schema.Text(
+        title=_(u"Establish"),
+        required=False,
+    )
+    chlirn = RelationList(
+        title=_(u"ChuangLiRen List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'ChuangLiRen',
+            source=CatalogSource(Type='DaoShi')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'chlirn',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    shchn = RelationList(
+        title=_(u"ShiCheng List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'ShiCheng',
+            source=CatalogSource(Type='DaoShi')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'shchn',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    fuzeren = RelationList(
+        title=_(u"FuZeRen List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'FuZeRen',
+            source=CatalogSource(Type='DaoShi')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'fuzeren',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    addr = schema.TextLine(
+        title=_(u"Address"),
+        required=False,
+    )
+    tel = schema.TextLine(
+        title=_(u"Telephone"),
+        required=False,
+    )
+    chngyn = RelationList(
+        title=_(u"ChengYuan List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'ChengYuan',
+            source=CatalogSource(Type='DaoShi')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'chngyn',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    yange = RichTextField(
+        title=_(u"YanGe"),
+        required=False,
+    )
+    fengsi = schema.Tuple(
+        title=_(u"FengSi"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'fengsi',
+        AjaxSelectFieldWidget,
+        vocabulary='crgis.deity'
+    )
+    zhusi = schema.Text(
+        title=_(u"ZhuSi"),
+        required=False,
+    )
+    zhiwai = RichTextField(
+        title=_(u"ZhuSi ZhiWai"),
+        required=False,
+    )
+    jisi = RichTextField(
+        title=_(u"JiSi"),
+        required=False,
+    )
+    intro = RichTextField(
+        title=_(u"Introduction"),
+        required=False,
+    )
+    wenwu = RichTextField(
+        title=_(u"GuWenWu"),
+        required=False,
+    )
+    service = RichTextField(
+        title=_(u"Service"),
+        required=False,
+    )
+    keyi = RelationList(
+        title=_(u"KeYi JingBen"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'KeYi',
+            source=CatalogSource(Type='KeYi')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'keyi',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    jngchng = RelationList(
+        title=_(u"JingChang FuWu"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'JingChang',
+            source=CatalogSource(Type='Temple')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'jngchng',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    zhumiao = RelationList(
+        title=_(u"ZhuMiao List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'ZhuMiao',
+            source=CatalogSource(Type='Temple')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'zhumiao',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    yishi = RelationList(
+        title=_(u"YiShi List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'YiShi',
+            source=CatalogSource()
+        ),
+        required=False,
+    )
+    hzds = RelationList(
+        title=_(u"HeZuo DaoShi"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'DaoShi',
+            source=CatalogSource(Type='DaoShi')
+        ),
+        required=False,
+    )
+    hzys = RichTextField(
+        title=_(u"HeZuo YueShi"),
+        required=False,
+    )
+    hzhz = RichTextField(
+        title=_(u"HeZuo HuZhi"),
+        required=False,
+    )
+    academic = RichTextField(
+        title=_(u"Academic Works"),
+        required=False,
+    )
+    literature = RichTextField(
+        title=_(u"Literature Reference"),
+        required=False,
+    )
+
