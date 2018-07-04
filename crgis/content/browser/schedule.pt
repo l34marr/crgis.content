@@ -1,0 +1,32 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="crgis.content">
+
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+  <div tal:condition="context/body">
+  <tal:field i18n:translate="">Body</tal:field>:
+  <span tal:content="structure python:context.body.output_relative_to(view.context)" />
+  </div>
+  <div tal:define="tpls context/temples|nothing"
+       tal:condition="tpls">
+  <tal:field i18n:translate="">Related Temples</tal:field>:
+    <tal:block repeat="tpl tpls">
+    <span tal:replace="python:tpl.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/tpl/end">,</span>
+    </tal:block>
+  </div>
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
