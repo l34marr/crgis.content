@@ -29,6 +29,6 @@ class Schedule(Container):
 class Buddhist(Item):
     implements(IBuddhist)
 
-class DaoShi(Item):
+class DaoShi(Container):
     implements(IDaoShi)
 
