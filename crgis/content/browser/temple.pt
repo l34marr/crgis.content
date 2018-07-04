@@ -26,7 +26,7 @@
   <div id="tab1" class="tab-pane fade in active">
 
 <fieldset>
-<legend i18n:translate="">Basic Info</legend>
+<legend style="margin-top: 20px" i18n:translate="">Basic Info</legend>
   <div tal:condition="context/data_src">
   <tal:field i18n:translate="">Data Source</tal:field>:
   <span tal:replace="python:view.t_title('data_src',context.data_src)" />
@@ -113,7 +113,7 @@
 </fieldset>
 
 <fieldset>
-<legend i18n:translate="">MOI Registry Info</legend>
+<legend style="margin-top: 20px" i18n:translate="">MOI Registry Info</legend>
   <div tal:condition="context/registered">
   <tal:field i18n:translate="">Registered Name</tal:field>:
   <span tal:replace="context/registered" />
@@ -153,7 +153,7 @@
 </fieldset>
 
 <fieldset tal:condition="python:context.overview or context.antiquity or context.narrate or context.non_narrate">
-<legend i18n:translate="">Outlook</legend>
+<legend style="margin-top: 20px" i18n:translate="">Outlook</legend>
   <div tal:condition="context/overview">
   <tal:field i18n:translate="">Building Overview</tal:field>:
   <span tal:content="structure python:context.overview.output_relative_to(view.context)" />
@@ -173,7 +173,7 @@
 </fieldset>
 
 <fieldset tal:condition="python:context.academic or context.literature">
-<legend i18n:translate="">References</legend>
+<legend style="margin-top: 20px" i18n:translate="">References</legend>
   <div tal:condition="context/academic">
   <tal:field i18n:translate="">Academic Works</tal:field>:
   <span tal:content="structure python:context.academic.output_relative_to(view.context)" />
@@ -185,7 +185,7 @@
 </fieldset>
 
 <fieldset tal:condition="python:context.fill_in or context.fill_date">
-<legend i18n:translate="">Booking Info</legend>
+<legend style="margin-top: 20px" i18n:translate="">Booking Info</legend>
   <div tal:condition="context/fill_in">
   <tal:field i18n:translate="">Filling Person</tal:field>:
   <span tal:replace="context/fill_in" />
@@ -276,7 +276,7 @@
   </div>
 
 <fieldset tal:condition="python:context.medicine or context.luck">
-<legend>籤詩</legend>
+<legend style="margin-top: 20px">籤詩</legend>
   <div tal:define="medicines context/medicine|nothing"
        tal:condition="medicines">
   藥籤:
@@ -344,7 +344,7 @@ coordinates = geo.coordinates if geo.coordinates else (121.0, 24.0)
 zoom = 17 if geo.coordinates else 7
 ?>
 
-<div id="mymap" style="z-index: 10; height:300px; width: 100%"></div>
+<div id="mymap" style="z-index: 10; height:300px; width: 100%; margin-top: 20px"></div>
 <script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
 
 <script>
