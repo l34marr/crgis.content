@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-07-05 03:39+0000\n"
+"POT-Creation-Date: 2018-07-05 15:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,15 +29,15 @@ msgstr ""
 msgid "Academic"
 msgstr ""
 
+#: ./browser/daofatan.pt:178
 #: ./browser/daoshi.pt:151
-#: ./browser/temple.pt:178
-#: ./interfaces.py:169
+#: ./browser/keyi.pt:137
 msgid "Academic Works"
 msgstr ""
 
+#: ./browser/daofatan.pt:82
 #: ./browser/daoshi.pt:90
 #: ./browser/temple.pt:43
-#: ./interfaces.py:96
 msgid "Address"
 msgstr ""
 
@@ -189,10 +189,12 @@ msgstr ""
 msgid "Changhua County"
 msgstr ""
 
+#: ./browser/keyi.pt:107
 #: ./interfaces.py:1308
 msgid "ChaoXieRen List"
 msgstr ""
 
+#: ./browser/daofatan.pt:91
 #: ./interfaces.py:996
 msgid "ChengYuan List"
 msgstr ""
@@ -205,6 +207,7 @@ msgstr ""
 msgid "Chiayi County"
 msgstr ""
 
+#: ./browser/daofatan.pt:59
 #: ./interfaces.py:940
 msgid "ChuangLiRen List"
 msgstr ""
@@ -224,8 +227,8 @@ msgid "Common Era"
 msgstr ""
 
 #: ./browser/bixiewu.pt:46
+#: ./browser/daofatan.pt:26
 #: ./browser/daoshi.pt:26
-#: ./browser/temple.pt:35
 msgid "Coordinate Type"
 msgstr ""
 
@@ -238,6 +241,7 @@ msgstr ""
 msgid "Custom types migration control panel"
 msgstr ""
 
+#: ./browser/keyi.pt:115
 #: ./interfaces.py:1324
 msgid "DaiBiao YingXiang"
 msgstr ""
@@ -261,6 +265,7 @@ msgstr ""
 msgid "DaoFaTan"
 msgstr ""
 
+#: ./browser/daofatan.pt:46
 #: ./browser/daoshi.pt:46
 #: ./interfaces.py:702
 msgid "DaoFaTan Attribute"
@@ -274,9 +279,9 @@ msgstr ""
 msgid "DaoFaTan Other Name"
 msgstr ""
 
+#: ./browser/daofatan.pt:31
 #: ./browser/daoshi.pt:31
-#: ./interfaces.py:669
-#: ./profiles/default/types/DaoFaTan.xml
+#: ./browser/keyi.pt:60
 msgid "DaoFaTan Type"
 msgstr ""
 
@@ -296,18 +301,20 @@ msgstr ""
 msgid "DaoShi Type"
 msgstr ""
 
+#: ./browser/daofatan.pt:36
 #: ./browser/daoshi.pt:36
-#: ./interfaces.py:680
+#: ./browser/keyi.pt:65
 msgid "DaoTan Type"
 msgstr ""
 
+#: ./browser/keyi.pt:26
 #: ./interfaces.py:1155
 msgid "Data From"
 msgstr ""
 
 #: ./browser/bixiewu.pt:30
+#: ./browser/daofatan.pt:21
 #: ./browser/daoshi.pt:21
-#: ./browser/temple.pt:31
 msgid "Data Source"
 msgstr ""
 
@@ -353,6 +360,7 @@ msgstr ""
 msgid "Description Other"
 msgstr ""
 
+#: ./browser/keyi.pt:40
 #: ./interfaces.py:1181
 msgid "Digitalization"
 msgstr ""
@@ -370,10 +378,13 @@ msgstr ""
 msgid "Era Reference"
 msgstr ""
 
+#: ./browser/daofatan.pt:54
 #: ./interfaces.py:936
 msgid "Establish"
 msgstr ""
 
+#: ./browser/daofatan.pt:50
+#: ./browser/keyi.pt:90
 #: ./interfaces.py:932
 msgid "Establish Year"
 msgstr ""
@@ -417,8 +428,9 @@ msgstr ""
 msgid "Fa Hao"
 msgstr ""
 
+#: ./browser/daofatan.pt:41
 #: ./browser/daoshi.pt:41
-#: ./interfaces.py:691
+#: ./browser/keyi.pt:70
 msgid "FaTan Type"
 msgstr ""
 
@@ -448,6 +460,7 @@ msgstr ""
 msgid "FengShiYe Info"
 msgstr ""
 
+#: ./browser/daofatan.pt:103
 #: ./interfaces.py:1016
 msgid "FengSi"
 msgstr ""
@@ -518,6 +531,7 @@ msgstr ""
 msgid "GeoCoder"
 msgstr ""
 
+#: ./browser/keyi.pt:128
 #: ./interfaces.py:1335
 msgid "GongXianZhe"
 msgstr ""
@@ -530,6 +544,7 @@ msgstr ""
 msgid "Governmental"
 msgstr ""
 
+#: ./browser/daofatan.pt:121
 #: ./interfaces.py:1043
 msgid "GuWenWu"
 msgstr ""
@@ -538,16 +553,19 @@ msgstr ""
 msgid "HaiBian"
 msgstr ""
 
+#: ./browser/daofatan.pt:162
 #: ./browser/daoshi.pt:136
 #: ./interfaces.py:830
 msgid "HeZuo DaoShi"
 msgstr ""
 
+#: ./browser/daofatan.pt:173
 #: ./browser/daoshi.pt:147
 #: ./interfaces.py:843
 msgid "HeZuo HuZhi"
 msgstr ""
 
+#: ./browser/daofatan.pt:169
 #: ./browser/daoshi.pt:143
 #: ./interfaces.py:839
 msgid "HeZuo YueShi"
@@ -584,10 +602,12 @@ msgstr ""
 msgid "Introduction"
 msgstr ""
 
+#: ./browser/keyi.pt:119
 #: ./interfaces.py:1327
 msgid "Introduction KeYi"
 msgstr ""
 
+#: ./browser/daofatan.pt:117
 #: ./interfaces.py:1035
 msgid "JiSi"
 msgstr ""
@@ -608,6 +628,7 @@ msgstr ""
 msgid "JianShi"
 msgstr ""
 
+#: ./browser/daofatan.pt:138
 #: ./browser/daoshi.pt:112
 #: ./interfaces.py:789
 msgid "JingChang FuWu"
@@ -629,6 +650,7 @@ msgstr ""
 msgid "KeYi"
 msgstr ""
 
+#: ./browser/daofatan.pt:130
 #: ./interfaces.py:1051
 msgid "KeYi JingBen"
 msgstr ""
@@ -657,6 +679,7 @@ msgstr ""
 msgid "Latitude"
 msgstr ""
 
+#: ./browser/keyi.pt:45
 #: ./interfaces.py:1192
 msgid "LeiBie"
 msgstr ""
@@ -665,6 +688,7 @@ msgstr ""
 msgid "Length, Width, Height, Material"
 msgstr ""
 
+#: ./browser/keyi.pt:35
 #: ./interfaces.py:1170
 msgid "License"
 msgstr ""
@@ -673,9 +697,9 @@ msgstr ""
 msgid "Lienchiang County"
 msgstr ""
 
+#: ./browser/daofatan.pt:182
 #: ./browser/daoshi.pt:155
-#: ./browser/temple.pt:182
-#: ./interfaces.py:173
+#: ./browser/keyi.pt:141
 msgid "Literature Reference"
 msgstr ""
 
@@ -877,6 +901,7 @@ msgstr ""
 msgid "Private"
 msgstr ""
 
+#: ./browser/keyi.pt:30
 #: ./interfaces.py:1166
 msgid "Provider"
 msgstr ""
@@ -946,6 +971,7 @@ msgstr ""
 msgid "Secondary Purpose"
 msgstr ""
 
+#: ./browser/daofatan.pt:125
 #: ./browser/daoshi.pt:106
 #: ./interfaces.py:785
 msgid "Service"
@@ -967,6 +993,7 @@ msgstr ""
 msgid "Shi Size"
 msgstr ""
 
+#: ./browser/daofatan.pt:67
 #: ./browser/daoshi.pt:75
 #: ./interfaces.py:737
 msgid "ShiCheng List"
@@ -996,11 +1023,13 @@ msgstr ""
 msgid "ShiZi Width"
 msgstr ""
 
+#: ./browser/daofatan.pt:75
 #: ./browser/daoshi.pt:83
 #: ./interfaces.py:753
 msgid "ShouTu List"
 msgstr ""
 
+#: ./browser/keyi.pt:94
 #: ./interfaces.py:1288
 msgid "ShuMing ShiXiang"
 msgstr ""
@@ -1028,6 +1057,7 @@ msgstr ""
 msgid "SungWang XingShi"
 msgstr ""
 
+#: ./browser/keyi.pt:99
 #: ./interfaces.py:1292
 msgid "SuoShu DaoFaTan"
 msgstr ""
@@ -1056,9 +1086,9 @@ msgstr ""
 msgid "Taoyuan County"
 msgstr ""
 
+#: ./browser/daofatan.pt:86
 #: ./browser/daoshi.pt:94
 #: ./browser/temple.pt:47
-#: ./interfaces.py:104
 msgid "Telephone"
 msgstr ""
 
@@ -1074,10 +1104,12 @@ msgstr ""
 msgid "Temple Type"
 msgstr ""
 
+#: ./browser/keyi.pt:75
 #: ./interfaces.py:1252
 msgid "TiGong DaoFaTan"
 msgstr ""
 
+#: ./browser/keyi.pt:83
 #: ./interfaces.py:1268
 msgid "TiGong DaoShi"
 msgstr ""
@@ -1183,6 +1215,7 @@ msgstr ""
 msgid "YSGS"
 msgstr ""
 
+#: ./browser/daofatan.pt:98
 #: ./interfaces.py:1012
 msgid "YanGe"
 msgstr ""
@@ -1199,6 +1232,7 @@ msgstr ""
 msgid "YiMingMiaoYu Other"
 msgstr ""
 
+#: ./browser/daofatan.pt:154
 #: ./browser/daoshi.pt:128
 #: ./interfaces.py:821
 msgid "YiShi List"
@@ -1212,6 +1246,7 @@ msgstr ""
 msgid "You can select which AT content type you want to migrate to an existing DX content type."
 msgstr ""
 
+#: ./browser/keyi.pt:123
 #: ./interfaces.py:1331
 msgid "YouLai"
 msgstr ""
@@ -1241,23 +1276,28 @@ msgstr ""
 msgid "ZhiWu"
 msgstr ""
 
+#: ./browser/daofatan.pt:146
 #: ./browser/daoshi.pt:120
 #: ./interfaces.py:805
 msgid "ZhuMiao List"
 msgstr ""
 
+#: ./browser/daofatan.pt:109
 #: ./interfaces.py:1027
 msgid "ZhuSi"
 msgstr ""
 
+#: ./browser/daofatan.pt:113
 #: ./interfaces.py:1031
 msgid "ZhuSi ZhiWai"
 msgstr ""
 
+#: ./browser/keyi.pt:49
 #: ./interfaces.py:1203
 msgid "ZiLiao GeShi"
 msgstr ""
 
+#: ./browser/keyi.pt:133
 #: ./interfaces.py:1339
 msgid "ZiLiao NeiRong"
 msgstr ""

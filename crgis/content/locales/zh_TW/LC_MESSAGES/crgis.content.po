@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.content\n"
-"POT-Creation-Date: 2018-07-05 03:39+0000\n"
+"POT-Creation-Date: 2018-07-05 15:50+0000\n"
 "PO-Revision-Date: 2018-07-05 11:58+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
@@ -26,15 +26,15 @@ msgstr ""
 msgid "Academic"
 msgstr "學術研究成果"
 
+#: ./browser/daofatan.pt:178
 #: ./browser/daoshi.pt:151
-#: ./browser/temple.pt:178
-#: ./interfaces.py:169
+#: ./browser/keyi.pt:137
 msgid "Academic Works"
 msgstr "學術著作"
 
+#: ./browser/daofatan.pt:82
 #: ./browser/daoshi.pt:90
 #: ./browser/temple.pt:43
-#: ./interfaces.py:96
 msgid "Address"
 msgstr "地址"
 
@@ -186,10 +186,12 @@ msgstr "分類"
 msgid "Changhua County"
 msgstr "彰化縣"
 
+#: ./browser/keyi.pt:107
 #: ./interfaces.py:1308
 msgid "ChaoXieRen List"
 msgstr "抄寫人"
 
+#: ./browser/daofatan.pt:91
 #: ./interfaces.py:996
 msgid "ChengYuan List"
 msgstr "歷代成員"
@@ -202,6 +204,7 @@ msgstr "嘉義市"
 msgid "Chiayi County"
 msgstr "嘉義縣"
 
+#: ./browser/daofatan.pt:59
 #: ./interfaces.py:940
 msgid "ChuangLiRen List"
 msgstr "創立人"
@@ -221,8 +224,8 @@ msgid "Common Era"
 msgstr "年代"
 
 #: ./browser/bixiewu.pt:46
+#: ./browser/daofatan.pt:26
 #: ./browser/daoshi.pt:26
-#: ./browser/temple.pt:35
 msgid "Coordinate Type"
 msgstr "座標定位方式"
 
@@ -235,6 +238,7 @@ msgstr "縣市"
 msgid "Custom types migration control panel"
 msgstr ""
 
+#: ./browser/keyi.pt:115
 #: ./interfaces.py:1324
 msgid "DaiBiao YingXiang"
 msgstr "代表影像"
@@ -258,6 +262,7 @@ msgstr "道職"
 msgid "DaoFaTan"
 msgstr "道法壇"
 
+#: ./browser/daofatan.pt:46
 #: ./browser/daoshi.pt:46
 #: ./interfaces.py:702
 msgid "DaoFaTan Attribute"
@@ -271,9 +276,9 @@ msgstr "道法壇名稱"
 msgid "DaoFaTan Other Name"
 msgstr "相關名稱"
 
+#: ./browser/daofatan.pt:31
 #: ./browser/daoshi.pt:31
-#: ./interfaces.py:669
-#: ./profiles/default/types/DaoFaTan.xml
+#: ./browser/keyi.pt:60
 msgid "DaoFaTan Type"
 msgstr "道法壇選項"
 
@@ -293,18 +298,20 @@ msgstr "道士其他名稱"
 msgid "DaoShi Type"
 msgstr "道士"
 
+#: ./browser/daofatan.pt:36
 #: ./browser/daoshi.pt:36
-#: ./interfaces.py:680
+#: ./browser/keyi.pt:65
 msgid "DaoTan Type"
 msgstr "道壇派門選項"
 
+#: ./browser/keyi.pt:26
 #: ./interfaces.py:1155
 msgid "Data From"
 msgstr "資料來源"
 
 #: ./browser/bixiewu.pt:30
+#: ./browser/daofatan.pt:21
 #: ./browser/daoshi.pt:21
-#: ./browser/temple.pt:31
 msgid "Data Source"
 msgstr "資料來源"
 
@@ -350,6 +357,7 @@ msgstr "描述"
 msgid "Description Other"
 msgstr "其他可供記述事項"
 
+#: ./browser/keyi.pt:40
 #: ./interfaces.py:1181
 msgid "Digitalization"
 msgstr "數位方式"
@@ -367,10 +375,13 @@ msgstr "環境位置描述"
 msgid "Era Reference"
 msgstr "年代參考文獻"
 
+#: ./browser/daofatan.pt:54
 #: ./interfaces.py:936
 msgid "Establish"
 msgstr "創立事項"
 
+#: ./browser/daofatan.pt:50
+#: ./browser/keyi.pt:90
 #: ./interfaces.py:932
 msgid "Establish Year"
 msgstr "創立年代"
@@ -414,8 +425,9 @@ msgstr "精確"
 msgid "Fa Hao"
 msgstr "法號"
 
+#: ./browser/daofatan.pt:41
 #: ./browser/daoshi.pt:41
-#: ./interfaces.py:691
+#: ./browser/keyi.pt:70
 msgid "FaTan Type"
 msgstr "法壇派門選項"
 
@@ -445,6 +457,7 @@ msgstr "風獅爺"
 msgid "FengShiYe Info"
 msgstr "風獅爺資訊"
 
+#: ./browser/daofatan.pt:103
 #: ./interfaces.py:1016
 msgid "FengSi"
 msgstr "奉祀神明"
@@ -515,6 +528,7 @@ msgstr "類型"
 msgid "GeoCoder"
 msgstr "住址轉址定位"
 
+#: ./browser/keyi.pt:128
 #: ./interfaces.py:1335
 msgid "GongXianZhe"
 msgstr "貢獻者"
@@ -527,6 +541,7 @@ msgstr "政府管理"
 msgid "Governmental"
 msgstr "政府官方資料"
 
+#: ./browser/daofatan.pt:121
 #: ./interfaces.py:1043
 msgid "GuWenWu"
 msgstr "古物與文物"
@@ -535,16 +550,19 @@ msgstr "古物與文物"
 msgid "HaiBian"
 msgstr "海邊"
 
+#: ./browser/daofatan.pt:162
 #: ./browser/daoshi.pt:136
 #: ./interfaces.py:830
 msgid "HeZuo DaoShi"
 msgstr "經常合作夥伴: 道士"
 
+#: ./browser/daofatan.pt:173
 #: ./browser/daoshi.pt:147
 #: ./interfaces.py:843
 msgid "HeZuo HuZhi"
 msgstr "經常合作夥伴: 糊紙"
 
+#: ./browser/daofatan.pt:169
 #: ./browser/daoshi.pt:143
 #: ./interfaces.py:839
 msgid "HeZuo YueShi"
@@ -581,10 +599,12 @@ msgstr ""
 msgid "Introduction"
 msgstr "簡介與相關圖片"
 
+#: ./browser/keyi.pt:119
 #: ./interfaces.py:1327
 msgid "Introduction KeYi"
 msgstr "科儀資料簡介"
 
+#: ./browser/daofatan.pt:117
 #: ./interfaces.py:1035
 msgid "JiSi"
 msgstr "祭祀活動"
@@ -605,6 +625,7 @@ msgstr "祭祀族群 (其他)"
 msgid "JianShi"
 msgstr "劍獅"
 
+#: ./browser/daofatan.pt:138
 #: ./browser/daoshi.pt:112
 #: ./interfaces.py:789
 msgid "JingChang FuWu"
@@ -626,6 +647,7 @@ msgstr "高雄市"
 msgid "KeYi"
 msgstr "科儀"
 
+#: ./browser/daofatan.pt:130
 #: ./interfaces.py:1051
 msgid "KeYi JingBen"
 msgstr "科儀經本"
@@ -654,6 +676,7 @@ msgstr "金門縣"
 msgid "Latitude"
 msgstr "緯度值"
 
+#: ./browser/keyi.pt:45
 #: ./interfaces.py:1192
 msgid "LeiBie"
 msgstr "資料類別"
@@ -662,6 +685,7 @@ msgstr "資料類別"
 msgid "Length, Width, Height, Material"
 msgstr "長、寬、高、材質"
 
+#: ./browser/keyi.pt:35
 #: ./interfaces.py:1170
 msgid "License"
 msgstr "使用授權"
@@ -670,9 +694,9 @@ msgstr "使用授權"
 msgid "Lienchiang County"
 msgstr "連江縣"
 
+#: ./browser/daofatan.pt:182
 #: ./browser/daoshi.pt:155
-#: ./browser/temple.pt:182
-#: ./interfaces.py:173
+#: ./browser/keyi.pt:141
 msgid "Literature Reference"
 msgstr "相關書目"
 
@@ -874,6 +898,7 @@ msgstr "主要功用"
 msgid "Private"
 msgstr "私建"
 
+#: ./browser/keyi.pt:30
 #: ./interfaces.py:1166
 msgid "Provider"
 msgstr "資料來源單位"
@@ -943,6 +968,7 @@ msgstr "行程型別"
 msgid "Secondary Purpose"
 msgstr "次要功用"
 
+#: ./browser/daofatan.pt:125
 #: ./browser/daoshi.pt:106
 #: ./interfaces.py:785
 msgid "Service"
@@ -964,6 +990,7 @@ msgstr "神像"
 msgid "Shi Size"
 msgstr "獅子尺寸"
 
+#: ./browser/daofatan.pt:67
 #: ./browser/daoshi.pt:75
 #: ./interfaces.py:737
 msgid "ShiCheng List"
@@ -993,11 +1020,13 @@ msgstr "獅子尺寸 (高)"
 msgid "ShiZi Width"
 msgstr "獅子尺寸 (面寬)"
 
+#: ./browser/daofatan.pt:75
 #: ./browser/daoshi.pt:83
 #: ./interfaces.py:753
 msgid "ShouTu List"
 msgstr "授徒"
 
+#: ./browser/keyi.pt:94
 #: ./interfaces.py:1288
 msgid "ShuMing ShiXiang"
 msgstr "屬名事項"
@@ -1025,6 +1054,7 @@ msgstr "空間屬性"
 msgid "SungWang XingShi"
 msgstr "送王形式"
 
+#: ./browser/keyi.pt:99
 #: ./interfaces.py:1292
 msgid "SuoShu DaoFaTan"
 msgstr "所屬道法壇"
@@ -1053,9 +1083,9 @@ msgstr "臺東縣"
 msgid "Taoyuan County"
 msgstr "桃園縣"
 
+#: ./browser/daofatan.pt:86
 #: ./browser/daoshi.pt:94
 #: ./browser/temple.pt:47
-#: ./interfaces.py:104
 msgid "Telephone"
 msgstr "電話"
 
@@ -1071,10 +1101,12 @@ msgstr "寺廟"
 msgid "Temple Type"
 msgstr "寺廟型別"
 
+#: ./browser/keyi.pt:75
 #: ./interfaces.py:1252
 msgid "TiGong DaoFaTan"
 msgstr "提供道法壇"
 
+#: ./browser/keyi.pt:83
 #: ./interfaces.py:1268
 msgid "TiGong DaoShi"
 msgstr "提供道長"
@@ -1180,6 +1212,7 @@ msgstr "信仰範圍"
 msgid "YSGS"
 msgstr "迎送代天巡狩儀式概述"
 
+#: ./browser/daofatan.pt:98
 #: ./interfaces.py:1012
 msgid "YanGe"
 msgstr "建立沿革"
@@ -1196,6 +1229,7 @@ msgstr "移民廟宇"
 msgid "YiMingMiaoYu Other"
 msgstr "移民廟宇 (其他)"
 
+#: ./browser/daofatan.pt:154
 #: ./browser/daoshi.pt:128
 #: ./interfaces.py:821
 msgid "YiShi List"
@@ -1209,6 +1243,7 @@ msgstr "宜蘭縣"
 msgid "You can select which AT content type you want to migrate to an existing DX content type."
 msgstr ""
 
+#: ./browser/keyi.pt:123
 #: ./interfaces.py:1331
 msgid "YouLai"
 msgstr "資料收集由來"
@@ -1238,23 +1273,28 @@ msgstr "鎮水 (擋水箭)"
 msgid "ZhiWu"
 msgstr "植物"
 
+#: ./browser/daofatan.pt:146
 #: ./browser/daoshi.pt:120
 #: ./interfaces.py:805
 msgid "ZhuMiao List"
 msgstr "駐廟服務宮廟"
 
+#: ./browser/daofatan.pt:109
 #: ./interfaces.py:1027
 msgid "ZhuSi"
 msgstr "對主祀神明的稱呼"
 
+#: ./browser/daofatan.pt:113
 #: ./interfaces.py:1031
 msgid "ZhuSi ZhiWai"
 msgstr "奉祀神明 (主祀神明之外)"
 
+#: ./browser/keyi.pt:49
 #: ./interfaces.py:1203
 msgid "ZiLiao GeShi"
 msgstr "資料格式描述"
 
+#: ./browser/keyi.pt:133
 #: ./interfaces.py:1339
 msgid "ZiLiao NeiRong"
 msgstr "資料內容"

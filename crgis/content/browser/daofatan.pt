@@ -110,7 +110,7 @@
   <span tal:replace="context/zhusi" />
   </div>
   <div tal:condition="context/zhiwai">
-  <tal:field i18n:translate="">ZhiWai</tal:field>:
+  <tal:field i18n:translate="">ZhuSi ZhiWai</tal:field>:
   <span tal:content="structure python:context.zhiwai.output_relative_to(view.context)" />
   </div>
   <div tal:condition="context/jisi">
