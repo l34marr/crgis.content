@@ -174,4 +174,29 @@
     component=".vocabularies.df_attrFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
+  <utility
+    name="keyi.data_src"
+    component=".vocabularies.keyi_data_srcFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="keyi.data_frm"
+    component=".vocabularies.keyi_data_frmFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="keyi.license"
+    component=".vocabularies.keyi_licenseFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="keyi.digit"
+    component=".vocabularies.keyi_digitFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="keyi.leibie"
+    component=".vocabularies.keyi_leibieFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
 </configure>

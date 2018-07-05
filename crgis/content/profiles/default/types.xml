@@ -14,4 +14,5 @@
  <object name="Buddhist" meta_type="Dexterity FTI" />
  <object name="DaoShi" meta_type="Dexterity FTI" />
  <object name="DaoFaTan" meta_type="Dexterity FTI" />
+ <object name="KeYi" meta_type="Dexterity FTI" />
 </object>

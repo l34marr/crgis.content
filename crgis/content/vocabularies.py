@@ -982,3 +982,74 @@ class df_attr(object):
         return SimpleVocabulary(items)
 df_attrFactory = df_attr()
 
+class keyi_data_src(object):
+    """ KeYi
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='slf', title=u'本系統資料'),
+            SimpleTerm(value='acm', title=u'學術研究成果'),
+            SimpleTerm(value='fdw', title=u'田野調查'),
+        )
+        return SimpleVocabulary(items)
+keyi_data_srcFactory = keyi_data_src()
+
+class keyi_data_frm(object):
+    """ KeYi
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='dga', title=u'數位典藏'),
+            SimpleTerm(value='dnt', title=u'捐贈'),
+            SimpleTerm(value='cwk', title=u'合作'),
+            SimpleTerm(value='fdw', title=u'田野調查'),
+        )
+        return SimpleVocabulary(items)
+keyi_data_frmFactory = keyi_data_frm()
+
+class keyi_license(object):
+    """ KeYi
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='lmt', title=u'限定'),
+            SimpleTerm(value='rsh', title=u'研究者'),
+            SimpleTerm(value='dbs', title=u'資料庫'),
+            SimpleTerm(value='opn', title=u'公開'),
+        )
+        return SimpleVocabulary(items)
+keyi_licenseFactory = keyi_license()
+
+class keyi_digit(object):
+    """ KeYi
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='dga', title=u'數位典藏掃描'),
+            SimpleTerm(value='scn', title=u'一般掃描'),
+            SimpleTerm(value='pht', title=u'一般翻攝'),
+            SimpleTerm(value='fdw', title=u'田野翻攝'),
+            SimpleTerm(value='cpy', title=u'影印掃描'),
+        )
+        return SimpleVocabulary(items)
+keyi_digitFactory = keyi_digit()
+
+class keyi_leibie(object):
+    """ KeYi
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='jdy', title=u'醮典儀式'),
+            SimpleTerm(value='gdy', title=u'功德儀式'),
+            SimpleTerm(value='zgw', title=u'總綱文檢'),
+            SimpleTerm(value='fsk', title=u'法事科儀'),
+            SimpleTerm(value='wjs', title=u'文檢(實體)'),
+        )
+        return SimpleVocabulary(items)
+keyi_leibieFactory = keyi_leibie()
+
