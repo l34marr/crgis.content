@@ -104,6 +104,7 @@ class ScheduleView(BrowserView):
         if len(photo) == 0: return None
         return photo[0].getObject()
 
+
 class DaoShiView(BrowserView):
 
     template = ViewPageTemplateFile("daoshi.pt")
@@ -122,4 +123,47 @@ class DaoShiView(BrowserView):
 
     def related_temples(self):
         return None
+
+
+class DaoFaTanView(BrowserView):
+
+    template = ViewPageTemplateFile("daofatan.pt")
+
+    def __call__(self):
+        return self.template()
+
+    def t_title(self, vocab, value):
+        try:
+            factory = getUtility(IVocabularyFactory, vocab)
+            vocabulary = factory(self.context)
+            term = vocabulary.getTerm(value)
+            return term.title
+        except:
+            return None
+
+    def deity_term(self, value):
+        factory = getUtility(IVocabularyFactory, 'deity_name')
+        vocabulary = factory(self.context)
+        try:
+            existing = vocabulary.getTerm(value)
+            return existing.title.split(u': ')[0]
+        except LookupError:
+            return value
+
+
+class KeYiView(BrowserView):
+
+    template = ViewPageTemplateFile("keyi.pt")
+
+    def __call__(self):
+        return self.template()
+
+    def t_title(self, vocab, value):
+        try:
+            factory = getUtility(IVocabularyFactory, vocab)
+            vocabulary = factory(self.context)
+            term = vocabulary.getTerm(value)
+            return term.title
+        except:
+            return None
 

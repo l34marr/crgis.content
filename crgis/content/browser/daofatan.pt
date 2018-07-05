@@ -1,0 +1,190 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="crgis.content">
+
+<body>
+
+<metal:styleslot fill-slot="style_slot">
+  <link rel="stylesheet" href="++resource++crgis.theme/leaflet/leaflet.css">
+</metal:styleslot>
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+  <div tal:define="srcs context/data_src|nothing"
+       tal:condition="srcs">
+  <tal:field i18n:translate="">Data Source</tal:field>:
+    <span tal:replace="python:view.t_title('crgis.data_src',srcs[0])" />
+  </div>
+  <div tal:define="crds context/coordinate|nothing"
+       tal:condition="crds">
+  <tal:field i18n:translate="">Coordinate Type</tal:field>:
+    <span tal:replace="python:view.t_title('crgis.coordinate',crds[0])" />
+  </div>
+  <div tal:define="dfts context/df_type|nothing"
+       tal:condition="dfts">
+  <tal:field i18n:translate="">DaoFaTan Type</tal:field>:
+    <span tal:replace="python:view.t_title('dao.df_type',dfts[0])" />
+  </div>
+  <div tal:define="dtts context/dt_type|nothing"
+       tal:condition="dtts">
+  <tal:field i18n:translate="">DaoTan Type</tal:field>:
+    <span tal:replace="python:view.t_title('dao.dt_type',dtts[0])" />
+  </div>
+  <div tal:define="ftts context/ft_type|nothing"
+       tal:condition="ftts">
+  <tal:field i18n:translate="">FaTan Type</tal:field>:
+    <span tal:replace="python:view.t_title('dao.ft_type',ftts[0])" />
+  </div>
+  <div tal:define="dfas context/df_attr|nothing"
+       tal:condition="dfas">
+  <tal:field i18n:translate="">DaoFaTan Attribute</tal:field>:
+    <span tal:replace="python:view.t_title('dao.df_attr',dfas[0])" />
+  </div>
+  <div tal:condition="context/birth">
+  <tal:field i18n:translate="">Establish Year</tal:field>:
+  <span tal:replace="context/birth" />
+  </div>
+  <div tal:condition="context/chngli">
+  <tal:field i18n:translate="">Establish</tal:field>:
+  <span tal:content="structure python:context.chngli.output_relative_to(view.context)" />
+  </div>
+  <div tal:define="clrs context/chlirn|nothing"
+       tal:condition="clrs">
+  <tal:field i18n:translate="">ChuangLiRen List</tal:field>:
+    <tal:block repeat="clr clrs">
+    <span tal:replace="python:clr.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/scl/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:define="scls context/shchn|nothing"
+       tal:condition="scls">
+  <tal:field i18n:translate="">ShiCheng List</tal:field>:
+    <tal:block repeat="scl scls">
+    <span tal:replace="python:scl.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/scl/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:define="fzrs context/fuzeren|nothing"
+       tal:condition="fzrs">
+  <tal:field i18n:translate="">ShouTu List</tal:field>:
+    <tal:block repeat="fzr fzrs">
+    <span tal:replace="python:sht.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/fzr/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:condition="context/addr">
+  <tal:field i18n:translate="">Address</tal:field>:
+  <span tal:replace="context/addr" />
+  </div>
+  <div tal:condition="context/tel">
+  <tal:field i18n:translate="">Telephone</tal:field>:
+  <span tal:replace="context/tel" />
+  </div>
+  <div tal:define="cyns context/chngyn|nothing"
+       tal:condition="cyns">
+  <tal:field i18n:translate="">ChengYuan List</tal:field>:
+    <tal:block repeat="cyn cyns">
+    <span tal:replace="python:cyn.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/cyn/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:condition="context/yange">
+  <tal:field i18n:translate="">YanGe</tal:field>:
+  <span tal:content="structure python:context.yange.output_relative_to(view.context)" />
+  </div>
+  <div tal:define="deities context/fengsi|nothing"
+       tal:condition="deities">
+  <tal:field i18n:translate="">FengSi</tal:field>:
+  <tal:deities repeat="deity deities">
+    <span tal:replace="python:view.deity_term(deity)">Deity Name</span>
+  </tal:deities>
+  </div>
+  <div tal:condition="context/zhusi">
+  <tal:field i18n:translate="">ZhuSi</tal:field>:
+  <span tal:replace="context/zhusi" />
+  </div>
+  <div tal:condition="context/zhiwai">
+  <tal:field i18n:translate="">ZhiWai</tal:field>:
+  <span tal:content="structure python:context.zhiwai.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/jisi">
+  <tal:field i18n:translate="">JiSi</tal:field>:
+  <span tal:content="structure python:context.jisi.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/wenwu">
+  <tal:field i18n:translate="">GuWenWu</tal:field>:
+  <span tal:content="structure python:context.wenwu.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/service">
+  <tal:field i18n:translate="">Service</tal:field>:
+  <span tal:content="structure python:context.service.output_relative_to(view.context)" />
+  </div>
+  <div tal:define="kyis context/keyi|nothing"
+       tal:condition="kyis">
+  <tal:field i18n:translate="">KeYi JingBen</tal:field>:
+    <tal:block repeat="kyi kyis">
+    <span tal:replace="python:kyi.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/kyi/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:define="jchs context/jngchng|nothing"
+       tal:condition="jchs">
+  <tal:field i18n:translate="">JingChang FuWu</tal:field>:
+    <tal:block repeat="jch jchs">
+    <span tal:replace="python:jch.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/jch/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:define="zhms context/zhumiao|nothing"
+       tal:condition="zhms">
+  <tal:field i18n:translate="">ZhuMiao List</tal:field>:
+    <tal:block repeat="zhm zhms">
+    <span tal:replace="python:zhm.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/zhm/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:define="yshs context/yishi|nothing"
+       tal:condition="yshs">
+  <tal:field i18n:translate="">YiShi List</tal:field>:
+    <tal:block repeat="ysh yshs">
+    <span tal:replace="python:ysh.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/ysh/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:define="hzds context/hzds|nothing"
+       tal:condition="hzds">
+  <tal:field i18n:translate="">HeZuo DaoShi</tal:field>:
+    <tal:block repeat="hzd hzds">
+    <span tal:replace="python:hzd.to_object.Title()" />
+    <span class="separator" tal:condition="not: repeat/hzd/end">,</span>
+    </tal:block>
+  </div>
+  <div tal:condition="context/hzys">
+  <tal:field i18n:translate="">HeZuo YueShi</tal:field>:
+  <span tal:content="structure python:context.hzys.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/hzhz">
+  <tal:field i18n:translate="">HeZuo HuZhi</tal:field>:
+  <span tal:content="structure python:context.hzhz.output_relative_to(view.context)" />
+  </div>
+
+  <div tal:condition="context/academic">
+  <tal:field i18n:translate="">Academic Works</tal:field>:
+  <span tal:content="structure python:context.academic.output_relative_to(view.context)" />
+  </div>
+  <div tal:condition="context/literature">
+  <tal:field i18n:translate="">Literature Reference</tal:field>:
+  <span tal:content="structure python:context.literature.output_relative_to(view.context)" />
+  </div>
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>

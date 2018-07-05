@@ -34,4 +34,16 @@
     class=".view.DaoShiView"
     permission="zope2.View" />
 
+  <browser:page
+    name="daofatan_view"
+    for="crgis.content.interfaces.IDaoFaTan"
+    class=".view.DaoFaTanView"
+    permission="zope2.View" />
+
+  <browser:page
+    name="keyi_view"
+    for="crgis.content.interfaces.IKeYi"
+    class=".view.KeYiView"
+    permission="zope2.View" />
+
 </configure>
