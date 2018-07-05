@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-07-04 03:06+0000\n"
+"POT-Creation-Date: 2018-07-05 03:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.content\n"
 
-#: ./interfaces.py:614
+#: ./interfaces.py:621
 msgid "1st-level Administrative Area"
 msgstr ""
 
-#: ./interfaces.py:618
+#: ./interfaces.py:625
 msgid "2nd-level Adminstrative Area"
 msgstr ""
 
@@ -42,7 +42,7 @@ msgid "Address"
 msgstr ""
 
 #: ./browser/daoshi.pt:66
-#: ./interfaces.py:722
+#: ./interfaces.py:729
 msgid "Alt Name"
 msgstr ""
 
@@ -96,6 +96,10 @@ msgstr ""
 msgid "Basic Info"
 msgstr ""
 
+#: ./migration/crgis_migration.pt:32
+msgid "Before migrating your content please read the ${migrationsection}"
+msgstr ""
+
 #: ./vocabularies.py:500
 msgid "BeiWenFuZhou"
 msgstr ""
@@ -105,7 +109,7 @@ msgid "Believer Organization"
 msgstr ""
 
 #: ./browser/daoshi.pt:62
-#: ./interfaces.py:718
+#: ./interfaces.py:725
 msgid "BenMin"
 msgstr ""
 
@@ -128,10 +132,11 @@ msgid "BiXieWu_Type"
 msgstr ""
 
 #: ./browser/daoshi.pt:70
-#: ./interfaces.py:726
+#: ./interfaces.py:733
 msgid "Birth Year"
 msgstr ""
 
+#: ./browser/schedule.pt:16
 #: ./interfaces.py:573
 msgid "Body"
 msgstr ""
@@ -184,12 +189,24 @@ msgstr ""
 msgid "Changhua County"
 msgstr ""
 
+#: ./interfaces.py:1308
+msgid "ChaoXieRen List"
+msgstr ""
+
+#: ./interfaces.py:996
+msgid "ChengYuan List"
+msgstr ""
+
 #: ./vocabularies.py:677
 msgid "Chiayi City"
 msgstr ""
 
 #: ./vocabularies.py:678
 msgid "Chiayi County"
+msgstr ""
+
+#: ./interfaces.py:940
+msgid "ChuangLiRen List"
 msgstr ""
 
 #: ./browser/bixiewu.pt:118
@@ -217,28 +234,49 @@ msgstr ""
 msgid "County"
 msgstr ""
 
+#: ./migration/crgis_migration.pt:21
+msgid "Custom types migration control panel"
+msgstr ""
+
+#: ./interfaces.py:1324
+msgid "DaiBiao YingXiang"
+msgstr ""
+
 #: ./browser/temple.pt:316
 #: ./interfaces.py:299
 msgid "DaiTien XuanSho"
 msgstr ""
 
 #: ./browser/daoshi.pt:50
-#: ./interfaces.py:706
+#: ./interfaces.py:713
 msgid "Dao Hao"
 msgstr ""
 
 #: ./browser/daoshi.pt:58
-#: ./interfaces.py:714
+#: ./interfaces.py:721
 msgid "Dao Zi"
 msgstr ""
 
+#: ./profiles/default/types/DaoFaTan.xml
+msgid "DaoFaTan"
+msgstr ""
+
 #: ./browser/daoshi.pt:46
-#: ./interfaces.py:695
+#: ./interfaces.py:702
 msgid "DaoFaTan Attribute"
 msgstr ""
 
+#: ./interfaces.py:858
+msgid "DaoFaTan Name"
+msgstr ""
+
+#: ./interfaces.py:862
+msgid "DaoFaTan Other Name"
+msgstr ""
+
 #: ./browser/daoshi.pt:31
-#: ./interfaces.py:662
+#: ./interfaces.py:669
+#: ./profiles/default/types/DaoFaTan.xml
 msgid "DaoFaTan Type"
 msgstr ""
 
@@ -246,11 +284,11 @@ msgstr ""
 msgid "DaoShi"
 msgstr ""
 
-#: ./interfaces.py:632
+#: ./interfaces.py:639
 msgid "DaoShi Name"
 msgstr ""
 
-#: ./interfaces.py:636
+#: ./interfaces.py:643
 msgid "DaoShi Other Name"
 msgstr ""
 
@@ -259,8 +297,12 @@ msgid "DaoShi Type"
 msgstr ""
 
 #: ./browser/daoshi.pt:36
-#: ./interfaces.py:673
+#: ./interfaces.py:680
 msgid "DaoTan Type"
+msgstr ""
+
+#: ./interfaces.py:1155
+msgid "Data From"
 msgstr ""
 
 #: ./browser/bixiewu.pt:30
@@ -299,12 +341,24 @@ msgstr ""
 msgid "Deity Host Other"
 msgstr ""
 
+#: ./migration/crgis_migration.pt:38
+msgid "Depending of the number of archetypes in your portal, it may take a <span class=\"strong\">really</span> long time for the migration to be done. Stay calm and be patient."
+msgstr ""
+
 #: ./interfaces.py:333
 msgid "Description"
 msgstr ""
 
 #: ./interfaces.py:286
 msgid "Description Other"
+msgstr ""
+
+#: ./interfaces.py:1181
+msgid "Digitalization"
+msgstr ""
+
+#: ./migration/crgis_migration.pt:114
+msgid "Do not migrate"
 msgstr ""
 
 #: ./interfaces.py:410
@@ -314,6 +368,14 @@ msgstr ""
 #: ./browser/bixiewu.pt:58
 #: ./interfaces.py:368
 msgid "Era Reference"
+msgstr ""
+
+#: ./interfaces.py:936
+msgid "Establish"
+msgstr ""
+
+#: ./interfaces.py:932
+msgid "Establish Year"
 msgstr ""
 
 #: ./browser/temple.pt:85
@@ -351,12 +413,12 @@ msgid "Exact"
 msgstr ""
 
 #: ./browser/daoshi.pt:54
-#: ./interfaces.py:710
+#: ./interfaces.py:717
 msgid "Fa Hao"
 msgstr ""
 
 #: ./browser/daoshi.pt:41
-#: ./interfaces.py:684
+#: ./interfaces.py:691
 msgid "FaTan Type"
 msgstr ""
 
@@ -386,6 +448,10 @@ msgstr ""
 msgid "FengShiYe Info"
 msgstr ""
 
+#: ./interfaces.py:1016
+msgid "FengSi"
+msgstr ""
+
 #: ./vocabularies.py:19
 msgid "Fieldwork"
 msgstr ""
@@ -407,6 +473,10 @@ msgstr ""
 #: ./browser/temple.pt:320
 #: ./interfaces.py:305
 msgid "Frequence"
+msgstr ""
+
+#: ./interfaces.py:972
+msgid "FuZeRen List"
 msgstr ""
 
 #: ./browser/temple.pt:138
@@ -448,12 +518,20 @@ msgstr ""
 msgid "GeoCoder"
 msgstr ""
 
+#: ./interfaces.py:1335
+msgid "GongXianZhe"
+msgstr ""
+
 #: ./vocabularies.py:309
 msgid "Government"
 msgstr ""
 
 #: ./vocabularies.py:17
 msgid "Governmental"
+msgstr ""
+
+#: ./interfaces.py:1043
+msgid "GuWenWu"
 msgstr ""
 
 #: ./vocabularies.py:557
@@ -466,12 +544,12 @@ msgid "HeZuo DaoShi"
 msgstr ""
 
 #: ./browser/daoshi.pt:147
-#: ./interfaces.py:850
+#: ./interfaces.py:843
 msgid "HeZuo HuZhi"
 msgstr ""
 
 #: ./browser/daoshi.pt:143
-#: ./interfaces.py:846
+#: ./interfaces.py:839
 msgid "HeZuo YueShi"
 msgstr ""
 
@@ -496,10 +574,22 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
+#: ./migration/crgis_migration.pt:31
+msgid "Important"
+msgstr ""
+
 #: ./browser/daoshi.pt:102
 #: ./browser/temple.pt:102
 #: ./interfaces.py:149
 msgid "Introduction"
+msgstr ""
+
+#: ./interfaces.py:1327
+msgid "Introduction KeYi"
+msgstr ""
+
+#: ./interfaces.py:1035
+msgid "JiSi"
 msgstr ""
 
 #: ./interfaces.py:198
@@ -519,7 +609,7 @@ msgid "JianShi"
 msgstr ""
 
 #: ./browser/daoshi.pt:112
-#: ./interfaces.py:782
+#: ./interfaces.py:789
 msgid "JingChang FuWu"
 msgstr ""
 
@@ -535,6 +625,26 @@ msgstr ""
 msgid "Kaohsiung City"
 msgstr ""
 
+#: ./profiles/default/types/KeYi.xml
+msgid "KeYi"
+msgstr ""
+
+#: ./interfaces.py:1051
+msgid "KeYi JingBen"
+msgstr ""
+
+#: ./interfaces.py:1136
+msgid "KeYi Name"
+msgstr ""
+
+#: ./interfaces.py:1140
+msgid "KeYi Other Name"
+msgstr ""
+
+#: ./profiles/default/types/KeYi.xml
+msgid "KeYi Type"
+msgstr ""
+
 #: ./vocabularies.py:666
 msgid "Keelung City"
 msgstr ""
@@ -545,6 +655,18 @@ msgstr ""
 
 #: ./interfaces.py:529
 msgid "Latitude"
+msgstr ""
+
+#: ./interfaces.py:1192
+msgid "LeiBie"
+msgstr ""
+
+#: ./interfaces.py:1204
+msgid "Length, Width, Height, Material"
+msgstr ""
+
+#: ./interfaces.py:1170
+msgid "License"
 msgstr ""
 
 #: ./vocabularies.py:686
@@ -599,6 +721,14 @@ msgstr ""
 msgid "Miaoli County"
 msgstr ""
 
+#: ./migration/crgis_migration.pt:93
+msgid "Migrate contents"
+msgstr ""
+
+#: ./migration/crgis_migration.pt:24
+msgid "Migrate custom Archetypes content types to any available Dexterity content types."
+msgstr ""
+
 #: ./behaviors/configure.zcml:11
 msgid "Name from Creation Date"
 msgstr ""
@@ -629,6 +759,10 @@ msgstr ""
 msgid "NianLiQingSheng Other"
 msgstr ""
 
+#: ./migration/crgis_migration.pt:148
+msgid "No content to migrate."
+msgstr ""
+
 #: ./browser/temple.pt:170
 #: ./interfaces.py:165
 #: ./vocabularies.py:654
@@ -637,6 +771,10 @@ msgstr ""
 
 #: ./vocabularies.py:35
 msgid "Not Yet"
+msgstr ""
+
+#: ./migration/crgis_migration.pt:37
+msgid "Note about how long it might take"
 msgstr ""
 
 #: ./browser/temple.pt:142
@@ -739,6 +877,10 @@ msgstr ""
 msgid "Private"
 msgstr ""
 
+#: ./interfaces.py:1166
+msgid "Provider"
+msgstr ""
+
 #: ./vocabularies.py:293
 msgid "Public"
 msgstr ""
@@ -773,6 +915,7 @@ msgstr ""
 msgid "Registered Name"
 msgstr ""
 
+#: ./browser/schedule.pt:21
 #: ./interfaces.py:422
 msgid "Related Temples"
 msgstr ""
@@ -804,7 +947,7 @@ msgid "Secondary Purpose"
 msgstr ""
 
 #: ./browser/daoshi.pt:106
-#: ./interfaces.py:778
+#: ./interfaces.py:785
 msgid "Service"
 msgstr ""
 
@@ -825,7 +968,7 @@ msgid "Shi Size"
 msgstr ""
 
 #: ./browser/daoshi.pt:75
-#: ./interfaces.py:730
+#: ./interfaces.py:737
 msgid "ShiCheng List"
 msgstr ""
 
@@ -854,12 +997,20 @@ msgid "ShiZi Width"
 msgstr ""
 
 #: ./browser/daoshi.pt:83
-#: ./interfaces.py:746
+#: ./interfaces.py:753
 msgid "ShouTu List"
+msgstr ""
+
+#: ./interfaces.py:1288
+msgid "ShuMing ShiXiang"
 msgstr ""
 
 #: ./vocabularies.py:539
 msgid "SiRen"
+msgstr ""
+
+#: ./migration/crgis_migration.pt:36
+msgid "Since LinguaPlone does not support Dexterity you need to migrate from LinguaPlone to ${pam}. The migration from Products.LinguaPlone to plone.app.multilingual should happen before the migration from Archetypes to plone.app.contenttypes. For details on the migration see the ${documentation}"
 msgstr ""
 
 #: ./browser/temple.pt:39
@@ -875,6 +1026,10 @@ msgstr ""
 #: ./browser/temple.pt:328
 #: ./interfaces.py:317
 msgid "SungWang XingShi"
+msgstr ""
+
+#: ./interfaces.py:1292
+msgid "SuoShu DaoFaTan"
 msgstr ""
 
 #: ./vocabularies.py:501
@@ -917,6 +1072,14 @@ msgstr ""
 
 #: ./profiles/default/types/Temple.xml
 msgid "Temple Type"
+msgstr ""
+
+#: ./interfaces.py:1252
+msgid "TiGong DaoFaTan"
+msgstr ""
+
+#: ./interfaces.py:1268
+msgid "TiGong DaoShi"
 msgstr ""
 
 #: ./interfaces.py:18
@@ -981,6 +1144,10 @@ msgstr ""
 msgid "WangYeXianXiang Other"
 msgstr ""
 
+#: ./migration/crgis_migration.pt:147
+msgid "Warning"
+msgstr ""
+
 #: ./browser/bixiewu.pt:98
 #: ./browser/temple.pt:110
 #: ./interfaces.py:145
@@ -1016,6 +1183,10 @@ msgstr ""
 msgid "YSGS"
 msgstr ""
 
+#: ./interfaces.py:1012
+msgid "YanGe"
+msgstr ""
+
 #: ./interfaces.py:120
 msgid "Year Accuracy"
 msgstr ""
@@ -1029,12 +1200,20 @@ msgid "YiMingMiaoYu Other"
 msgstr ""
 
 #: ./browser/daoshi.pt:128
-#: ./interfaces.py:814
+#: ./interfaces.py:821
 msgid "YiShi List"
 msgstr ""
 
 #: ./vocabularies.py:682
 msgid "Yilan County"
+msgstr ""
+
+#: ./migration/crgis_migration.pt:96
+msgid "You can select which AT content type you want to migrate to an existing DX content type."
+msgstr ""
+
+#: ./interfaces.py:1331
+msgid "YouLai"
 msgstr ""
 
 #: ./browser/temple.pt:312
@@ -1063,12 +1242,28 @@ msgid "ZhiWu"
 msgstr ""
 
 #: ./browser/daoshi.pt:120
-#: ./interfaces.py:798
+#: ./interfaces.py:805
 msgid "ZhuMiao List"
 msgstr ""
 
+#: ./interfaces.py:1027
+msgid "ZhuSi"
+msgstr ""
+
+#: ./interfaces.py:1031
+msgid "ZhuSi ZhiWai"
+msgstr ""
+
+#: ./interfaces.py:1203
+msgid "ZiLiao GeShi"
+msgstr ""
+
+#: ./interfaces.py:1339
+msgid "ZiLiao NeiRong"
+msgstr ""
+
 #: ./browser/daoshi.pt:98
-#: ./interfaces.py:770
+#: ./interfaces.py:777
 msgid "ZouZhi"
 msgstr ""
 
@@ -1126,6 +1321,10 @@ msgstr ""
 
 #: ./vocabularies.py:595
 msgid "crouching"
+msgstr ""
+
+#: ./migration/crgis_migration.pt:36
+msgid "documentation"
 msgstr ""
 
 #: ./vocabularies.py:610
@@ -1493,6 +1692,10 @@ msgstr ""
 #. Default: "OT"
 #: ./vocabularies.py:472
 msgid "medicine05"
+msgstr ""
+
+#: ./migration/crgis_migration.pt:32
+msgid "migration-section in the documentation of plone.app.contenttypes"
 msgstr ""
 
 #: ./vocabularies.py:521

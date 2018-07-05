@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.content\n"
-"POT-Creation-Date: 2018-07-04 03:06+0000\n"
-"PO-Revision-Date: 2018-07-04 11:08+0800\n"
+"POT-Creation-Date: 2018-07-05 03:39+0000\n"
+"PO-Revision-Date: 2018-07-05 11:58+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.content\n"
 
-#: ./interfaces.py:614
+#: ./interfaces.py:621
 msgid "1st-level Administrative Area"
 msgstr ""
 
-#: ./interfaces.py:618
+#: ./interfaces.py:625
 msgid "2nd-level Adminstrative Area"
 msgstr ""
 
@@ -39,7 +39,7 @@ msgid "Address"
 msgstr "地址"
 
 #: ./browser/daoshi.pt:66
-#: ./interfaces.py:722
+#: ./interfaces.py:729
 msgid "Alt Name"
 msgstr "其他名稱"
 
@@ -93,6 +93,10 @@ msgstr "底座尺寸 (寬)"
 msgid "Basic Info"
 msgstr "基本資料"
 
+#: ./migration/crgis_migration.pt:32
+msgid "Before migrating your content please read the ${migrationsection}"
+msgstr ""
+
 #: ./vocabularies.py:500
 msgid "BeiWenFuZhou"
 msgstr "碑文與符咒"
@@ -102,7 +106,7 @@ msgid "Believer Organization"
 msgstr "信徒組織"
 
 #: ./browser/daoshi.pt:62
-#: ./interfaces.py:718
+#: ./interfaces.py:725
 msgid "BenMin"
 msgstr "本命"
 
@@ -125,10 +129,11 @@ msgid "BiXieWu_Type"
 msgstr "辟邪物類型"
 
 #: ./browser/daoshi.pt:70
-#: ./interfaces.py:726
+#: ./interfaces.py:733
 msgid "Birth Year"
 msgstr "出生年代 (西元年)"
 
+#: ./browser/schedule.pt:16
 #: ./interfaces.py:573
 msgid "Body"
 msgstr "內容"
@@ -181,6 +186,14 @@ msgstr "分類"
 msgid "Changhua County"
 msgstr "彰化縣"
 
+#: ./interfaces.py:1308
+msgid "ChaoXieRen List"
+msgstr "抄寫人"
+
+#: ./interfaces.py:996
+msgid "ChengYuan List"
+msgstr "歷代成員"
+
 #: ./vocabularies.py:677
 msgid "Chiayi City"
 msgstr "嘉義市"
@@ -188,6 +201,10 @@ msgstr "嘉義市"
 #: ./vocabularies.py:678
 msgid "Chiayi County"
 msgstr "嘉義縣"
+
+#: ./interfaces.py:940
+msgid "ChuangLiRen List"
+msgstr "創立人"
 
 #: ./browser/bixiewu.pt:118
 #: ./interfaces.py:435
@@ -214,28 +231,49 @@ msgstr "座標定位方式"
 msgid "County"
 msgstr "縣市"
 
+#: ./migration/crgis_migration.pt:21
+msgid "Custom types migration control panel"
+msgstr ""
+
+#: ./interfaces.py:1324
+msgid "DaiBiao YingXiang"
+msgstr "代表影像"
+
 #: ./browser/temple.pt:316
 #: ./interfaces.py:299
 msgid "DaiTien XuanSho"
 msgstr "迎送代天巡狩儀式"
 
 #: ./browser/daoshi.pt:50
-#: ./interfaces.py:706
+#: ./interfaces.py:713
 msgid "Dao Hao"
 msgstr "道號"
 
 #: ./browser/daoshi.pt:58
-#: ./interfaces.py:714
+#: ./interfaces.py:721
 msgid "Dao Zi"
 msgstr "道職"
 
+#: ./profiles/default/types/DaoFaTan.xml
+msgid "DaoFaTan"
+msgstr "道法壇"
+
 #: ./browser/daoshi.pt:46
-#: ./interfaces.py:695
+#: ./interfaces.py:702
 msgid "DaoFaTan Attribute"
 msgstr "道法壇性質"
 
+#: ./interfaces.py:858
+msgid "DaoFaTan Name"
+msgstr "道法壇名稱"
+
+#: ./interfaces.py:862
+msgid "DaoFaTan Other Name"
+msgstr "相關名稱"
+
 #: ./browser/daoshi.pt:31
-#: ./interfaces.py:662
+#: ./interfaces.py:669
+#: ./profiles/default/types/DaoFaTan.xml
 msgid "DaoFaTan Type"
 msgstr "道法壇選項"
 
@@ -243,11 +281,11 @@ msgstr "道法壇選項"
 msgid "DaoShi"
 msgstr "道士"
 
-#: ./interfaces.py:632
+#: ./interfaces.py:639
 msgid "DaoShi Name"
 msgstr "道士姓名"
 
-#: ./interfaces.py:636
+#: ./interfaces.py:643
 msgid "DaoShi Other Name"
 msgstr "道士其他名稱"
 
@@ -256,9 +294,13 @@ msgid "DaoShi Type"
 msgstr "道士"
 
 #: ./browser/daoshi.pt:36
-#: ./interfaces.py:673
+#: ./interfaces.py:680
 msgid "DaoTan Type"
 msgstr "道壇派門選項"
+
+#: ./interfaces.py:1155
+msgid "Data From"
+msgstr "資料來源"
 
 #: ./browser/bixiewu.pt:30
 #: ./browser/daoshi.pt:21
@@ -296,6 +338,10 @@ msgstr "對主祀神明的稱呼"
 msgid "Deity Host Other"
 msgstr "主祀神明 (其他)"
 
+#: ./migration/crgis_migration.pt:38
+msgid "Depending of the number of archetypes in your portal, it may take a <span class=\"strong\">really</span> long time for the migration to be done. Stay calm and be patient."
+msgstr ""
+
 #: ./interfaces.py:333
 msgid "Description"
 msgstr "描述"
@@ -303,6 +349,14 @@ msgstr "描述"
 #: ./interfaces.py:286
 msgid "Description Other"
 msgstr "其他可供記述事項"
+
+#: ./interfaces.py:1181
+msgid "Digitalization"
+msgstr "數位方式"
+
+#: ./migration/crgis_migration.pt:114
+msgid "Do not migrate"
+msgstr ""
 
 #: ./interfaces.py:410
 msgid "Environment Description"
@@ -312,6 +366,14 @@ msgstr "環境位置描述"
 #: ./interfaces.py:368
 msgid "Era Reference"
 msgstr "年代參考文獻"
+
+#: ./interfaces.py:936
+msgid "Establish"
+msgstr "創立事項"
+
+#: ./interfaces.py:932
+msgid "Establish Year"
+msgstr "創立年代"
 
 #: ./browser/temple.pt:85
 #: ./interfaces.py:129
@@ -348,12 +410,12 @@ msgid "Exact"
 msgstr "精確"
 
 #: ./browser/daoshi.pt:54
-#: ./interfaces.py:710
+#: ./interfaces.py:717
 msgid "Fa Hao"
 msgstr "法號"
 
 #: ./browser/daoshi.pt:41
-#: ./interfaces.py:684
+#: ./interfaces.py:691
 msgid "FaTan Type"
 msgstr "法壇派門選項"
 
@@ -383,6 +445,10 @@ msgstr "風獅爺"
 msgid "FengShiYe Info"
 msgstr "風獅爺資訊"
 
+#: ./interfaces.py:1016
+msgid "FengSi"
+msgstr "奉祀神明"
+
 #: ./vocabularies.py:19
 msgid "Fieldwork"
 msgstr "田野調查"
@@ -405,6 +471,10 @@ msgstr "財團法人"
 #: ./interfaces.py:305
 msgid "Frequence"
 msgstr "舉辦週期與時間"
+
+#: ./interfaces.py:972
+msgid "FuZeRen List"
+msgstr "現在負責人"
 
 #: ./browser/temple.pt:138
 #: ./interfaces.py:82
@@ -445,6 +515,10 @@ msgstr "類型"
 msgid "GeoCoder"
 msgstr "住址轉址定位"
 
+#: ./interfaces.py:1335
+msgid "GongXianZhe"
+msgstr "貢獻者"
+
 #: ./vocabularies.py:309
 msgid "Government"
 msgstr "政府管理"
@@ -452,6 +526,10 @@ msgstr "政府管理"
 #: ./vocabularies.py:17
 msgid "Governmental"
 msgstr "政府官方資料"
+
+#: ./interfaces.py:1043
+msgid "GuWenWu"
+msgstr "古物與文物"
 
 #: ./vocabularies.py:557
 msgid "HaiBian"
@@ -463,12 +541,12 @@ msgid "HeZuo DaoShi"
 msgstr "經常合作夥伴: 道士"
 
 #: ./browser/daoshi.pt:147
-#: ./interfaces.py:850
+#: ./interfaces.py:843
 msgid "HeZuo HuZhi"
 msgstr "經常合作夥伴: 糊紙"
 
 #: ./browser/daoshi.pt:143
-#: ./interfaces.py:846
+#: ./interfaces.py:839
 msgid "HeZuo YueShi"
 msgstr "經常合作夥伴: 樂師"
 
@@ -493,11 +571,23 @@ msgstr "花蓮縣"
 msgid "Image"
 msgstr "圖檔"
 
+#: ./migration/crgis_migration.pt:31
+msgid "Important"
+msgstr ""
+
 #: ./browser/daoshi.pt:102
 #: ./browser/temple.pt:102
 #: ./interfaces.py:149
 msgid "Introduction"
 msgstr "簡介與相關圖片"
+
+#: ./interfaces.py:1327
+msgid "Introduction KeYi"
+msgstr "科儀資料簡介"
+
+#: ./interfaces.py:1035
+msgid "JiSi"
+msgstr "祭祀活動"
 
 #: ./interfaces.py:198
 msgid "JiSiFanWei"
@@ -516,7 +606,7 @@ msgid "JianShi"
 msgstr "劍獅"
 
 #: ./browser/daoshi.pt:112
-#: ./interfaces.py:782
+#: ./interfaces.py:789
 msgid "JingChang FuWu"
 msgstr "經常服務宮廟"
 
@@ -532,6 +622,26 @@ msgstr "聚落鎮煞"
 msgid "Kaohsiung City"
 msgstr "高雄市"
 
+#: ./profiles/default/types/KeYi.xml
+msgid "KeYi"
+msgstr "科儀"
+
+#: ./interfaces.py:1051
+msgid "KeYi JingBen"
+msgstr "科儀經本"
+
+#: ./interfaces.py:1136
+msgid "KeYi Name"
+msgstr "科儀資料"
+
+#: ./interfaces.py:1140
+msgid "KeYi Other Name"
+msgstr "科儀相關名稱"
+
+#: ./profiles/default/types/KeYi.xml
+msgid "KeYi Type"
+msgstr "科儀資料"
+
 #: ./vocabularies.py:666
 msgid "Keelung City"
 msgstr "基隆市"
@@ -543,6 +653,18 @@ msgstr "金門縣"
 #: ./interfaces.py:529
 msgid "Latitude"
 msgstr "緯度值"
+
+#: ./interfaces.py:1192
+msgid "LeiBie"
+msgstr "資料類別"
+
+#: ./interfaces.py:1204
+msgid "Length, Width, Height, Material"
+msgstr "長、寬、高、材質"
+
+#: ./interfaces.py:1170
+msgid "License"
+msgstr "使用授權"
 
 #: ./vocabularies.py:686
 msgid "Lienchiang County"
@@ -596,6 +718,14 @@ msgstr "藥籤"
 msgid "Miaoli County"
 msgstr "苗栗縣"
 
+#: ./migration/crgis_migration.pt:93
+msgid "Migrate contents"
+msgstr ""
+
+#: ./migration/crgis_migration.pt:24
+msgid "Migrate custom Archetypes content types to any available Dexterity content types."
+msgstr ""
+
 #: ./behaviors/configure.zcml:11
 msgid "Name from Creation Date"
 msgstr ""
@@ -626,6 +756,10 @@ msgstr "年例請神"
 msgid "NianLiQingSheng Other"
 msgstr "年例請神 (其他)"
 
+#: ./migration/crgis_migration.pt:148
+msgid "No content to migrate."
+msgstr ""
+
 #: ./browser/temple.pt:170
 #: ./interfaces.py:165
 #: ./vocabularies.py:654
@@ -635,6 +769,10 @@ msgstr "非敘事性人物裝飾"
 #: ./vocabularies.py:35
 msgid "Not Yet"
 msgstr "未定位"
+
+#: ./migration/crgis_migration.pt:37
+msgid "Note about how long it might take"
+msgstr ""
 
 #: ./browser/temple.pt:142
 #: ./interfaces.py:87
@@ -736,6 +874,10 @@ msgstr "主要功用"
 msgid "Private"
 msgstr "私建"
 
+#: ./interfaces.py:1166
+msgid "Provider"
+msgstr "資料來源單位"
+
 #: ./vocabularies.py:293
 msgid "Public"
 msgstr "公有"
@@ -770,6 +912,7 @@ msgstr "創立年代參考文獻"
 msgid "Registered Name"
 msgstr "登記名稱"
 
+#: ./browser/schedule.pt:21
 #: ./interfaces.py:422
 msgid "Related Temples"
 msgstr "相關寺廟"
@@ -801,7 +944,7 @@ msgid "Secondary Purpose"
 msgstr "次要功用"
 
 #: ./browser/daoshi.pt:106
-#: ./interfaces.py:778
+#: ./interfaces.py:785
 msgid "Service"
 msgstr "服務項目"
 
@@ -822,7 +965,7 @@ msgid "Shi Size"
 msgstr "獅子尺寸"
 
 #: ./browser/daoshi.pt:75
-#: ./interfaces.py:730
+#: ./interfaces.py:737
 msgid "ShiCheng List"
 msgstr "師承"
 
@@ -851,13 +994,21 @@ msgid "ShiZi Width"
 msgstr "獅子尺寸 (面寬)"
 
 #: ./browser/daoshi.pt:83
-#: ./interfaces.py:746
+#: ./interfaces.py:753
 msgid "ShouTu List"
 msgstr "授徒"
+
+#: ./interfaces.py:1288
+msgid "ShuMing ShiXiang"
+msgstr "屬名事項"
 
 #: ./vocabularies.py:539
 msgid "SiRen"
 msgstr "私人"
+
+#: ./migration/crgis_migration.pt:36
+msgid "Since LinguaPlone does not support Dexterity you need to migrate from LinguaPlone to ${pam}. The migration from Products.LinguaPlone to plone.app.multilingual should happen before the migration from Archetypes to plone.app.contenttypes. For details on the migration see the ${documentation}"
+msgstr ""
 
 #: ./browser/temple.pt:39
 #: ./interfaces.py:32
@@ -873,6 +1024,10 @@ msgstr "空間屬性"
 #: ./interfaces.py:317
 msgid "SungWang XingShi"
 msgstr "送王形式"
+
+#: ./interfaces.py:1292
+msgid "SuoShu DaoFaTan"
+msgstr "所屬道法壇"
 
 #: ./vocabularies.py:501
 msgid "Ta"
@@ -915,6 +1070,14 @@ msgstr "寺廟"
 #: ./profiles/default/types/Temple.xml
 msgid "Temple Type"
 msgstr "寺廟型別"
+
+#: ./interfaces.py:1252
+msgid "TiGong DaoFaTan"
+msgstr "提供道法壇"
+
+#: ./interfaces.py:1268
+msgid "TiGong DaoShi"
+msgstr "提供道長"
 
 #: ./interfaces.py:18
 msgid "Title"
@@ -978,6 +1141,10 @@ msgstr "王爺選項"
 msgid "WangYeXianXiang Other"
 msgstr "王爺選項 (其他)"
 
+#: ./migration/crgis_migration.pt:147
+msgid "Warning"
+msgstr ""
+
 #: ./browser/bixiewu.pt:98
 #: ./browser/temple.pt:110
 #: ./interfaces.py:145
@@ -1013,6 +1180,10 @@ msgstr "信仰範圍"
 msgid "YSGS"
 msgstr "迎送代天巡狩儀式概述"
 
+#: ./interfaces.py:1012
+msgid "YanGe"
+msgstr "建立沿革"
+
 #: ./interfaces.py:120
 msgid "Year Accuracy"
 msgstr "年份精確度"
@@ -1026,13 +1197,21 @@ msgid "YiMingMiaoYu Other"
 msgstr "移民廟宇 (其他)"
 
 #: ./browser/daoshi.pt:128
-#: ./interfaces.py:814
+#: ./interfaces.py:821
 msgid "YiShi List"
 msgstr "重要儀式執行"
 
 #: ./vocabularies.py:682
 msgid "Yilan County"
 msgstr "宜蘭縣"
+
+#: ./migration/crgis_migration.pt:96
+msgid "You can select which AT content type you want to migrate to an existing DX content type."
+msgstr ""
+
+#: ./interfaces.py:1331
+msgid "YouLai"
+msgstr "資料收集由來"
 
 #: ./browser/temple.pt:312
 #: ./interfaces.py:295
@@ -1060,12 +1239,28 @@ msgid "ZhiWu"
 msgstr "植物"
 
 #: ./browser/daoshi.pt:120
-#: ./interfaces.py:798
+#: ./interfaces.py:805
 msgid "ZhuMiao List"
 msgstr "駐廟服務宮廟"
 
+#: ./interfaces.py:1027
+msgid "ZhuSi"
+msgstr "對主祀神明的稱呼"
+
+#: ./interfaces.py:1031
+msgid "ZhuSi ZhiWai"
+msgstr "奉祀神明 (主祀神明之外)"
+
+#: ./interfaces.py:1203
+msgid "ZiLiao GeShi"
+msgstr "資料格式描述"
+
+#: ./interfaces.py:1339
+msgid "ZiLiao NeiRong"
+msgstr "資料內容"
+
 #: ./browser/daoshi.pt:98
-#: ./interfaces.py:770
+#: ./interfaces.py:777
 msgid "ZouZhi"
 msgstr "奏職與學習"
 
@@ -1124,6 +1319,10 @@ msgstr "水泥"
 #: ./vocabularies.py:595
 msgid "crouching"
 msgstr "蹲踞"
+
+#: ./migration/crgis_migration.pt:36
+msgid "documentation"
+msgstr ""
 
 #: ./vocabularies.py:610
 msgid "female"
@@ -1491,6 +1690,10 @@ msgstr "眼科"
 #: ./vocabularies.py:472
 msgid "medicine05"
 msgstr "有, 其他"
+
+#: ./migration/crgis_migration.pt:32
+msgid "migration-section in the documentation of plone.app.contenttypes"
+msgstr ""
 
 #: ./vocabularies.py:521
 msgid "mud"
