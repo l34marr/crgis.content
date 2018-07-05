@@ -52,14 +52,14 @@
   </div>
   <div tal:condition="context/chngli">
   <tal:field i18n:translate="">Establish</tal:field>:
-  <span tal:content="structure python:context.chngli.output_relative_to(view.context)" />
+  <span tal:content="context/chngli" />
   </div>
   <div tal:define="clrs context/chlirn|nothing"
        tal:condition="clrs">
   <tal:field i18n:translate="">ChuangLiRen List</tal:field>:
     <tal:block repeat="clr clrs">
     <span tal:replace="python:clr.to_object.Title()" />
-    <span class="separator" tal:condition="not: repeat/scl/end">,</span>
+    <span class="separator" tal:condition="not: repeat/clr/end">,</span>
     </tal:block>
   </div>
   <div tal:define="scls context/shchn|nothing"
@@ -74,7 +74,7 @@
        tal:condition="fzrs">
   <tal:field i18n:translate="">ShouTu List</tal:field>:
     <tal:block repeat="fzr fzrs">
-    <span tal:replace="python:sht.to_object.Title()" />
+    <span tal:replace="python:fzr.to_object.Title()" />
     <span class="separator" tal:condition="not: repeat/fzr/end">,</span>
     </tal:block>
   </div>
