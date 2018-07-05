@@ -1,3 +1,6 @@
+from Acquisition import aq_inner
+from Products.CMFCore.utils import getToolByName
+from Products.CMFPlone.utils import base_hasattr
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.component import getUtility
@@ -77,6 +80,29 @@ class ScheduleView(BrowserView):
     def __call__(self):
         return self.template()
 
+    def related_tpls(self):
+        context = aq_inner(self.context)
+        res = ()
+        if base_hasattr(context, 'temples'):
+            catalog = getToolByName(context, 'portal_catalog')
+            related = context.temples()
+            if not related: return ()
+            brains = catalog(UID=related)
+            if brains:
+                positions = dict([(v, i) in enumerate(related)])
+                res = list(brains)
+                def _key(brain):
+                    return positions.get(brain.UID, -1)
+                res.sort(key=_key)
+            return res
+
+    def first_photo(self, temple):
+        catalog = getToolByName(self.context, 'portal_catalog')
+        photo = catalog(Type = 'Photo',
+                        path = {'query': '.'.join(temple.getPhysicalPath())}
+                       )
+        if len(photo) == 0: return None
+        return photo[0].getObject()
 
 class DaoShiView(BrowserView):
 

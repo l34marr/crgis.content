@@ -19,10 +19,22 @@
   <div tal:define="tpls context/temples|nothing"
        tal:condition="tpls">
   <tal:field i18n:translate="">Related Temples</tal:field>:
+  <ol>
     <tal:block repeat="tpl tpls">
-    <span tal:replace="python:tpl.to_object.Title()" />
-    <span class="separator" tal:condition="not: repeat/tpl/end">,</span>
+    <li>
+    <a href=""
+     tal:attributes="href tpl/to_path; target string:_blank"
+     tal:content="tpl/to_object/Title|nothing">Temple</a>
+    </li>
+    <tal:tpl define="obj python: tpl.to_object;
+                     photo python: view.first_photo(obj)">
+      <span tal:replace="obj/address" /><br />
+      <span tal:replace="obj/in_charge" /><br />
+      <span tal:replace="obj/tel" />
+      <!-- span tal:replace="python: type(photo)" / NoneType? -->
+    </tal:tpl>
     </tal:block>
+  </ol>
   </div>
 
 </metal:content-core>
