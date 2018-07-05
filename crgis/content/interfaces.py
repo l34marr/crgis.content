@@ -1322,6 +1322,7 @@ class IKeYi(model.Schema):
     )
     daibiao = namedfile.NamedBlobImage(
         title=_(u"DaiBiao YingXiang"),
+        required=False,
     )
     intro = RichTextField(
         title=_(u"Introduction KeYi"),

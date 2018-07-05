@@ -19,12 +19,12 @@
   <div tal:define="srcs context/data_src|nothing"
        tal:condition="srcs">
   <tal:field i18n:translate="">Data Source</tal:field>:
-    <span tal:replace="python:view.t_title('key.data_src',srcs[0])" />
+    <span tal:replace="python:view.t_title('keyi.data_src',srcs[0])" />
   </div>
   <div tal:define="frms context/data_frm|nothing"
        tal:condition="frms">
   <tal:field i18n:translate="">Data From</tal:field>:
-    <span tal:replace="python:view.t_title('key.data_frm',frms[0])" />
+    <span tal:replace="python:view.t_title('keyi.data_frm',frms[0])" />
   </div>
   <div tal:condition="context/prvdr">
   <tal:field i18n:translate="">Provider</tal:field>:
