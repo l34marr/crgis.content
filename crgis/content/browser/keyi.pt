@@ -113,6 +113,12 @@
 
   <div tal:condition="context/daibiao">
   <tal:field i18n:translate="">DaiBiao YingXiang</tal:field>:
+  <figure class="image-product"
+   tal:define="scale context/@@images;
+               img_tag python:scale.scale('daibiao', scale='large').tag()"
+   tal:on-error="string: Image cannot be displayed">
+    <img tal:replace="structure img_tag" />
+  </figure>
   </div>
 
   <div tal:condition="context/intro">
