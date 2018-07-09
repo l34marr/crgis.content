@@ -46,4 +46,11 @@
     class=".view.KeYiView"
     permission="zope2.View" />
 
+  <browser:page
+    name="blocky_view"
+    for="plone.dexterity.interfaces.IDexterityContainer"
+    class="plone.app.contenttypes.browser.folder.FolderView"
+    template="folder_blocky_view.pt"
+    permission="zope2.View" />
+
 </configure>
