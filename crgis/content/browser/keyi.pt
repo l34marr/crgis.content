@@ -112,7 +112,7 @@
   </div>
 
   <div tal:condition="context/daibiao">
-  <tal:field i18n:translate="">DaiBiao YingXiang</tal:field>:
+  <tal:field i18n:translate="">DaiBiao YingXiang</tal:field>:<br />
   <figure class="image-product"
    tal:define="scale context/@@images;
                img_tag python:scale.scale('daibiao', scale='large').tag()"
@@ -135,8 +135,16 @@
   <span tal:content="structure python:context.gngxian.output_relative_to(view.context)" />
   </div>
 
-  <div tal:condition="context/file">
+  <div tal:condition="context/file"
+   tal:define="content_type context/file/contentType|nothing;
+               download_url string:${context/absolute_url}/@@download/file/${context/file/filename}">
   <tal:field i18n:translate="">ZiLiao NeiRong</tal:field>:
+  <a tal:attributes="href download_url">
+    <tal:name tal:content="context/file/filename">Filename</tal:name>
+  </a>
+  <tal:data condition="python: content_type.startswith('text')">
+    <pre tal:content="context/file/data|nothing" />
+  </tal:data>
   </div>
 
   <div tal:condition="context/academic">
