@@ -17,11 +17,25 @@
                     image_scale portal/@@image_scale">
       <metal:entry fill-slot="entry">
 
-        <article style="float: left; position: relative; overflow: hidden; height: 200px; width: 200px; margin: 10px; padding: 0 6px 0 9px; text-align: center; background: #fff">
-          <h2 class="tileHeadline" style="height: 80px" metal:define-macro="listitem">
+        <article style="float: left; position: relative; overflow: hidden; height: 122px; width: 202px; margin: 10px; padding: 0 6px 0 9px; text-align: center; background: #fff"
+         tal:define="multiline python: len(item_title) > 15;">
+
+          <h2 class="tileHeadline" style="height: 80px"
+           tal:condition="multiline"
+           tal:attributes="style string: margin-top: 25px;">
             <a class="summary url"
                 tal:attributes="href item_link;
-                                title python: item_description or item_type"
+                                title python: item_description or item_title"
+                tal:content="item_title">
+              Item Title
+            </a>
+          </h2>
+          <h2 class="tileHeadline" style="height: 80px"
+           tal:condition="python: not multiline"
+           tal:attributes="style string: margin-top: 40px;">
+            <a class="summary url"
+                tal:attributes="href item_link;
+                                title python: item_description or item_title"
                 tal:content="item_title">
               Item Title
             </a>
