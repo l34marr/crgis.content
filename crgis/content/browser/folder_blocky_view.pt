@@ -21,17 +21,11 @@
           <h2 class="tileHeadline" style="height: 80px" metal:define-macro="listitem">
             <a class="summary url"
                 tal:attributes="href item_link;
-                                title item_type"
+                                title python: item_description or item_type"
                 tal:content="item_title">
               Item Title
             </a>
           </h2>
-
-          <div class="tileBody" tal:condition="item_description">
-            <span class="description" tal:content="item_description">
-              description
-            </span>
-          </div>
 
           <div class="visualClear"><!-- --></div>
 
