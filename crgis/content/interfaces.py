@@ -377,7 +377,7 @@ class IBiXieWu(model.Schema):
         required=False,
         vocabulary=u"material",
     )
-    volumn = schema.TextLine(
+    volumn = RichTextField(
         title=_(u"Volumn"),
         required=False,
     )

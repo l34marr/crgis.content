@@ -68,7 +68,7 @@
   </div>
   <div tal:condition="context/volumn">
   <tal:field i18n:translate="">Volumn</tal:field>:
-  <span tal:replace="context/volumn" />
+  <span tal:content="structure python:context.volumn.output_relative_to(view.context)" />
   </div>
   <div tal:condition="context/localtional">
   <tal:field i18n:translate="">Locational Attribute</tal:field>:
