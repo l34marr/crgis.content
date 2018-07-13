@@ -407,7 +407,7 @@ class IBiXieWu(model.Schema):
         required=False,
     )
     environment = RichTextField(
-        title=_(u"Environment Description"),
+        title=_(u"Environmental Description"),
         required=False,
     )
     reference = RichTextField(
@@ -423,8 +423,16 @@ class IBiXieWu(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder()),
+            source=CatalogSource(Type='Temple')
+        ),
         required=False,
+    )
+    directives.widget(
+        'r_temples',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
     )
     model.fieldset('fengshiye', label=_(u'FengShiYe'), fields=['village', 'color', 'genre', 'posture', 'gender', 'shi_d', 'shi_w', 'shi_h', 'shi_t', 'base_l', 'base_w', 'base_h'])
     village = schema.TextLine(
@@ -1281,7 +1289,7 @@ class IKeYi(model.Schema):
         }
     )
     niandai = schema.TextLine(
-        title=_(u"Establish Year"),
+        title=_(u"ZiLiao NianDai"),
         required=False,
     )
     shumg = schema.Text(
