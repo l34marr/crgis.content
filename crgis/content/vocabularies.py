@@ -8,6 +8,17 @@ from zope.schema.vocabulary import SimpleTerm
 from crgis.content import _
 
 
+class DaoTypesVocabulary(object):
+    """Vocabulary Factory for Dao Types
+    """
+    implements(IVocabularyFactory)
+
+    def __call__(self, *args, **kwargs):
+
+        dao_types = {'DaoShi': u'道士', 'DaoFaTan': u'道法壇', 'KeYi': u'科儀'}
+        dao_terms = [SimpleTerm(i[0], i[0], i[1]) for i in dao_types.items()]
+        return SimpleVocabulary(dao_terms)
+
 class data_src(object):
     """ Data Source
     """

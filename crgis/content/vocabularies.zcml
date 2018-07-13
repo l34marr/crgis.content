@@ -5,6 +5,10 @@
   i18n_domain="crgis.content">
 
   <utility
+    name="crgis.types.dao"
+    factory=".vocabularies.DaoTypesVocabulary" />
+
+  <utility
     name="data_src"
     component=".vocabularies.data_srcFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
