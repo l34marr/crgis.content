@@ -26,55 +26,55 @@
 
 <fieldset>
 <legend style="margin-top: 20px" i18n:translate="">Basic Info</legend>
-  <div tal:condition="context/data_src">
+  <p tal:condition="context/data_src">
   <tal:field i18n:translate="">Data Source</tal:field>:
   <span tal:replace="python:view.t_title('data_src',context.data_src)" />
-  </div>
-  <div tal:condition="context/lct_cou">
+  </p>
+  <p tal:condition="context/lct_cou">
   <tal:field i18n:translate="">County</tal:field>:
   <span tal:replace="context/lct_cou" />
-  </div>
-  <div tal:condition="context/lct_tow">
+  </p>
+  <p tal:condition="context/lct_tow">
   <tal:field i18n:translate="">Town</tal:field>:
   <span tal:replace="context/lct_tow" />
-  </div>
-  <div tal:condition="context/lct_vil">
+  </p>
+  <p tal:condition="context/lct_vil">
   <tal:field i18n:translate="">Village</tal:field>:
   <span tal:replace="context/lct_vil" />
-  </div>
-  <div tal:condition="context/coordinate">
+  </p>
+  <p tal:condition="context/coordinate">
   <tal:field i18n:translate="">Coordinate Type</tal:field>:
   <span tal:replace="python:view.t_title('coordinate',context.coordinate)" />
-  </div>
-  <div tal:condition="context/btype">
+  </p>
+  <p tal:condition="context/btype">
   <tal:field i18n:translate="">BiXieWu Type</tal:field>:
   <span tal:replace="python:view.t_title('bixiewu',context.btype)" />
-  </div>
-  <div tal:condition="context/era">
+  </p>
+  <p tal:condition="context/era">
   <tal:field i18n:translate="">Common Era</tal:field>:
   <span tal:replace="context/era" />
-  </div>
-  <div tal:condition="context/era_ref">
+  </p>
+  <p tal:condition="context/era_ref">
   <tal:field i18n:translate="">Era Reference</tal:field>
   <span tal:content="structure python:context.era_ref.output_relative_to(view.context)" />
-  </div>
-  <div tal:condition="context/facing">
+  </p>
+  <p tal:condition="context/facing">
   <tal:field i18n:translate="">Facing</tal:field>:
   <span tal:replace="context/facing" />
-  </div>
-  <div tal:condition="context/material">
+  </p>
+  <p tal:condition="context/material">
   <tal:field i18n:translate="">Material</tal:field>:
   <span tal:replace="python:view.t_title('material',context.material)" />
-  </div>
-  <div tal:condition="context/volumn">
+  </p>
+  <p tal:condition="context/volumn">
   <tal:field i18n:translate="">Volumn</tal:field>:
   <span tal:content="structure python:context.volumn.output_relative_to(view.context)" />
-  </div>
-  <div tal:condition="context/localtional">
+  </p>
+  <p tal:condition="context/localtional">
   <tal:field i18n:translate="">Locational Attribute</tal:field>:
   <span tal:replace="python:view.t_title('locational',context.localtional)" />
-  </div>
-  <div tal:define="choices context/purpose|nothing"
+  </p>
+  <p tal:define="choices context/purpose|nothing"
        tal:condition="choices">
     <tal:onlyone condition="python: len(choices) == 1">
     <tal:field i18n:translate="">Primary Purpose</tal:field>:
@@ -93,15 +93,44 @@
       <span class="separator" tal:condition="not: repeat/choice/end">,</span>
       </tal:others>
     </tal:many>
-  </div>
-  <div tal:condition="context/worship">
+  </p>
+  <p tal:condition="context/worship">
   <tal:field i18n:translate="">Worship</tal:field>:
   <span tal:content="structure python:context.worship.output_relative_to(view.context)" />
-  </div>
-  <div tal:condition="context/establishment">
+  </p>
+  <p tal:condition="context/establishment">
   <tal:field i18n:translate="">Establishment Description</tal:field>:
   <span tal:content="structure python:context.establishment.output_relative_to(view.context)" />
-  </div>
+  </p>
+  <p tal:condition="context/spatial">
+  <tal:field i18n:translate="">Spatial Attribute</tal:field>:
+  <span tal:content="structure python:context.spatial.output_relative_to(view.context)" />
+  </p>
+  <p tal:condition="context/environment">
+  <tal:field i18n:translate="">Environmental Description</tal:field>:
+  <span tal:content="structure python:context.environment.output_relative_to(view.context)" />
+  </p>
+  <p tal:condition="context/reference">
+  <tal:field i18n:translate="">Reference</tal:field>:
+  <span tal:content="structure python:context.reference.output_relative_to(view.context)" />
+  </p>
+  <p tal:condition="context/remark">
+  <tal:field i18n:translate="">Remark</tal:field>:
+  <span tal:content="structure python:context.remark.output_relative_to(view.context)" />
+  </p>
+  <p tal:define="tpls context/r_temples|nothing"
+       tal:condition="tpls">
+  <tal:field i18n:translate="">Related Temples</tal:field>:
+  <ol>
+    <tal:block repeat="tpl tpls">
+    <li>
+    <a href=""
+     tal:attributes="href tpl/to_path; target string:_blank"
+     tal:content="tpl/to_object/Title|nothing">Temple</a>
+    </li>
+    </tal:block>
+  </ol>
+  </p>
 </fieldset>
 
   </div>
@@ -110,62 +139,62 @@
 
 <fieldset>
 <legend style="margin-top: 20px" i18n:translate="">FengShiYe Info</legend>
-  <div tal:condition="context/village">
+  <p tal:condition="context/village">
   <tal:field i18n:translate="">Village Name</tal:field>:
   <span tal:replace="context/village" />
-  </div>
-  <div tal:condition="context/color">
+  </p>
+  <p tal:condition="context/color">
   <tal:field i18n:translate="">Color</tal:field>:
   <span tal:replace="python:view.t_title('isExisting',context.color)" />
-  </div>
-  <div tal:condition="context/genre">
+  </p>
+  <p tal:condition="context/genre">
   <tal:field i18n:translate="">Genre</tal:field>:
   <span tal:replace="python:view.t_title('genre',context.genre)" />
-  </div>
-  <div tal:condition="context/posture">
+  </p>
+  <p tal:condition="context/posture">
   <tal:field i18n:translate="">Posture</tal:field>:
   <span tal:replace="python:view.t_title('posture',context.posture)" />
-  </div>
-  <div tal:condition="context/gender">
+  </p>
+  <p tal:condition="context/gender">
   <tal:field i18n:translate="">Gender</tal:field>:
   <span tal:replace="python:view.t_title('gender',context.gender)" />
-  </div>
+  </p>
 </fieldset>
 
 <fieldset>
 <legend style="margin-top: 20px" i18n:translate="">Shi Size</legend>
-  <div tal:condition="context/shi_d">
+  <p tal:condition="context/shi_d">
   <tal:field i18n:translate="">ShiZi Depth</tal:field>:
   <span tal:replace="context/shi_d" />
-  </div>
-  <div tal:condition="context/shi_w">
+  </p>
+  <p tal:condition="context/shi_w">
   <tal:field i18n:translate="">ShiZi Width</tal:field>:
   <span tal:replace="context/shi_w" />
-  </div>
-  <div tal:condition="context/shi_h">
+  </p>
+  <p tal:condition="context/shi_h">
   <tal:field i18n:translate="">ShiZi Height</tal:field>:
   <span tal:replace="context/shi_h" />
-  </div>
-  <div tal:condition="context/shi_t">
+  </p>
+  <p tal:condition="context/shi_t">
   <tal:field i18n:translate="">ShiZi Head</tal:field>:
   <span tal:replace="context/shi_t" />
-  </div>
+  </p>
 </fieldset>
 
 <fieldset>
 <legend style="margin-top: 20px" i18n:translate="">Base Size</legend>
-  <div tal:condition="context/base_l">
+  <p tal:condition="context/base_l">
   <tal:field i18n:translate="">Base Length</tal:field>:
   <span tal:replace="context/base_l" />
-  </div>
-  <div tal:condition="context/base_w">
+  </p>
+  <p tal:condition="context/base_w">
   <tal:field i18n:translate="">Base Width</tal:field>:
   <span tal:replace="context/base_w" />
-  </div>
-  <div tal:condition="context/base_h">
+  </p>
+  <p tal:condition="context/base_h">
   <tal:field i18n:translate="">Base Height</tal:field>:
   <span tal:replace="context/base_h" />
-  </div>
+  </p>
 </fieldset>
 
   </div>
