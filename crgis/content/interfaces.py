@@ -725,6 +725,10 @@ class IDaoShi(model.Schema):
         title=_(u"Fa Hao"),
         required=False,
     )
+    dao_tan = schema.TextLine(
+        title=_(u"Dao Tan"),
+        required=False,
+    )
     dao_zi = schema.TextLine(
         title=_(u"Dao Zi"),
         required=False,
@@ -825,13 +829,8 @@ class IDaoShi(model.Schema):
             'recentlyUsed': True,
         }
     )
-    yishi = RelationList(
-        title=_(u"YiShi List"),
-        default=[],
-        value_type=RelationChoice(
-            title=u'YiShi',
-            source=CatalogSource()
-        ),
+    yishi = RichTextField(
+        title=_(u"YiShi"),
         required=False,
     )
     hzds = RelationList(
@@ -1103,13 +1102,8 @@ class IDaoFaTan(model.Schema):
             'recentlyUsed': True,
         }
     )
-    yishi = RelationList(
-        title=_(u"YiShi List"),
-        default=[],
-        value_type=RelationChoice(
-            title=u'YiShi',
-            source=CatalogSource()
-        ),
+    yishi = RichTextField(
+        title=_(u"YiShi"),
         required=False,
     )
     hzds = RelationList(
