@@ -8,6 +8,17 @@ from zope.schema.vocabulary import SimpleTerm
 from crgis.content import _
 
 
+class TplTypesVocabulary(object):
+    """Vocabulary Factory for Temple Types
+    """
+    implements(IVocabularyFactory)
+
+    def __call__(self, *args, **kwargs):
+
+        tpl_types = {'Temple': u'寺廟', 'BiXieWu': u'辟邪物', 'Pilgrimage': u'遶境'}
+        tpl_terms = [SimpleTerm(i[0], i[0], i[1]) for i in tpl_types.items()]
+        return SimpleVocabulary(tpl_terms)
+
 class DaoTypesVocabulary(object):
     """Vocabulary Factory for Dao Types
     """

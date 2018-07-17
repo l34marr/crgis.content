@@ -5,6 +5,10 @@
   i18n_domain="crgis.content">
 
   <utility
+    name="crgis.types.tpl"
+    factory=".vocabularies.TplTypesVocabulary" />
+
+  <utility
     name="crgis.types.dao"
     factory=".vocabularies.DaoTypesVocabulary" />
 
