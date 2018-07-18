@@ -651,71 +651,17 @@ class IDaoShi(model.Schema):
         title=_(u"DaoShi Other Name"),
         required=False,
     )
-    data_src = schema.Tuple(
-        title=_(u"Data Source"),
+    birth = schema.TextLine(
+        title=_(u"Birth Year"),
         required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
     )
-    directives.widget(
-        'data_src',
-        AjaxSelectFieldWidget,
-        vocabulary='crgis.data_src'
-    )
-    coordinate = schema.Tuple(
-        title=_(u"Coordinate Type"),
+    addr = schema.TextLine(
+        title=_(u"Address"),
         required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
     )
-    directives.widget(
-        'coordinate',
-        AjaxSelectFieldWidget,
-        vocabulary='crgis.coordinate'
-    )
-    df_type = schema.Tuple(
-        title=_(u"DaoFaTan Type"),
+    tel = schema.TextLine(
+        title=_(u"Telephone"),
         required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'df_type',
-        AjaxSelectFieldWidget,
-        vocabulary='dao.df_type'
-    )
-    dt_type = schema.Tuple(
-        title=_(u"DaoTan Type"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'dt_type',
-        AjaxSelectFieldWidget,
-        vocabulary='dao.dt_type'
-    )
-    ft_type = schema.Tuple(
-        title=_(u"FaTan Type"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'ft_type',
-        AjaxSelectFieldWidget,
-        vocabulary='dao.ft_type'
-    )
-    df_attr = schema.Tuple(
-        title=_(u"DaoFaTan Attribute"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'df_attr',
-        AjaxSelectFieldWidget,
-        vocabulary='dao.df_attr'
     )
     dao_hao = schema.TextLine(
         title=_(u"Dao Hao"),
@@ -739,10 +685,6 @@ class IDaoShi(model.Schema):
     )
     alt_nm = schema.TextLine(
         title=_(u"Alt Name"),
-        required=False,
-    )
-    birth = schema.TextLine(
-        title=_(u"Birth Year"),
         required=False,
     )
     shchn = RelationList(
@@ -776,14 +718,6 @@ class IDaoShi(model.Schema):
         pattern_options={
             'recentlyUsed': True,
         }
-    )
-    addr = schema.TextLine(
-        title=_(u"Address"),
-        required=False,
-    )
-    tel = schema.TextLine(
-        title=_(u"Telephone"),
-        required=False,
     )
     zouzhi = RichTextField(
         title=_(u"ZouZhi"),
@@ -850,6 +784,72 @@ class IDaoShi(model.Schema):
         title=_(u"HeZuo HuZhi"),
         required=False,
     )
+    data_src = schema.Tuple(
+        title=_(u"Data Source"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'data_src',
+        AjaxSelectFieldWidget,
+        vocabulary='crgis.data_src'
+    )
+    coordinate = schema.Tuple(
+        title=_(u"Coordinate Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'coordinate',
+        AjaxSelectFieldWidget,
+        vocabulary='crgis.coordinate'
+    )
+    df_type = schema.Tuple(
+        title=_(u"DaoFaTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'df_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.df_type'
+    )
+    dt_type = schema.Tuple(
+        title=_(u"DaoTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'dt_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.dt_type'
+    )
+    ft_type = schema.Tuple(
+        title=_(u"FaTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'ft_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.ft_type'
+    )
+    df_attr = schema.Tuple(
+        title=_(u"DaoFaTan Attribute"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'df_attr',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.df_attr'
+    )
     academic = RichTextField(
         title=_(u"Academic Works"),
         required=False,
@@ -867,6 +867,54 @@ class IDaoFaTan(model.Schema):
     )
     description = schema.Text(
         title=_(u"DaoFaTan Other Name"),
+        required=False,
+    )
+    birth = schema.TextLine(
+        title=_(u"Establish Year"),
+        required=False,
+    )
+    chngli = schema.Text(
+        title=_(u"Establish"),
+        required=False,
+    )
+    chlirn = RelationList(
+        title=_(u"ChuangLiRen List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'ChuangLiRen',
+            source=CatalogSource(Type='DaoShi')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'chlirn',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    fuzeren = RelationList(
+        title=_(u"FuZeRen List"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'FuZeRen',
+            source=CatalogSource(Type='DaoShi')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'fuzeren',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    addr = schema.TextLine(
+        title=_(u"Address"),
+        required=False,
+    )
+    tel = schema.TextLine(
+        title=_(u"Telephone"),
         required=False,
     )
     data_src = schema.Tuple(
@@ -935,30 +983,6 @@ class IDaoFaTan(model.Schema):
         AjaxSelectFieldWidget,
         vocabulary='dao.df_attr'
     )
-    birth = schema.TextLine(
-        title=_(u"Establish Year"),
-        required=False,
-    )
-    chngli = schema.Text(
-        title=_(u"Establish"),
-        required=False,
-    )
-    chlirn = RelationList(
-        title=_(u"ChuangLiRen List"),
-        default=[],
-        value_type=RelationChoice(
-            title=u'ChuangLiRen',
-            source=CatalogSource(Type='DaoShi')
-        ),
-        required=False,
-    )
-    directives.widget(
-        'chlirn',
-        RelatedItemsFieldWidget,
-        pattern_options={
-            'recentlyUsed': True,
-        }
-    )
     shchn = RelationList(
         title=_(u"ShiCheng List"),
         default=[],
@@ -974,30 +998,6 @@ class IDaoFaTan(model.Schema):
         pattern_options={
             'recentlyUsed': True,
         }
-    )
-    fuzeren = RelationList(
-        title=_(u"FuZeRen List"),
-        default=[],
-        value_type=RelationChoice(
-            title=u'FuZeRen',
-            source=CatalogSource(Type='DaoShi')
-        ),
-        required=False,
-    )
-    directives.widget(
-        'fuzeren',
-        RelatedItemsFieldWidget,
-        pattern_options={
-            'recentlyUsed': True,
-        }
-    )
-    addr = schema.TextLine(
-        title=_(u"Address"),
-        required=False,
-    )
-    tel = schema.TextLine(
-        title=_(u"Telephone"),
-        required=False,
     )
     chngyn = RelationList(
         title=_(u"ChengYuan List"),
@@ -1017,6 +1017,10 @@ class IDaoFaTan(model.Schema):
     )
     yange = RichTextField(
         title=_(u"YanGe"),
+        required=False,
+    )
+    intro = RichTextField(
+        title=_(u"Introduction"),
         required=False,
     )
     fengsi = schema.Tuple(
@@ -1042,16 +1046,8 @@ class IDaoFaTan(model.Schema):
         title=_(u"JiSi"),
         required=False,
     )
-    intro = RichTextField(
-        title=_(u"Introduction"),
-        required=False,
-    )
     wenwu = RichTextField(
         title=_(u"GuWenWu"),
-        required=False,
-    )
-    service = RichTextField(
-        title=_(u"Service"),
         required=False,
     )
     keyi = RelationList(
@@ -1069,6 +1065,10 @@ class IDaoFaTan(model.Schema):
         pattern_options={
             'recentlyUsed': True,
         }
+    )
+    service = RichTextField(
+        title=_(u"Service"),
+        required=False,
     )
     jngchng = RelationList(
         title=_(u"JingChang FuWu"),
@@ -1142,53 +1142,13 @@ class IKeYi(model.Schema):
         title=_(u"KeYi Other Name"),
         required=False,
     )
-    data_src = schema.Tuple(
-        title=_(u"Data Source"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'data_src',
-        AjaxSelectFieldWidget,
-        vocabulary='keyi.data_src'
-    )
-    data_frm = schema.Tuple(
-        title=_(u"Data From"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'data_frm',
-        AjaxSelectFieldWidget,
-        vocabulary='keyi.data_frm'
-    )
-    prvdr = schema.TextLine(
-        title=_(u"Provider"),
+    intro = RichTextField(
+        title=_(u"Introduction KeYi"),
         required=False,
     )
-    license = schema.Tuple(
-        title=_(u"License"),
+    daibiao = namedfile.NamedBlobImage(
+        title=_(u"DaiBiao YingXiang"),
         required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'license',
-        AjaxSelectFieldWidget,
-        vocabulary='keyi.license'
-    )
-    digit = schema.Tuple(
-        title=_(u"Digitalization"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'digit',
-        AjaxSelectFieldWidget,
-        vocabulary='keyi.digit'
     )
     leibie = schema.Tuple(
         title=_(u"LeiBie"),
@@ -1200,87 +1160,6 @@ class IKeYi(model.Schema):
         'leibie',
         AjaxSelectFieldWidget,
         vocabulary='keyi.leibie'
-    )
-    geshi = schema.Text(
-        title=_(u"ZiLiao GeShi"),
-        description=_(u"Length, Width, Height, Material"),
-        required=False,
-    )
-    coordinate = schema.Tuple(
-        title=_(u"Coordinate Type"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'coordinate',
-        AjaxSelectFieldWidget,
-        vocabulary='crgis.coordinate'
-    )
-    df_type = schema.Tuple(
-        title=_(u"DaoFaTan Type"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'df_type',
-        AjaxSelectFieldWidget,
-        vocabulary='dao.df_type'
-    )
-    dt_type = schema.Tuple(
-        title=_(u"DaoTan Type"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'dt_type',
-        AjaxSelectFieldWidget,
-        vocabulary='dao.dt_type'
-    )
-    ft_type = schema.Tuple(
-        title=_(u"FaTan Type"),
-        required=False,
-        value_type=schema.TextLine(),
-        missing_value=(),
-    )
-    directives.widget(
-        'ft_type',
-        AjaxSelectFieldWidget,
-        vocabulary='dao.ft_type'
-    )
-    tg_df = RelationList(
-        title=_(u"TiGong DaoFaTan"),
-        default=[],
-        value_type=RelationChoice(
-            title=u'TGDFT',
-            source=CatalogSource(Type='DaoFaTan')
-        ),
-        required=False,
-    )
-    directives.widget(
-        'tg_df',
-        RelatedItemsFieldWidget,
-        pattern_options={
-            'recentlyUsed': True,
-        }
-    )
-    tg_ds = RelationList(
-        title=_(u"TiGong DaoShi"),
-        default=[],
-        value_type=RelationChoice(
-            title=u'TGDS',
-            source=CatalogSource(Type='DaoShi')
-        ),
-        required=False,
-    )
-    directives.widget(
-        'tg_ds',
-        RelatedItemsFieldWidget,
-        pattern_options={
-            'recentlyUsed': True,
-        }
     )
     niandai = schema.TextLine(
         title=_(u"ZiLiao NianDai"),
@@ -1322,20 +1201,137 @@ class IKeYi(model.Schema):
             'recentlyUsed': True,
         }
     )
-    daibiao = namedfile.NamedBlobImage(
-        title=_(u"DaiBiao YingXiang"),
+    license = schema.Tuple(
+        title=_(u"License"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'license',
+        AjaxSelectFieldWidget,
+        vocabulary='keyi.license'
+    )
+    digit = schema.Tuple(
+        title=_(u"Digitalization"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'digit',
+        AjaxSelectFieldWidget,
+        vocabulary='keyi.digit'
+    )
+    geshi = schema.Text(
+        title=_(u"ZiLiao GeShi"),
+        description=_(u"Length, Width, Height, Material"),
         required=False,
     )
-    intro = RichTextField(
-        title=_(u"Introduction KeYi"),
+    coordinate = schema.Tuple(
+        title=_(u"Coordinate Type"),
         required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'coordinate',
+        AjaxSelectFieldWidget,
+        vocabulary='crgis.coordinate'
+    )
+    data_src = schema.Tuple(
+        title=_(u"Data Source"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'data_src',
+        AjaxSelectFieldWidget,
+        vocabulary='keyi.data_src'
+    )
+    data_frm = schema.Tuple(
+        title=_(u"Data From"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'data_frm',
+        AjaxSelectFieldWidget,
+        vocabulary='keyi.data_frm'
+    )
+    prvdr = schema.TextLine(
+        title=_(u"Provider"),
+        required=False,
+    )
+    tg_df = RelationList(
+        title=_(u"TiGong DaoFaTan"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'TGDFT',
+            source=CatalogSource(Type='DaoFaTan')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'tg_df',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    tg_ds = RelationList(
+        title=_(u"TiGong DaoShi"),
+        default=[],
+        value_type=RelationChoice(
+            title=u'TGDS',
+            source=CatalogSource(Type='DaoShi')
+        ),
+        required=False,
+    )
+    directives.widget(
+        'tg_ds',
+        RelatedItemsFieldWidget,
+        pattern_options={
+            'recentlyUsed': True,
+        }
+    )
+    df_type = schema.Tuple(
+        title=_(u"DaoFaTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'df_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.df_type'
+    )
+    dt_type = schema.Tuple(
+        title=_(u"DaoTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'dt_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.dt_type'
+    )
+    ft_type = schema.Tuple(
+        title=_(u"FaTan Type"),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
+    )
+    directives.widget(
+        'ft_type',
+        AjaxSelectFieldWidget,
+        vocabulary='dao.ft_type'
     )
     youlai = RichTextField(
         title=_(u"YouLai"),
-        required=False,
-    )
-    gngxian = RichTextField(
-        title=_(u"GongXianZhe"),
         required=False,
     )
     file = namedfile.NamedBlobFile(
@@ -1348,6 +1344,10 @@ class IKeYi(model.Schema):
     )
     literature = RichTextField(
         title=_(u"Literature Reference"),
+        required=False,
+    )
+    gngxian = RichTextField(
+        title=_(u"GongXianZhe"),
         required=False,
     )
 
