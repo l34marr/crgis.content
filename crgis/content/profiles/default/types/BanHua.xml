@@ -20,7 +20,7 @@
   <property name="add_permission">cmf.AddPortalContent</property>
   <property name="klass">crgis.content.content.BanHua</property>
   <property name="model_source"></property>
-  <property name="model_file">crgis.content.model:banhua.xml</property>
+  <property name="model_file">crgis.content.models:banhua.xml</property>
   <property name="schema"></property>
 
   <property name="behaviors">

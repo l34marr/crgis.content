@@ -1351,3 +1351,6 @@ class IKeYi(model.Schema):
         required=False,
     )
 
+class IBanHua(model.Schema):
+    """BanHua Type"""
+
