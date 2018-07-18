@@ -49,7 +49,7 @@
   <browser:page
     name="banhua_view"
     for="crgis.content.interfaces.IBanHua"
-    class=".view.BanHua"
+    class=".view.BanHuaView"
     permission="zope2.View" />
 
   <browser:page
