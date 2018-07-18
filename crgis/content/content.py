@@ -11,6 +11,7 @@ from crgis.content.interfaces import IBuddhist
 from crgis.content.interfaces import IDaoShi
 from crgis.content.interfaces import IDaoFaTan
 from crgis.content.interfaces import IKeYi
+from crgis.content.interfaces import IBanHua
 
 
 class Temple(Container):
@@ -39,4 +40,7 @@ class DaoFaTan(Container):
 
 class KeYi(Container):
     implements(IDaoFaTan)
+
+class BanHua(Item):
+    implements(IBanHua)
 

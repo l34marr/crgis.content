@@ -47,6 +47,12 @@
     permission="zope2.View" />
 
   <browser:page
+    name="banhua_view"
+    for="crgis.content.interfaces.IBanHua"
+    class=".view.BanHua"
+    permission="zope2.View" />
+
+  <browser:page
     name="blocky_view"
     for="plone.dexterity.interfaces.IDexterityContainer"
     class="plone.app.contenttypes.browser.folder.FolderView"

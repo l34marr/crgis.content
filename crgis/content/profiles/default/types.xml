@@ -15,4 +15,5 @@
  <object name="DaoShi" meta_type="Dexterity FTI" />
  <object name="DaoFaTan" meta_type="Dexterity FTI" />
  <object name="KeYi" meta_type="Dexterity FTI" />
+ <object name="BanHua" meta_type="Dexterity FTI" />
 </object>

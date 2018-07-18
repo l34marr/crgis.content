@@ -167,3 +167,11 @@ class KeYiView(BrowserView):
         except:
             return None
 
+
+class BanHuaView(BrowserView):
+
+    template = ViewPageTemplateFile("banhua.pt")
+
+    def __call__(self):
+        return self.template()
+
