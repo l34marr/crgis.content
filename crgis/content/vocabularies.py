@@ -30,6 +30,17 @@ class DaoTypesVocabulary(object):
         dao_terms = [SimpleTerm(i[0], i[0], i[1]) for i in dao_types.items()]
         return SimpleVocabulary(dao_terms)
 
+class TgbTypesVocabulary(object):
+    """Vocabulary Factory for Tangible Types
+    """
+    implements(IVocabularyFactory)
+
+    def __call__(self, *args, **kwargs):
+
+        tgb_types = {'BanHua': u'版畫'}
+        tgb_terms = [SimpleTerm(i[0], i[0], i[1]) for i in tgb_types.items()]
+        return SimpleVocabulary(tgb_terms)
+
 class data_src(object):
     """ Data Source
     """
