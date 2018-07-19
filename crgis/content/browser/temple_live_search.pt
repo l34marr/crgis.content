@@ -1,0 +1,112 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ xmlns:v-on="http://vuejs.org/von"
+ xmlns:v-bind="http://vuejs.org/vbind"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="crgis.content">
+
+<body>
+
+<metal:styleslot fill-slot="style_slot">
+  <link rel="stylesheet" href="++resource++crgis.theme/leaflet/leaflet.css">
+  <link rel="stylesheet" href="++resource++crgis.theme/custom.css">
+<script src="${portal_url}/++resource++crgis.theme/vue.min.js"></script>
+</metal:styleslot>
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+<div class="row" id="live-search">
+  <div class="col-md-9">
+
+系統即時搜尋結果共: {{ items_total }} 筆符合
+
+<div class="pages">
+    <a v-if="'batching' in req && 'prev' in req['batching']"
+       v-on:click="getJson(req['batching']['prev'])" href="javascript:void(0)">上一頁</a>
+
+    <a v-if="'batching' in req && 'next' in req['batching']"
+       v-on:click="getJson(req['batching']['next'])" href="javascript:void(0)">下一頁</a>
+</div>
+
+<div class="row">
+  <div class="col-md-4" v-for="item in req.items">
+    <div class="temple-item">
+        <a target="_blank" v-bind:href="item['@id']">{{ item.title }}</a><br>
+所在地: {{ item.city }}<br>
+主祀: {{ item.deity }}
+
+    </div>
+  </div>
+</div>
+  </div>
+
+
+  <div class="col-md-3">
+    寺廟名稱:<input type='text' name='title' v-on:input="updateCond">
+  </div>
+</div>
+
+<script>
+var app = new Vue({
+  el: '#live-search',
+  data: {
+    message: 'Hello Vue!',
+    items_total: 0,
+    title: '',
+    deity_main: '',
+    req: {items: []}
+  },
+  methods: {
+    updateCond: function(element){
+        field = element.target
+        fieldName = field.name
+        value = field.value
+        // 搜尋最少輸入2個字
+        if(value.length < 2){
+            app[fieldName] = ''
+        }else{
+            app[fieldName] = value
+            app.getTempleBrain()
+        }
+    },
+    getJson:function(url){
+        $.ajax({url:url,
+            type:'GET',
+            beforeSend:function(xhr){ xhr.setRequestHeader('Accept', 'application/json')}}
+        ).done(function(req){
+           app['items_total'] = req['items_total']
+           app['req'] = req
+        })
+    },
+    getTempleBrain: function () {
+        condStr = ''
+        if(app['title'].length > 0){
+            condStr = condStr + 'Title=' + app['title'] + '&'
+        }
+        if(app['deity_main'].length > 0){
+            condStr = condStr + 'deity_main=' + app['deity_main'] + '&'
+        }
+        app.getJson('http://140.109.160.12:8090/crgis/@search?Type=Temple&metadata_fields=deity&metadata_fields=city&' + condStr)
+    }
+
+  }
+})
+
+$(document).ready(function(){
+debugger
+    app.getJson('${portal_url}/@search?Type=Temple&metadata_fields=deity&metadata_fields=city')
+})
+</script>
+
+
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
