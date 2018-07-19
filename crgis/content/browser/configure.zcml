@@ -23,6 +23,12 @@
     permission="cmf.ManagePortal" />
 
   <browser:page
+    name="temple_live_search"
+    for="*"
+    class=".view.TempleLiveSearch"
+    permission="zope2.View" />
+
+  <browser:page
     name="photo_view"
     for="crgis.content.interfaces.IPhoto"
     class=".view.MyView"

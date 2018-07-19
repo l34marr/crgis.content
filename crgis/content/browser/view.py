@@ -1,4 +1,5 @@
 from Products.Five.browser import BrowserView
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.component import getUtility
 from zope.schema.interfaces import IVocabularyFactory
 from plone.protect.interfaces import IDisableCSRFProtection
@@ -85,6 +86,15 @@ class SetDefaultViewStatus(BrowserView):
             if count % 100 == 0:
                 transaction.commit()
                 logger.info('transaction.commit() %s_ok' % count)
+
+
+class TempleLiveSearch(BrowserView):
+
+    template = ViewPageTemplateFile("temple_live_search.pt")
+
+    def __call__(self):
+        return self.template()
+
 
 
 
