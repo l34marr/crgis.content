@@ -118,7 +118,7 @@
   <tal:field i18n:translate="">Remark</tal:field>:
   <span tal:content="structure python:context.remark.output_relative_to(view.context)" />
   </p>
-  <p tal:define="tpls context/r_temples|nothing"
+  <div tal:define="tpls context/r_temples|nothing"
        tal:condition="tpls">
   <tal:field i18n:translate="">Related Temples</tal:field>:
   <ol>
@@ -130,7 +130,7 @@
     </li>
     </tal:block>
   </ol>
-  </p>
+  </div>
 </fieldset>
 
   </div>
@@ -205,14 +205,14 @@
 <?python
 from collective.geo.geographer.interfaces import IGeoreferenced
 geo = IGeoreferenced(context)
-coordinates = geo.coordinates if geo.coordinates else (121.0, 24.0)
+coordinates = geo.coordinates
 zoom = 17 if geo.coordinates else 7
 ?>
 
-<div id="mymap" style="z-index: 10; height:300px; width: 100%; margin-top: 20px"></div>
+<div tal:condition="coordinates" id="mymap" style="z-index: 10; height:300px; width: 100%; margin-top: 20px"></div>
 <script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
 
-<script>
+<script tal:condition="coordinates">
 var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 var ly1 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2003&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
 var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2001&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
