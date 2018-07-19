@@ -12,17 +12,17 @@
 
   <metal:entries fill-slot="entries">
     <metal:block use-macro="context/@@listing_view/macros/entries"
-        tal:define="batch python:context.restrictedTraverse('@@contentlisting')(portal_type='Folder');
+        tal:define="batch python:context.restrictedTraverse('@@contentlisting')(portal_type=['Folder','Temple']);
                     portal context/@@plone_portal_state/portal;
                     image_scale portal/@@image_scale">
       <metal:entry fill-slot="entry">
 
-        <article style="float: left; position: relative; overflow: hidden; height: 122px; width: 202px; margin: 10px; padding: 0 6px 0 9px; text-align: center; background: #fff"
-         tal:define="multiline python: len(item_title) > 15;">
+        <article style="float: left; position: relative; overflow: hidden; height: 122px; width: 202px; margin: 10px; padding: 0 6px 0 9px; text-align: center; background: #e6e4e4"
+         tal:define="multiline python: len(item_title) > 22;">
 
           <h2 class="tileHeadline" style="height: 80px"
            tal:condition="multiline"
-           tal:attributes="style string: margin-top: 25px;">
+           tal:attributes="style string: margin-top: 30px;">
             <a class="summary url"
                 tal:attributes="href item_link;
                                 title python: item_description or item_title"
@@ -32,7 +32,7 @@
           </h2>
           <h2 class="tileHeadline" style="height: 80px"
            tal:condition="python: not multiline"
-           tal:attributes="style string: margin-top: 40px;">
+           tal:attributes="style string: margin-top: 42px;">
             <a class="summary url"
                 tal:attributes="href item_link;
                                 title python: item_description or item_title"
