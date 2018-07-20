@@ -31,7 +31,7 @@
       <span tal:replace="obj/address" /><br />
       <span tal:replace="obj/in_charge" /><br />
       <span tal:replace="obj/tel" />
-      <!-- span tal:replace="python: type(photo)" / NoneType? -->
+      <div><img tal:condition="photo" src="${photo/absolute_url}/@@images/image/preview" /></div>
     </tal:tpl>
     </tal:block>
   </ol>

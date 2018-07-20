@@ -97,12 +97,11 @@ class ScheduleView(BrowserView):
             return res
 
     def first_photo(self, temple):
-        catalog = getToolByName(self.context, 'portal_catalog')
-        photo = catalog(Type = 'Photo',
-                        path = {'query': '.'.join(temple.getPhysicalPath())}
-                       )
-        if len(photo) == 0: return None
-        return photo[0].getObject()
+         objs = temple.getChildNodes()
+         for item in objs:
+             if item.Type() in ['Photo', 'Image']:
+                 return item
+         return None
 
 
 class DaoShiView(BrowserView):
