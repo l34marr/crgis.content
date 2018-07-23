@@ -625,19 +625,17 @@ class IBuddhist(model.Schema):
         title=_(u"Description"),
         required=False,
     )
-    area1 = schema.TextLine(
-        title=_(u"1st-level Administrative Area"),
+    area = schema.TextLine(
+        title=_(u"Administrative Area"),
         required=False,
     )
-    area2 = schema.TextLine(
-        title=_(u"2nd-level Adminstrative Area"),
-        required=False,
-    )
-    category = schema.Tuple(
+    fenlei = schema.TextLine(
         title=_(u"Category"),
         required=False,
-        value_type=schema.TextLine(),
-        missing_value=()
+    )
+    text = RichTextField(
+        title=_(u"Text"),
+        required=False,
     )
 
 
