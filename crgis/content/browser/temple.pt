@@ -213,11 +213,11 @@
   </div>
   <div tal:condition="context/jsfw">
   祭祀範圍：
-  <span tal:replace="context/jsfw" />
+  <span tal:content="structure python:context.jsfw.output_relative_to(view.context)" />
   </div>
   <div tal:condition="context/xyfw">
   信仰範圍：
-  <span tal:replace="context/xyfw" />
+  <span tal:content="structure python:context.xyfw.output_relative_to(view.context)" />
   </div>
   <div tal:define="flxts context/flxt|nothing"
        tal:condition="flxts">
@@ -294,7 +294,7 @@
 </fieldset>
   <div tal:condition="context/organization">
   信徒組織：
-  <span tal:replace="context/organization" />
+  <span tal:content="structure python:context.organization.output_relative_to(view.context)" />
   </div>
   <div tal:condition="context/desc_o">
   其他可供記述事項：
