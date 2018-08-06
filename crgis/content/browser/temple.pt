@@ -196,6 +196,44 @@
   </div>
 </fieldset>
 
+<!-- Embeded map -->
+<?python
+from collective.geo.geographer.interfaces import IGeoreferenced
+geo = IGeoreferenced(context)
+coordinates = geo.coordinates if geo.coordinates else (121.0, 24.0)
+zoom = 17 if geo.coordinates else 7
+?>
+
+<div id="mymap" style="z-index: 10; height:300px; width: 100%; margin-top: 20px"></div>
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
+
+<script>
+var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var ly1 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2003&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2001&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly3 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1993&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly4 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1989&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly5 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1921&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var baseMaps = {
+    "1921 日治臺灣堡圖": ly5,
+    "1989 臺灣經建1版地形圖": ly4,
+    "1993 臺灣經建2版地形圖": ly3,
+    "2001 臺灣經建3版地形圖": ly2,
+    "2003 臺灣經建4版地形圖": ly1,
+    "Open Street Map" : osm
+};
+
+var map = L.map('mymap', {
+    center: ${python:'[%s, %s]' % (coordinates[1], coordinates[0])},
+    zoom: ${zoom},
+    layers: [osm]
+});
+L.control.layers(baseMaps).addTo(map);
+
+marker = L.marker(${python:'[%s, %s]' % (coordinates[1], coordinates[0])}, {'title': '${context/title}', 'riseOnHover': true})
+marker.addTo(map)
+</script>
+
   </div>
 
   <div id="tab2" class="tab-pane fade">
@@ -335,44 +373,6 @@
   </div>
 
 </div>
-
-<!-- Embeded map -->
-<?python
-from collective.geo.geographer.interfaces import IGeoreferenced
-geo = IGeoreferenced(context)
-coordinates = geo.coordinates if geo.coordinates else (121.0, 24.0)
-zoom = 17 if geo.coordinates else 7
-?>
-
-<div id="mymap" style="z-index: 10; height:300px; width: 100%; margin-top: 20px"></div>
-<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
-
-<script>
-var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-var ly1 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2003&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2001&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly3 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1993&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly4 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1989&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly5 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1921&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var baseMaps = {
-    "1921 日治臺灣堡圖": ly5,
-    "1989 臺灣經建1版地形圖": ly4,
-    "1993 臺灣經建2版地形圖": ly3,
-    "2001 臺灣經建3版地形圖": ly2,
-    "2003 臺灣經建4版地形圖": ly1,
-    "Open Street Map" : osm
-};
-
-var map = L.map('mymap', {
-    center: ${python:'[%s, %s]' % (coordinates[1], coordinates[0])},
-    zoom: ${zoom},
-    layers: [osm]
-});
-L.control.layers(baseMaps).addTo(map);
-
-marker = L.marker(${python:'[%s, %s]' % (coordinates[1], coordinates[0])}, {'title': '${context/title}', 'riseOnHover': true})
-marker.addTo(map)
-</script>
 
 </metal:content-core>
 </metal:content-core>
