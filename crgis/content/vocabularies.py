@@ -41,6 +41,33 @@ class TgbTypesVocabulary(object):
         tgb_terms = [SimpleTerm(i[0], i[0], i[1]) for i in tgb_types.items()]
         return SimpleVocabulary(tgb_terms)
 
+class AssetsVocabulary(object):
+    """Vocabulary Factory for Assets
+    """
+    implements(IVocabularyFactory)
+
+    def __call__(self, *args, **kwargs):
+        items = (
+            SimpleTerm(value=u'歷史建築', title=u'歷史建築'),
+            SimpleTerm(value=u'古蹟', title=u'古蹟'),
+            SimpleTerm(value=u'遺址', title=u'遺址'),
+            SimpleTerm(value=u'聚落', title=u'聚落'),
+        )
+        return SimpleVocabulary(items)
+
+class AdmLvlVocabulary(object):
+    """Vocabulary Factory for AdminLevel
+    """
+    implements(IVocabularyFactory)
+
+    def __call__(self, *args, **kwargs):
+        items = (
+            SimpleTerm(value=u'國定', title=u'國定'),
+            SimpleTerm(value=u'直轄市定', title=u'直轄市定'),
+            SimpleTerm(value=u'縣(市)定', title=u'縣(市)定'),
+        )
+        return SimpleVocabulary(items)
+
 class data_src(object):
     """ Data Source
     """

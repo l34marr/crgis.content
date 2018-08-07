@@ -17,6 +17,14 @@
     factory=".vocabularies.TgbTypesVocabulary" />
 
   <utility
+    name="crgis.types.assets"
+    factory=".vocabularies.AssetsVocabulary" />
+
+  <utility
+    name="crgis.types.admlvl"
+    factory=".vocabularies.AdmLvlVocabulary" />
+
+  <utility
     name="data_src"
     component=".vocabularies.data_srcFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
