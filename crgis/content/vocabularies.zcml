@@ -219,4 +219,8 @@
     component=".vocabularies.keyi_leibieFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
+  <utility
+    name="buddhist.leibie"
+    factory=".vocabularies.buddhist_leibie" />
+
 </configure>

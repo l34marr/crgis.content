@@ -1113,3 +1113,23 @@ class keyi_leibie(object):
         return SimpleVocabulary(items)
 keyi_leibieFactory = keyi_leibie()
 
+class buddhist_leibie(object):
+    """ Buddhist
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value=u'協會', title=u'協會'),
+            SimpleTerm(value=u'寺', title=u'寺'),
+            SimpleTerm(value=u'廟', title=u'廟'),
+            SimpleTerm(value=u'庵', title=u'庵'),
+            SimpleTerm(value=u'殿', title=u'殿'),
+            SimpleTerm(value=u'堂', title=u'堂'),
+            SimpleTerm(value=u'洞', title=u'洞'),
+            SimpleTerm(value=u'俄康', title=u'俄康'),
+            SimpleTerm(value=u'活動點', title=u'活動點'),
+            SimpleTerm(value=u'其他', title=u'其他'),
+            SimpleTerm(value=u'不詳', title=u'不詳'),
+        )
+        return SimpleVocabulary(items)
+
