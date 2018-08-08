@@ -174,3 +174,11 @@ class BanHuaView(BrowserView):
     def __call__(self):
         return self.template()
 
+
+class BuddhistView(BrowserView):
+
+    template = ViewPageTemplateFile("buddhist.pt")
+
+    def __call__(self):
+        return self.template()
+

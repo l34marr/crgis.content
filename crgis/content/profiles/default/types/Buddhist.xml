@@ -33,11 +33,11 @@
   </property>
 
   <!-- View information -->
-  <property name="default_view">view</property>
+  <property name="default_view">buddhist_view</property>
   <property name="default_view_fallback">False</property>
-  <property name="immediate_view">view</property>
+  <property name="immediate_view">buddhist_view</property>
   <property name="view_methods">
-    <element value="view" />
+    <element value="buddhist_view" />
   </property>
 
   <!-- Method aliases -->

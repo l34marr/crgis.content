@@ -153,11 +153,11 @@ msgstr "填表資料"
 
 #: ./profiles/default/types/Buddhist.xml
 msgid "Buddhist"
-msgstr ""
+msgstr "中國寺廟"
 
 #: ./profiles/default/types/Buddhist.xml
 msgid "Buddhist Type"
-msgstr ""
+msgstr "中國寺廟"
 
 #: ./browser/temple.pt:158
 #: ./interfaces.py:153

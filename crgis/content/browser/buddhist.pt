@@ -1,0 +1,68 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="crgis.content">
+
+<body>
+
+<metal:styleslot fill-slot="style_slot">
+  <link rel="stylesheet" href="++resource++crgis.theme/leaflet/leaflet.css">
+</metal:styleslot>
+<metal:title fill-slot="content-title">
+</metal:title>
+<metal:description fill-slot="content-description">
+</metal:description>
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+  <div id="parent-fieldname-text"
+      tal:condition="context/text"
+      tal:content="structure python:context.text.output_relative_to(view.context)"
+      tal:attributes="class python: toc and 'pat-autotoc' or ''" />
+
+  <hr>
+
+  <p>Data Source: <a href="https://worldmap.harvard.edu/data/geonode:china_bgis_fme" target="_blank">China BGIS (Buddhist GIS)</a>
+  , edited by Jiang Wu (Univ of Arizona).
+  <br>
+  Based on Gui Weibing (ed.) Zhongguo Fojiao siyuan minglu (2006).
+  <br>
+  Edition version 1.1</p>
+
+<!-- Embeded map -->
+<?python
+from collective.geo.geographer.interfaces import IGeoreferenced
+geo = IGeoreferenced(context)
+coordinates = geo.coordinates
+zoom = 10 if geo.coordinates else 7
+?>
+
+<div tal:condition="coordinates" id="mymap" style="z-index: 10; height:300px; width: 100%; margin-top: 20px"></div>
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
+
+<script tal:condition="coordinates">
+var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var baseMaps = {
+    "Open Street Map" : osm
+};
+
+var map = L.map('mymap', {
+    center: ${python:'[%s, %s]' % (coordinates[1], coordinates[0])},
+    zoom: ${zoom},
+    layers: [osm]
+});
+L.control.layers(baseMaps).addTo(map);
+
+marker = L.marker(${python:'[%s, %s]' % (coordinates[1], coordinates[0])}, {'title': '${context/title}', 'riseOnHover': true})
+marker.addTo(map)
+</script>
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>

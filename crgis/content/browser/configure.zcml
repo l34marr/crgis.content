@@ -53,6 +53,12 @@
     permission="zope2.View" />
 
   <browser:page
+    name="buddhist_view"
+    for="crgis.content.interfaces.IBuddhist"
+    class=".view.BuddhistView"
+    permission="zope2.View" />
+
+  <browser:page
     name="blocky_view"
     for="plone.dexterity.interfaces.IDexterityContainer"
     class="plone.app.contenttypes.browser.folder.FolderView"
