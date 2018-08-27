@@ -151,12 +151,18 @@ var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQ
 var ly3 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1993&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
 var ly4 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1989&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
 var ly5 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1921&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly6 = L.tileLayer('http://wmts.nlsc.gov.tw/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&FORMAT=image/png&STYLE=_null&LAYER=EMAP5&TILEMATRIXSET=EPSG:3857&TileMatrix={z}&TileCol={x}&&TileRow={y}');
+var ly7 = L.tileLayer('http://wmts.nlsc.gov.tw/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&FORMAT=image/png&STYLE=_null&LAYER=PHOTO2&TILEMATRIXSET=EPSG:3857&TileMatrix={z}&TileCol={x}&&TileRow={y}');
+var ly8 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1904&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
 var baseMaps = {
+    "1904 日治臺灣堡圖": ly8,
     "1921 日治臺灣堡圖": ly5,
     "1989 臺灣經建1版地形圖": ly4,
     "1993 臺灣經建2版地形圖": ly3,
     "2001 臺灣經建3版地形圖": ly2,
     "2003 臺灣經建4版地形圖": ly1,
+    "臺灣通用電子地圖": ly6,
+    "臺灣通用正射影像": ly7,
     "Open Street Map" : osm
 };
 
