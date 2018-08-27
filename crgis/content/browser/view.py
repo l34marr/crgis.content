@@ -5,6 +5,24 @@ from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.component import getUtility
 from zope.schema.interfaces import IVocabularyFactory
+from zope.intid.interfaces import IIntIds
+from zc.relation.interfaces import ICatalog
+from zope.security import checkPermission
+
+
+def back_references(source_object, attribute_name):
+    """ Return back references from source object on specified attribute_name """
+    catalog = getUtility(ICatalog)
+    intids = getUtility(IIntIds)
+    result = []
+    for rel in catalog.findRelations(
+                dict(to_id=intids.getId(aq_inner(source_object)),
+                     from_attribute=attribute_name)
+               ):
+        obj = intids.queryObject(rel.from_id)
+        if obj is not None and checkPermission('zope2.View', obj):
+            result.append(obj)
+    return result
 
 
 class MyView(BrowserView):
@@ -17,6 +35,7 @@ class MyView(BrowserView):
             return term.title
         except:
             return None
+
 
 class TempleView(BrowserView):
 
@@ -43,14 +62,14 @@ class TempleView(BrowserView):
         except:
             return None
 
-    def getTemplePilgrimage(self, temple):
-        return None
+    def rPilgrimage(self):
+        return back_references(self.context, 'temples')
 
-    def getTempleFestival(self, temple):
-        return None
+    def rBiXieWu(self):
+        return back_references(self.context, 'r_temples')
 
-    def getTempleBiXieWu(self, temple):
-        return None
+    def rFestival(self):
+        return back_references(self.context, 'relatedItems')
 
 
 class BiXieWuView(BrowserView):

@@ -20,6 +20,7 @@
   <li class="active"><a data-toggle="tab" href="#tab1" i18n:translate="">Default Info</a></li>
   <li><a data-toggle="tab" href="#tab2" i18n:translate="">Appendix Info</a></li>
   <li><a data-toggle="tab" href="#tab3" i18n:translate="">WangYe Info</a></li>
+  <li tal:condition="python: len(view.rPilgrimage()) != 0 or len(view.rBiXieWu()) != 0"><a data-toggle="tab" href="#tab4" i18n:translate="">Reference Info</a></li>
 </ul>
 
 <div class="tab-content">
@@ -376,6 +377,30 @@ marker.addTo(map)
   <tal:field i18n:translate="">YSGS</tal:field>:
   <span tal:replace="context/ysgs" />
   </div>
+  </div>
+
+  <div id="tab4" class="tab-pane fade"
+   tal:define="rps python: view.rPilgrimage();
+               rbs python: view.rBiXieWu()"
+   tal:condition="python: len(rps) != 0 or len(rbs) != 0">
+    <ol tal:condition="python: len(rps)">
+    <tal:block repeat="rp rps">
+      <li>
+        <a href="#"
+         tal:attributes="href python: rp.absolute_url()"
+         tal:content="python: rp.__parent__.Title() + rp.Title()">Pilgrimage</a>
+      </li>
+    </tal:block>
+    </ol>
+    <ol tal:condition="python: len(rbs)">
+    <tal:block repeat="rb rbs">
+      <li>
+        <a href="#"
+         tal:attributes="href python: rb.absolute_url()"
+         tal:content="python: rb.Title()">BiXieWu</a>
+      </li>
+    </tal:block>
+    </ol>
   </div>
 
 </div>
