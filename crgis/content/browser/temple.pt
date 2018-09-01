@@ -20,7 +20,7 @@
   <li class="active"><a data-toggle="tab" href="#tab1" i18n:translate="">Default Info</a></li>
   <li><a data-toggle="tab" href="#tab2" i18n:translate="">Appendix Info</a></li>
   <li><a data-toggle="tab" href="#tab3" i18n:translate="">WangYe Info</a></li>
-  <li tal:condition="python: len(view.rPilgrimage()) != 0 or len(view.rBiXieWu()) != 0"><a data-toggle="tab" href="#tab4" i18n:translate="">Reference Info</a></li>
+  <li tal:condition="python: len(view.rPilgrimage()) != 0 or len(view.rBiXieWu()) != 0 or len(view.rFestival()) != 0 or len(view.rJngChng()) !=0 or len(view.rZhuMiao()) != 0"><a data-toggle="tab" href="#tab4" i18n:translate="">Reference Info</a></li>
 </ul>
 
 <div class="tab-content">
@@ -380,24 +380,61 @@ marker.addTo(map)
   </div>
 
   <div id="tab4" class="tab-pane fade"
-   tal:define="rps python: view.rPilgrimage();
-               rbs python: view.rBiXieWu()"
-   tal:condition="python: len(rps) != 0 or len(rbs) != 0">
+   tal:define="rps python:view.rPilgrimage();
+               rbs python:view.rBiXieWu();
+               rjs python:view.rJngChng();
+               rzs python:view.rZhuMiao();
+               rfs python:view.rFestival();"
+   tal:condition="python: len(rps) != 0 or len(rbs) != 0 or len(rjs) !=0 or len(rzs) !=0 or len(rfs) !=0">
+   <h2 tal:condition="python: len(rps)" i18n:translate="">Pilgrimage</h2>
     <ol tal:condition="python: len(rps)">
     <tal:block repeat="rp rps">
       <li>
         <a href="#"
-         tal:attributes="href python: rp.absolute_url()"
+         tal:attributes="href rp/absolute_url"
          tal:content="python: rp.__parent__.Title() + rp.Title()">Pilgrimage</a>
       </li>
     </tal:block>
     </ol>
+   <h2 tal:condition="python: len(rbs)" i18n:translate="">BiXieWu</h2>
     <ol tal:condition="python: len(rbs)">
     <tal:block repeat="rb rbs">
       <li>
         <a href="#"
-         tal:attributes="href python: rb.absolute_url()"
-         tal:content="python: rb.Title()">BiXieWu</a>
+         tal:attributes="href rb/absolute_url;
+                         target string:_blank"
+         tal:content="rb/Title">BiXieWu</a>
+      </li>
+    </tal:block>
+    </ol>
+   <h2 tal:condition="python: len(rfs)" i18n:translate="">Festival List</h2>
+    <ol tal:condition="python: len(rfs)">
+    <tal:block repeat="rf rfs">
+      <li>
+        <a href="#"
+         tal:attributes="href rf/absolute_url"
+         tal:content="rf/Title">Festival</a>
+      </li>
+    </tal:block>
+    </ol>
+   <h2 tal:condition="python: len(rjs)" i18n:translate="">JingChang FuWu</h2>
+    <ol tal:condition="python: len(rjs)">
+    <tal:block repeat="rj rjs">
+      <li>
+        <span tal:replace="python: '道長' if rj.portal_type == 'DaoShi' else '道壇'" />
+        <a href="#"
+         tal:attributes="href rj/absolute_url"
+         tal:content="rj/Title">JingChang</a>
+      </li>
+    </tal:block>
+    </ol>
+   <h2 tal:condition="python: len(rzs)" i18n:translate="">ZhuMiao List</h2>
+    <ol tal:condition="python: len(rzs)">
+    <tal:block repeat="rz rzs">
+      <li>
+        <a href="#"
+         tal:attributes="href rz/absolute_url"
+         tal:content="rz/Title">ZhuMiao</a>
       </li>
     </tal:block>
     </ol>

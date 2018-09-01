@@ -71,6 +71,12 @@ class TempleView(BrowserView):
     def rFestival(self):
         return back_references(self.context, 'relatedItems')
 
+    def rJngChng(self):
+        return back_references(self.context, 'jngchng')
+
+    def rZhuMiao(self):
+        return back_references(self.context, 'zhumiao')
+
 
 class BiXieWuView(BrowserView):
 
