@@ -423,13 +423,14 @@ class IBiXieWu(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=CatalogSource(Type='Temple')
+            source=CatalogSource(Type=['Temple','Folder'])
         ),
         required=False,
     )
     directives.widget(
         'r_temples',
         RelatedItemsFieldWidget,
+        vocabulary='plone.app.vocabularies.Catalog',
         pattern_options={
             'recentlyUsed': True,
         }
@@ -602,7 +603,7 @@ class ISchedule(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'Related Temple',
-            source=CatalogSource(Type='Temple')
+            source=CatalogSource(Type=['Temple','Folder'])
         ),
         required=False,
     )
@@ -734,7 +735,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'JingChang',
-            source=CatalogSource(Type='Temple')
+            source=CatalogSource(Type=['Temple','Folder'])
         ),
         required=False,
     )
@@ -750,7 +751,7 @@ class IDaoShi(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'ZhuMiao',
-            source=CatalogSource(Type='Temple')
+            source=CatalogSource(Type=['Temple','Folder'])
         ),
         required=False,
     )
@@ -1073,7 +1074,7 @@ class IDaoFaTan(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'JingChang',
-            source=CatalogSource(Type='Temple')
+            source=CatalogSource(Type=['Temple','Folder'])
         ),
         required=False,
     )
@@ -1089,7 +1090,7 @@ class IDaoFaTan(model.Schema):
         default=[],
         value_type=RelationChoice(
             title=u'ZhuMiao',
-            source=CatalogSource(Type='Temple')
+            source=CatalogSource(Type=['Temple','Folder'])
         ),
         required=False,
     )
