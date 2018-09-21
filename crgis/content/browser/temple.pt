@@ -19,8 +19,8 @@
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#tab1" i18n:translate="">Default Info</a></li>
   <li><a data-toggle="tab" href="#tab2" i18n:translate="">Appendix Info</a></li>
-  <li><a data-toggle="tab" href="#tab3" i18n:translate="">WangYe Info</a></li>
-  <li tal:condition="python: len(view.rPilgrimage()) != 0 or len(view.rBiXieWu()) != 0 or len(view.rFestival()) != 0 or len(view.rJngChng()) !=0 or len(view.rZhuMiao()) != 0"><a data-toggle="tab" href="#tab4" i18n:translate="">Reference Info</a></li>
+  <li tal:condition="python:context.wysm"><a data-toggle="tab" href="#tab3" i18n:translate="">WangYe Info</a></li>
+  <li tal:condition="python:len(view.rPilgrimage()) != 0 or len(view.rBiXieWu()) != 0 or len(view.rFestival()) != 0 or len(view.rJngChng()) !=0 or len(view.rZhuMiao()) != 0"><a data-toggle="tab" href="#tab4" i18n:translate="">Reference Info</a></li>
 </ul>
 
 <div class="tab-content">
@@ -347,7 +347,8 @@ marker.addTo(map)
   </div>
   </div>
 
-  <div id="tab3" class="tab-pane fade">
+  <div id="tab3" class="tab-pane fade"
+   tal:condition="python:context.wysm">
 
   <div tal:condition="context/wysm">
   <tal:field i18n:translate="">WangYe Name</tal:field>:
