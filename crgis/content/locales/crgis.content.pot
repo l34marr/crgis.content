@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-07-19 04:32+0000\n"
+"POT-Creation-Date: 2018-09-21 03:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.content\n"
 
-#: ./interfaces.py:629
-msgid "1st-level Administrative Area"
-msgstr ""
-
-#: ./interfaces.py:633
-msgid "2nd-level Adminstrative Area"
-msgstr ""
-
-#: ./vocabularies.py:40
+#: ./vocabularies.py:78
 msgid "Academic"
 msgstr ""
 
@@ -37,22 +29,26 @@ msgstr ""
 
 #: ./browser/daofatan.pt:50
 #: ./browser/daoshi.pt:26
-#: ./browser/temple.pt:43
+#: ./browser/temple.pt:53
 msgid "Address"
 msgstr ""
 
+#: ./interfaces.py:630
+msgid "Administrative Area"
+msgstr ""
+
 #: ./browser/daoshi.pt:54
-#: ./interfaces.py:687
+#: ./interfaces.py:686
 msgid "Alt Name"
 msgstr ""
 
-#: ./vocabularies.py:574
+#: ./vocabularies.py:612
 msgid "AnZhenLuKou"
 msgstr ""
 
-#: ./browser/temple.pt:162
+#: ./browser/temple.pt:172
 #: ./interfaces.py:157
-#: ./vocabularies.py:674
+#: ./vocabularies.py:712
 msgid "Antiquity"
 msgstr ""
 
@@ -60,15 +56,15 @@ msgstr ""
 msgid "Appendix"
 msgstr ""
 
-#: ./browser/temple.pt:21
+#: ./browser/temple.pt:30
 msgid "Appendix Info"
 msgstr ""
 
-#: ./interfaces.py:513
+#: ./interfaces.py:514
 msgid "Attached To"
 msgstr ""
 
-#: ./vocabularies.py:526
+#: ./vocabularies.py:564
 msgid "BaGua"
 msgstr ""
 
@@ -80,22 +76,22 @@ msgstr ""
 msgid "BanHua Type"
 msgstr ""
 
-#: ./browser/bixiewu.pt:195
-#: ./interfaces.py:486
+#: ./browser/bixiewu.pt:239
+#: ./interfaces.py:487
 msgid "Base Height"
 msgstr ""
 
-#: ./browser/bixiewu.pt:187
-#: ./interfaces.py:478
+#: ./browser/bixiewu.pt:231
+#: ./interfaces.py:479
 msgid "Base Length"
 msgstr ""
 
-#: ./browser/bixiewu.pt:185
+#: ./browser/bixiewu.pt:229
 msgid "Base Size"
 msgstr ""
 
-#: ./browser/bixiewu.pt:191
-#: ./interfaces.py:482
+#: ./browser/bixiewu.pt:235
+#: ./interfaces.py:483
 msgid "Base Width"
 msgstr ""
 
@@ -105,11 +101,7 @@ msgstr ""
 msgid "Basic Info"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:32
-msgid "Before migrating your content please read the ${migrationsection}"
-msgstr ""
-
-#: ./vocabularies.py:522
+#: ./vocabularies.py:560
 msgid "BeiWenFuZhou"
 msgstr ""
 
@@ -118,12 +110,13 @@ msgid "Believer Organization"
 msgstr ""
 
 #: ./browser/daoshi.pt:50
-#: ./interfaces.py:683
+#: ./interfaces.py:682
 msgid "BenMin"
 msgstr ""
 
+#: ./browser/temple.pt:409
 #: ./profiles/default/types/BiXieWu.xml
-#: ./vocabularies.py:645
+#: ./vocabularies.py:683
 msgid "BiXieWu"
 msgstr ""
 
@@ -141,16 +134,16 @@ msgid "BiXieWu_Type"
 msgstr ""
 
 #: ./browser/daoshi.pt:22
-#: ./interfaces.py:655
+#: ./interfaces.py:654
 msgid "Birth Year"
 msgstr ""
 
 #: ./browser/schedule.pt:16
-#: ./interfaces.py:581
+#: ./interfaces.py:582
 msgid "Body"
 msgstr ""
 
-#: ./browser/temple.pt:188
+#: ./browser/temple.pt:198
 msgid "Booking Info"
 msgstr ""
 
@@ -162,71 +155,71 @@ msgstr ""
 msgid "Buddhist Type"
 msgstr ""
 
-#: ./browser/temple.pt:158
+#: ./browser/temple.pt:168
 #: ./interfaces.py:153
-#: ./vocabularies.py:673
+#: ./vocabularies.py:711
 msgid "Building Overview"
 msgstr ""
 
-#: ./browser/temple.pt:122
+#: ./browser/temple.pt:132
 #: ./interfaces.py:69
 msgid "Building Type"
 msgstr ""
 
-#: ./browser/temple.pt:126
+#: ./browser/temple.pt:136
 #: ./interfaces.py:74
 msgid "Building Type Other"
 msgstr ""
 
-#: ./configure.zcml:32
+#: ./configure.zcml:31
 msgid "CRGIS Content Types"
 msgstr ""
 
-#: ./configure.zcml:40
-msgid "CRGIS Content Types (uninstall)"
+#: ./configure.zcml:39
+msgid "CRGIS Content Types (Uninstall)"
 msgstr ""
 
-#: ./configure.zcml:32
+#: ./configure.zcml:31
 msgid "CRGIS Content Types Package"
 msgstr ""
 
-#: ./interfaces.py:505
+#: ./interfaces.py:506
 msgid "Category"
 msgstr ""
 
-#: ./vocabularies.py:697
+#: ./vocabularies.py:735
 msgid "Changhua County"
 msgstr ""
 
 #: ./browser/keyi.pt:59
-#: ./interfaces.py:1189
+#: ./interfaces.py:1188
 msgid "ChaoXieRen List"
 msgstr ""
 
 #: ./browser/daofatan.pt:107
-#: ./interfaces.py:1003
+#: ./interfaces.py:1002
 msgid "ChengYuan List"
 msgstr ""
 
-#: ./vocabularies.py:699
+#: ./vocabularies.py:737
 msgid "Chiayi City"
 msgstr ""
 
-#: ./vocabularies.py:700
+#: ./vocabularies.py:738
 msgid "Chiayi County"
 msgstr ""
 
 #: ./browser/daofatan.pt:31
-#: ./interfaces.py:881
+#: ./interfaces.py:880
 msgid "ChuangLiRen List"
 msgstr ""
 
-#: ./browser/bixiewu.pt:147
-#: ./interfaces.py:443
+#: ./browser/bixiewu.pt:191
+#: ./interfaces.py:444
 msgid "Color"
 msgstr ""
 
-#: ./vocabularies.py:328
+#: ./vocabularies.py:366
 msgid "Committee"
 msgstr ""
 
@@ -264,32 +257,28 @@ msgstr ""
 msgid "Creators"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:21
-msgid "Custom types migration control panel"
-msgstr ""
-
 #: ./browser/keyi.pt:26
-#: ./interfaces.py:1150
+#: ./interfaces.py:1149
 msgid "DaiBiao YingXiang"
 msgstr ""
 
-#: ./browser/temple.pt:316
+#: ./browser/temple.pt:371
 #: ./interfaces.py:299
 msgid "DaiTien XuanSho"
 msgstr ""
 
 #: ./browser/daoshi.pt:34
-#: ./interfaces.py:667
+#: ./interfaces.py:666
 msgid "Dao Hao"
 msgstr ""
 
 #: ./browser/daoshi.pt:42
-#: ./interfaces.py:675
+#: ./interfaces.py:674
 msgid "Dao Tan"
 msgstr ""
 
 #: ./browser/daoshi.pt:46
-#: ./interfaces.py:679
+#: ./interfaces.py:678
 msgid "Dao Zi"
 msgstr ""
 
@@ -299,7 +288,7 @@ msgstr ""
 
 #: ./browser/daofatan.pt:88
 #: ./browser/daoshi.pt:174
-#: ./interfaces.py:843
+#: ./interfaces.py:842
 msgid "DaoFaTan Attribute"
 msgstr ""
 
@@ -307,11 +296,11 @@ msgstr ""
 msgid "DaoFaTan Leibie"
 msgstr ""
 
-#: ./interfaces.py:865
+#: ./interfaces.py:864
 msgid "DaoFaTan Name"
 msgstr ""
 
-#: ./interfaces.py:869
+#: ./interfaces.py:868
 msgid "DaoFaTan Other Name"
 msgstr ""
 
@@ -329,11 +318,11 @@ msgstr ""
 msgid "DaoShi"
 msgstr ""
 
-#: ./interfaces.py:647
+#: ./interfaces.py:646
 msgid "DaoShi Name"
 msgstr ""
 
-#: ./interfaces.py:651
+#: ./interfaces.py:650
 msgid "DaoShi Other Name"
 msgstr ""
 
@@ -352,7 +341,7 @@ msgid "DaoTan Type"
 msgstr ""
 
 #: ./browser/keyi.pt:101
-#: ./interfaces.py:1254
+#: ./interfaces.py:1253
 msgid "Data From"
 msgstr ""
 
@@ -362,20 +351,20 @@ msgstr ""
 msgid "Data Source"
 msgstr ""
 
-#: ./vocabularies.py:330
+#: ./vocabularies.py:368
 msgid "Deacon"
 msgstr ""
 
-#: ./browser/temple.pt:20
+#: ./browser/temple.pt:29
 msgid "Default Info"
 msgstr ""
 
-#: ./browser/temple.pt:106
+#: ./browser/temple.pt:116
 #: ./interfaces.py:141
 msgid "Deities Accompany"
 msgstr ""
 
-#: ./browser/temple.pt:74
+#: ./browser/temple.pt:84
 #: ./interfaces.py:52
 msgid "Deity Company"
 msgstr ""
@@ -392,10 +381,6 @@ msgstr ""
 msgid "Deity Host Other"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:38
-msgid "Depending of the number of archetypes in your portal, it may take a <span class=\"strong\">really</span> long time for the migration to be done. Stay calm and be patient."
-msgstr ""
-
 #: ./interfaces.py:333
 msgid "Description"
 msgstr ""
@@ -405,16 +390,12 @@ msgid "Description Other"
 msgstr ""
 
 #: ./browser/keyi.pt:78
-#: ./interfaces.py:1216
+#: ./interfaces.py:1215
 msgid "Digitalization"
 msgstr ""
 
 #: ./browser/keyi.pt:70
 msgid "Digitalization GeShi"
-msgstr ""
-
-#: ./migration/crgis_migration.pt:114
-msgid "Do not migrate"
 msgstr ""
 
 #: ./browser/bixiewu.pt:110
@@ -428,21 +409,21 @@ msgid "Era Reference"
 msgstr ""
 
 #: ./browser/daofatan.pt:26
-#: ./interfaces.py:877
+#: ./interfaces.py:876
 msgid "Establish"
 msgstr ""
 
 #: ./browser/daofatan.pt:22
-#: ./interfaces.py:873
+#: ./interfaces.py:872
 msgid "Establish Year"
 msgstr ""
 
-#: ./browser/temple.pt:85
+#: ./browser/temple.pt:95
 #: ./interfaces.py:129
 msgid "Established Year by Taiwan Temple Collection"
 msgstr ""
 
-#: ./browser/temple.pt:89
+#: ./browser/temple.pt:99
 #: ./interfaces.py:133
 msgid "Established Year by Taiwan Temple Overview"
 msgstr ""
@@ -452,13 +433,13 @@ msgstr ""
 msgid "Establishment Description"
 msgstr ""
 
-#: ./browser/temple.pt:98
+#: ./browser/temple.pt:108
 #: ./interfaces.py:125
-#: ./vocabularies.py:670
+#: ./vocabularies.py:708
 msgid "Establishment History"
 msgstr ""
 
-#: ./browser/temple.pt:81
+#: ./browser/temple.pt:91
 #: ./interfaces.py:112
 msgid "Estimated Earliest Founding Year"
 msgstr ""
@@ -467,12 +448,12 @@ msgstr ""
 msgid "Estimated Latest Founding Year"
 msgstr ""
 
-#: ./vocabularies.py:657
+#: ./vocabularies.py:695
 msgid "Exact"
 msgstr ""
 
 #: ./browser/daoshi.pt:38
-#: ./interfaces.py:671
+#: ./interfaces.py:670
 msgid "Fa Hao"
 msgstr ""
 
@@ -495,12 +476,12 @@ msgstr ""
 msgid "FenLingXiTong Other"
 msgstr ""
 
-#: ./vocabularies.py:578
+#: ./vocabularies.py:616
 msgid "FenMu"
 msgstr ""
 
-#: ./interfaces.py:437
-#: ./vocabularies.py:520
+#: ./interfaces.py:438
+#: ./vocabularies.py:558
 msgid "FengShiYe"
 msgstr ""
 
@@ -509,29 +490,33 @@ msgid "FengShiYe Info"
 msgstr ""
 
 #: ./browser/daofatan.pt:126
-#: ./interfaces.py:1027
+#: ./interfaces.py:1026
 msgid "FengSi"
 msgstr ""
 
-#: ./vocabularies.py:41
+#: ./browser/temple.pt:420
+msgid "Festival List"
+msgstr ""
+
+#: ./vocabularies.py:79
 msgid "Fieldwork"
 msgstr ""
 
-#: ./browser/temple.pt:194
+#: ./browser/temple.pt:204
 #: ./interfaces.py:181
 msgid "Filling Date"
 msgstr ""
 
-#: ./browser/temple.pt:190
+#: ./browser/temple.pt:200
 #: ./interfaces.py:177
 msgid "Filling Person"
 msgstr ""
 
-#: ./vocabularies.py:329
+#: ./vocabularies.py:367
 msgid "Foundation"
 msgstr ""
 
-#: ./browser/temple.pt:320
+#: ./browser/temple.pt:375
 #: ./interfaces.py:305
 msgid "Frequence"
 msgstr ""
@@ -541,24 +526,24 @@ msgid "FuWu WangLuo"
 msgstr ""
 
 #: ./browser/daofatan.pt:41
-#: ./interfaces.py:897
+#: ./interfaces.py:896
 msgid "FuZeRen List"
 msgstr ""
 
-#: ./browser/temple.pt:138
+#: ./browser/temple.pt:148
 #: ./interfaces.py:82
 msgid "Funding Type"
 msgstr ""
 
-#: ./vocabularies.py:658
+#: ./vocabularies.py:696
 msgid "Fuzzy"
 msgstr ""
 
-#: ./vocabularies.py:55
+#: ./vocabularies.py:93
 msgid "GIS Reference"
 msgstr ""
 
-#: ./vocabularies.py:54
+#: ./vocabularies.py:92
 msgid "GPS"
 msgstr ""
 
@@ -566,8 +551,8 @@ msgstr ""
 msgid "GeRen JieShao"
 msgstr ""
 
-#: ./browser/bixiewu.pt:159
-#: ./interfaces.py:457
+#: ./browser/bixiewu.pt:203
+#: ./interfaces.py:458
 msgid "Gender"
 msgstr ""
 
@@ -579,46 +564,46 @@ msgstr ""
 msgid "Generates short name based on creation date."
 msgstr ""
 
-#: ./browser/bixiewu.pt:151
-#: ./interfaces.py:447
+#: ./browser/bixiewu.pt:195
+#: ./interfaces.py:448
 msgid "Genre"
 msgstr ""
 
-#: ./vocabularies.py:53
+#: ./vocabularies.py:91
 msgid "GeoCoder"
 msgstr ""
 
 #: ./browser/keyi.pt:180
-#: ./interfaces.py:1350
+#: ./interfaces.py:1349
 msgid "GongXianZhe"
 msgstr ""
 
-#: ./vocabularies.py:331
+#: ./vocabularies.py:369
 msgid "Government"
 msgstr ""
 
-#: ./vocabularies.py:39
+#: ./vocabularies.py:77
 msgid "Governmental"
 msgstr ""
 
 #: ./browser/daofatan.pt:151
-#: ./interfaces.py:1050
+#: ./interfaces.py:1049
 msgid "GuWenWu"
 msgstr ""
 
-#: ./vocabularies.py:579
+#: ./vocabularies.py:617
 msgid "HaiBian"
 msgstr ""
 
 #: ./browser/daofatan.pt:198
 #: ./browser/daoshi.pt:127
-#: ./interfaces.py:771
+#: ./interfaces.py:770
 msgid "HeZuo DaoShi"
 msgstr ""
 
 #: ./browser/daofatan.pt:211
 #: ./browser/daoshi.pt:140
-#: ./interfaces.py:784
+#: ./interfaces.py:783
 msgid "HeZuo HuZhi"
 msgstr ""
 
@@ -628,48 +613,44 @@ msgstr ""
 
 #: ./browser/daofatan.pt:207
 #: ./browser/daoshi.pt:136
-#: ./interfaces.py:780
+#: ./interfaces.py:779
 msgid "HeZuo YueShi"
 msgstr ""
 
-#: ./browser/temple.pt:51
+#: ./browser/temple.pt:61
 #: ./interfaces.py:108
 msgid "Homepage"
 msgstr ""
 
-#: ./vocabularies.py:693
+#: ./vocabularies.py:731
 msgid "Hsinchu City"
 msgstr ""
 
-#: ./vocabularies.py:692
+#: ./vocabularies.py:730
 msgid "Hsinchu County"
 msgstr ""
 
-#: ./vocabularies.py:705
+#: ./vocabularies.py:743
 msgid "Hualien County"
 msgstr ""
 
-#: ./interfaces.py:502
+#: ./interfaces.py:503
 msgid "Image"
-msgstr ""
-
-#: ./migration/crgis_migration.pt:31
-msgid "Important"
 msgstr ""
 
 #: ./browser/daofatan.pt:120
 #: ./browser/daoshi.pt:90
-#: ./browser/temple.pt:102
+#: ./browser/temple.pt:112
 msgid "Introduction"
 msgstr ""
 
 #: ./browser/keyi.pt:22
-#: ./interfaces.py:1146
+#: ./interfaces.py:1145
 msgid "Introduction KeYi"
 msgstr ""
 
 #: ./browser/daofatan.pt:143
-#: ./interfaces.py:1046
+#: ./interfaces.py:1045
 msgid "JiSi"
 msgstr ""
 
@@ -685,25 +666,25 @@ msgstr ""
 msgid "JiSiZuQun Other"
 msgstr ""
 
-#: ./vocabularies.py:524
+#: ./vocabularies.py:562
 msgid "JianShi"
 msgstr ""
 
 #: ./browser/daofatan.pt:174
 #: ./browser/daoshi.pt:99
-#: ./interfaces.py:735
+#: ./browser/temple.pt:430
 msgid "JingChang FuWu"
 msgstr ""
 
-#: ./vocabularies.py:559
+#: ./vocabularies.py:597
 msgid "JuLuo"
 msgstr ""
 
-#: ./vocabularies.py:573
+#: ./vocabularies.py:611
 msgid "JuLuoZhenSha"
 msgstr ""
 
-#: ./vocabularies.py:702
+#: ./vocabularies.py:740
 msgid "Kaohsiung City"
 msgstr ""
 
@@ -712,15 +693,15 @@ msgid "KeYi"
 msgstr ""
 
 #: ./browser/daofatan.pt:156
-#: ./interfaces.py:1054
+#: ./interfaces.py:1053
 msgid "KeYi JingBen"
 msgstr ""
 
-#: ./interfaces.py:1138
+#: ./interfaces.py:1137
 msgid "KeYi Name"
 msgstr ""
 
-#: ./interfaces.py:1142
+#: ./interfaces.py:1141
 msgid "KeYi Other Name"
 msgstr ""
 
@@ -728,33 +709,33 @@ msgstr ""
 msgid "KeYi Type"
 msgstr ""
 
-#: ./vocabularies.py:688
+#: ./vocabularies.py:726
 msgid "Keelung City"
 msgstr ""
 
-#: ./vocabularies.py:709
+#: ./vocabularies.py:747
 msgid "Kinmen County"
 msgstr ""
 
-#: ./interfaces.py:537
+#: ./interfaces.py:538
 msgid "Latitude"
 msgstr ""
 
 #: ./browser/keyi.pt:36
-#: ./interfaces.py:1154
+#: ./interfaces.py:1153
 msgid "LeiBie"
 msgstr ""
 
-#: ./interfaces.py:1228
+#: ./interfaces.py:1227
 msgid "Length, Width, Height, Material"
 msgstr ""
 
 #: ./browser/keyi.pt:73
-#: ./interfaces.py:1205
+#: ./interfaces.py:1204
 msgid "License"
 msgstr ""
 
-#: ./vocabularies.py:708
+#: ./vocabularies.py:746
 msgid "Lienchiang County"
 msgstr ""
 
@@ -769,15 +750,15 @@ msgstr ""
 msgid "Locational Attribute"
 msgstr ""
 
-#: ./interfaces.py:533
+#: ./interfaces.py:534
 msgid "Longtitude"
 msgstr ""
 
-#: ./vocabularies.py:575
+#: ./vocabularies.py:613
 msgid "LuChong"
 msgstr ""
 
-#: ./vocabularies.py:560
+#: ./vocabularies.py:598
 msgid "LuKuo"
 msgstr ""
 
@@ -785,11 +766,11 @@ msgstr ""
 msgid "Luck Divination"
 msgstr ""
 
-#: ./browser/temple.pt:116
+#: ./browser/temple.pt:126
 msgid "MOI Registry Info"
 msgstr ""
 
-#: ./vocabularies.py:56
+#: ./vocabularies.py:94
 msgid "Map"
 msgstr ""
 
@@ -802,16 +783,8 @@ msgstr ""
 msgid "Medicine Divination"
 msgstr ""
 
-#: ./vocabularies.py:694
+#: ./vocabularies.py:732
 msgid "Miaoli County"
-msgstr ""
-
-#: ./migration/crgis_migration.pt:93
-msgid "Migrate contents"
-msgstr ""
-
-#: ./migration/crgis_migration.pt:24
-msgid "Migrate custom Archetypes content types to any available Dexterity content types."
 msgstr ""
 
 #: ./browser/daofatan.pt:245
@@ -828,17 +801,17 @@ msgstr ""
 msgid "Name from Id"
 msgstr ""
 
-#: ./vocabularies.py:696
+#: ./vocabularies.py:734
 msgid "Nantou County"
 msgstr ""
 
-#: ./browser/temple.pt:166
+#: ./browser/temple.pt:176
 #: ./interfaces.py:161
-#: ./vocabularies.py:675
+#: ./vocabularies.py:713
 msgid "Narrate"
 msgstr ""
 
-#: ./vocabularies.py:690
+#: ./vocabularies.py:728
 msgid "New Taipei City"
 msgstr ""
 
@@ -850,63 +823,55 @@ msgstr ""
 msgid "NianLiQingSheng Other"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:148
-msgid "No content to migrate."
-msgstr ""
-
-#: ./browser/temple.pt:170
+#: ./browser/temple.pt:180
 #: ./interfaces.py:165
-#: ./vocabularies.py:676
+#: ./vocabularies.py:714
 msgid "Non Narrate"
 msgstr ""
 
-#: ./vocabularies.py:57
+#: ./vocabularies.py:95
 msgid "Not Yet"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:37
-msgid "Note about how long it might take"
-msgstr ""
-
-#: ./browser/temple.pt:142
+#: ./browser/temple.pt:152
 #: ./interfaces.py:87
 msgid "Organizing Type"
 msgstr ""
 
-#: ./browser/temple.pt:146
+#: ./browser/temple.pt:156
 #: ./interfaces.py:92
 msgid "Organizing Type Other"
 msgstr ""
 
-#: ./vocabularies.py:42
+#: ./vocabularies.py:80
 msgid "Other"
 msgstr ""
 
-#: ./browser/temple.pt:156
+#: ./browser/temple.pt:166
 msgid "Outlook"
 msgstr ""
 
-#: ./interfaces.py:553
+#: ./interfaces.py:554
 msgid "Owner Name"
 msgstr ""
 
-#: ./interfaces.py:557
+#: ./interfaces.py:558
 msgid "Owner Organization"
 msgstr ""
 
-#: ./interfaces.py:561
+#: ./interfaces.py:562
 msgid "Owner Title"
 msgstr ""
 
-#: ./vocabularies.py:707
+#: ./vocabularies.py:745
 msgid "Penghu County"
 msgstr ""
 
-#: ./vocabularies.py:327
+#: ./vocabularies.py:365
 msgid "Person"
 msgstr ""
 
-#: ./browser/temple.pt:150
+#: ./browser/temple.pt:160
 #: ./interfaces.py:100
 msgid "Person In Charge"
 msgstr ""
@@ -915,11 +880,11 @@ msgstr ""
 msgid "Photo"
 msgstr ""
 
-#: ./interfaces.py:549
+#: ./interfaces.py:550
 msgid "Photo Day"
 msgstr ""
 
-#: ./interfaces.py:545
+#: ./interfaces.py:546
 msgid "Photo Month"
 msgstr ""
 
@@ -927,10 +892,11 @@ msgstr ""
 msgid "Photo Type"
 msgstr ""
 
-#: ./interfaces.py:541
+#: ./interfaces.py:542
 msgid "Photo Year"
 msgstr ""
 
+#: ./browser/temple.pt:399
 #: ./profiles/default/types/Pilgrimage.xml
 msgid "Pilgrimage"
 msgstr ""
@@ -939,24 +905,24 @@ msgstr ""
 msgid "Pilgrimage Type"
 msgstr ""
 
-#: ./vocabularies.py:703
+#: ./vocabularies.py:741
 msgid "Pingtung County"
 msgstr ""
 
-#: ./browser/bixiewu.pt:155
-#: ./interfaces.py:452
+#: ./browser/bixiewu.pt:199
+#: ./interfaces.py:453
 msgid "Posture"
 msgstr ""
 
-#: ./browser/temple.pt:59
+#: ./browser/temple.pt:69
 msgid "Primary Deities"
 msgstr ""
 
-#: ./browser/temple.pt:65
+#: ./browser/temple.pt:75
 msgid "Primary Deities (Other)"
 msgstr ""
 
-#: ./browser/temple.pt:69
+#: ./browser/temple.pt:79
 msgid "Primary Deity Alias"
 msgstr ""
 
@@ -964,16 +930,16 @@ msgstr ""
 msgid "Primary Purpose"
 msgstr ""
 
-#: ./vocabularies.py:314
+#: ./vocabularies.py:352
 msgid "Private"
 msgstr ""
 
 #: ./browser/keyi.pt:105
-#: ./interfaces.py:1265
+#: ./interfaces.py:1264
 msgid "Provider"
 msgstr ""
 
-#: ./vocabularies.py:315
+#: ./vocabularies.py:353
 msgid "Public"
 msgstr ""
 
@@ -981,11 +947,11 @@ msgstr ""
 msgid "Purpose"
 msgstr ""
 
-#: ./vocabularies.py:527
+#: ./vocabularies.py:565
 msgid "QiWu"
 msgstr ""
 
-#: ./vocabularies.py:313
+#: ./vocabularies.py:351
 msgid "Raising"
 msgstr ""
 
@@ -994,16 +960,20 @@ msgstr ""
 msgid "Reference"
 msgstr ""
 
-#: ./browser/temple.pt:176
+#: ./browser/temple.pt:32
+msgid "Reference Info"
+msgstr ""
+
+#: ./browser/temple.pt:186
 msgid "References"
 msgstr ""
 
-#: ./browser/temple.pt:93
+#: ./browser/temple.pt:103
 #: ./interfaces.py:137
 msgid "References on Establishment"
 msgstr ""
 
-#: ./browser/temple.pt:118
+#: ./browser/temple.pt:128
 #: ./interfaces.py:78
 msgid "Registered Name"
 msgstr ""
@@ -1014,12 +984,12 @@ msgstr ""
 msgid "Related Temples"
 msgstr ""
 
-#: ./browser/temple.pt:130
+#: ./browser/temple.pt:140
 #: ./interfaces.py:60
 msgid "Religion Type"
 msgstr ""
 
-#: ./browser/temple.pt:134
+#: ./browser/temple.pt:144
 #: ./interfaces.py:65
 msgid "Religion Type Other"
 msgstr ""
@@ -1049,29 +1019,29 @@ msgstr ""
 
 #: ./browser/daofatan.pt:169
 #: ./browser/daoshi.pt:94
-#: ./interfaces.py:731
+#: ./interfaces.py:730
 msgid "Service"
 msgstr ""
 
-#: ./vocabularies.py:525
+#: ./vocabularies.py:563
 msgid "ShanHaiZhen"
 msgstr ""
 
-#: ./vocabularies.py:529
+#: ./vocabularies.py:567
 msgid "ShenShou"
 msgstr ""
 
-#: ./vocabularies.py:521
+#: ./vocabularies.py:559
 msgid "ShenXiang"
 msgstr ""
 
-#: ./browser/bixiewu.pt:165
+#: ./browser/bixiewu.pt:209
 msgid "Shi Size"
 msgstr ""
 
 #: ./browser/daofatan.pt:97
 #: ./browser/daoshi.pt:63
-#: ./interfaces.py:691
+#: ./interfaces.py:690
 msgid "ShiCheng List"
 msgstr ""
 
@@ -1079,100 +1049,96 @@ msgstr ""
 msgid "ShiCheng ShouTu"
 msgstr ""
 
-#: ./vocabularies.py:519
+#: ./vocabularies.py:557
 msgid "ShiGanDang"
 msgstr ""
 
-#: ./browser/bixiewu.pt:167
-#: ./interfaces.py:462
+#: ./browser/bixiewu.pt:211
+#: ./interfaces.py:463
 msgid "ShiZi Depth"
 msgstr ""
 
-#: ./browser/bixiewu.pt:179
-#: ./interfaces.py:474
+#: ./browser/bixiewu.pt:223
+#: ./interfaces.py:475
 msgid "ShiZi Head"
 msgstr ""
 
-#: ./browser/bixiewu.pt:175
-#: ./interfaces.py:470
+#: ./browser/bixiewu.pt:219
+#: ./interfaces.py:471
 msgid "ShiZi Height"
 msgstr ""
 
-#: ./browser/bixiewu.pt:171
-#: ./interfaces.py:466
+#: ./browser/bixiewu.pt:215
+#: ./interfaces.py:467
 msgid "ShiZi Width"
 msgstr ""
 
 #: ./browser/daoshi.pt:73
-#: ./interfaces.py:707
+#: ./interfaces.py:706
 msgid "ShouTu List"
 msgstr ""
 
 #: ./browser/keyi.pt:44
-#: ./interfaces.py:1169
+#: ./interfaces.py:1168
 msgid "ShuMing ShiXiang"
 msgstr ""
 
-#: ./vocabularies.py:561
+#: ./vocabularies.py:599
 msgid "SiRen"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:36
-msgid "Since LinguaPlone does not support Dexterity you need to migrate from LinguaPlone to ${pam}. The migration from Products.LinguaPlone to plone.app.multilingual should happen before the migration from Archetypes to plone.app.contenttypes. For details on the migration see the ${documentation}"
-msgstr ""
-
-#: ./browser/temple.pt:39
+#: ./browser/temple.pt:49
 #: ./interfaces.py:32
 msgid "Sitting Facing"
 msgstr ""
 
 #: ./browser/bixiewu.pt:106
 #: ./interfaces.py:406
-#: ./vocabularies.py:677
+#: ./vocabularies.py:715
 msgid "Spatial Attribute"
 msgstr ""
 
-#: ./browser/temple.pt:328
+#: ./browser/temple.pt:383
 #: ./interfaces.py:317
 msgid "SungWang XingShi"
 msgstr ""
 
 #: ./browser/keyi.pt:49
-#: ./interfaces.py:1173
+#: ./interfaces.py:1172
 msgid "SuoShu DaoFaTan"
 msgstr ""
 
-#: ./vocabularies.py:523
+#: ./vocabularies.py:561
 msgid "Ta"
 msgstr ""
 
-#: ./vocabularies.py:695
+#: ./vocabularies.py:733
 msgid "Taichung City"
 msgstr ""
 
-#: ./vocabularies.py:701
+#: ./vocabularies.py:739
 msgid "Tainan City"
 msgstr ""
 
-#: ./vocabularies.py:689
+#: ./vocabularies.py:727
 msgid "Taipei City"
 msgstr ""
 
-#: ./vocabularies.py:706
+#: ./vocabularies.py:744
 msgid "Taitung County"
 msgstr ""
 
-#: ./vocabularies.py:691
+#: ./vocabularies.py:729
 msgid "Taoyuan County"
 msgstr ""
 
 #: ./browser/daofatan.pt:54
 #: ./browser/daoshi.pt:30
-#: ./browser/temple.pt:47
+#: ./browser/temple.pt:57
 msgid "Telephone"
 msgstr ""
 
-#: ./vocabularies.py:644
+#: ./vocabularies.py:682
 msgid "TemPle"
 msgstr ""
 
@@ -1184,13 +1150,17 @@ msgstr ""
 msgid "Temple Type"
 msgstr ""
 
+#: ./interfaces.py:638
+msgid "Text"
+msgstr ""
+
 #: ./browser/keyi.pt:110
-#: ./interfaces.py:1269
+#: ./interfaces.py:1268
 msgid "TiGong DaoFaTan"
 msgstr ""
 
 #: ./browser/keyi.pt:120
-#: ./interfaces.py:1285
+#: ./interfaces.py:1284
 msgid "TiGong DaoShi"
 msgstr ""
 
@@ -1203,15 +1173,15 @@ msgstr ""
 msgid "Town"
 msgstr ""
 
-#: ./configure.zcml:40
+#: ./configure.zcml:39
 msgid "Uninstalls CRGIS Content Types Package"
 msgstr ""
 
-#: ./vocabularies.py:659
+#: ./vocabularies.py:697
 msgid "Unknown"
 msgstr ""
 
-#: ./browser/temple.pt:52
+#: ./browser/temple.pt:62
 msgid "View Homepage"
 msgstr ""
 
@@ -1220,8 +1190,8 @@ msgstr ""
 msgid "Village"
 msgstr ""
 
-#: ./browser/bixiewu.pt:143
-#: ./interfaces.py:439
+#: ./browser/bixiewu.pt:187
+#: ./interfaces.py:440
 msgid "Village Name"
 msgstr ""
 
@@ -1230,7 +1200,7 @@ msgstr ""
 msgid "Volumn"
 msgstr ""
 
-#: ./browser/temple.pt:324
+#: ./browser/temple.pt:379
 #: ./interfaces.py:311
 msgid "WangTsuan Material"
 msgstr ""
@@ -1239,11 +1209,11 @@ msgstr ""
 msgid "WangYe"
 msgstr ""
 
-#: ./browser/temple.pt:22
+#: ./browser/temple.pt:31
 msgid "WangYe Info"
 msgstr ""
 
-#: ./browser/temple.pt:308
+#: ./browser/temple.pt:363
 #: ./interfaces.py:291
 msgid "WangYe Name"
 msgstr ""
@@ -1256,16 +1226,12 @@ msgstr ""
 msgid "WangYeXianXiang Other"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:147
-msgid "Warning"
-msgstr ""
-
 #: ./browser/daofatan.pt:149
 msgid "WenWu KeYi"
 msgstr ""
 
 #: ./browser/bixiewu.pt:98
-#: ./browser/temple.pt:110
+#: ./browser/temple.pt:120
 #: ./interfaces.py:145
 msgid "Worship"
 msgstr ""
@@ -1274,11 +1240,11 @@ msgstr ""
 msgid "Worship Description"
 msgstr ""
 
-#: ./vocabularies.py:580
+#: ./vocabularies.py:618
 msgid "WuChong"
 msgstr ""
 
-#: ./vocabularies.py:646
+#: ./vocabularies.py:684
 msgid "WyYing"
 msgstr ""
 
@@ -1294,13 +1260,13 @@ msgstr ""
 msgid "XinYangFangWei"
 msgstr ""
 
-#: ./browser/temple.pt:332
+#: ./browser/temple.pt:387
 #: ./interfaces.py:321
 msgid "YSGS"
 msgstr ""
 
 #: ./browser/daofatan.pt:116
-#: ./interfaces.py:1019
+#: ./interfaces.py:1018
 msgid "YanGe"
 msgstr ""
 
@@ -1318,61 +1284,57 @@ msgstr ""
 
 #: ./browser/daofatan.pt:193
 #: ./browser/daoshi.pt:118
-#: ./interfaces.py:767
+#: ./interfaces.py:766
 msgid "YiShi"
 msgstr ""
 
-#: ./vocabularies.py:704
+#: ./vocabularies.py:742
 msgid "Yilan County"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:96
-msgid "You can select which AT content type you want to migrate to an existing DX content type."
-msgstr ""
-
 #: ./browser/keyi.pt:148
-#: ./interfaces.py:1334
+#: ./interfaces.py:1333
 msgid "YouLai"
 msgstr ""
 
-#: ./browser/temple.pt:312
+#: ./browser/temple.pt:367
 #: ./interfaces.py:295
 msgid "YungS WangTsuan"
 msgstr ""
 
-#: ./vocabularies.py:698
+#: ./vocabularies.py:736
 msgid "Yunlin County"
 msgstr ""
 
-#: ./vocabularies.py:528
+#: ./vocabularies.py:566
 msgid "ZhaoBi"
 msgstr ""
 
-#: ./vocabularies.py:576
+#: ./vocabularies.py:614
 msgid "ZhenFeng"
 msgstr ""
 
-#: ./vocabularies.py:577
+#: ./vocabularies.py:615
 msgid "ZhenShui"
 msgstr ""
 
-#: ./vocabularies.py:530
+#: ./vocabularies.py:568
 msgid "ZhiWu"
 msgstr ""
 
 #: ./browser/daofatan.pt:184
 #: ./browser/daoshi.pt:109
-#: ./interfaces.py:751
+#: ./browser/temple.pt:441
 msgid "ZhuMiao List"
 msgstr ""
 
 #: ./browser/daofatan.pt:135
-#: ./interfaces.py:1038
+#: ./interfaces.py:1037
 msgid "ZhuSi"
 msgstr ""
 
 #: ./browser/daofatan.pt:139
-#: ./interfaces.py:1042
+#: ./interfaces.py:1041
 msgid "ZhuSi ZhiWai"
 msgstr ""
 
@@ -1381,7 +1343,7 @@ msgid "ZiLaio NeiRong"
 msgstr ""
 
 #: ./browser/keyi.pt:82
-#: ./interfaces.py:1227
+#: ./interfaces.py:1226
 msgid "ZiLiao GeShi"
 msgstr ""
 
@@ -1390,12 +1352,12 @@ msgid "ZiLiao LaiYuan"
 msgstr ""
 
 #: ./browser/keyi.pt:154
-#: ./interfaces.py:1338
+#: ./interfaces.py:1337
 msgid "ZiLiao NeiRong"
 msgstr ""
 
 #: ./browser/keyi.pt:40
-#: ./interfaces.py:1165
+#: ./interfaces.py:1164
 msgid "ZiLiao NianDai"
 msgstr ""
 
@@ -1406,659 +1368,656 @@ msgid "ZiLiao ShuoMing"
 msgstr ""
 
 #: ./browser/daoshi.pt:82
-#: ./interfaces.py:723
+#: ./interfaces.py:722
 msgid "ZouZhi"
 msgstr ""
 
 #. Default: "Buddhism"
-#: ./vocabularies.py:295
+#: ./vocabularies.py:333
 msgid "bd_bd"
 msgstr ""
 
 #. Default: "Folk"
-#: ./vocabularies.py:296
+#: ./vocabularies.py:334
 msgid "bd_fk"
 msgstr ""
 
 #. Default: "IKuanTao"
-#: ./vocabularies.py:297
+#: ./vocabularies.py:335
 msgid "bd_ik"
 msgstr ""
 
 #. Default: "Other"
-#: ./vocabularies.py:302
+#: ./vocabularies.py:340
 msgid "bd_ot"
 msgstr ""
 
 #. Default: "PhoenixHall"
-#: ./vocabularies.py:300
+#: ./vocabularies.py:338
 msgid "bd_ph"
 msgstr ""
 
 #. Default: "Private"
-#: ./vocabularies.py:298
+#: ./vocabularies.py:336
 msgid "bd_pv"
 msgstr ""
 
 #. Default: "Taoism"
-#: ./vocabularies.py:301
+#: ./vocabularies.py:339
 msgid "bd_to"
 msgstr ""
 
 #. Default: "VegetarianHall"
-#: ./vocabularies.py:299
+#: ./vocabularies.py:337
 msgid "bd_vh"
 msgstr ""
 
-#: ./vocabularies.py:545
+#: ./vocabularies.py:583
 msgid "brick"
 msgstr ""
 
-#: ./vocabularies.py:546
+#: ./vocabularies.py:584
 msgid "ceramics"
 msgstr ""
 
-#: ./vocabularies.py:544
+#: ./vocabularies.py:582
 msgid "coment"
 msgstr ""
 
-#: ./vocabularies.py:617
+#: ./vocabularies.py:655
 msgid "crouching"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:36
-msgid "documentation"
-msgstr ""
-
-#: ./vocabularies.py:632
+#: ./vocabularies.py:670
 msgid "female"
 msgstr ""
 
 #. Default: "MZ"
-#: ./vocabularies.py:368
+#: ./vocabularies.py:406
 msgid "flxt10"
 msgstr ""
 
 #. Default: "MZ BGC"
-#: ./vocabularies.py:369
+#: ./vocabularies.py:407
 msgid "flxt11"
 msgstr ""
 
 #. Default: "MZ XGF"
-#: ./vocabularies.py:370
+#: ./vocabularies.py:408
 msgid "flxt12"
 msgstr ""
 
 #. Default: "MZ LGT"
-#: ./vocabularies.py:371
+#: ./vocabularies.py:409
 msgid "flxt13"
 msgstr ""
 
 #. Default: "MZ GDT"
-#: ./vocabularies.py:372
+#: ./vocabularies.py:410
 msgid "flxt14"
 msgstr ""
 
 #. Default: "MZ ZLG"
-#: ./vocabularies.py:373
+#: ./vocabularies.py:411
 msgid "flxt15"
 msgstr ""
 
 #. Default: "MZ NYG"
-#: ./vocabularies.py:374
+#: ./vocabularies.py:412
 msgid "flxt16"
 msgstr ""
 
 #. Default: "MZ YCL"
-#: ./vocabularies.py:375
+#: ./vocabularies.py:413
 msgid "flxt17"
 msgstr ""
 
 #. Default: "MZ TND"
-#: ./vocabularies.py:376
+#: ./vocabularies.py:414
 msgid "flxt18"
 msgstr ""
 
 #. Default: "MZ PTG"
-#: ./vocabularies.py:377
+#: ./vocabularies.py:415
 msgid "flxt19"
 msgstr ""
 
 #. Default: "MZ GKG"
-#: ./vocabularies.py:378
+#: ./vocabularies.py:416
 msgid "flxt20"
 msgstr ""
 
 #. Default: "MZ TAG"
-#: ./vocabularies.py:379
+#: ./vocabularies.py:417
 msgid "flxt21"
 msgstr ""
 
 #. Default: "MZ OT"
-#: ./vocabularies.py:380
+#: ./vocabularies.py:418
 msgid "flxt22"
 msgstr ""
 
 #. Default: "WY"
-#: ./vocabularies.py:381
+#: ./vocabularies.py:419
 msgid "flxt30"
 msgstr ""
 
 #. Default: "WY NKS"
-#: ./vocabularies.py:382
+#: ./vocabularies.py:420
 msgid "flxt31"
 msgstr ""
 
 #. Default: "WY MAD"
-#: ./vocabularies.py:383
+#: ./vocabularies.py:421
 msgid "flxt32"
 msgstr ""
 
 #. Default: "WY DLG"
-#: ./vocabularies.py:384
+#: ./vocabularies.py:422
 msgid "flxt33"
 msgstr ""
 
 #. Default: "WY MMS"
-#: ./vocabularies.py:385
+#: ./vocabularies.py:423
 msgid "flxt34"
 msgstr ""
 
 #. Default: "WY AXF"
-#: ./vocabularies.py:386
+#: ./vocabularies.py:424
 msgid "flxt35"
 msgstr ""
 
 #. Default: "WY GST"
-#: ./vocabularies.py:387
+#: ./vocabularies.py:425
 msgid "flxt36"
 msgstr ""
 
 #. Default: "WY BOX"
-#: ./vocabularies.py:388
+#: ./vocabularies.py:426
 msgid "flxt37"
 msgstr ""
 
 #. Default: "WY LGG"
-#: ./vocabularies.py:389
+#: ./vocabularies.py:427
 msgid "flxt38"
 msgstr ""
 
 #. Default: "WY FSG"
-#: ./vocabularies.py:390
+#: ./vocabularies.py:428
 msgid "flxt39"
 msgstr ""
 
 #. Default: "WY OT"
-#: ./vocabularies.py:391
+#: ./vocabularies.py:429
 msgid "flxt40"
 msgstr ""
 
 #. Default: "WY BHG"
-#: ./vocabularies.py:392
+#: ./vocabularies.py:430
 msgid "flxt41"
 msgstr ""
 
 #. Default: "GY"
-#: ./vocabularies.py:393
+#: ./vocabularies.py:431
 msgid "flxt50"
 msgstr ""
 
 #. Default: "GY LSS"
-#: ./vocabularies.py:394
+#: ./vocabularies.py:432
 msgid "flxt51"
 msgstr ""
 
 #. Default: "GY CFS"
-#: ./vocabularies.py:395
+#: ./vocabularies.py:433
 msgid "flxt52"
 msgstr ""
 
 #. Default: "GY LHY"
-#: ./vocabularies.py:396
+#: ./vocabularies.py:434
 msgid "flxt53"
 msgstr ""
 
 #. Default: "GY BYS"
-#: ./vocabularies.py:397
+#: ./vocabularies.py:435
 msgid "flxt54"
 msgstr ""
 
 #. Default: "GY DXS"
-#: ./vocabularies.py:398
+#: ./vocabularies.py:436
 msgid "flxt55"
 msgstr ""
 
 #. Default: "GY ZZS"
-#: ./vocabularies.py:399
+#: ./vocabularies.py:437
 msgid "flxt56"
 msgstr ""
 
 #. Default: "GY ZYS"
-#: ./vocabularies.py:400
+#: ./vocabularies.py:438
 msgid "flxt57"
 msgstr ""
 
 #. Default: "GY ZYY"
-#: ./vocabularies.py:401
+#: ./vocabularies.py:439
 msgid "flxt58"
 msgstr ""
 
 #. Default: "GY QSY"
-#: ./vocabularies.py:402
+#: ./vocabularies.py:440
 msgid "flxt59"
 msgstr ""
 
 #. Default: "GY OT"
-#: ./vocabularies.py:403
+#: ./vocabularies.py:441
 msgid "flxt60"
 msgstr ""
 
 #. Default: "OT"
-#: ./vocabularies.py:406
+#: ./vocabularies.py:444
 msgid "flxt70"
 msgstr ""
 
 #. Default: "OT GZXL"
-#: ./vocabularies.py:407
+#: ./vocabularies.py:445
 msgid "flxt71"
 msgstr ""
 
 #. Default: "OT GZYH"
-#: ./vocabularies.py:408
+#: ./vocabularies.py:446
 msgid "flxt72"
 msgstr ""
 
 #. Default: "OT XTSB"
-#: ./vocabularies.py:409
+#: ./vocabularies.py:447
 msgid "flxt73"
 msgstr ""
 
 #. Default: "OT XTWD"
-#: ./vocabularies.py:410
+#: ./vocabularies.py:448
 msgid "flxt74"
 msgstr ""
 
 #. Default: "OT BSDD"
-#: ./vocabularies.py:411
+#: ./vocabularies.py:449
 msgid "flxt75"
 msgstr ""
 
 #. Default: "OT ZTYS"
-#: ./vocabularies.py:412
+#: ./vocabularies.py:450
 msgid "flxt76"
 msgstr ""
 
 #. Default: "OT SSGW"
-#: ./vocabularies.py:413
+#: ./vocabularies.py:451
 msgid "flxt77"
 msgstr ""
 
 #. Default: "WM SAG"
-#: ./vocabularies.py:404
+#: ./vocabularies.py:442
 msgid "flxt81"
 msgstr ""
 
 #. Default: "WM CHT"
-#: ./vocabularies.py:405
+#: ./vocabularies.py:443
 msgid "flxt82"
 msgstr ""
 
 #. Default: "QZ"
-#: ./vocabularies.py:343
+#: ./vocabularies.py:381
 msgid "jstq10"
 msgstr ""
 
 #. Default: "QZ SY"
-#: ./vocabularies.py:344
+#: ./vocabularies.py:382
 msgid "jstq11"
 msgstr ""
 
 #. Default: "QZ TA"
-#: ./vocabularies.py:345
+#: ./vocabularies.py:383
 msgid "jstq12"
 msgstr ""
 
 #. Default: "QZ AX"
-#: ./vocabularies.py:346
+#: ./vocabularies.py:384
 msgid "jstq13"
 msgstr ""
 
 #. Default: "ZZ"
-#: ./vocabularies.py:347
+#: ./vocabularies.py:385
 msgid "jstq20"
 msgstr ""
 
 #. Default: "ZZ FL"
-#: ./vocabularies.py:348
+#: ./vocabularies.py:386
 msgid "jstq21"
 msgstr ""
 
 #. Default: "ZZ KJ"
-#: ./vocabularies.py:349
+#: ./vocabularies.py:387
 msgid "jstq22"
 msgstr ""
 
 #. Default: "GD"
-#: ./vocabularies.py:350
+#: ./vocabularies.py:388
 msgid "jstq30"
 msgstr ""
 
 #. Default: "GD CZ"
-#: ./vocabularies.py:351
+#: ./vocabularies.py:389
 msgid "jstq31"
 msgstr ""
 
 #. Default: "GD JY"
-#: ./vocabularies.py:352
+#: ./vocabularies.py:390
 msgid "jstq32"
 msgstr ""
 
 #. Default: "GD HZ"
-#: ./vocabularies.py:353
+#: ./vocabularies.py:391
 msgid "jstq33"
 msgstr ""
 
 #. Default: "GD FL"
-#: ./vocabularies.py:354
+#: ./vocabularies.py:392
 msgid "jstq34"
 msgstr ""
 
 #. Default: "OT PPZ"
-#: ./vocabularies.py:355
+#: ./vocabularies.py:393
 msgid "jstq41"
 msgstr ""
 
 #. Default: "OT DZK"
-#: ./vocabularies.py:356
+#: ./vocabularies.py:394
 msgid "jstq42"
 msgstr ""
 
 #. Default: "OT ZHYM"
-#: ./vocabularies.py:357
+#: ./vocabularies.py:395
 msgid "jstq43"
 msgstr ""
 
 #. Default: "NO"
-#: ./vocabularies.py:505
+#: ./vocabularies.py:543
 msgid "luck00"
 msgstr ""
 
 #. Default: "ST"
-#: ./vocabularies.py:506
+#: ./vocabularies.py:544
 msgid "luck01"
 msgstr ""
 
 #. Default: "HD"
-#: ./vocabularies.py:507
+#: ./vocabularies.py:545
 msgid "luck02"
 msgstr ""
 
 #. Default: "OT"
-#: ./vocabularies.py:508
+#: ./vocabularies.py:546
 msgid "luck03"
 msgstr ""
 
-#: ./vocabularies.py:618
+#: ./vocabularies.py:656
 msgid "lying"
 msgstr ""
 
-#: ./vocabularies.py:631
+#: ./vocabularies.py:669
 msgid "male"
 msgstr ""
 
 #. Default: "NO"
-#: ./vocabularies.py:489
+#: ./vocabularies.py:527
 msgid "medicine00"
 msgstr ""
 
 #. Default: "DR"
-#: ./vocabularies.py:490
+#: ./vocabularies.py:528
 msgid "medicine01"
 msgstr ""
 
 #. Default: "XE"
-#: ./vocabularies.py:491
+#: ./vocabularies.py:529
 msgid "medicine02"
 msgstr ""
 
 #. Default: "FK"
-#: ./vocabularies.py:492
+#: ./vocabularies.py:530
 msgid "medicine03"
 msgstr ""
 
 #. Default: "YK"
-#: ./vocabularies.py:493
+#: ./vocabularies.py:531
 msgid "medicine04"
 msgstr ""
 
 #. Default: "OT"
-#: ./vocabularies.py:494
+#: ./vocabularies.py:532
 msgid "medicine05"
 msgstr ""
 
-#: ./migration/crgis_migration.pt:32
-msgid "migration-section in the documentation of plone.app.contenttypes"
-msgstr ""
-
-#: ./vocabularies.py:543
+#: ./vocabularies.py:581
 msgid "mud"
 msgstr ""
 
 #. Default: "GDMZ"
-#: ./vocabularies.py:457
+#: ./vocabularies.py:495
 msgid "nlqs01"
 msgstr ""
 
 #. Default: "BGMZ"
-#: ./vocabularies.py:458
+#: ./vocabularies.py:496
 msgid "nlqs02"
 msgstr ""
 
 #. Default: "XGMZ"
-#: ./vocabularies.py:459
+#: ./vocabularies.py:497
 msgid "nlqs03"
 msgstr ""
 
 #. Default: "ZHMZ"
-#: ./vocabularies.py:460
+#: ./vocabularies.py:498
 msgid "nlqs04"
 msgstr ""
 
 #. Default: "WNQS"
-#: ./vocabularies.py:461
+#: ./vocabularies.py:499
 msgid "nlqs05"
 msgstr ""
 
-#: ./vocabularies.py:592
+#: ./vocabularies.py:630
 msgid "no"
 msgstr ""
 
-#: ./vocabularies.py:531
+#: ./vocabularies.py:569
 msgid "other"
 msgstr ""
 
-#: ./vocabularies.py:620
+#: ./vocabularies.py:658
 msgid "reclining"
 msgstr ""
 
 #. Default: "Buddhism"
-#: ./vocabularies.py:276
+#: ./vocabularies.py:314
 msgid "rl_bd"
 msgstr ""
 
 #. Default: "Confucianism"
-#: ./vocabularies.py:278
+#: ./vocabularies.py:316
 msgid "rl_cf"
 msgstr ""
 
 #. Default: "IKuanTao"
-#: ./vocabularies.py:280
+#: ./vocabularies.py:318
 msgid "rl_ik"
 msgstr ""
 
 #. Default: "Liism"
-#: ./vocabularies.py:279
+#: ./vocabularies.py:317
 msgid "rl_li"
 msgstr ""
 
 #. Default: "Other"
-#: ./vocabularies.py:284
+#: ./vocabularies.py:322
 msgid "rl_ot"
 msgstr ""
 
 #. Default: "SyuanYuanJiao"
-#: ./vocabularies.py:283
+#: ./vocabularies.py:321
 msgid "rl_sy"
 msgstr ""
 
 #. Default: "Taoism"
-#: ./vocabularies.py:277
+#: ./vocabularies.py:315
 msgid "rl_to"
 msgstr ""
 
 #. Default: "TenRiKyo"
-#: ./vocabularies.py:282
+#: ./vocabularies.py:320
 msgid "rl_tr"
 msgstr ""
 
 #. Default: "TienTi"
-#: ./vocabularies.py:281
+#: ./vocabularies.py:319
 msgid "rl_tt"
 msgstr ""
 
-#: ./vocabularies.py:605
+#: ./vocabularies.py:643
 msgid "roof"
 msgstr ""
 
-#: ./vocabularies.py:619
+#: ./vocabularies.py:657
 msgid "sitting"
 msgstr ""
 
-#: ./vocabularies.py:616
+#: ./vocabularies.py:654
 msgid "standing"
 msgstr ""
 
-#: ./vocabularies.py:542
+#: ./vocabularies.py:580
 msgid "stone"
 msgstr ""
 
-#: ./vocabularies.py:633
+#: ./vocabularies.py:671
 msgid "unknown"
 msgstr ""
 
-#: ./vocabularies.py:603
+#. Default: "View on Map"
+#: ./browser/temple.pt:21
+msgid "view_on_map"
+msgstr ""
+
+#: ./vocabularies.py:641
 msgid "village"
 msgstr ""
 
-#: ./vocabularies.py:604
+#: ./vocabularies.py:642
 msgid "wall"
 msgstr ""
 
-#: ./vocabularies.py:547
+#: ./vocabularies.py:585
 msgid "wood"
 msgstr ""
 
 #. Default: "SC"
-#: ./vocabularies.py:472
+#: ./vocabularies.py:510
 msgid "wyxx01"
 msgstr ""
 
 #. Default: "QWF"
-#: ./vocabularies.py:473
+#: ./vocabularies.py:511
 msgid "wyxx02"
 msgstr ""
 
 #. Default: "QWN"
-#: ./vocabularies.py:474
+#: ./vocabularies.py:512
 msgid "wyxx03"
 msgstr ""
 
 #. Default: "WCF"
-#: ./vocabularies.py:475
+#: ./vocabularies.py:513
 msgid "wyxx04"
 msgstr ""
 
 #. Default: "WCN"
-#: ./vocabularies.py:476
+#: ./vocabularies.py:514
 msgid "wyxx05"
 msgstr ""
 
 #. Default: "WJ"
-#: ./vocabularies.py:477
+#: ./vocabularies.py:515
 msgid "wyxx06"
 msgstr ""
 
 #. Default: "OT"
-#: ./vocabularies.py:478
+#: ./vocabularies.py:516
 msgid "wyxx07"
 msgstr ""
 
 #. Default: "ZX"
-#: ./vocabularies.py:438
+#: ./vocabularies.py:476
 msgid "xhly01"
 msgstr ""
 
 #. Default: "XH"
-#: ./vocabularies.py:439
+#: ./vocabularies.py:477
 msgid "xhly02"
 msgstr ""
 
 #. Default: "BK"
-#: ./vocabularies.py:440
+#: ./vocabularies.py:478
 msgid "xhly03"
 msgstr ""
 
 #. Default: "SM"
-#: ./vocabularies.py:441
+#: ./vocabularies.py:479
 msgid "xhly04"
 msgstr ""
 
 #. Default: "WC"
-#: ./vocabularies.py:442
+#: ./vocabularies.py:480
 msgid "xhly05"
 msgstr ""
 
 #. Default: "NS"
-#: ./vocabularies.py:443
+#: ./vocabularies.py:481
 msgid "xhly06"
 msgstr ""
 
 #. Default: "FL"
-#: ./vocabularies.py:444
+#: ./vocabularies.py:482
 msgid "xhly07"
 msgstr ""
 
 #. Default: "ZS"
-#: ./vocabularies.py:445
+#: ./vocabularies.py:483
 msgid "xhly08"
 msgstr ""
 
 #. Default: "AZ"
-#: ./vocabularies.py:446
+#: ./vocabularies.py:484
 msgid "xhly09"
 msgstr ""
 
-#: ./vocabularies.py:591
+#: ./vocabularies.py:629
 msgid "yes"
 msgstr ""
 
 #. Default: "PHM"
-#: ./vocabularies.py:424
+#: ./vocabularies.py:462
 msgid "ymmy01"
 msgstr ""
 
 #. Default: "DCM"
-#: ./vocabularies.py:425
+#: ./vocabularies.py:463
 msgid "ymmy02"
 msgstr ""
 
 #. Default: "APM"
-#: ./vocabularies.py:426
+#: ./vocabularies.py:464
 msgid "ymmy03"
 msgstr ""
 
 #. Default: "DSM"
-#: ./vocabularies.py:427
+#: ./vocabularies.py:465
 msgid "ymmy04"
 msgstr ""
