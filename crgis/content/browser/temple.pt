@@ -16,6 +16,15 @@
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">
 
+<p align="right"
+   tal:define="itemId context/getId;">
+  <a href=""
+     tal:attributes="href python: 'http://crgis.rchss.sinica.edu.tw/crgis_tw/crgis/cultural.php?k='+itemId;
+                     title itemId;
+                     target string:_blank"
+     i18n:translate="view_on_map">View on Map</a>
+</p>
+
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#tab1" i18n:translate="">Default Info</a></li>
   <li><a data-toggle="tab" href="#tab2" i18n:translate="">Appendix Info</a></li>
