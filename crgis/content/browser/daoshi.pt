@@ -8,10 +8,6 @@
 
 <body>
 
-<metal:styleslot fill-slot="style_slot">
-  <link rel="stylesheet" href="++resource++crgis.theme/leaflet/leaflet.css">
-</metal:styleslot>
-
 <metal:content-core fill-slot="content-core">
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">

@@ -8,10 +8,6 @@
 
 <body>
 
-<metal:styleslot fill-slot="style_slot">
-  <link rel="stylesheet" href="++resource++crgis.theme/leaflet/leaflet.css">
-</metal:styleslot>
-
 <metal:content-core fill-slot="content-core">
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">
@@ -205,50 +201,6 @@
   <span tal:replace="context/fill_date" />
   </div>
 </fieldset>
-
-<!-- Embeded map -->
-<?python
-from collective.geo.geographer.interfaces import IGeoreferenced
-geo = IGeoreferenced(context)
-coordinates = geo.coordinates if geo.coordinates else (121.0, 24.0)
-zoom = 15 if geo.coordinates else 7
-?>
-
-<div id="mymap" style="z-index: 10; height:400px; width: 100%; margin-top: 20px"></div>
-<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
-
-<script>
-var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-var ly1 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2003&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2001&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly3 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1993&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly4 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1989&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly5 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1921&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var ly6 = L.tileLayer('http://wmts.nlsc.gov.tw/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&FORMAT=image/png&STYLE=_null&LAYER=EMAP5&TILEMATRIXSET=EPSG:3857&TileMatrix={z}&TileCol={x}&&TileRow={y}');
-var ly7 = L.tileLayer('http://wmts.nlsc.gov.tw/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&FORMAT=image/png&STYLE=_null&LAYER=PHOTO2&TILEMATRIXSET=EPSG:3857&TileMatrix={z}&TileCol={x}&&TileRow={y}');
-var ly8 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1904&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
-var baseMaps = {
-    "1904 日治臺灣堡圖": ly8,
-    "1921 日治臺灣堡圖": ly5,
-    "1989 臺灣經建1版地形圖": ly4,
-    "1993 臺灣經建2版地形圖": ly3,
-    "2001 臺灣經建3版地形圖": ly2,
-    "2003 臺灣經建4版地形圖": ly1,
-    "臺灣通用電子地圖": ly6,
-    "臺灣通用正射影像": ly7,
-    "Open Street Map" : osm
-};
-
-var map = L.map('mymap', {
-    center: ${python:'[%s, %s]' % (coordinates[1], coordinates[0])},
-    zoom: ${zoom},
-    layers: [osm]
-});
-L.control.layers(baseMaps).addTo(map);
-
-marker = L.marker(${python:'[%s, %s]' % (coordinates[1], coordinates[0])}, {'title': '${context/title}', 'riseOnHover': true})
-marker.addTo(map)
-</script>
 
   </div>
 
